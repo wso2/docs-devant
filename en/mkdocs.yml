@@ -126,4 +126,4 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/wso2
-      
+#  base_path: http://localhost:8000
