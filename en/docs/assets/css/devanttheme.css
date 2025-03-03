@@ -18,7 +18,7 @@
 }
 
 .md-typeset a{
-    color: #3841ec !important;
+    color: #0369A1 !important;
 }
 
 .md-nav__link{
@@ -30,7 +30,7 @@
 }
 
 .md-nav__item .md-nav__link--active {
-    color:  #3841ec !important;
+    color:  #0369A1 !important;
 }
 
 /*
@@ -200,7 +200,7 @@ text-align: left;
 }
 
 .cText:hover {
-   color: #545ce5;
+   color: #0369A1;
   }
 .md-icon svg{
 visibility: hidden;
@@ -234,7 +234,7 @@ visibility: hidden;
     width: 40rem !important;
   }
 .cIcon path{
-  fill: #545ce5;
+  fill: #0369A1;
 }
 
 .md-main__inner_search{
