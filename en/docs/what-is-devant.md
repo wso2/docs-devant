@@ -1,6 +1,6 @@
 # What is Devant?
 
-Devant allows you to manage your own AI integration agents. Integrate any AI agent into the integrations you build in low-code and pro-code, and jump from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.
+Devant is a powerful IPaaS with first-class AI support. Integrate any AI agent into the integrations you build in low-code and pro-code, and jump from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.
 
 ## Key capabilities of Devant
 
