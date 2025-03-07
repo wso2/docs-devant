@@ -4,7 +4,7 @@
 
 In this guide, you will:
 
-- Create a Devant project and add a simple automation that will print `"Hello World"` every minute.
+- Create a simple automation that will print `"Hello World"` every minute.
 - Use Ballerina Integrator (BI) to develop the automation.
 - Push the automation to Devant from the Ballerina Integrator which will automatically build the automation.
 - Schedule the automation to run every minute.
@@ -20,32 +20,14 @@ In this guide, you will:
     3. Read and accept the privacy policy and terms of use and Click **Create**.
 3. VSCode: [Install VSCode](https://code.visualstudio.com/download) if you don't have it installed already.
 
-???+ info "VS Code Profile"
-    To learn more about profiles, see [Visual Studio Code Profiles](https://code.visualstudio.com/docs/editor/profiles).
-
-## Step 1: Create a project
-1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in. This opens the organization overview page.
-2. On the organization overview page, click **+ Create Project**.
-3. Enter the following details:
-
-    !!! info
-        The **Name** field must be unique and cannot be changed after creation.
-
-    | **Field**                | **Value**                          |
-    |--------------------------|------------------------------------|
-    | **Project Display Name** | Hello World Project                  |
-    | **Name**                 | hello-world-project                  |
-    | **Project Description**  | My sample project                  |
-
-4. Click **Create**. This creates the project and takes you to the project overview page.
-
 <!-- Todo finalize the names and structure -->
-## Step 2: Attach a Git repository
-1. On the project overview page, click **Attach a Git Repository**.
-2. Go to the **GitHub** tab.
-3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
-4. Under the **Organization**  dropdown click **+ Add**. This will redirect you to **Install WSO2 Cloud App Stage** page.
-5. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
+## Step 1: Attach a Git repository
+1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in. This opens the organization overview page and lists the projects.
+2. Select the **Default** project.
+3. On the project overview page, click **Attach a Git Repository**.
+4. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
+5. Under the **Organization**  dropdown click **+ Add**. This will redirect you to **Install WSO2 Cloud App Stage** page.
+6. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
 
     !!! note
         The **WSO2 Cloud App** requires:
@@ -54,11 +36,11 @@ In this guide, you will:
 
         You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) at any time. Write access is used to push changes directly to your repository.
 
-6. Select your organization under the **Organization**  dropdown. If your organization is still not listed click the Refetch button.
-7. Select a repository to save your automation. Additionally, you can select a **Branch** and a **Path** of the selected repository to save your automation.
-8. **Name** and **Identifier** fields will be automatically populated. Additionally, you can edit them to your preference.
-9. Select the **Technology** as `Ballerina`.
-10. Choose the **Integration Type** as `Automation` and Click **Create**.
+7. Select your organization under the **Organization**  dropdown. If your organization is still not listed click the Refetch button.
+8. Select a repository to save your automation. Additionally, you can select a **Branch** and a **Path** of the selected repository to save your automation.
+9. **Name** and **Identifier** fields will be automatically populated. Additionally, you can edit them to your preference.
+10. Select the **Technology** as `Ballerina`.
+11. Choose the **Integration Type** as `Automation` and Click **Create**.
 
 This will redirect you to the overview page of the automation. Now, let's design the automation.
 
