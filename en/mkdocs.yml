@@ -74,7 +74,17 @@ nav:
   - Home: index.md
   - Introduction:
       - What is Devant?: what-is-devant.md
-
+  - Devant Concepts:
+      - Resource Hierarchy: devant-concepts/resource-hierarchy.md
+      - Organization: devant-concepts/organization.md
+      - Project: devant-concepts/project.md
+      - Component: devant-concepts/component.md
+      - Endpoint: devant-concepts/endpoint.md
+      - CI/CD: devant-concepts/ci-cd.md
+      - Deployment Tracks: devant-concepts/deployment-tracks.md
+      - Connections: devant-concepts/connections.md
+      - Data Planes: devant-concepts/data-planes.md
+      - Environments: devant-concepts/environments.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
