@@ -1,6 +1,6 @@
 # What is Devant?
 
-Devant is a powerful IPaaS with first-class AI support. Integrate any AI agent into the integrations you build in low-code and pro-code, and move away from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.
+Devant is a powerful IPaaS with first-class AI support. Incorporate AI agents into the integrations you build in low-code and pro-code, and move away from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.
 
 ## Key capabilities of Devant
 
@@ -11,8 +11,8 @@ Devant is a powerful IPaaS with first-class AI support. Integrate any AI agent i
 - **Git Repository Integration**: Effortlessly connect to Git-based platforms like GitHub, Bitbucket, or GitLab to develop components by linking an existing repository.
 
 ### Design for security, governance, and developer experience
-- **Application Security Design**: Leverage [cell-based architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md), where projects become governable units from development to deployment, ensuring managed access via APIs, events, and data.
-- **Domain-Driven Design**: Organize enterprise systems into domains, exposing managed APIs, events, and data through projects. Each project consists of components representing units of deployment.
+- **Cell-Based Architecture**: Leverage [cell-based architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md), where projects become governable units from development to deployment, ensuring managed access via APIs, events, and data.
+- **Composable architecture**: Organize enterprise systems into domains, exposing managed APIs, events, and data through projects. Each project consists of components representing units of deployment.
 - **Developer-Centric Design**: Tools and workflows tailored specifically for integration developers, enhancing debugging, testing, and issue identification.
 
 ### Seamless deployment
@@ -38,4 +38,4 @@ Devant is a powerful IPaaS with first-class AI support. Integrate any AI agent i
 - **Engineering Insights**: Gain visibility into engineering insights and advanced data analytics to make data-driven decisions, optimize processes, and improve efficiency.
 - **API Analytics**: Understand API performance and adoption patterns to identify and resolve operational bottlenecks.
 
-Devant is your all-in-one AI platform for building, deploying, and managing integrations with ease, security, and efficiency.
+Devant is your all-in-one AI-capable platform for building, deploying, and managing integrations with ease, security, and efficiency.
