@@ -75,7 +75,7 @@ nav:
   - Introduction:
       - What is Devant?: what-is-devant.md
   - Quick Start Guides:
-      - Deploy Your First Automation: quick-start-guides/deploy-your-first-automation.md
+      - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
 
 # Extensions
 markdown_extensions:

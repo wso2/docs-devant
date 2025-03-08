@@ -1,11 +1,11 @@
-# Deploy Your First Automation
+# Schedule Your First Automation
 
 ## Overview
 
 In this guide, you will:
 
 - Create a simple automation that will print `"Hello World"` every minute.
-- Use Ballerina Integrator (BI) to develop the automation.
+- Use Ballerina Integrator to develop the automation.
 - Push the automation to Devant from the Ballerina Integrator which will automatically build the automation.
 - Schedule the automation to run every minute.
 
