@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://wso2.com/devant/docs/</loc>
+         <loc>https://wso2.github.io/docs-devant/</loc>
          <lastmod>2025-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wso2.com/devant/docs/page-not-found/</loc>
+         <loc>https://wso2.github.io/docs-devant/page-not-found/</loc>
          <lastmod>2025-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wso2.com/devant/docs/what-is-devant/</loc>
+         <loc>https://wso2.github.io/docs-devant/what-is-devant/</loc>
          <lastmod>2025-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
