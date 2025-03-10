@@ -51,10 +51,10 @@ This will redirect you to the overview page of the automation. Now, let's design
 
 ## Step 4: Set up Ballerina Integrator for the first time
 1. Click the Ballerina Integrator icon on the sidebar.    
-   <a href="{{base_path}}/assets/img/get-started/bi_icon.png"><img src="{{base_path}}/assets/img/get-started/bi_icon.png" alt="Ballerina Integrator Icon" width="80%"></a>
+   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_icon.png"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_icon.png" alt="Ballerina Integrator Icon" width="80%"></a>
 2. Click **`Set Up Ballerina Integrator`**. The setup wizard will install and configure the [Ballerina](https://ballerina.io/) distribution required for the Ballerina Integrator.
 3. Click **`Restart VS Code`** to complete the setup.
-   <a href="{{base_path}}/assets/img/get-started/bi_setup.gif"><img src="{{base_path}}/assets/img/get-started/bi_setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
+   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_setup.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
 
 ???+ info "Update Ballerina Integrator's Ballerina Distribution"
     The setup wizard will install the Ballerina distribution required for the Ballerina Integrator into `<USER_HOME>/.ballerina/ballerina-home` directory.
@@ -66,7 +66,7 @@ This will redirect you to the overview page of the automation. Now, let's design
 3. Click **Create New Integration** and Enter the Integration Name as `HelloWorld`.
 4. The project directory should be automatically populated. If not, select the project directory by clicking on the **Select Location** button.
 5. Click **Create Integration** to create the integration project.
-   <a href="{{base_path}}/assets/img/get-started/create_integration.gif"><img src="{{base_path}}/assets/img/get-started/create_integration.gif" alt="Create Integration" width="80%"></a>
+   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create_integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create_integration.gif" alt="Create Integration" width="80%"></a>
 6. In the design view, click **Add Construct**.
 7. Select **Automation** from the Constructs menu.
 8. Click **Create** to create an automation. This will direct you to the automation diagram view.
@@ -74,7 +74,7 @@ This will redirect you to the overview page of the automation. Now, let's design
 10. Select **Function Call** and select **println**.
 11. Click **+ Add Another Value**, type `"Hello World"` and click **Save**.
 12. Click **Run** in the top right corner to run the automation. The automation will be compiled and run in the embedded Ballerina runtime.
-   <a href="{{base_path}}/assets/img/get-started/design_integration.gif"><img src="{{base_path}}/assets/img/get-started/design_integration.gif" alt="Design Integration" width="80%"></a>
+   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/design_integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/design_integration.gif" alt="Design Integration" width="80%"></a>
 
 ## Step 6: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself -->
 1. Click **Source Control** icon on the sidebar.
@@ -96,6 +96,6 @@ This will redirect you to the overview page of the automation. Now, let's design
 7. Add `1` to the **Repeat every** text box.
 8. Add `01:00 AM` to the **At** text box and click **Update**.
 9. Your automation will run every Day at 01:00 AM. You can see the next execution time as **Next run in** in the Development card.
-   <a href="{{base_path}}/assets/img/get-started/view_logs.gif"><img src="{{base_path}}/assets/img/get-started/view_logs.gif" alt="View Logs" width="80%"></a>
+   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/view_logs.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/view_logs.gif" alt="View Logs" width="80%"></a>
 
 [//]: # (After successfully testing your service, explore other Devant features like [managing]&#40;../api-management/lifecycle-management.md&#41;, [observing]&#40;../monitoring-and-insights/observability-overview.md&#41;, and [DevOps]&#40;../devops-and-ci-cd/view-runtime-details.md&#41;.  <!-- Todo Update this with the real features -->)
