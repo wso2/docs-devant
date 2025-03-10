@@ -74,6 +74,8 @@ nav:
   - Home: index.md
   - Introduction:
       - What is Devant?: what-is-devant.md
+  - Quick Start Guides:
+      - Deploy Your First Integration: quick-start-guides/deploy-your-first-integration.md
 
 # Extensions
 markdown_extensions:
@@ -126,4 +128,4 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/wso2
-#  base_path: http://localhost:8000
+  base_path: http://localhost:8000/devant/docs
