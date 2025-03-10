@@ -8,12 +8,8 @@ Devant is a powerful IPaaS with first-class AI support. Incorporate AI agents in
 - **AI-Assisted Development**: Devant includes a developer friendly VSCode-based editor with an integrated AI copilot, which aids developers at every stage, from code generation to refactoring.
 - **Unified Low-Code and Pro-Code Development**: Allows seamless transitions between low-code and pro-code development, accommodating a diverse range of developer skills and preferences.
 - **Comprehensive Protocol and AI Support**: Built-in capabilities to integrate with third-party AI services, vector databases, and support for protocols such as TCP, UDP, FILE, Websub, and Websubhub.
-- **Git Repository Integration**: Effortlessly connect to Git-based platforms like GitHub, Bitbucket, or GitLab to develop components by linking an existing repository.
-
-### Design for security, governance, and developer experience
-- **Cell-Based Architecture**: Leverage [cell-based architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md), where projects become governable units from development to deployment, ensuring managed access via APIs, events, and data.
-- **Composable architecture**: Organize enterprise systems into domains, exposing managed APIs, events, and data through projects. Each project consists of components representing units of deployment.
 - **Developer-Centric Design**: Tools and workflows tailored specifically for integration developers, enhancing debugging, testing, and issue identification.
+- **Git Repository Integration**: Effortlessly connect to Git-based platforms like GitHub, Bitbucket, or GitLab to develop components by linking an existing repository.
 
 ### Seamless deployment
 - **CI/CD**: Eliminate manual builds and unreliable deployments with Devant's industry-standard CI/CD tooling, providing complete control and flexibility.
