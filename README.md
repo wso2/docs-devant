@@ -180,9 +180,8 @@ Navigate to the location where you want to clone the repository and clone the fo
    >```
     >python3 -m mkdocs serve
     >```
->
 
-2. Open the following URL on a new browser window to view the Micro Integrator documentation site locally:
+2. Open the following URL on a new browser window to view the Devant documentation site locally:
 
    http://localhost:8000
 
@@ -193,28 +192,26 @@ Navigate to the location where you want to clone the repository and clone the fo
    > 1. Navigate to the `mkdocs.yml` file.
    >
    > 2. Change the following configuration to `false` as shown below:
-        >
-        >     ```
-    >     #Breaks build if there's a warning
-    >     strict: false
-    >     ```
-   >
+   >```
+   >     #Breaks build if there's a warning
+   >     strict: false
+   >```
    > 3. Run the following command to start the server and to make the server load only the changed items and display the changes faster.
-        >
-        >     `mkdocs serve --dirtyreload`
+   >
+   >     `mkdocs serve --dirtyreload`
    >
    > 4. If you are running the `mkdocs serve --dirtyreload` command to run the MkDocs server, make sure to change the configuration in the `mkdocs.yml` file as follows before sending a pull request.
-        >
-        >     `strict: true`
+   >
+   >     `strict: true`
    >
 
    > **NOTE**:
    >
    > If you are adding new images or new pages to the doc space, update the base path when locally running the project.
    >
-   > 1. Open the `mkdocs.yml` file located in the `docs-devant/en/docs/` directory.
+   > 1. Open the `mkdocs.yml` file located in the `docs-devant/en/` directory.
    >
-   > 2. Update the `base_path` to `http://localhost:8000/en/latest` by uncommenting the entry.
+   > 2. Update the `base_path` to `http://localhost:8000/` by uncommenting the entry.
    >
    > 3. Make sure to undo this change before submitting the pull request.
 >
