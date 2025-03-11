@@ -18,12 +18,12 @@
 site_name: ""
 site_description: Devant Learning Portal
 site_author: WSO2
-site_url: https://wso2.com/devant/docs
+site_url: https://wso2.github.io/docs-devant/
 
 # Repository
 repo_name: wso2/docs-devant
-repo_url: https://github.com/wso2/docs-devant-dev/
-edit_uri: https://github.com/wso2/docs-devant-dev/edit/dev/en/docs/
+repo_url: https://github.com/wso2/docs-devant/
+edit_uri: https://github.com/wso2/docs-devant/edit/dev/en/docs/
 dev_addr: localhost:8000
 
 # Copyright
