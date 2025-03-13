@@ -6,9 +6,9 @@ Devant creates environments for each project, where all integrations within the 
 
 The Devant cloud data plane provides two default environments (i.e., development and production). However, if you are in a private data plane organization, you can customize and create multiple environments based on your requirements.
 
-Devant adopts a *build once, deploy many* strategy to manage integrations across multiple environments. An integration is automatically built per commit. Then it is promoted to subsequent environments. This allows testing changes in lower, non-production environments like development before promoting the build to production.
+Devant adopts a *build once, deploy many* strategy to manage integrations across multiple environments. It automatically builds an integration for each commit, which is then promoted to subsequent environments. This allows testing changes in lower, non-production environments like development before promoting the build to production.
 
-Devant injects configurations and secrets that you maintain at the environment level into integrations at runtime. This ensures a strict separation of environment-specific configurations from source code. Although configurations can vary across environments, the code and the built container remain unchanged. Configurations and secrets include:
+Devant injects configurations and secrets that you maintain at the environment level into integrations at runtime. This ensures a strict separation of environment-specific configurations from source code. Although configurations can vary across environments, the build artifacts remain unchanged. Configurations and secrets include:
 
 - Resource credentials to a database, cache, or other backing services.
 - Credentials to external cloud services such as Amazon S3 or external APIs.
@@ -20,8 +20,8 @@ All configurations and secrets are encrypted at rest and in transit and stored i
 Devant automated build pipelines work as follows:
 
 - Automatically builds a container image from the provided source code for the new commit.
-- Runs security and vulnerability scans if applicable, depending on the integration type.
-- Pushes the container image to a container registry. In the cloud data plane, Devant pushes the image to a Devant-managed registry. If it is a private data plane organization, Devant pushes the image to a registry that you own.
+- Runs security and vulnerability scans, if applicable, depending on the integration type.
+- Pushes the container image to a container registry. Devant pushes the image to a Devant-managed registry in the cloud data plane. If it is a private data plane organization, Devant pushes the image to your own registry.
 - Updates service endpoints and API specifications from the provided repository if applicable.
 
 ### Repeatable builds
@@ -43,7 +43,7 @@ To view details of a specific build, click **View Details** corresponding to the
 
 ## Deployment
 
-Once Devant builds the latest commit it automatically deploys to the Development environment, you can track the deployments on the **Deploy** page.
+Once Devant builds the latest commit it automatically deploys to the Development environment. You can track the deployments on the **Deploy** page.
 
 ### Immutable deployments
 
@@ -51,9 +51,9 @@ Once Devant deploys an integration with configurations, the configurations becom
 
 ### Promote an integration to a higher environment
 
-Devant builds a container once per GitHub commit and then promotes it to subsequent higher environments.
+Devant builds artifacts once per GitHub commit and then promotes it to subsequent higher environments.
 
-You can go to the **Deploy** page of an integration and promote it manually across environments.
+In the overview page, click **Promote** to promote it manually across environments. This can be also done in the **Deploy** page.
 
 ## Configurations
 
@@ -78,7 +78,7 @@ To change environment-specific configurations, go to the **Deploy** page of the 
 
 The information on the **Test** page is only applicable to automation and API.
 
-For the automation, click **Test** to run the automation once. Select **Test with Arguments** to test your automation with arguments. You can view current and historic execution details along with a quick snapshot of recent activity via the total count of executions within the last 30 days. For each execution, you can view vital details such as the unique execution ID, the time it was triggered, and relevant revision information. Furthermore, you can dive deeper into the details by clicking on a specific execution to access its associated logs. This information enhances transparency, troubleshooting capabilities, and overall execution management, allowing you to easily monitor and analyze workflows.
+For the automation, click **Test** to run the automation once. Select **Test with Arguments** to test your automation with arguments. You can view current and historic execution details along with a quick snapshot of recent activity via the total count of executions within the last 30 days. For each execution, you can view vital information such as the unique execution ID, the time it was triggered, and relevant revision information. Furthermore, you can dive deeper into the details by clicking on a specific execution to access its associated logs. This information enhances transparency, troubleshooting capabilities, and overall execution management, allowing you to easily monitor and analyze workflows.
 
 For API, click **Console** in the **Test** dropdown to list all the resources in the API. Click **Get Test Key** to get a test key. Click a resource to expand it. Click **Try it out** and fill in the parameters (if any). Click **Execute** to invoke the resource. This will show the resource response and the execution details. You can also select the **API Chat** in the **Test** dropdown to test the API using an Intelligent Agent.
 
@@ -86,6 +86,6 @@ For API, click **Console** in the **Test** dropdown to list all the resources in
 
 Devant performs rolling updates to ensure zero downtime between deployments and promotions.
 
-A new build undergoes a health check before traffic is switched to it from the current build.
+A new build undergoes a health check before switching traffic from the current build.
 
-If you configure the necessary health checks for an integration, it can prevent deploying and promoting unhealthy versions of an integration.
+Configuring the necessary health checks for an integration can prevent the deployment and promotion of unhealthy versions of the integration.
