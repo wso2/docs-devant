@@ -78,7 +78,7 @@ nav:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
       - Organization: devant-concepts/organization.md
       - Project: devant-concepts/project.md
-      - Component: devant-concepts/component.md
+      - Component: devant-concepts/integration.md
       - Endpoint: devant-concepts/endpoint.md
       - CI/CD: devant-concepts/ci-cd.md
       - Deployment Tracks: devant-concepts/deployment-tracks.md

@@ -1,14 +1,14 @@
 # CI/CD
 
-Devant provides a streamlined continuous integration and continuous deployment (CI/CD) experience to deploy applications and services efficiently across multiple environments.
+Devant provides a streamlined continuous integration and continuous deployment (CI/CD) experience to deploy integrations and services efficiently across multiple environments.
 
-Devant creates environments for each project, where all components within the project share the environments. An environment is an isolated deployment area with restricted network and resource access. Services deployed in one environment cannot communicate with services deployed in another.
+Devant creates environments for each project, where all integrations within the project share the environments. An environment is an isolated deployment area with restricted network and resource access. Services deployed in one environment cannot communicate with services deployed in another.
 
 The Devant cloud data plane provides two default environments (i.e., development and production). However, if you are in a private data plane organization, you can customize and create multiple environments based on your requirements.
 
-Devant adopts a *build once, deploy many* strategy to manage components across multiple environments. An application is built only once (i.e., per commit if automatic build on commit is enabled or based on the selected commit during a manual build). Then it is promoted to subsequent environments. This allows testing changes in lower, non-production environments like development before promoting the build to production.
+Devant adopts a *build once, deploy many* strategy to manage integrations across multiple environments. An integration is automatically built per commit. Then it is promoted to subsequent environments. This allows testing changes in lower, non-production environments like development before promoting the build to production.
 
-Devant injects configurations and secrets that you maintain at the environment level into components at runtime. This ensures a strict separation of environment-specific configurations from source code. Although configurations can vary across environments, the code and the built container remain unchanged. Configurations and secrets include:
+Devant injects configurations and secrets that you maintain at the environment level into integrations at runtime. This ensures a strict separation of environment-specific configurations from source code. Although configurations can vary across environments, the code and the built container remain unchanged. Configurations and secrets include:
 
 - Resource credentials to a database, cache, or other backing services.
 - Credentials to external cloud services such as Amazon S3 or external APIs.
@@ -17,14 +17,12 @@ All configurations and secrets are encrypted at rest and in transit and stored i
 
 ## Build
 
-Devant auto-generates build pipelines that may slightly differ depending on the component type you create. Generally, all build pipelines work as follows:
+Devant automated build pipelines work as follows:
 
-- Builds a container image either from the provided source code or from a given Dockerfile for a specific commit.
-- Runs security and vulnerability scans if applicable, depending on the component type.
+- Automatically builds a container image from the provided source code for the new commit.
+- Runs security and vulnerability scans if applicable, depending on the integration type.
 - Pushes the container image to a container registry. In the cloud data plane, Devant pushes the image to a Devant-managed registry. If it is a private data plane organization, Devant pushes the image to a registry that you own.
 - Updates service endpoints and API specifications from the provided repository if applicable.
-
-In addition to these steps, some buildpacks support integrating unit tests into the build pipeline. For more details, see [Integrate Unit Tests into the Build Pipeline](../develop-components/integrate-unit-tests-into-the-build-pipeline.md).
 
 ### Repeatable builds
 
@@ -35,9 +33,7 @@ Devant can replicate builds from an identical code version (Git commit). This me
 
 ### Trigger a build
 
-On the **Build** page, click **Build Latest**. If necessary, you have the option to select a particular commit and build an image.
-
-If you want to automatically trigger a build with each commit, you can enable **Auto Build on Commit**.
+On the **Build** page, click **Build Latest** to build the latest commit. If necessary, you have the option to build earlier commits. Change the button to **Show commits** from the dropdown and click **Show commits**. Select the commit from the commits pane and click **Build**.
 
 ### Build logs
 
@@ -47,32 +43,17 @@ To view details of a specific build, click **View Details** corresponding to the
 
 ## Deployment
 
-Once you build an image in Devant, you can deploy it via the **Deploy** page. To deploy an image, you can follow one of the approaches given below:
-
-- **Manually deploy**: In the **Deploy** page, go to the **Set Up** card and click **Deploy**.
-- **Automatically deploy on build**: In the **Deploy** page, go to the **Set Up** card and enable **Auto Deploy on Build**. This automatically initiates deployment upon the completion of an automatic build.
-
-!!! info
-    To enable **Auto Deploy on Build**, you must enable **Auto Build on Commit**. This is because automatic deployment is not necessary or useful in scenarios where automatic build is not enabled.
-
-!!! note
-    - You must trigger the first build in a Ballerina component manually to ensure that Devant applies the required configurations to the development environment. You can enable automatic builds subsequently.
-    - Devant automatically checks the configurable defined in your source code against the configurable values applied in an environment. Devant requests the configurable values on deployment and promotion. If you have changed the configurables in your Ballerina component, auto-build pipelines can fail as a precaution to avoid a component crash at runtime due to missing configurables.
-    - The configurable verifying capability is only available for Ballerina components. For Dockerfile-based components, ensure to manage and update the configurations and secrets in environments ahead of time. You must also ensure backward compatibility between at least one release if you change the configurations.
-
-### Set up area and initial deployment
-
-In the deploy phase, Devant uses a setup area to merge the Docker image with its environment-independent configurations. Devant then deploys this composite to the environment. This is known as the initial deployment.
+Once Devant builds the latest commit it automatically deploys to the Development environment, you can track the deployments on the **Deploy** page.
 
 ### Immutable deployments
 
-Once Devant deploys a component with configurations, the configurations become immutable. Any subsequent change results in a new deployment.
+Once Devant deploys an integration with configurations, the configurations become immutable. Any subsequent change results in a new deployment.
 
-### Promote a component to a higher environment
+### Promote an integration to a higher environment
 
 Devant builds a container once per GitHub commit and then promotes it to subsequent higher environments.
 
-You can go to the **Deploy** page of a component and promote it manually across environments.
+You can go to the **Deploy** page of an integration and promote it manually across environments.
 
 ## Configurations
 
@@ -82,23 +63,24 @@ Devant allows you to define both environment-independent configurations and envi
 
 These configurations apply to all environments.
 
-To change environment-independent configurations, go to the **Deploy** page of the component, make the necessary configuration changes via the **Set Up** card, and then trigger a new deployment to the initial environment. From there, you can proceed to promote the component to higher environments.
+To change environment-independent configurations, go to the **Deploy** page of the integration, make the necessary configuration changes via the **Set Up** card, and then trigger a new deployment to the initial environment. From there, you can proceed to promote the integration to higher environments.
 
 ### Environment-specific configurations
 
 These configurations apply to a particular environment.
 
-To change environment-specific configurations, go to the **Deploy** page of the component, make the necessary configuration changes via the specific environment card, and trigger a new deployment.
+To change environment-specific configurations, go to the **Deploy** page of the integration, make the necessary configuration changes via the specific environment card, and trigger a new deployment.
 
-To learn more about managing these configurations, see [Configuration Management](https://wso2.com/devant/docs/devant-concepts/configuration-management/).
+[//]: # (Todo: enable the following)
+[//]: # (To learn more about managing these configurations, see [Configuration Management]&#40;https://wso2.com/devant/docs/devant-concepts/configuration-management/&#41;.)
 
-## Task execution
+## Test
 
-The information on the **Execute** page is only applicable to scheduled and manual task components.
+The information on the **Test** page is only applicable to automation and API.
 
-To track and monitor executions associated with a deployed scheduled task or manual task, go to the left navigation menu and click **Execute**.
+For the automation, click **Test** to run the automation once. Select **Test with Arguments** to test your automation with arguments. You can view current and historic execution details along with a quick snapshot of recent activity via the total count of executions within the last 30 days. For each execution, you can view vital details such as the unique execution ID, the time it was triggered, and relevant revision information. Furthermore, you can dive deeper into the details by clicking on a specific execution to access its associated logs. This information enhances transparency, troubleshooting capabilities, and overall execution management, allowing you to easily monitor and analyze workflows.
 
-You can view current and historic execution details along with a quick snapshot of recent activity via the total count of executions within the last 30 days. For each execution, you can view vital details such as the unique execution ID, the time it was triggered, and relevant revision information. Furthermore, you can dive deeper into the details by clicking on a specific execution to access its associated logs. This information enhances transparency, troubleshooting capabilities, and overall execution management, allowing you to easily monitor and analyze workflows.
+For API, click **Console** in the **Test** dropdown to list all the resources in the API. Click **Get Test Key** to get a test key. Click a resource to expand it. Click **Try it out** and fill in the parameters (if any). Click **Execute** to invoke the resource. This will show the resource response and the execution details. You can also select the **API Chat** in the **Test** dropdown to test the API using an Intelligent Agent.
 
 ## Zero-downtime deployments
 
@@ -106,4 +88,4 @@ Devant performs rolling updates to ensure zero downtime between deployments and 
 
 A new build undergoes a health check before traffic is switched to it from the current build.
 
-If you configure the necessary health checks for a component, it can prevent deploying and promoting unhealthy versions of a component.
+If you configure the necessary health checks for an integration, it can prevent deploying and promoting unhealthy versions of an integration.

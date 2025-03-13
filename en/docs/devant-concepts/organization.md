@@ -1,6 +1,6 @@
 ﻿# Organization
 
-An organization in Devant is a logical grouping of users and user resources. A first-time user must create an organization and be a member of it when signing in to Devant. Users and resources in an organization cannot access resources in another organization unless an admin of the other organization invites them and adds them as a member of that organization. A user cannot create more than one organization.
+An organization in Devant is a logical grouping of users and user resources. A first-time user must create an organization and be a member of it when signing in to Devant. Users and resources in an organization cannot access resources in another organization unless an admin of the other organization invites them and adds them as member of that organization. A user cannot create more than one organization.
 
 ## Switch organizations
 
@@ -20,10 +20,10 @@ Devant comes with predefined groups already configured with specific roles, as f
 
 - **API Publisher**: A collection of users who have the API Publisher role.
 - **API Subscriber**: A collection of users who have the API Subscriber role.
-- **Admin** : A collection of users who have the Admin role.
-- **Billing Admin** : A collection of users who have the Billing Admin role.
-- **Devant DevOps** : A collection of users who have the Devant DevOps role.
-- **Developer** : Users who develop, deploy, and manage cloud native applications at scale.
+- **Admin**: A collection of users who have the Admin role.
+- **Billing Admin**: A collection of users who have the Billing Admin role.
+- **Devant DevOps**: A collection of users who have the Devant DevOps role.
+- **Developer**: Users who develop, deploy, and manage integrations at scale.
 - **External API Subscriber**: A collection of users who have the External API Subscriber role.
 
 When creating a new group to invite members, be sure to assign a role to the group to ensure users have the required permissions.
@@ -33,11 +33,11 @@ When creating a new group to invite members, be sure to assign a role to the gro
 Devant roles are defined as follows:
 
 - **API Publisher**: An API publisher can discover, create, publish, delete, test, and manage an API.
-- **API Subscriber**: An API subscriber is a developer in a particular organization. An API subscriber can subscribe to an application, manage subscriptions, manage applications, generate API keys, and manage API keys.
+- **API Subscriber**: An API subscriber is a developer in a particular organization. An API subscriber can subscribe to an API, manage subscriptions, manage integrations, generate API keys, and manage API keys.
 - **Admin**: An administrator is responsible for all administration tasks, including user management, customizing the Developer Portal, managing projects, enabling analytics, managing domains, etc.
 - **Billing Admin**: Is responsible for billing administration that includes viewing tiers, creating and viewing organizations, managing invoices, viewing and creating subscriptions, and viewing and creating payment methods.
 - **Devant DevOps**: A Devant DevOps user is a user with access to the Devant DevOps portal, enabling them to actively manage, ensure dependable deployment, and monitor components.
-- **Developer** : A user who can develop, deploy, and manage cloud native applications at scale.  
+- **Developer**: Users who develop, deploy, and manage integrations at scale. 
 - **External API subscriber**: External API subscribers are API consumers who have access only to the API Developer Portal. They can join an organization with the sole purpose of consuming APIs.
 - **Environment Manager (Deprecated)**: Manages deployment environments.
 
