@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wso2.github.io/docs-devant/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.github.io/docs-devant/page-not-found/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.github.io/docs-devant/what-is-devant/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.github.io/docs-devant/quick-start-guides/schedule-your-first-automation/</loc>
+         <lastmod>2025-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
