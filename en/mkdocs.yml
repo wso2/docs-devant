@@ -74,6 +74,8 @@ nav:
   - Home: index.md
   - Introduction:
       - What is Devant?: what-is-devant.md
+  - Quick Start Guides:
+      - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
   - Devant Concepts:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
       - Organization: devant-concepts/organization.md
@@ -136,4 +138,5 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/wso2
-#  base_path: http://localhost:8000
+  base_path: https://wso2.github.io/docs-devant
+#base_path: http://localhost:8000
