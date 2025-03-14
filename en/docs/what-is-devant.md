@@ -8,11 +8,11 @@ Devant is a powerful IPaaS with first-class AI support. Incorporate AI agents in
 - **AI-Assisted Development**: Devant includes a developer friendly VSCode-based editor with an integrated AI copilot, which aids developers at every stage, from code generation to refactoring.
 - **Unified Low-Code and Pro-Code Development**: Allows seamless transitions between low-code and pro-code development, accommodating a diverse range of developer skills and preferences.
 - **Comprehensive Protocol and AI Support**: Built-in capabilities to integrate with third-party AI services, vector databases, and support for protocols such as TCP, UDP, FILE, Websub, and Websubhub.
-- **Developer-Centric Design**: Tools and workflows tailored specifically for integration developers, enhancing debugging, testing, and issue identification.
+- **Developer-Centric Design**: Tools and workflows tailored specifically for integration developers, enhancing debugging, testing, and issue identification. The integrations can be built in [Ballerina](https://ballerina.io/) and [Wso2 Micro Integrator](https://wso2.com/integrator/micro-integrator/) which are optimized for building integrations or using the Devant Cloud Editor.
 - **Git Repository Integration**: Effortlessly connect to Git-based platforms like GitHub, Bitbucket, or GitLab to develop components by linking an existing repository.
 
 ### Seamless deployment
-- **CI/CD**: Eliminate manual builds and unreliable deployments with Devant's industry-standard CI/CD tooling, providing complete control and flexibility.
+- **CI/CD**: Eliminate manual builds and unreliable deployments with [Devant's industry-standard CI/CD tooling](devant-concepts/ci-cd.md), providing complete control and flexibility.
 - **Multi-Cloud Kubernetes**: Easily deliver cloud-native applications across Azure, AWS, GCP, or your Kubernetes clusters.
 - **Configuration Management**: Centralize configuration parameters, sensitive credentials, and secrets across deployment environments via an intuitive interface.
 
