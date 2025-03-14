@@ -1,22 +1,22 @@
 ## Introduction
 
-Retrieval-Augmented Generation (RAG) is a powerful approach that enhances Large Language Models (LLM) accuracy by providing contextual data sources.
-To effectively use RAG, we need a structured way to ingest and store data. 
-This process, known as RAG Ingestion, involves configuring a vector database, embedding models, chunking, and processing source files.
+Retrieval-Augmented Generation (RAG) is an AI framework that enhances Large Language Model (LLM) accuracy by providing contextual data sources.
+To make use of RAG effectively, data must be systematically ingested into vector databases. This process, known as RAG Ingestion, involves setting up a vector database, utilizing embedding models, processing source files and chunking data.
+Devant offers a platform to efficiently ingest and manage unstructured documents for RAG.
 This guide walks through the key steps of RAG Ingestion in Devant.
 
-Go to your Organization by selecting the organization from the **Organization** dropdown in the top left corner. Select **RAG Ingestion** from the **Admin** dropdown in the bottom of the left navigation. 
+Go to your Organization by selecting the organization from the **Organization** dropdown in the top left corner. Select **RAG Ingestion** from the **Admin** dropdown at the bottom of the left navigation. 
 
 ## Step 1: Initialize Vector Store
 
-Contextual information is provided as numerical vectors (embeddings) to LLMs. These embeddings are stored in a vector database for efficient retrieval.
+LLMs receive contextual information as numerical vectors (embeddings). A vector database stores these embeddings for efficient retrieval.
 Devant supports a wide range of vector databases like Pinecone, Weaviate, Chroma, and so on. 
 
 1. Select `Pinecone` as the vector database.
 2. Enter the API key in the **API Key** field.
 
     ???+ info "Info"
-        Refer to the [Pinecone API Key documentation](https://docs.pinecone.io/guides/projects/manage-api-keys#create-an-api-key) to create an API key.
+        To create an API key, refer to the [Pinecone API Key documentation](https://docs.pinecone.io/guides/projects/manage-api-keys#create-an-api-key).
 
 3. Enter the **Collection Name**. The collection will be automatically created if it does not exist.
 4. Click **Next**.
@@ -27,19 +27,19 @@ Devant supports a wide range of vector databases like Pinecone, Weaviate, Chroma
 2. Enter the API key in the **Embedding Model API Key** field.
 
     ???+ info "Info"
-        Refer to the [OpenAI Platform documentation](https://platform.openai.com/docs/guides/embeddings) to create an API key.
+        To create an API key, refer to the [OpenAI Platform documentation](https://platform.openai.com/docs/guides/embeddings).
 
 3. Click **Next**.
 
 ## Step 3: Configure Chunking
 
-Since large documents cannot be processed at once, we use chunking to break them into manageable parts.
+Chunking is used to break large documents into manageable parts because processing them all at once is not feasible.
 **Chunking strategy**, **Max segment size**, and **Max overlap size** are automatically populated with default values. You can modify them if needed.
 
 ???+ info "Info"
     - **Chunking strategy** defines how text is split into smaller, manageable pieces (chunks).
     - **Max segment size** determines the maximum length of tokens for each chunk.
-    - **Max overlap size** defines how many tokens are repeated between consecutive chunks.
+    - **Max overlap size** defines how many tokens repeat between consecutive chunks.
 
 ## Step 4: Upload Source Files
 
@@ -50,7 +50,7 @@ Next, upload your source files (e.g., PDFs, CSVs, or text documents) for process
 3. Click **Upload**.
 
     !!! note
-        When you click **Upload** it will also generate embeddings for the uploaded files and store them in the vector database.
+        When you click **Upload** it will generate embeddings for the uploaded files and store them in the vector database.
 
 ## Step 5: Verify
 
