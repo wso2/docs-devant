@@ -13,27 +13,25 @@
         <meta name="author" content="WSO2">
       
       
-        <link rel="canonical" href="https://wso2.com/devant/docs/quick-start-guides/schedule-your-first-automation/">
+        <link rel="canonical" href="https://wso2.com/devant/docs/rag-ingestion/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../quick-start-guides/schedule-your-first-automation/">
       
       
-        <link rel="next" href="../../rag-ingestion/">
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>Schedule Your First Automation - </title>
+        <title>RAG Ingestion - </title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7bf56d0a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7bf56d0a.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -52,15 +50,15 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/css/blue-palette-alt2.css">
+      <link rel="stylesheet" href="../assets/css/blue-palette-alt2.css">
     
-      <link rel="stylesheet" href="../../assets/css/devanttheme.css">
+      <link rel="stylesheet" href="../assets/css/devanttheme.css">
     
-      <link rel="stylesheet" href="../../assets/lib/json-formatter/json-formatter.css">
+      <link rel="stylesheet" href="../assets/lib/json-formatter/json-formatter.css">
     
-      <link rel="stylesheet" href="../../assets/css/config-catalog.css">
+      <link rel="stylesheet" href="../assets/css/config-catalog.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -101,7 +99,7 @@
    <!-- CookiePro cookies consent notice end -->
    
   </script>
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -112,7 +110,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
 
   
   
@@ -137,7 +135,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#schedule-your-first-automation" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -164,9 +162,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
+    <a href=".." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="../../assets/images/logo.png" alt="logo" style="vertical-align: middle;">
+  <img src="../assets/images/logo.png" alt="logo" style="vertical-align: middle;">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -182,7 +180,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Schedule Your First Automation
+              RAG Ingestion
             
           </span>
         </div>
@@ -322,9 +320,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
+    <a href=".." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="../../assets/images/logo.png" alt="logo" style="vertical-align: middle;">
+  <img src="../assets/images/logo.png" alt="logo" style="vertical-align: middle;">
 
     </a>
     
@@ -382,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         What is Devant?
       </a>
     </li>
@@ -395,16 +393,16 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
       
       
       
@@ -413,7 +411,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Quick Start Guides
@@ -424,101 +422,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Schedule Your First Automation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../quick-start-guides/schedule-your-first-automation/" class="md-nav__link">
         Schedule Your First Automation
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-attach-a-git-repository" class="md-nav__link">
-    Step 1: Attach a Git repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-install-the-ballerina-integrator-extension" class="md-nav__link">
-    Step 2: Install the Ballerina Integrator extension
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-set-up-ballerina-integrator-for-the-first-time" class="md-nav__link">
-    Step 3: Set up Ballerina Integrator for the first time
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-develop-automation-in-vscode" class="md-nav__link">
-    Step 4: Develop automation in VSCode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-push-to-devant" class="md-nav__link">
-    Step 5: Push to Devant 
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-6-schedule-automation" class="md-nav__link">
-    Step 6: Schedule Automation
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -536,11 +444,83 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../rag-ingestion/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          RAG Ingestion
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         RAG Ingestion
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-initialize-vector-store" class="md-nav__link">
+    Step 1: Initialize Vector Store
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-configure-the-embedding-model" class="md-nav__link">
+    Step 2: Configure the Embedding Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-configure-chunking" class="md-nav__link">
+    Step 3: Configure Chunking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-upload-source-files" class="md-nav__link">
+    Step 4: Upload Source Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-verify" class="md-nav__link">
+    Step 5: Verify
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -562,8 +542,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -572,57 +550,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#step-1-initialize-vector-store" class="md-nav__link">
+    Step 1: Initialize Vector Store
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-attach-a-git-repository" class="md-nav__link">
-    Step 1: Attach a Git repository
+  <a href="#step-2-configure-the-embedding-model" class="md-nav__link">
+    Step 2: Configure the Embedding Model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-install-the-ballerina-integrator-extension" class="md-nav__link">
-    Step 2: Install the Ballerina Integrator extension
+  <a href="#step-3-configure-chunking" class="md-nav__link">
+    Step 3: Configure Chunking
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-set-up-ballerina-integrator-for-the-first-time" class="md-nav__link">
-    Step 3: Set up Ballerina Integrator for the first time
+  <a href="#step-4-upload-source-files" class="md-nav__link">
+    Step 4: Upload Source Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-develop-automation-in-vscode" class="md-nav__link">
-    Step 4: Develop automation in VSCode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-push-to-devant" class="md-nav__link">
-    Step 5: Push to Devant 
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-6-schedule-automation" class="md-nav__link">
-    Step 6: Schedule Automation
+  <a href="#step-5-verify" class="md-nav__link">
+    Step 5: Verify
   </a>
   
 </li>
@@ -642,7 +606,7 @@
                   
 
   
-    <a href="https://github.com/wso2/docs-devant/edit/dev/en/docs/quick-start-guides/schedule-your-first-automation.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-devant/edit/dev/en/docs/rag-ingestion.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -651,124 +615,87 @@
     
       
     
-    <a href="https://github.com/wso2/docs-devant/raw/dev/en/docs/quick-start-guides/schedule-your-first-automation.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-devant/raw/dev/en/docs/rag-ingestion.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="schedule-your-first-automation">Schedule Your First Automation<a class="headerlink" href="#schedule-your-first-automation" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>In this guide, you will:</p>
-<ul>
-<li>Create a simple automation that prints <code>"Hello World"</code> every day.</li>
-<li>Use Ballerina Integrator to develop the automation.</li>
-<li>Push the automation to Devant from the Ballerina Integrator which automatically builds the automation.</li>
-<li>Schedule the automation to run every day.</li>
-</ul>
-<!-- Todo add a YouTube video tutorial for this quick start -->
+  <h1>RAG Ingestion</h1>
 
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Retrieval-Augmented Generation (RAG) is an AI framework that enhances Large Language Model (LLM) accuracy by providing contextual data sources.
+To make use of RAG effectively, data must be systematically ingested into vector databases. This process, known as RAG Ingestion, involves setting up a vector database, utilizing embedding models, processing source files and chunking data.
+Devant offers a platform to efficiently ingest and manage unstructured documents for RAG.
+This guide walks through the key steps of RAG Ingestion in Devant.</p>
+<p>Go to your Organization by selecting the organization from the <strong>Organization</strong> dropdown in the top left corner. Select <strong>RAG Ingestion</strong> from the <strong>Admin</strong> dropdown at the bottom of the left navigation. </p>
+<h2 id="step-1-initialize-vector-store">Step 1: Initialize Vector Store<a class="headerlink" href="#step-1-initialize-vector-store" title="Permanent link">&para;</a></h2>
+<p>LLMs receive contextual information as numerical vectors (embeddings). A vector database stores these embeddings for efficient retrieval.
+Devant supports a wide range of vector databases like Pinecone, Weaviate, Chroma, and so on. </p>
 <ol>
-<li>GitHub account: <a href="https://github.com/signup">Create a GitHub account</a> if you don't have one already.</li>
-<li>If signing in to Devant for the first time, create an organization:<ol>
-<li>Go to <a href="https://console.devant.dev/">https://console.devant.dev/</a> and sign in using Google, GitHub, or Microsoft account.</li>
-<li>Enter a unique organization name. For example, <code>Stark Industries</code>.</li>
-<li>Read and accept the privacy policy and terms of use and click <strong>Create</strong>.</li>
-</ol>
-</li>
-<li>VSCode: <a href="https://code.visualstudio.com/download">Install VSCode</a> if you don't have it installed already.</li>
-</ol>
-<!-- Todo finalize the names and structure -->
-
-<h2 id="step-1-attach-a-git-repository">Step 1: Attach a Git repository<a class="headerlink" href="#step-1-attach-a-git-repository" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Go to <a href="https://console.devant.dev/">https://console.devant.dev/</a> and sign in. This opens the organization overview page and lists the projects.</li>
-<li>Select the <strong>Default</strong> project.</li>
-<li>On the project overview page, click <strong>Attach a Git Repository</strong>.</li>
-<li>Click <strong>Authorize with GitHub</strong> to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account <a href="https://github.com/marketplace/choreo-apps">WSO2 Cloud App</a>.</li>
-<li>Under the <strong>Organization</strong> dropdown, click <strong>+ Add</strong>. This redirects you to the <strong>Install WSO2 Cloud App Stage</strong> page.</li>
+<li>Select <code>Pinecone</code> as the vector database.</li>
 <li>
-<p>Select your GitHub account and install <a href="https://github.com/marketplace/choreo-apps">WSO2 Cloud App</a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The <strong>WSO2 Cloud App</strong> requires:
-- Read and write access to code and pull requests.
-- Read access to issues and metadata.</p>
-<p>You can <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps">revoke access</a> at any time. Write access is used to push changes directly to your repository.</p>
-</div>
-</li>
-<li>
-<p>Select your organization under the <strong>Organization</strong> dropdown. If your organization is not listed, click the Refetch button.</p>
-</li>
-<li>Select a repository to save your automation. Optionally, you may select a <strong>Branch</strong> and a <strong>Path</strong> of the selected repository to save your automation.</li>
-<li>The <strong>Name</strong> and <strong>Identifier</strong> fields are automatically populated. Optionally, you can edit them to your preference.</li>
-<li>Select the <strong>Technology</strong> as <code>Ballerina</code>.</li>
-<li>Choose the <strong>Integration Type</strong> as <code>Automation</code> and click <strong>Create</strong>.</li>
-</ol>
-<p>This redirects you to the overview page of the automation. Now, let's design the automation.</p>
-<h2 id="step-2-install-the-ballerina-integrator-extension">Step 2: Install the Ballerina Integrator extension<a class="headerlink" href="#step-2-install-the-ballerina-integrator-extension" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Click <strong>Install Ballerina Integrator extension</strong> on the overview page. This opens the VSCode extensions page.</li>
-<li>Click <strong>Install</strong> to install the extension. This installs both <strong>Ballerina Integrator</strong> and <strong>Ballerina</strong> extensions on VSCode.</li>
-</ol>
-<h2 id="step-3-set-up-ballerina-integrator-for-the-first-time">Step 3: Set up Ballerina Integrator for the first time<a class="headerlink" href="#step-3-set-up-ballerina-integrator-for-the-first-time" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Click the Ballerina Integrator icon on the sidebar.
-   <a href="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/bi_icon.png"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/bi_icon.png" alt="Ballerina Integrator Icon" width="80%"></a></li>
-<li>Click <strong><code>Set Up Ballerina Integrator</code></strong>. The setup wizard installs and configures the <a href="https://ballerina.io/">Ballerina</a> distribution required for the Ballerina Integrator.</li>
-<li>Click <strong><code>Restart VS Code</code></strong> to complete the setup.
-   <a href="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/bi-setup.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a></li>
-</ol>
-<details class="info" open="open"><summary>Update Ballerina Integrator's Ballerina Distribution</summary><p>The setup wizard installs the Ballerina distribution required for the Ballerina Integrator into the <code>&lt;USER_HOME&gt;/.ballerina/ballerina-home</code> directory.
-Press <code>Ctrl + Shift + P</code> on Windows and Linux, or <code>Shift + ⌘ + P</code> on a Mac and type <code>Ballerina: Update Ballerina Integrator</code> to update the installed Ballerina distribution.</p>
+<p>Enter the API key in the <strong>API Key</strong> field.</p>
+<details class="info" open="open"><summary>Info</summary><p>To create an API key, refer to the <a href="https://docs.pinecone.io/guides/projects/manage-api-keys#create-an-api-key">Pinecone API Key documentation</a>.</p>
 </details>
-<h2 id="step-4-develop-automation-in-vscode">Step 4: Develop automation in VSCode<a class="headerlink" href="#step-4-develop-automation-in-vscode" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Click <strong>Develop automation in VSCode</strong> in the automation overview page. This opens your project in VSCode. <!-- Todo This is not working ATM update this if we are going live without this --></li>
-<li>Click the Ballerina Integrator icon on the sidebar. <!-- Todo step 1-6 will be automatically done by the Ballerina Integrator extension. But that is not working ATM. Remove those steps once we support that --></li>
-<li>Click <strong>Create New Integration</strong> and enter the Integration Name as <code>HelloWorld</code>.</li>
-<li>The project directory should be automatically populated. If not, select the project directory by clicking the <strong>Select Location</strong> button.</li>
-<li>Click <strong>Create Integration</strong> to create the integration project.
-   <a href="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/create-integration.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/create-integration.gif" alt="Create Integration" width="80%"></a></li>
-<li>In the design view, click <strong>Add Construct</strong>.</li>
-<li>Select <strong>Automation</strong> from the Constructs menu.</li>
-<li>Click <strong>Create</strong> to create an automation. This directs you to the automation diagram view.</li>
-<li>Click <strong>+</strong> after the <strong>Start</strong> node to open the node panel.</li>
-<li>Select <strong>Function Call</strong> and select <strong>println</strong>.</li>
-<li>Click <strong>+ Add Another Value</strong>, type <code>"Hello World"</code> and click <strong>Save</strong>.</li>
-<li>Click <strong>Run</strong> in the top right corner to run the automation. This compiles the automation and runs it in the embedded Ballerina runtime.
-   <a href="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/design-integration.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/design-integration.gif" alt="Design Integration" width="80%"></a></li>
-</ol>
-<h2 id="step-5-push-to-devant">Step 5: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself --><a class="headerlink" href="#step-5-push-to-devant" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Click the <strong>Source Control</strong> icon on the sidebar.</li>
-<li>Click <strong>+</strong> to stage all changes.</li>
-<li>Add an appropriate commit message and commit.</li>
-<li>Click <strong>Sync Changes</strong> to push the changes to remote.</li>
-</ol>
-<h2 id="step-6-schedule-automation">Step 6: Schedule Automation<a class="headerlink" href="#step-6-schedule-automation" title="Permanent link">&para;</a></h2>
-<ol>
+</li>
 <li>
-<p>Once you push the changes, the overview page of the Devant automation will automatically refresh and show you the <strong>Latest Commit</strong> and automatically build your automation showing the <strong>Build Status</strong>.</p>
+<p>Enter the <strong>Collection Name</strong>. The collection will be automatically created if it does not exist.</p>
+</li>
+<li>Click <strong>Next</strong>.</li>
+</ol>
+<h2 id="step-2-configure-the-embedding-model">Step 2: Configure the Embedding Model<a class="headerlink" href="#step-2-configure-the-embedding-model" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Select <code>text-embedding-ada-002</code> embedding model from the <strong>Open AI</strong> dropdown.</li>
+<li>
+<p>Enter the API key in the <strong>Embedding Model API Key</strong> field.</p>
+<details class="info" open="open"><summary>Info</summary><p>To create an API key, refer to the <a href="https://platform.openai.com/docs/guides/embeddings">OpenAI Platform documentation</a>.</p>
+</details>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+</ol>
+<h2 id="step-3-configure-chunking">Step 3: Configure Chunking<a class="headerlink" href="#step-3-configure-chunking" title="Permanent link">&para;</a></h2>
+<p>Chunking is used to break large documents into manageable parts because processing them all at once is not feasible.
+<strong>Chunking strategy</strong>, <strong>Max segment size</strong>, and <strong>Max overlap size</strong> are automatically populated with default values. You can modify them if needed.</p>
+<details class="info" open="open"><summary>Info</summary><ul>
+<li><strong>Chunking strategy</strong> defines how text is split into smaller, manageable pieces (chunks).</li>
+<li><strong>Max segment size</strong> determines the maximum length of tokens for each chunk.</li>
+<li><strong>Max overlap size</strong> defines how many tokens repeat between consecutive chunks.</li>
+</ul>
+</details>
+<h2 id="step-4-upload-source-files">Step 4: Upload Source Files<a class="headerlink" href="#step-4-upload-source-files" title="Permanent link">&para;</a></h2>
+<p>Next, upload your source files (e.g., PDFs, CSVs, or text documents) for processing.</p>
+<ol>
+<li>Click <strong>Select Files</strong>. This will open the file explorer on your local machine.</li>
+<li>Select the files you want to upload.</li>
+<li>
+<p>Click <strong>Upload</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The build process may take some time. Once complete, the build status changes to <strong>Success</strong>. You can see the Build History by clicking <strong>Build</strong> in the left navigation.</p>
+<p>When you click <strong>Upload</strong> it will generate embeddings for the uploaded files and store them in the vector database.</p>
 </div>
 </li>
-<li>
-<p>Once the <strong>Build Status</strong> shows <code>Build completed</code>, click <strong>Test</strong> to run your automation once.</p>
-</li>
-<li>The development card automatically updates with execution details. Click the refresh button in the top right corner if it is not automatically updated.</li>
-<li>Click <strong>View Logs</strong> on an execution. You will see the <code>Hello World</code> log printed along with the execution time.</li>
-<li>Click <strong>Schedule</strong> to schedule the automation.</li>
-<li>In the <strong>BY INTERVAL</strong> tab, select <strong>Day</strong> from the dropdown.</li>
-<li>Enter <code>1</code> in the <strong>Repeat every</strong> text box.</li>
-<li>Enter <code>01:00 AM</code> in the <strong>At</strong> text box and click <strong>Update</strong>.</li>
-<li>Your automation will now run every day at 01:00 AM. You can see the next execution time as <strong>Next run in</strong> in the Development card.
-   <a href="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/view-logs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/view-logs.gif" alt="View Logs" width="80%"></a></li>
 </ol>
+<h2 id="step-5-verify">Step 5: Verify<a class="headerlink" href="#step-5-verify" title="Permanent link">&para;</a></h2>
+<p>Once processing is complete, execute test queries to ensure proper data retrieval.</p>
+<ol>
+<li>Enter a query according to the content of the files uploaded in the previous step in the  <strong>Query</strong> field.</li>
+<li>
+<p><strong>Maximum chunks to retrieve</strong> and <strong>Minimum similarity threshold</strong> are automatically populated with default values. You can modify them if needed.</p>
+<details class="info" open="open"><summary>Info</summary><ul>
+<li><strong>Maximum chunks to retrieve</strong> defines the number of matching chunks to retrieve against the query.</li>
+<li><strong>Minimum similarity threshold</strong> determines whether a chunk is relevant enough to be considered a match for a given query. Expressed as a value between 0 and 1 (for example, 0.7 or 70% similarity).</li>
+</ul>
+</details>
+</li>
+<li>
+<p>Click <strong>Retrieve</strong>. The search results will display the chunks that match the query.</p>
+</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/rag-ingestion.gif"><img src="https://wso2.github.io/docs-devant/assets/img/rag-ingestion.gif" alt="RAG Ingestion" width="80%"></a></p>
 
 
 
@@ -795,7 +722,7 @@ Press <code>Ctrl + Shift + P</code> on Windows and Linux, or <code>Shift + ⌘ +
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: What is Devant?" rel="prev">
+          <a href="../quick-start-guides/schedule-your-first-automation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Schedule Your First Automation" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -804,26 +731,11 @@ Press <code>Ctrl + Shift + P</code> on Windows and Linux, or <code>Shift + ⌘ +
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                What is Devant?
+                Schedule Your First Automation
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../../rag-ingestion/" class="md-footer__link md-footer__link--next" aria-label="Next: RAG Ingestion" rel="next">
-            <div class="md-footer__title">
-              <div class="md-ellipsis">
-                <span class="md-footer__direction">
-                  Next
-                </span>
-                RAG Ingestion
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -848,18 +760,18 @@ Press <code>Ctrl + Shift + P</code> on Windows and Linux, or <code>Shift + ⌘ +
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.path", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.path", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
+      <script src="../assets/javascripts/bundle.fc8c2696.min.js"></script>
       
-        <script src="../../assets/lib/json-formatter/json-formatter.umd.js"></script>
+        <script src="../assets/lib/json-formatter/json-formatter.umd.js"></script>
       
-        <script src="../../assets/lib/highlightjs/highlight.min.js"></script>
+        <script src="../assets/lib/highlightjs/highlight.min.js"></script>
       
-        <script src="../../assets/js/devanttheme.js"></script>
+        <script src="../assets/js/devanttheme.js"></script>
       
-        <script src="../../js/open_in_new_tab.js"></script>
+        <script src="../js/open_in_new_tab.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
