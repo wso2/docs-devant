@@ -27,7 +27,7 @@
     <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="new-home-page-" transform="translate(-805.000000, -274.000000)">
             <g id="services" transform="translate(805.000000, 274.821793)">
-                <use id="Rectangle-Copy-23" stroke="#5567D5" mask="url(#mask-2)" stroke-width="1.5" fill-opacity="0.8" fill="#FFFFFF" opacity="0.599999964" stroke-dasharray="1.5,3" xlink:href="#path-1"></use>
+                <use id="Rectangle-Copy-23" stroke="#2F5FA7" mask="url(#mask-2)" stroke-width="1.5" fill-opacity="0.8" fill="#FFFFFF" opacity="0.599999964" stroke-dasharray="1.5,3" xlink:href="#path-1"></use>
                 <g id="Rectangle" opacity="0.850714">
                     <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
                     <use fill-opacity="0.6" fill="#FFFFFF" xlink:href="#path-4"></use>
@@ -37,7 +37,7 @@
                     <use fill="url(#linearGradient-6)" xlink:href="#path-7"></use>
                     <use fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-7"></use>
                 </g>
-                <path d="M2.25931812,28.7100837 L25.5428532,42.3769244 C26.9193826,43.1849121 27.7648988,44.6616206 27.7648988,46.2577651 L27.7648988,90.6384318 C27.7648988,91.4668589 27.0933259,92.1384318 26.2648988,92.1384318 C25.9979366,92.1384318 25.7358113,92.0671848 25.5055807,91.9320453 L2.22204563,78.2652046 C0.845516227,77.457217 -1.58088552e-15,75.9805085 0,74.384364 L0,30.0036973 C5.64680752e-16,29.1752702 0.671572875,28.5036973 1.5,28.5036973 C1.76696219,28.5036973 2.02908752,28.5749443 2.25931812,28.7100837 Z" id="Rectangle-Copy-24" fill="#5567D5" opacity="0.690581549"></path>
+                <path d="M2.25931812,28.7100837 L25.5428532,42.3769244 C26.9193826,43.1849121 27.7648988,44.6616206 27.7648988,46.2577651 L27.7648988,90.6384318 C27.7648988,91.4668589 27.0933259,92.1384318 26.2648988,92.1384318 C25.9979366,92.1384318 25.7358113,92.0671848 25.5055807,91.9320453 L2.22204563,78.2652046 C0.845516227,77.457217 -1.58088552e-15,75.9805085 0,74.384364 L0,30.0036973 C5.64680752e-16,29.1752702 0.671572875,28.5036973 1.5,28.5036973 C1.76696219,28.5036973 2.02908752,28.5749443 2.25931812,28.7100837 Z" id="Rectangle-Copy-24" fill="#2F5FA7" opacity="0.690581549"></path>
             </g>
         </g>
     </g>

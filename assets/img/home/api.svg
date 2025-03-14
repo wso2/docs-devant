@@ -30,7 +30,7 @@
                 <mask id="mask-4" fill="white">
                     <use xlink:href="#path-2"></use>
                 </mask>
-                <g id="Mask-Copy-8" stroke="#5567D5" mask="url(#mask-3)" stroke-width="1.5" fill-opacity="0.8" fill="#FFFFFF" opacity="0.599999964" stroke-dasharray="1.5,3">
+                <g id="Mask-Copy-8" stroke="#2F5FA7" mask="url(#mask-3)" stroke-width="1.5" fill-opacity="0.8" fill="#FFFFFF" opacity="0.599999964" stroke-dasharray="1.5,3">
                     <use mask="url(#mask-5)" xlink:href="#path-2"></use>
                 </g>
                 <mask id="mask-8" fill="white">
@@ -44,7 +44,7 @@
                 <mask id="mask-11" fill="white">
                     <use xlink:href="#path-10"></use>
                 </mask>
-                <use id="Mask-Copy-11" fill="#5567D5" opacity="0.690581549" xlink:href="#path-10"></use>
+                <use id="Mask-Copy-11" fill="#2F5FA7" opacity="0.690581549" xlink:href="#path-10"></use>
             </g>
         </g>
     </g>
