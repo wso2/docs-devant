@@ -51,7 +51,7 @@ This redirects you to the overview page of the automation. Now, let's design the
 
 ## Step 3: Set up Ballerina Integrator for the first time
 1. Click the Ballerina Integrator icon on the sidebar.
-   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_icon.png"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_icon.png" alt="Ballerina Integrator Icon" width="80%"></a>
+   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-icon.png"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-icon.png" alt="Ballerina Integrator Icon" width="80%"></a>
 2. Click **`Set Up Ballerina Integrator`**. The setup wizard installs and configures the [Ballerina](https://ballerina.io/) distribution required for the Ballerina Integrator.
 3. Click **`Restart VS Code`** to complete the setup.
    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
