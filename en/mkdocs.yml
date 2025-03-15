@@ -74,8 +74,8 @@ nav:
   - What is Devant?: index.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
+      - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
   - RAG Ingestion: rag-ingestion.md
-
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
