@@ -71,12 +71,11 @@ theme:
 strict: false
 # Navigation
 nav:
-  - Home: index.md
-  - Introduction:
-      - What is Devant?: what-is-devant.md
+  - What is Devant?: index.md
   - Quick Start Guides:
-      - Deploy Your First Integration: quick-start-guides/deploy-your-first-integration.md
-
+      - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
+      - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
+  - RAG Ingestion: rag-ingestion.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
@@ -128,4 +127,5 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/wso2
-  base_path: http://localhost:8000/devant/docs
+  base_path: https://wso2.github.io/docs-devant
+#base_path: http://localhost:8000
