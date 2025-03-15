@@ -75,7 +75,16 @@ nav:
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
   - RAG Ingestion: rag-ingestion.md
-
+  - Share and Reuse Integrations:
+      - Create a Connection: sharing-and-reusing/create-a-connection.md
+      - Use a Connection in Your Integration: sharing-and-reusing/use-a-connection-in-your-integration.md
+      - Use a Database Connection in Your Integration: sharing-and-reusing/use-a-database-connection-in-your-integration.md
+  - Devant-Managed Databases and Caches:
+      - Overview: manage-databases-and-caches/devant-managed-databases-and-caches.md
+      - PostgreSQL:  manage-databases-and-caches/devant-managed-postgresql-databases.md
+      - MySQL: manage-databases-and-caches/devant-managed-mysql-databases.md
+      - Devant-Managed Cache: manage-databases-and-caches/devant-managed-caches.md
+      - Add Devant-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
