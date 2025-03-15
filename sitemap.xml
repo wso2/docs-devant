@@ -16,7 +16,47 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wso2.com/devant/docs/manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace/</loc>
+         <lastmod>2025-03-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/manage-databases-and-caches/devant-managed-caches/</loc>
+         <lastmod>2025-03-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/manage-databases-and-caches/devant-managed-databases-and-caches/</loc>
+         <lastmod>2025-03-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/manage-databases-and-caches/devant-managed-mysql-databases/</loc>
+         <lastmod>2025-03-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/manage-databases-and-caches/devant-managed-postgresql-databases/</loc>
+         <lastmod>2025-03-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wso2.com/devant/docs/quick-start-guides/schedule-your-first-automation/</loc>
+         <lastmod>2025-03-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/sharing-and-reusing/create-a-connection/</loc>
+         <lastmod>2025-03-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/sharing-and-reusing/use-a-connection-in-your-integration/</loc>
+         <lastmod>2025-03-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/sharing-and-reusing/use-a-database-connection-in-your-integration/</loc>
          <lastmod>2025-03-15</lastmod>
          <changefreq>daily</changefreq>
     </url>

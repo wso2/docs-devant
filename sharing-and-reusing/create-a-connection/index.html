@@ -13,25 +13,27 @@
         <meta name="author" content="WSO2">
       
       
-        <link rel="canonical" href="https://wso2.com/devant/docs/">
+        <link rel="canonical" href="https://wso2.com/devant/docs/sharing-and-reusing/create-a-connection/">
       
       
+        <link rel="prev" href="../../rag-ingestion/">
       
-        <link rel="next" href="quick-start-guides/schedule-your-first-automation/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+        <link rel="next" href="../use-a-connection-in-your-integration/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title></title>
+        <title>Create a Connection - </title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7bf56d0a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7bf56d0a.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -50,15 +52,15 @@
       
     
     
-      <link rel="stylesheet" href="assets/css/blue-palette-alt2.css">
+      <link rel="stylesheet" href="../../assets/css/blue-palette-alt2.css">
     
-      <link rel="stylesheet" href="assets/css/devanttheme.css">
+      <link rel="stylesheet" href="../../assets/css/devanttheme.css">
     
-      <link rel="stylesheet" href="assets/lib/json-formatter/json-formatter.css">
+      <link rel="stylesheet" href="../../assets/lib/json-formatter/json-formatter.css">
     
-      <link rel="stylesheet" href="assets/css/config-catalog.css">
+      <link rel="stylesheet" href="../../assets/css/config-catalog.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -99,7 +101,7 @@
    <!-- CookiePro cookies consent notice end -->
    
   </script>
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -110,7 +112,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
 
   
   
@@ -135,7 +137,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-devant" class="md-skip">
+        <a href="#create-a-connection" class="md-skip">
           Skip to content
         </a>
       
@@ -162,9 +164,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
+    <a href="../.." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="assets/images/logo.png" alt="logo" style="vertical-align: middle;">
+  <img src="../../assets/images/logo.png" alt="logo" style="vertical-align: middle;">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -180,7 +182,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              What is Devant?
+              Create a Connection
             
           </span>
         </div>
@@ -316,9 +318,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
+    <a href="../.." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="assets/images/logo.png" alt="logo" style="vertical-align: middle;">
+  <img src="../../assets/images/logo.png" alt="logo" style="vertical-align: middle;">
 
     </a>
     
@@ -370,100 +372,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          What is Devant?
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         What is Devant?
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key-capabilities-of-devant" class="md-nav__link">
-    Key capabilities of Devant
-  </a>
-  
-    <nav class="md-nav" aria-label="Key capabilities of Devant">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#efficient-and-effective-development" class="md-nav__link">
-    Efficient and effective development
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seamless-deployment" class="md-nav__link">
-    Seamless deployment
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#effortless-management-of-apis-integrations-microservices-and-web-applications" class="md-nav__link">
-    Effortless management of APIs, integrations, microservices, and web applications
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reusable-digital-assets" class="md-nav__link">
-    Reusable digital assets
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comprehensive-observability" class="md-nav__link">
-    Comprehensive observability
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#robust-governance" class="md-nav__link">
-    Robust governance
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -505,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quick-start-guides/schedule-your-first-automation/" class="md-nav__link">
+      <a href="../../quick-start-guides/schedule-your-first-automation/" class="md-nav__link">
         Schedule Your First Automation
       </a>
     </li>
@@ -527,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rag-ingestion/" class="md-nav__link">
+      <a href="../../rag-ingestion/" class="md-nav__link">
         RAG Ingestion
       </a>
     </li>
@@ -540,16 +453,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
       
@@ -558,7 +471,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Share and Reuse Integrations
@@ -569,11 +482,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="sharing-and-reusing/create-a-connection/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Create a Connection
       </a>
+      
     </li>
   
 
@@ -585,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sharing-and-reusing/use-a-connection-in-your-integration/" class="md-nav__link">
+      <a href="../use-a-connection-in-your-integration/" class="md-nav__link">
         Use a Connection in Your Integration
       </a>
     </li>
@@ -599,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sharing-and-reusing/use-a-database-connection-in-your-integration/" class="md-nav__link">
+      <a href="../use-a-database-connection-in-your-integration/" class="md-nav__link">
         Use a Database Connection in Your Integration
       </a>
     </li>
@@ -650,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/devant-managed-databases-and-caches/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/devant-managed-databases-and-caches/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -664,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/devant-managed-postgresql-databases/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/devant-managed-postgresql-databases/" class="md-nav__link">
         PostgreSQL
       </a>
     </li>
@@ -678,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/devant-managed-mysql-databases/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/devant-managed-mysql-databases/" class="md-nav__link">
         MySQL
       </a>
     </li>
@@ -692,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/devant-managed-caches/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/devant-managed-caches/" class="md-nav__link">
         Devant-Managed Cache
       </a>
     </li>
@@ -706,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace/" class="md-nav__link">
         Add Devant-Managed Databases and Caches to the Marketplace
       </a>
     </li>
@@ -740,69 +663,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key-capabilities-of-devant" class="md-nav__link">
-    Key capabilities of Devant
-  </a>
-  
-    <nav class="md-nav" aria-label="Key capabilities of Devant">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#efficient-and-effective-development" class="md-nav__link">
-    Efficient and effective development
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seamless-deployment" class="md-nav__link">
-    Seamless deployment
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#effortless-management-of-apis-integrations-microservices-and-web-applications" class="md-nav__link">
-    Effortless management of APIs, integrations, microservices, and web applications
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reusable-digital-assets" class="md-nav__link">
-    Reusable digital assets
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comprehensive-observability" class="md-nav__link">
-    Comprehensive observability
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#robust-governance" class="md-nav__link">
-    Robust governance
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -816,7 +676,7 @@
                   
 
   
-    <a href="https://github.com/wso2/docs-devant/edit/dev/en/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-devant/edit/dev/en/docs/sharing-and-reusing/create-a-connection.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -825,53 +685,103 @@
     
       
     
-    <a href="https://github.com/wso2/docs-devant/raw/dev/en/docs/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-devant/raw/dev/en/docs/sharing-and-reusing/create-a-connection.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="what-is-devant">What is Devant?<a class="headerlink" href="#what-is-devant" title="Permanent link">&para;</a></h1>
-<p>Devant is a powerful IPaaS with first-class AI support. Incorporate AI agents into the integrations you build in low-code and pro-code, and move away from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.</p>
-<h2 id="key-capabilities-of-devant">Key capabilities of Devant<a class="headerlink" href="#key-capabilities-of-devant" title="Permanent link">&para;</a></h2>
-<h3 id="efficient-and-effective-development">Efficient and effective development<a class="headerlink" href="#efficient-and-effective-development" title="Permanent link">&para;</a></h3>
+<h1 id="create-a-connection">Create a Connection<a class="headerlink" href="#create-a-connection" title="Permanent link">&para;</a></h1>
+<p>Using Connections, you can connect the integration with other APIs on Devant or external services. It also allows you to create connections to any Devant-managed database.</p>
+<p>To create a connection to an API or a database, follow the step-by-step instructions in the respective tab:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Create a connection to an API</label><label for="__tabbed_1_2">Create a connection to a database</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><h2>Create a connection to a Devant service</h2></p>
+<p>Follow these steps to create a connection to an API deployed in Devant:</p>
+<ol>
+<li>
+<p>In the Devant Console, go to the top navigation menu and set the visibility level as project or integration as follows: </p>
 <ul>
-<li><strong>AI-Assisted Development</strong>: Devant includes a developer friendly VSCode-based editor with an integrated AI copilot, which aids developers at every stage, from code generation to refactoring.</li>
-<li><strong>Unified Low-Code and Pro-Code Development</strong>: Allows seamless transitions between low-code and pro-code development, accommodating a diverse range of developer skills and preferences.</li>
-<li><strong>Comprehensive Protocol and AI Support</strong>: Built-in capabilities to integrate with third-party AI services, vector databases, and support for protocols such as TCP, UDP, FILE, Websub, and Websubhub.</li>
-<li><strong>Developer-Centric Design</strong>: Tools and workflows tailored specifically for integration developers, enhancing debugging, testing, and issue identification.</li>
-<li><strong>Git Repository Integration</strong>: Effortlessly connect to Git-based platforms like GitHub, Bitbucket, or GitLab to develop components by linking an existing repository.</li>
+<li><strong>Project Connection</strong>: Select an organization and a project in that organization. </li>
+<li><strong>Integration Connection</strong>: Select an organization, a project in that organization, and an integration in the selected project. </li>
 </ul>
-<h3 id="seamless-deployment">Seamless deployment<a class="headerlink" href="#seamless-deployment" title="Permanent link">&para;</a></h3>
+</li>
+<li>
+<p>In the left navigation menu, click <strong>Admin</strong> and then <strong>Connections</strong>. This page lists all the existing connections.</p>
+</li>
+<li>Click the <strong>Services</strong> card and the resource page will open. You can search and apply filters to efficiently find a service.</li>
+<li>Click on the service you want to connect to. </li>
+<li>Enter a name and a description for the connection.</li>
+<li>Select an <strong>Access Mode</strong> and <strong>Authentication Scheme</strong> for the connection.</li>
+<li>Click <strong>Create</strong>.</li>
+</ol>
+<p>This creates the connection and displays its details for each environment, along with an inline guide on how to use the connection in your component. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>During connection creation, secret values for the lowest environment are visible, allowing you to copy them for local use if necessary. Secret values for higher environments remain hidden to ensure security.</p>
+</div>
+<p><h2>Create a connection to an external service</h2></p>
+<p>Follow these steps to create a connection to an external service:</p>
+<ol>
+<li>In the left navigation menu, click <strong>Admin</strong> and then <strong>Third Party Services</strong>. This page lists all the existing third-party services.</li>
+<li>Click <strong>+Register</strong>. This opens the Register a Third Party Service window.</li>
+<li>Enter the <strong>Name</strong>, <strong>Version</strong>, and <strong>Summary</strong>.</li>
+<li>Select a the <strong>Service Definition</strong> file to upload.</li>
+<li>Select a the <strong>Service Type</strong> from the dropdown.</li>
+<li>Click <strong>Define Endpoints</strong>.</li>
+<li>Add endpoints to your requirement and click <strong>Register</strong>.</li>
+</ol>
+<p>For step-by-step instructions on using a connection in your integration, see <a href="../use-a-connection-in-your-integration/">Use a Connection in Your Integration</a>.</p>
+</div>
+<div class="tabbed-block">
+<p>Prerequisites:</p>
 <ul>
-<li><strong>CI/CD</strong>: Eliminate manual builds and unreliable deployments with Devant's industry-standard CI/CD tooling, providing complete control and flexibility.</li>
-<li><strong>Multi-Cloud Kubernetes</strong>: Easily deliver cloud-native applications across Azure, AWS, GCP, or your Kubernetes clusters.</li>
-<li><strong>Configuration Management</strong>: Centralize configuration parameters, sensitive credentials, and secrets across deployment environments via an intuitive interface.</li>
+<li>Create a Devant-managed database. For details, see <a href="../../manage-databases-and-caches/Devant-managed-databases-and-caches.md">Devant-Managed Databases and Caches</a>.</li>
+<li>Add the database to the Marketplace. For details, see <a href="../../manage-databases-and-caches/add-Devant-managed-databases-and-caches-to-the-marketplace.md">Add Devant-Managed Databases and Caches to the Marketplace</a>.</li>
 </ul>
-<h3 id="effortless-management-of-apis-integrations-microservices-and-web-applications">Effortless management of APIs, integrations, microservices, and web applications<a class="headerlink" href="#effortless-management-of-apis-integrations-microservices-and-web-applications" title="Permanent link">&para;</a></h3>
+<p>Follow these steps to create a connection to a Devant-managed database:</p>
+<ol>
+<li>
+<p>In the Devant Console, go to the top navigation menu and set the visibility level as <a href="../../Devant-concepts/connections.md#project-connections">project</a> or <a href="../../Devant-concepts/connections.md#component-connections">component</a> as follows: </p>
 <ul>
-<li><strong>Enable Security</strong>: Empower security teams to manage data flows, ensuring seamless control over sensitive information like access credentials.</li>
-<li><strong>Scale Up or Down</strong>: Kubernetes handles scaling automatically, optimizing costs by scaling services based on demand.</li>
-<li><strong>Ensure Reliability</strong>: DevOps and SRE teams can easily manage deployed components with built-in insights and observability.</li>
+<li><strong>Project Connection</strong>: Select an organization and a project in that organization. </li>
+<li><strong>Component Connection</strong>: Select an organization, a project in that organization, and a component in the selected project. </li>
 </ul>
-<h3 id="reusable-digital-assets">Reusable digital assets<a class="headerlink" href="#reusable-digital-assets" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Control Visibility and Sharing</strong>: Publish your digital assets to a shared marketplace for consumption by internal or external stakeholders, managed by role-based access control.</li>
-<li><strong>Internal Marketplace</strong>: Devant's secure internal marketplace fosters transparency and efficiency with granular access control for publishers and consumers.</li>
-</ul>
-<h3 id="comprehensive-observability">Comprehensive observability<a class="headerlink" href="#comprehensive-observability" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Anomaly Detection</strong>: Stay ahead of issues with prompt notifications, ensuring balanced scaling and immediate action during unexpected mishaps.</li>
-<li><strong>Troubleshoot and Debug</strong>: Quickly pinpoint and address root causes using detailed logs and data aligned in the same timeline, down to the machine-level details.</li>
-</ul>
-<h3 id="robust-governance">Robust governance<a class="headerlink" href="#robust-governance" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>DORA Metrics</strong>: Monitor your DevOps efficiency with Devant DORA metrics, experiencing rapid improvements in time from deployment to production safely and robustly.</li>
-<li><strong>Engineering Insights</strong>: Gain visibility into engineering insights and advanced data analytics to make data-driven decisions, optimize processes, and improve efficiency.</li>
-<li><strong>API Analytics</strong>: Understand API performance and adoption patterns to identify and resolve operational bottlenecks.</li>
-</ul>
-<p>Devant is your all-in-one AI-capable platform for building, deploying, and managing integrations with ease, security, and efficiency.</p>
+</li>
+<li>
+<p>In the left navigation menu, click <strong>Dependencies</strong>  and then <strong>Connections</strong>. This page lists all the existing connections.</p>
+</li>
+<li>Click <strong>+Create</strong>. This opens the Marketplace view where you can browse and search for services or databases.</li>
+<li>Click the <strong>Databases</strong> tab. You can search and apply filters to efficiently find a database.</li>
+<li>Click on the database you want to connect to. </li>
+<li>
+<p>To create the connection, follow these steps:</p>
+<ol>
+<li>Enter a name and description.</li>
+<li>
+<p>Under <strong>Environment Configuration</strong>, select credentials for each environment.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, the selected database is applied to all environments. To use different databases for specific environments, select the appropriate database and provide the corresponding credentials for each environment.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.  </p>
+</li>
+</ol>
+</li>
+</ol>
+<p>This creates the connection and displays the database connection details for each environment, along with an inline guide on how to use the connection in your component. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>During connection creation, secret values for the lowest environment are visible, allowing you to copy them for local use if necessary. Secret values for higher environments remain hidden to ensure security.</p>
+</div>
+<p>For step-by-step instructions on using a database in your component, see <a href="../use-a-database-connection-in-your-integration/">Use a Database Connection in Your Component</a>.</p>
+</div>
+</div>
+</div>
 
 
 
@@ -897,15 +807,30 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../../rag-ingestion/" class="md-footer__link md-footer__link--prev" aria-label="Previous: RAG Ingestion" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                RAG Ingestion
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="quick-start-guides/schedule-your-first-automation/" class="md-footer__link md-footer__link--next" aria-label="Next: Schedule Your First Automation" rel="next">
+          <a href="../use-a-connection-in-your-integration/" class="md-footer__link md-footer__link--next" aria-label="Next: Use a Connection in Your Integration" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Schedule Your First Automation
+                Use a Connection in Your Integration
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -936,18 +861,18 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.path", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.path", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.fc8c2696.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
       
-        <script src="assets/lib/json-formatter/json-formatter.umd.js"></script>
+        <script src="../../assets/lib/json-formatter/json-formatter.umd.js"></script>
       
-        <script src="assets/lib/highlightjs/highlight.min.js"></script>
+        <script src="../../assets/lib/highlightjs/highlight.min.js"></script>
       
-        <script src="assets/js/devanttheme.js"></script>
+        <script src="../../assets/js/devanttheme.js"></script>
       
-        <script src="js/open_in_new_tab.js"></script>
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
