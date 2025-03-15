@@ -1,4 +1,4 @@
-# Deploy Your First Integration
+# Deploy Your First Integration as API
 
 ## Overview
 
@@ -6,8 +6,8 @@ In this guide, you will:
 
 - Create a simple Integration as an API that calls a backend service and returns its response to the client. 
 - The backend service responds with a JSON with a key `message` and the value `Hello World!!!`, and the API deployed in Devant forwards this response to the client.
-- Use Micro Integrator (MI) to develop the API.
-- Push the integration to Devant which automatically builds and deploys the integration to the development environment.
+- Use WSO2 Micro Integrator (MI) to develop the API.
+- Push the integration to Devant, which automatically builds and deploys the integration to the development environment.
 - Test the integration.
 
 ## Prerequisites
@@ -24,7 +24,7 @@ In this guide, you will:
 2. Select the **Default** project.
 3. On the project overview page, click **Attach a Git Repository**.
 4. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
-5. Under the **Organization**  dropdown click **+ Add**. This redirects you to **Install WSO2 Cloud App Stage** page.
+5. Under the **Organization**  dropdown click **+ Add**. This redirects you to the **Install WSO2 Cloud App Stage** page.
 6. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
 
     !!! note
@@ -34,7 +34,7 @@ In this guide, you will:
 
          You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) at any time. Write access is used to push changes directly to your repository.
 
-7. Select your organization under the **Organization**  dropdown. If your organization is still not listed click the Refetch button.
+7. Under the **Organization**  dropdown, select your organization. If it is still not listed, click the Refetch button.
 8. Select a repository to save your integration. Additionally, you can select a **Branch** and a **Path** of the selected repository to save your integration.
 9. **Name** and **Identifier** fields are automatically populated. Additionally, you can edit them to your preference.
 10. Select the **Technology** as `WSO2 MI`.
@@ -69,14 +69,14 @@ This redirects you to the overview page of the integration. Now, let's design th
     - Java Development Kit (JDK) version 21
     - WSO2 Micro Integrator (MI) 4.4.0 runtime
 
-    If you don't have them installed on your local machine, these are automatically prompted for downloading and configured by the MI for VSCode extension during the project creation step:
+    If you don't have them installed on your local machine, the MI for VSCode extension automatically prompts you to download and configure them during the project creation step:
 
     1. Click **Download Java & MI** to download and set up Java and MI runtime.
 
         <a href="{{base_path}}/assets/img/get-started/deploy-your-first-integration/download-java-and-mi.png"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-integration/download-java-and-mi.png" alt="Download Java and MI" width="80%"></a>
 
         !!! info
-            If a different JDK or WSO2 MI version is installed on your local machine, you'll be prompted to download the required versions. 
+            If your local machine has a different JDK or WSO2 MI version installed, the system will prompt you to download the required versions. 
 
             1. Click **Download** to install the required JDK or/and MI version(s).
             2. Once the download is complete, configure the Java Home or/and MI Home paths by clicking **Select Java Home** or/and **Select MI Path**, respectively.
@@ -91,11 +91,11 @@ This redirects you to the overview page of the integration. Now, let's design th
 
 ## Step 2 - Create an API
 
-Now the integration project is ready to add an API. In this scenario, the API calls a backend service and responds to the client. First, let's create an API.
+Now, the integration project is ready to add an API. In this scenario, the API calls a backend service and responds to the client. First, let's create an API.
 
 1. In the **Add Artifact** interface, under **Create an Integration**, click on **API**. This opens the **API Form**.
 
-2. Enter `HelloWorldAPI` as the API **Name**. The API **Context** field is automatically populated with the same value.
+2. Enter `HelloWorldAPI` as the API **Name**. The system automatically populates the API **Context** field with the same value.
 
     <a href="{{base_path}}/assets/img/get-started/deploy-your-first-integration/new-api.png"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-integration/new-api.png" alt="Create New API" width="80%"></a>
 
@@ -105,7 +105,7 @@ Once you create the API, a default resource is automatically generated. You can 
 
 ## Step 3 - Design the integration
 
-Now it's time to design your API. This is the underlying logic that's executed behind the scenes when an API request is made. In this scenario first, you need to call the backend service. For that, you have to add an [HTTP connection](https://mi.docs.wso2.com/en/latest/reference/connectors/http-connector/http-connector-overview/). Follow the below steps to create an HTTPS connection.
+Now, it's time to design your API. This underlying logic is executed behind the scenes when an API request is made. In this scenario, you first need to call the backend service. For that, you have to add an [HTTP connection](https://mi.docs.wso2.com/en/latest/reference/connectors/http-connector/http-connector-overview/). Follow the below steps to create an HTTPS connection.
 
 1. Open the **Resource View** of the API resource by clicking the `GET` resource under **Available resources** on **Service Designer**.
 
@@ -140,7 +140,7 @@ Now it's time to design your API. This is the underlying logic that's executed b
 
 9. Click **Submit**.
 
-    Now let's add a [Respond Mediator](https://mi.docs.wso2.com/en/latest/reference/mediators/respond-mediator/) to respond the message to the client.
+    Now, let's add a [Respond Mediator](https://mi.docs.wso2.com/en/latest/reference/mediators/respond-mediator/) to respond the message to the client.
 
 10. Click on the **+** icon placed just after the HTTPS GET operation to open the palette.
 
@@ -167,14 +167,14 @@ Click the **Build and Run** icon located in the top right corner of VSCode.
 
 Now, let's test the integration service. For that, you can use the inbuilt try-it functionality in the MI for the VSCode extension.
 
-When you run the integration artifact as in [Step 4](#step-4-run-the-integration-artifacts), the **Runtime Services** interface is opened up. You can see all the available services.
+When you run the integration artifact as in [Step 4](#step-4-run-the-integration-artifacts), the **Runtime Services** interface opens. You can see all the available services.
 
-Select `HelloWorldAPI` that you have developed and test the resource.
+Select `HelloWorldAPI`, which you have developed, and test the resource.
 
 <a href="{{base_path}}/assets/img/get-started/deploy-your-first-integration/test-api.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-integration/test-api.gif" alt="Test API" width="80%"></a>
     
 !!! note
-    You can refer to [Micro Integrator Documentation](https://mi.docs.wso2.com/en/latest/) for more information.
+    For more information, refer to [Micro Integrator Documentation](https://mi.docs.wso2.com/en/latest/).
 
 ## Step 6: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself -->
 1. Click **Source Control** icon on the sidebar.
