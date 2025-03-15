@@ -41,11 +41,11 @@ To integrate a database into your application, click the appropriate tab below b
 
           | Configuration Key       | Devant-Defined Environment Variable Name                       |
           |-------------------------|----------------------------------------------------------------|
-          | HostName                | CHOREO_<CONNECTION_NAME\>_HOSTNAME                             |
-          | Port                    | CHOREO_<CONNECTION_NAME\>_PORT                                 |
-          | Username                | CHOREO_<CONNECTION_NAME\>_USERNAME                             |
-          | Password                | CHOREO_<CONNECTION_NAME\>_PASSWORD                             |
-          | DatabaseName            | CHOREO_<CONNECTION_NAME\>DATABASENAME                          |
+          | HostName                | DEVANT_<CONNECTION_NAME\>_HOSTNAME                             |
+          | Port                    | DEVANT_<CONNECTION_NAME\>_PORT                                 |
+          | Username                | DEVANT_<CONNECTION_NAME\>_USERNAME                             |
+          | Password                | DEVANT_<CONNECTION_NAME\>_PASSWORD                             |
+          | DatabaseName            | DEVANT_<CONNECTION_NAME\>DATABASENAME                          |
 
 
           If you'd like to use custom environment variable names instead of the Devant-defined ones, add the dependency as a service reference under `dependencies` in the same file. For more details, refer to the instructions under the `component.yaml file (v1.0)` tab.
@@ -67,7 +67,7 @@ To integrate a database into your application, click the appropriate tab below b
     The following is a sample code snippet in NodeJS:
 
     ``` java
-    const hostName = process.env.CHOREO_<CONNECTION_NAME>_HOSTNAME;
+    const hostName = process.env.DEVANT_<CONNECTION_NAME>_HOSTNAME;
     ```
 
 === "Component.yaml file (v1.0)"

@@ -32,13 +32,13 @@ To create a connection to an API or a database, follow the step-by-step instruct
     Follow these steps to create a connection to an external service:
 
 [//]: # (TODO: Explain more about these steps)
-    1. In the left navigation menu, click **Admin** and then **Third Party Services**. This page lists all the existing third party services.
+    1. In the left navigation menu, click **Admin** and then **Third Party Services**. This page lists all the existing third-party services.
     2. Click **+Register**. This opens the Register a Third Party Service window.
     3. Enter the **Name**, **Version**, and **Summary**.
     4. Select a the **Service Definition** file to upload.
     4. Select a the **Service Type** from the dropdown.
     5. Click **Define Endpoints**.
-    6. Add enpoints to your requirenment and click **Register**.
+    6. Add endpoints to your requirement and click **Register**.
 
       For step-by-step instructions on using a connection in your integration, see [Use a Connection in Your Integration](./use-a-connection-in-your-integration.md).
 
@@ -74,6 +74,6 @@ To create a connection to an API or a database, follow the step-by-step instruct
     This creates the connection and displays the database connection details for each environment, along with an inline guide on how to use the connection in your component. 
 
     !!! note
-        During connection creation, secret values for the lowest environment are visible, allowing you to copy them for local use if necessary. Secret values for higher environments remain hidden to ensure security
+        During connection creation, secret values for the lowest environment are visible, allowing you to copy them for local use if necessary. Secret values for higher environments remain hidden to ensure security.
     
     For step-by-step instructions on using a database in your component, see [Use a Database Connection in Your Component](./use-a-database-connection-in-your-integration.md).
