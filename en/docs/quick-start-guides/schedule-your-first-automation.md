@@ -60,9 +60,9 @@ This redirects you to the overview page of the automation. Now, let's design the
     Press `Ctrl + Shift + P` on Windows and Linux, or `Shift + ⌘ + P` on a Mac and type `Ballerina: Update Ballerina Integrator` to update the installed Ballerina distribution.
 
 ## Step 4: Develop automation in VSCode
-1. Go to the Devant automation overview page and click **Develop automation in VSCode**. This will clone your project and open in Ballerina Integrator.
+1. Goto the Overview page of the integration you have created and click **Develop automation in VSCode**. This will clone your project and open in Ballerina Integrator.
 2. In Ballerina Integrator design view, click **Add Artifact**.
-3. Select **Automation** from the Constructs menu.
+3. Select **Automation** from the Constructs menu. Since **Automation** is chosen from the Devant console, other options are disabled.
 4. Click **Create** to create an automation. This directs you to the automation diagram view.
 5. Click **+** after the **Start** node to open the node panel.
 6. Select **Call Function** and select **println**.
