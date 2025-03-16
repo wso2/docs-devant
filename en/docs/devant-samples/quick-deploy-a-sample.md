@@ -28,7 +28,7 @@ To quickly deploy a sample, follow these steps:
 
 Once you deploy a sample, follow one of the post-deployment actions below based on the integration type:
 
-- **For Integration as API**: Go to the **Console** under **Test** dropdown on the left navigation to test the deployed API.
+- **For Integration as API**: On the overview page, click **Test** to test the deployed API.
 - **For Automation**: On the overview page, click **Test** to run your automation once or click **Schedule** to schedule the automation.
 
 This feature allows you to quickly explore and understand how Devant works with minimal setup.
