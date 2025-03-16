@@ -495,7 +495,7 @@
       
         <li class="md-nav__item">
   <a href="#step-5-push-to-devant" class="md-nav__link">
-    Step 5: Push to Devant 
+    Step 5: Push to Devant
   </a>
   
 </li>
@@ -908,7 +908,7 @@
       
         <li class="md-nav__item">
   <a href="#step-5-push-to-devant" class="md-nav__link">
-    Step 5: Push to Devant 
+    Step 5: Push to Devant
   </a>
   
 </li>
@@ -973,8 +973,6 @@
 </li>
 <li>VSCode: <a href="https://code.visualstudio.com/download">Install VSCode</a> if you don't have it installed already.</li>
 </ol>
-<!-- Todo finalize the names and structure -->
-
 <h2 id="step-1-attach-a-git-repository">Step 1: Attach a Git repository<a class="headerlink" href="#step-1-attach-a-git-repository" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Go to <a href="https://console.devant.dev/">https://console.devant.dev/</a> and sign in. This opens the organization overview page and lists the projects.</li>
@@ -1019,22 +1017,17 @@ Press <code>Ctrl + Shift + P</code> on Windows and Linux, or <code>Shift + ⌘ +
 </details>
 <h2 id="step-4-develop-automation-in-vscode">Step 4: Develop automation in VSCode<a class="headerlink" href="#step-4-develop-automation-in-vscode" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Click <strong>Develop automation in VSCode</strong> in the automation overview page. This opens your project in VSCode. <!-- Todo This is not working ATM update this if we are going live without this --></li>
-<li>Click the Ballerina Integrator icon on the sidebar. <!-- Todo step 1-6 will be automatically done by the Ballerina Integrator extension. But that is not working ATM. Remove those steps once we support that --></li>
-<li>Click <strong>Create New Integration</strong> and enter the Integration Name as <code>HelloWorld</code>.</li>
-<li>The project directory should be automatically populated. If not, select the project directory by clicking the <strong>Select Location</strong> button.</li>
-<li>Click <strong>Create Integration</strong> to create the integration project.
-   <a href="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/create-integration.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/create-integration.gif" alt="Create Integration" width="80%"></a></li>
-<li>In the design view, click <strong>Add Construct</strong>.</li>
-<li>Select <strong>Automation</strong> from the Constructs menu.</li>
+<li>Goto the Overview page of the integration you have created and click <strong>Develop automation in VSCode</strong>. This will clone your project and open in Ballerina Integrator.</li>
+<li>In Ballerina Integrator design view, click <strong>Add Artifact</strong>.</li>
+<li>Select <strong>Automation</strong> from the Constructs menu. Since <strong>Automation</strong> is chosen from the Devant console, other options are disabled.</li>
 <li>Click <strong>Create</strong> to create an automation. This directs you to the automation diagram view.</li>
 <li>Click <strong>+</strong> after the <strong>Start</strong> node to open the node panel.</li>
-<li>Select <strong>Function Call</strong> and select <strong>println</strong>.</li>
+<li>Select <strong>Call Function</strong> and select <strong>println</strong>.</li>
 <li>Click <strong>+ Add Another Value</strong>, type <code>"Hello World"</code> and click <strong>Save</strong>.</li>
 <li>Click <strong>Run</strong> in the top right corner to run the automation. This compiles the automation and runs it in the embedded Ballerina runtime.
    <a href="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/design-integration.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/schedule-your-first-automation/design-integration.gif" alt="Design Integration" width="80%"></a></li>
 </ol>
-<h2 id="step-5-push-to-devant">Step 5: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself --><a class="headerlink" href="#step-5-push-to-devant" title="Permanent link">&para;</a></h2>
+<h2 id="step-5-push-to-devant">Step 5: Push to Devant<a class="headerlink" href="#step-5-push-to-devant" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Click the <strong>Source Control</strong> icon on the sidebar.</li>
 <li>Click <strong>+</strong> to stage all changes.</li>
