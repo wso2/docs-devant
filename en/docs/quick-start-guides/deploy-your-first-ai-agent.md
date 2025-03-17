@@ -4,8 +4,8 @@
 
 In this guide, you will:
 
-- Create a simple AI Agent that provides motivational quotes.
-- Develop the AI Agent integration using Ballerina Integrator.
+- Create a simple AI Agent that provides math tutoring assistance.
+- Use Ballerina Integrator to develop the AI Agent integration.
 - Push the AI Agent to Devant from Ballerina Integrator, which will automatically build and deploy it into the development environment.
 - Test the AI Agent by sending prompts.
 - Promote it to the production environment and use it as an API.
@@ -51,7 +51,7 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 
 ## Step 3: Set up Ballerina Integrator for the first time
 1. Click the Ballerina Integrator icon on the sidebar.
-   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_icon.png"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_icon.png" alt="Ballerina Integrator Icon" width="80%"></a>
+   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-icon.png"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-icon.png" alt="Ballerina Integrator Icon" width="80%"></a>
 2. Click **`Set Up Ballerina Integrator`**. The setup wizard installs and configures the [Ballerina](https://ballerina.io/) distribution required for the Ballerina Integrator.
 3. Click **`Restart VS Code`** to complete the setup.
    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
@@ -61,22 +61,15 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
     Press `Ctrl + Shift + P` on Windows and Linux, or `Shift + ⌘ + P` on a Mac and type `Ballerina: Update Ballerina Integrator` to update the installed Ballerina distribution.
 
 ## Step 4: Develop AI Agent in VSCode
-1. Click **Develop in Ballerina Integrator** in the AI Agent overview page. This opens your project in VSCode. <!-- Todo This is not working ATM update this if we are going live without this -->
-2. Click the Ballerina Integrator icon on the sidebar. <!-- Todo step 1-6 will be automatically done by the Ballerina Integrator extension. But that is not working ATM. Remove those steps once we support that -->
-3. Click **Create New Integration** and enter the Integration Name as `MotivationAssistant`.
-4. The project directory should be automatically populated. If not, select the project directory by clicking the **Select Location** button.
+1. Goto the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open in Ballerina Integrator.
+2. In Ballerina Integrator design view, click **Add Artifact**.
+3. Select **AI Chat Agent** from the Constructs menu. Since **AI Agent** is chosen from the Devant console, other options are disabled.
+4. Provide the name of the Agent as `Math Tutor` and Click **Create**. This directs you to the AI Chat Agent diagram view.
 5. Click **Create Integration** to create the integration project.
    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create-integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create-integration.gif" alt="Create Integration" width="80%"></a>
 6. In the design view, click **Add Construct**.
 7. Select **AI Chat Agent** from the Constructs menu.
-8. Then provide the name of the listener as `motivationAssistant` for listener configuration and click next.
-9. For the service configuration, provide the service base path as `/agentChat`.  
-10. Click **Create** to create the AI Agent. This directs you to the AI Agent diagram view.
-11. Click **+** after the **Start** node to open the node panel.
-12. Select **Function Call** and select **println**.
-13. Click **+ Add Another Value**, type `"Hello World"` and click **Save**.
-14. Click **Run** in the top right corner to start the AI Agent. This compiles and runs the AI Agent service in the embedded Ballerina runtime.
-   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/design-integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/design-integration.gif" alt="Design Integration" width="80%"></a>
+<!-- Todo Need to add the remaining steps -->
 
 
 ## Step 5: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself -->
