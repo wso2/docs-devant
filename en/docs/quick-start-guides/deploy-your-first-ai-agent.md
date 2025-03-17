@@ -36,11 +36,11 @@ In this guide, you will:
 
         You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) at any time. Write access is used to push changes directly to your repository.
 
-7. Select your organization under the **Organization** dropdown. If your organization is not listed, click the Refetch button.
-8. Select a repository to save your AI Agent. Optionally, you may select a **Branch** and a **Path** of the selected repository to save your AI Agent.
-9. The **Name** and **Identifier** fields are automatically populated. Optionally, you can edit them to your preference.
-10. Select the **Technology** as `Ballerina`.
-11. Choose the **Integration Type** as `AI Agent` and click **Create**.
+6. Select your organization under the **Organization** dropdown. If your organization is not listed, click the Refetch button.
+7. Select a repository to save your AI Agent. Optionally, you may select a **Branch** and a **Path** of the selected repository to save your AI Agent.
+8. The **Name** and **Identifier** fields are automatically populated. Optionally, you can edit them to your preference.
+9. Select the **Technology** as `Ballerina`.
+10. Choose the **Integration Type** as `AI Agent` and click **Create**.
 
 This redirects you to the overview page of the AI Agent. Now, let's develop the AI Agent.
 
@@ -61,15 +61,17 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
     Press `Ctrl + Shift + P` on Windows and Linux, or `Shift + ⌘ + P` on a Mac and type `Ballerina: Update Ballerina Integrator` to update the installed Ballerina distribution.
 
 ## Step 4: Develop AI Agent in VSCode
-1. Goto the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open in Ballerina Integrator.
-2. In Ballerina Integrator design view, click **Add Artifact**.
-3. Select **AI Chat Agent** from the Constructs menu. Since **AI Agent** is chosen from the Devant console, other options are disabled.
-4. Provide the name of the Agent as `Math Tutor` and Click **Create**. This directs you to the AI Chat Agent diagram view.
+1. Go to the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open in Ballerina Integrator.
+2. In the Ballerina Integrator design view, click **Add Artifact**.
+3. Select **AI Chat Agent** from the Constructs menu. Since **AI Agent** has been chosen from the Devant console, other options are disabled.
+4. Provide the name of the Agent as `MathTutor` and click **Create**. This directs you to the AI Chat Agent diagram view.
 5. Click **Create Integration** to create the integration project.
    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create-integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create-integration.gif" alt="Create Integration" width="80%"></a>
 6. In the design view, click **Add Construct**.
 7. Select **AI Chat Agent** from the Constructs menu.
-<!-- Todo Need to add the remaining steps -->
+8. From the left side panel, add a new function. Name it as `multiply`. Add two `decimal` parameters and a `decimal` return type. Add a return node with the expression `a * b`.
+9. In the Agent box, click the plus icon to create a tool. Select the `multiply` function you just created.
+10. Edit the agent and add 'Math Tutor' as role and an appropriate set of instructions. Eg: "You are a school math tutor assistant. Use the tools to provide answers to students' questions". 
 
 
 ## Step 5: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself -->
@@ -84,7 +86,9 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
     !!! note
         The build process may take some time. Once complete, the build status changes to **Success**. You can see the Build History by clicking **Build** in the left navigation.
 
-2. Once the **Build Status** shows `Build completed`, it will get automatically deployed into the development card.
-3. Send a prompt similar to the following to get the AI Agent response:
+2. Once the **Build Status** shows `Build completed`, it will be automatically deployed into the development card.
+3. Send a prompt to test your Math Tutor agent, such as `What is 2343282 * 392011`. Even though typically LLMs are bad at large multiplication, this agent has tool support to give an accurate answer.
 
-[//]: # (After successfully testing your service, explore other Devant features like [managing]&#40;../api-management/lifecycle-management.md&#41;, [observing]&#40;../monitoring-and-insights/observability-overview.md&#41;, and [DevOps]&#40;../devops-and-ci-cd/view-runtime-details.md&#41;.  <!-- Todo Update this with the real features -->)
+4. After successfully testing, you can promote your AI Agent to production by clicking **Promote** button.
+
+5. Once deployed to production, you can access your AI Agent through the API endpoints and embed it in your applications.
