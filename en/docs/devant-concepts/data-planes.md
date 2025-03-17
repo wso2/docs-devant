@@ -6,6 +6,8 @@ The data plane is the environment where user integrations are deployed based on 
 
 Devant's architecture features two distinct data plane types: cloud data planes and private data planes. A cloud data plane utilizes a multi-tenanted infrastructure model for deploying user integrations, creating a shared yet secure environment for integration runtime. In contrast, a private data plane(PDP) provides dedicated infrastructure for a single organization to run its user integrations. This ensures an added layer of privacy and control for organizations with specific requirements.
 
+![Choreo high-level view](../assets/img/devant-concepts/high-level-view.png)
+
 ## Private data planes
 
 ### Infrastructure
@@ -122,8 +124,7 @@ All communication between the control plane and the private data plane is secure
 
 The following diagram depicts the architecture overview of Devant's in-data-plane log and observability in Azure PDP:
 
-[//]: # (Tooo: Modify this diagram to match Devant)
-[//]: # (![Observability architecture]&#40;../assets/img/devant-concepts/observability-architecture.png&#41;)
+![Observability architecture](../assets/img/devant-concepts/observability-architecture.png){width=700 height=500}
 
 The private data plane observability architecture is centered around a strong commitment to data privacy and compliance. This is achieved through a strategic decision to retain logs and observability data within the data planes itself. Key aspects of this architecture include:
 
