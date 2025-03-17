@@ -18,7 +18,7 @@
 site_name: ""
 site_description: Devant Learning Portal
 site_author: WSO2
-site_url: https://wso2.github.io/docs-devant/
+site_url: https://wso2.com/devant/docs
 
 # Repository
 repo_name: wso2/docs-devant
@@ -71,11 +71,19 @@ theme:
 strict: false
 # Navigation
 nav:
-  - Home: index.md
-  - Introduction:
-      - What is Devant?: what-is-devant.md
+  - What is Devant?: index.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
+  - Devant Samples:
+      - Explore the Samples Collection:
+          - Samples Overview: devant-samples/samples-overview.md
+          - Quick Deploy a Sample: devant-samples/quick-deploy-a-sample.md
+      - Explore the Demo Organization: devant-samples/explore-the-demo-organization.md
+  - RAG Ingestion: rag-ingestion.md
+  - Share and Reuse Integrations:
+      - Create a Connection: sharing-and-reusing/create-a-connection.md
+      - Use a Connection in Your Integration: sharing-and-reusing/use-a-connection-in-your-integration.md
+      - Use a Database Connection in Your Integration: sharing-and-reusing/use-a-database-connection-in-your-integration.md
   - Devant Concepts:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
       - Organization: devant-concepts/organization.md
@@ -87,6 +95,12 @@ nav:
       - Connections: devant-concepts/connections.md
       - Data Planes: devant-concepts/data-planes.md
       - Environments: devant-concepts/environments.md
+  - Devant-Managed Databases and Caches:
+      - Overview: manage-databases-and-caches/devant-managed-databases-and-caches.md
+      - PostgreSQL:  manage-databases-and-caches/devant-managed-postgresql-databases.md
+      - MySQL: manage-databases-and-caches/devant-managed-mysql-databases.md
+      - Devant-Managed Cache: manage-databases-and-caches/devant-managed-caches.md
+      - Add Devant-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition

@@ -20,7 +20,6 @@ In this guide, you will:
     3. Read and accept the privacy policy and terms of use and click **Create**.
 3. VSCode: [Install VSCode](https://code.visualstudio.com/download) if you don't have it installed already.
 
-<!-- Todo finalize the names and structure -->
 ## Step 1: Attach a Git repository
 1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in. This opens the organization overview page and lists the projects.
 2. Select the **Default** project.
@@ -51,7 +50,7 @@ This redirects you to the overview page of the automation. Now, let's design the
 
 ## Step 3: Set up Ballerina Integrator for the first time
 1. Click the Ballerina Integrator icon on the sidebar.
-   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_icon.png"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi_icon.png" alt="Ballerina Integrator Icon" width="80%"></a>
+   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-icon.png"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-icon.png" alt="Ballerina Integrator Icon" width="80%"></a>
 2. Click **`Set Up Ballerina Integrator`**. The setup wizard installs and configures the [Ballerina](https://ballerina.io/) distribution required for the Ballerina Integrator.
 3. Click **`Restart VS Code`** to complete the setup.
    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
@@ -61,22 +60,17 @@ This redirects you to the overview page of the automation. Now, let's design the
     Press `Ctrl + Shift + P` on Windows and Linux, or `Shift + ⌘ + P` on a Mac and type `Ballerina: Update Ballerina Integrator` to update the installed Ballerina distribution.
 
 ## Step 4: Develop automation in VSCode
-1. Click **Develop automation in VSCode** in the automation overview page. This opens your project in VSCode. <!-- Todo This is not working ATM update this if we are going live without this -->
-2. Click the Ballerina Integrator icon on the sidebar. <!-- Todo step 1-6 will be automatically done by the Ballerina Integrator extension. But that is not working ATM. Remove those steps once we support that -->
-3. Click **Create New Integration** and enter the Integration Name as `HelloWorld`.
-4. The project directory should be automatically populated. If not, select the project directory by clicking the **Select Location** button.
-5. Click **Create Integration** to create the integration project.
-   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create-integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create-integration.gif" alt="Create Integration" width="80%"></a>
-6. In the design view, click **Add Construct**.
-7. Select **Automation** from the Constructs menu.
-8. Click **Create** to create an automation. This directs you to the automation diagram view.
-9. Click **+** after the **Start** node to open the node panel.
-10. Select **Function Call** and select **println**.
-11. Click **+ Add Another Value**, type `"Hello World"` and click **Save**.
-12. Click **Run** in the top right corner to run the automation. This compiles the automation and runs it in the embedded Ballerina runtime.
+1. Goto the Overview page of the integration you have created and click **Develop automation in VSCode**. This will clone your project and open in Ballerina Integrator.
+2. In Ballerina Integrator design view, click **Add Artifact**.
+3. Select **Automation** from the Constructs menu. Since **Automation** is chosen from the Devant console, other options are disabled.
+4. Click **Create** to create an automation. This directs you to the automation diagram view.
+5. Click **+** after the **Start** node to open the node panel.
+6. Select **Call Function** and select **println**.
+7. Click **+ Add Another Value**, type `"Hello World"` and click **Save**.
+8. Click **Run** in the top right corner to run the automation. This compiles the automation and runs it in the embedded Ballerina runtime.
    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/design-integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/design-integration.gif" alt="Design Integration" width="80%"></a>
 
-## Step 5: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself -->
+## Step 5: Push to Devant
 1. Click the **Source Control** icon on the sidebar.
 2. Click **+** to stage all changes.
 3. Add an appropriate commit message and commit.
