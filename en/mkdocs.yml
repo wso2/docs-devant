@@ -74,6 +74,7 @@ nav:
   - What is Devant?: index.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
+      - Deploy Your First AI Agent: quick-start-guides/deploy-your-first-ai-agent.md
   - RAG Ingestion: rag-ingestion.md
   - Share and Reuse Integrations:
       - Create a Connection: sharing-and-reusing/create-a-connection.md
