@@ -13,25 +13,27 @@
         <meta name="author" content="WSO2">
       
       
-        <link rel="canonical" href="https://wso2.com/devant/docs/">
+        <link rel="canonical" href="https://wso2.com/devant/docs/devant-concepts/ci-cd/">
       
       
+        <link rel="prev" href="../endpoint/">
       
-        <link rel="next" href="quick-start-guides/schedule-your-first-automation/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+        <link rel="next" href="../deployment-tracks/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title></title>
+        <title>CI/CD - </title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7bf56d0a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7bf56d0a.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -50,15 +52,15 @@
       
     
     
-      <link rel="stylesheet" href="assets/css/blue-palette-alt2.css">
+      <link rel="stylesheet" href="../../assets/css/blue-palette-alt2.css">
     
-      <link rel="stylesheet" href="assets/css/devanttheme.css">
+      <link rel="stylesheet" href="../../assets/css/devanttheme.css">
     
-      <link rel="stylesheet" href="assets/lib/json-formatter/json-formatter.css">
+      <link rel="stylesheet" href="../../assets/lib/json-formatter/json-formatter.css">
     
-      <link rel="stylesheet" href="assets/css/config-catalog.css">
+      <link rel="stylesheet" href="../../assets/css/config-catalog.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -99,7 +101,7 @@
    <!-- CookiePro cookies consent notice end -->
    
   </script>
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -110,7 +112,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
 
   
   
@@ -135,7 +137,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-devant" class="md-skip">
+        <a href="#cicd" class="md-skip">
           Skip to content
         </a>
       
@@ -162,9 +164,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
+    <a href="../.." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="assets/images/logo.png" alt="logo" style="vertical-align: middle;">
+  <img src="../../assets/images/logo.png" alt="logo" style="vertical-align: middle;">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -180,7 +182,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              What is Devant?
+              CI/CD
             
           </span>
         </div>
@@ -316,9 +318,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
+    <a href="../.." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="assets/images/logo.png" alt="logo" style="vertical-align: middle;">
+  <img src="../../assets/images/logo.png" alt="logo" style="vertical-align: middle;">
 
     </a>
     
@@ -370,100 +372,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          What is Devant?
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         What is Devant?
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key-capabilities-of-devant" class="md-nav__link">
-    Key capabilities of Devant
-  </a>
-  
-    <nav class="md-nav" aria-label="Key capabilities of Devant">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#efficient-and-effective-development" class="md-nav__link">
-    Efficient and effective development
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seamless-deployment" class="md-nav__link">
-    Seamless deployment
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#effortless-management-of-apis-integrations-microservices-and-web-applications" class="md-nav__link">
-    Effortless management of APIs, integrations, microservices, and web applications
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reusable-digital-assets" class="md-nav__link">
-    Reusable digital assets
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comprehensive-observability" class="md-nav__link">
-    Comprehensive observability
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#robust-governance" class="md-nav__link">
-    Robust governance
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -505,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quick-start-guides/schedule-your-first-automation/" class="md-nav__link">
+      <a href="../../quick-start-guides/schedule-your-first-automation/" class="md-nav__link">
         Schedule Your First Automation
       </a>
     </li>
@@ -585,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-samples/samples-overview/" class="md-nav__link">
+      <a href="../../devant-samples/samples-overview/" class="md-nav__link">
         Samples Overview
       </a>
     </li>
@@ -599,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-samples/quick-deploy-a-sample/" class="md-nav__link">
+      <a href="../../devant-samples/quick-deploy-a-sample/" class="md-nav__link">
         Quick Deploy a Sample
       </a>
     </li>
@@ -620,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-samples/explore-the-demo-organization/" class="md-nav__link">
+      <a href="../../devant-samples/explore-the-demo-organization/" class="md-nav__link">
         Explore the Demo Organization
       </a>
     </li>
@@ -642,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rag-ingestion/" class="md-nav__link">
+      <a href="../../rag-ingestion/" class="md-nav__link">
         RAG Ingestion
       </a>
     </li>
@@ -686,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sharing-and-reusing/create-a-connection/" class="md-nav__link">
+      <a href="../../sharing-and-reusing/create-a-connection/" class="md-nav__link">
         Create a Connection
       </a>
     </li>
@@ -700,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sharing-and-reusing/use-a-connection-in-your-integration/" class="md-nav__link">
+      <a href="../../sharing-and-reusing/use-a-connection-in-your-integration/" class="md-nav__link">
         Use a Connection in Your Integration
       </a>
     </li>
@@ -714,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sharing-and-reusing/use-a-database-connection-in-your-integration/" class="md-nav__link">
+      <a href="../../sharing-and-reusing/use-a-database-connection-in-your-integration/" class="md-nav__link">
         Use a Database Connection in Your Integration
       </a>
     </li>
@@ -734,16 +647,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
       
@@ -752,7 +665,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Devant Concepts
@@ -765,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/resource-hierarchy/" class="md-nav__link">
+      <a href="../resource-hierarchy/" class="md-nav__link">
         Resource Hierarchy
       </a>
     </li>
@@ -779,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/organization/" class="md-nav__link">
+      <a href="../organization/" class="md-nav__link">
         Organization
       </a>
     </li>
@@ -793,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/project/" class="md-nav__link">
+      <a href="../project/" class="md-nav__link">
         Project
       </a>
     </li>
@@ -807,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/integration/" class="md-nav__link">
+      <a href="../integration/" class="md-nav__link">
         Component
       </a>
     </li>
@@ -821,7 +734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/endpoint/" class="md-nav__link">
+      <a href="../endpoint/" class="md-nav__link">
         Endpoint
       </a>
     </li>
@@ -833,11 +746,147 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="devant-concepts/ci-cd/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CI/CD
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         CI/CD
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    Build
+  </a>
+  
+    <nav class="md-nav" aria-label="Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repeatable-builds" class="md-nav__link">
+    Repeatable builds
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigger-a-build" class="md-nav__link">
+    Trigger a build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-logs" class="md-nav__link">
+    Build logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    Deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immutable-deployments" class="md-nav__link">
+    Immutable deployments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promote-an-integration-to-a-higher-environment" class="md-nav__link">
+    Promote an integration to a higher environment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-independent-configurations" class="md-nav__link">
+    Environment-independent configurations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-specific-configurations" class="md-nav__link">
+    Environment-specific configurations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    Test
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zero-downtime-deployments" class="md-nav__link">
+    Zero-downtime deployments
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -849,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/deployment-tracks/" class="md-nav__link">
+      <a href="../deployment-tracks/" class="md-nav__link">
         Deployment Tracks
       </a>
     </li>
@@ -863,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/connections/" class="md-nav__link">
+      <a href="../connections/" class="md-nav__link">
         Connections
       </a>
     </li>
@@ -877,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/data-planes/" class="md-nav__link">
+      <a href="../data-planes/" class="md-nav__link">
         Data Planes
       </a>
     </li>
@@ -891,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="devant-concepts/environments/" class="md-nav__link">
+      <a href="../environments/" class="md-nav__link">
         Environments
       </a>
     </li>
@@ -942,7 +991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/devant-managed-databases-and-caches/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/devant-managed-databases-and-caches/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -956,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/devant-managed-postgresql-databases/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/devant-managed-postgresql-databases/" class="md-nav__link">
         PostgreSQL
       </a>
     </li>
@@ -970,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/devant-managed-mysql-databases/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/devant-managed-mysql-databases/" class="md-nav__link">
         MySQL
       </a>
     </li>
@@ -984,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/devant-managed-caches/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/devant-managed-caches/" class="md-nav__link">
         Devant-Managed Cache
       </a>
     </li>
@@ -998,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace/" class="md-nav__link">
+      <a href="../../manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace/" class="md-nav__link">
         Add Devant-Managed Databases and Caches to the Marketplace
       </a>
     </li>
@@ -1039,57 +1088,104 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-capabilities-of-devant" class="md-nav__link">
-    Key capabilities of Devant
+  <a href="#build" class="md-nav__link">
+    Build
   </a>
   
-    <nav class="md-nav" aria-label="Key capabilities of Devant">
+    <nav class="md-nav" aria-label="Build">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#efficient-and-effective-development" class="md-nav__link">
-    Efficient and effective development
+  <a href="#repeatable-builds" class="md-nav__link">
+    Repeatable builds
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#seamless-deployment" class="md-nav__link">
-    Seamless deployment
+  <a href="#trigger-a-build" class="md-nav__link">
+    Trigger a build
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#effortless-management-of-apis-integrations-microservices-and-web-applications" class="md-nav__link">
-    Effortless management of APIs, integrations, microservices, and web applications
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reusable-digital-assets" class="md-nav__link">
-    Reusable digital assets
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comprehensive-observability" class="md-nav__link">
-    Comprehensive observability
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#robust-governance" class="md-nav__link">
-    Robust governance
+  <a href="#build-logs" class="md-nav__link">
+    Build logs
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    Deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immutable-deployments" class="md-nav__link">
+    Immutable deployments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promote-an-integration-to-a-higher-environment" class="md-nav__link">
+    Promote an integration to a higher environment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-independent-configurations" class="md-nav__link">
+    Environment-independent configurations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-specific-configurations" class="md-nav__link">
+    Environment-specific configurations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    Test
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zero-downtime-deployments" class="md-nav__link">
+    Zero-downtime deployments
+  </a>
   
 </li>
       
@@ -1108,7 +1204,7 @@
                   
 
   
-    <a href="https://github.com/wso2/docs-devant/edit/dev/en/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-devant/edit/dev/en/docs/devant-concepts/ci-cd.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1117,53 +1213,66 @@
     
       
     
-    <a href="https://github.com/wso2/docs-devant/raw/dev/en/docs/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-devant/raw/dev/en/docs/devant-concepts/ci-cd.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="what-is-devant">What is Devant?<a class="headerlink" href="#what-is-devant" title="Permanent link">&para;</a></h1>
-<p>Devant is a powerful IPaaS with first-class AI support. Incorporate AI agents into the integrations you build in low-code and pro-code, and move away from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.</p>
-<h2 id="key-capabilities-of-devant">Key capabilities of Devant<a class="headerlink" href="#key-capabilities-of-devant" title="Permanent link">&para;</a></h2>
-<h3 id="efficient-and-effective-development">Efficient and effective development<a class="headerlink" href="#efficient-and-effective-development" title="Permanent link">&para;</a></h3>
+<h1 id="cicd">CI/CD<a class="headerlink" href="#cicd" title="Permanent link">&para;</a></h1>
+<p>Devant provides a streamlined continuous integration and continuous deployment (CI/CD) experience to deploy integrations and services efficiently across multiple environments.</p>
+<p>Devant creates environments for each project, where all integrations within the project share the environments. An environment is an isolated deployment area with restricted network and resource access. Services deployed in one environment cannot communicate with services deployed in another.</p>
+<p>The Devant cloud data plane provides two default environments (i.e., development and production). However, if you are in a private data plane organization, you can customize and create multiple environments based on your requirements.</p>
+<p>Devant adopts a <em>build once, deploy many</em> strategy to manage integrations across multiple environments. It automatically builds an integration for each commit, which is then promoted to subsequent environments. This allows testing changes in lower, non-production environments like development before promoting the build to production.</p>
+<p>Devant injects configurations and secrets you maintain at the environment level into integrations at runtime. This ensures a strict separation of environment-specific configurations from source code. Although configurations can vary across environments, the build artifacts remain unchanged. Configurations and secrets include:</p>
 <ul>
-<li><strong>AI-Assisted Development</strong>: Devant includes a developer friendly VSCode-based editor with an integrated AI copilot, which aids developers at every stage, from code generation to refactoring.</li>
-<li><strong>Unified Low-Code and Pro-Code Development</strong>: Allows seamless transitions between low-code and pro-code development, accommodating a diverse range of developer skills and preferences.</li>
-<li><strong>Comprehensive Protocol and AI Support</strong>: Built-in capabilities to integrate with third-party AI services, vector databases, and support for protocols such as TCP, UDP, FILE, Websub, and Websubhub.</li>
-<li><strong>Developer-Centric Design</strong>: Tools and workflows tailored specifically for integration developers, enhancing debugging, testing, and issue identification.</li>
-<li><strong>Git Repository Integration</strong>: Effortlessly connect to Git-based platforms like GitHub, Bitbucket, or GitLab to develop components by linking an existing repository.</li>
+<li>Resource credentials to a database, cache, or other backing services.</li>
+<li>Credentials to external cloud services such as Amazon S3 or external APIs.</li>
 </ul>
-<h3 id="seamless-deployment">Seamless deployment<a class="headerlink" href="#seamless-deployment" title="Permanent link">&para;</a></h3>
+<p>All configurations and secrets are encrypted at rest and in transit and stored in a secure vault. In a private data plane organization, you can store configurations and secrets in your infrastructure.</p>
+<h2 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h2>
+<p>Devant automated build pipelines work as follows:</p>
 <ul>
-<li><strong>CI/CD</strong>: Eliminate manual builds and unreliable deployments with Devant's industry-standard CI/CD tooling, providing complete control and flexibility.</li>
-<li><strong>Multi-Cloud Kubernetes</strong>: Easily deliver cloud-native applications across Azure, AWS, GCP, or your Kubernetes clusters.</li>
-<li><strong>Configuration Management</strong>: Centralize configuration parameters, sensitive credentials, and secrets across deployment environments via an intuitive interface.</li>
+<li>Automatically builds a container image from the provided source code for the new commit.</li>
+<li>Runs security and vulnerability scans, if applicable, depending on the integration type.</li>
+<li>Pushes the container image to a container registry. Devant pushes the image to a Devant-managed registry in the cloud data plane. If it is a private data plane organization, Devant pushes the image to your own registry.</li>
+<li>Updates service endpoints and API specifications from the provided repository if applicable.</li>
 </ul>
-<h3 id="effortless-management-of-apis-integrations-microservices-and-web-applications">Effortless management of APIs, integrations, microservices, and web applications<a class="headerlink" href="#effortless-management-of-apis-integrations-microservices-and-web-applications" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Enable Security</strong>: Empower security teams to manage data flows, ensuring seamless control over sensitive information like access credentials.</li>
-<li><strong>Scale Up or Down</strong>: Kubernetes handles scaling automatically, optimizing costs by scaling services based on demand.</li>
-<li><strong>Ensure Reliability</strong>: DevOps and SRE teams can easily manage deployed components with built-in insights and observability.</li>
-</ul>
-<h3 id="reusable-digital-assets">Reusable digital assets<a class="headerlink" href="#reusable-digital-assets" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Control Visibility and Sharing</strong>: Publish your digital assets to a shared marketplace for consumption by internal or external stakeholders, managed by role-based access control.</li>
-<li><strong>Internal Marketplace</strong>: Devant's secure internal marketplace fosters transparency and efficiency with granular access control for publishers and consumers.</li>
-</ul>
-<h3 id="comprehensive-observability">Comprehensive observability<a class="headerlink" href="#comprehensive-observability" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Anomaly Detection</strong>: Stay ahead of issues with prompt notifications, ensuring balanced scaling and immediate action during unexpected mishaps.</li>
-<li><strong>Troubleshoot and Debug</strong>: Quickly pinpoint and address root causes using detailed logs and data aligned in the same timeline, down to the machine-level details.</li>
-</ul>
-<h3 id="robust-governance">Robust governance<a class="headerlink" href="#robust-governance" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>DORA Metrics</strong>: Monitor your DevOps efficiency with Devant DORA metrics, experiencing rapid improvements in time from deployment to production safely and robustly.</li>
-<li><strong>Engineering Insights</strong>: Gain visibility into engineering insights and advanced data analytics to make data-driven decisions, optimize processes, and improve efficiency.</li>
-<li><strong>API Analytics</strong>: Understand API performance and adoption patterns to identify and resolve operational bottlenecks.</li>
-</ul>
-<p>Devant is your all-in-one AI-capable platform for building, deploying, and managing integrations with ease, security, and efficiency.</p>
+<h3 id="repeatable-builds">Repeatable builds<a class="headerlink" href="#repeatable-builds" title="Permanent link">&para;</a></h3>
+<p>Devant can replicate builds from an identical code version (Git commit). This means that multiple builds initiated from the same Git commit will generate Docker images with the same behavior.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the event of multiple builds from the same code version, Devant preserves only the most recent version of the Docker image created from the particular code version.</p>
+</div>
+<h3 id="trigger-a-build">Trigger a build<a class="headerlink" href="#trigger-a-build" title="Permanent link">&para;</a></h3>
+<p>On the <strong>Build</strong> page, click <strong>Build Latest</strong> to build the latest commit. If necessary, you have the option to build earlier commits. Change the button to <strong>Show commits</strong> from the dropdown and click <strong>Show commits</strong>. Select the commit from the commits pane and click <strong>Build</strong>.</p>
+<h3 id="build-logs">Build logs<a class="headerlink" href="#build-logs" title="Permanent link">&para;</a></h3>
+<p>You can view build logs for specific builds on the <strong>Build</strong> page.</p>
+<p>To view details of a specific build, click <strong>View Details</strong> corresponding to the build.</p>
+<h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
+<p>Once Devant builds the latest commit it automatically deploys to the Development environment. You can track the deployments on the <strong>Deploy</strong> page.</p>
+<h3 id="immutable-deployments">Immutable deployments<a class="headerlink" href="#immutable-deployments" title="Permanent link">&para;</a></h3>
+<p>Once Devant deploys an integration with configurations, the configurations become immutable. Any subsequent change results in a new deployment.</p>
+<h3 id="promote-an-integration-to-a-higher-environment">Promote an integration to a higher environment<a class="headerlink" href="#promote-an-integration-to-a-higher-environment" title="Permanent link">&para;</a></h3>
+<p>Devant builds artifacts once per GitHub commit and then promotes it to subsequent higher environments.</p>
+<p>In the overview page, click <strong>Promote</strong> to promote it manually across environments. This can be also done in the <strong>Deploy</strong> page.</p>
+<h2 id="configurations">Configurations<a class="headerlink" href="#configurations" title="Permanent link">&para;</a></h2>
+<p>Devant allows you to define both environment-independent configurations and environment-specific configurations.</p>
+<h3 id="environment-independent-configurations">Environment-independent configurations<a class="headerlink" href="#environment-independent-configurations" title="Permanent link">&para;</a></h3>
+<p>These configurations apply to all environments.</p>
+<p>To change environment-independent configurations, go to the <strong>Deploy</strong> page of the integration, make the necessary configuration changes via the <strong>Set Up</strong> card, and then trigger a new deployment to the initial environment. From there, you can proceed to promote the integration to higher environments.</p>
+<h3 id="environment-specific-configurations">Environment-specific configurations<a class="headerlink" href="#environment-specific-configurations" title="Permanent link">&para;</a></h3>
+<p>These configurations apply to a particular environment.</p>
+<p>To change environment-specific configurations, go to the <strong>Deploy</strong> page of the integration, make the necessary configuration changes via the specific environment card, and trigger a new deployment.</p>
+<h2 id="test">Test<a class="headerlink" href="#test" title="Permanent link">&para;</a></h2>
+<p>The information on the <strong>Test</strong> page is only applicable to automation and API.</p>
+<p>For the automation, click <strong>Test</strong> to run the automation once. Select <strong>Test with Arguments</strong> to test your automation with arguments. You can view current and historic execution details along with a quick snapshot of recent activity via the total count of executions within the last 30 days. For each execution, you can view vital information such as the unique execution ID, the time it was triggered, and relevant revision information. Furthermore, you can dive deeper into the details by clicking on a specific execution to access its associated logs. This information enhances transparency, troubleshooting capabilities, and overall execution management, allowing you to easily monitor and analyze workflows.</p>
+<p>For API, click <strong>Console</strong> in the <strong>Test</strong> dropdown to list all the resources in the API. Click <strong>Get Test Key</strong> to get a test key. Click a resource to expand it. Click <strong>Try it out</strong> and fill in the parameters (if any). Click <strong>Execute</strong> to invoke the resource. This will show the resource response and the execution details. You can also select the <strong>API Chat</strong> in the <strong>Test</strong> dropdown to test the API using an Intelligent Agent.</p>
+<h2 id="zero-downtime-deployments">Zero-downtime deployments<a class="headerlink" href="#zero-downtime-deployments" title="Permanent link">&para;</a></h2>
+<p>Devant performs rolling updates to ensure zero downtime between deployments and promotions.</p>
+<p>A new build undergoes a health check before switching traffic from the current build.</p>
+<p>Configuring the necessary health checks for an integration can prevent the deployment and promotion of unhealthy versions of the integration.</p>
 
 
 
@@ -1189,15 +1298,30 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../endpoint/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Endpoint" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                Endpoint
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="quick-start-guides/schedule-your-first-automation/" class="md-footer__link md-footer__link--next" aria-label="Next: Schedule Your First Automation" rel="next">
+          <a href="../deployment-tracks/" class="md-footer__link md-footer__link--next" aria-label="Next: Deployment Tracks" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Schedule Your First Automation
+                Deployment Tracks
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1228,18 +1352,18 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.path", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.path", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.fc8c2696.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
       
-        <script src="assets/lib/json-formatter/json-formatter.umd.js"></script>
+        <script src="../../assets/lib/json-formatter/json-formatter.umd.js"></script>
       
-        <script src="assets/lib/highlightjs/highlight.min.js"></script>
+        <script src="../../assets/lib/highlightjs/highlight.min.js"></script>
       
-        <script src="assets/js/devanttheme.js"></script>
+        <script src="../../assets/js/devanttheme.js"></script>
       
-        <script src="js/open_in_new_tab.js"></script>
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
