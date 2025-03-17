@@ -84,6 +84,17 @@ nav:
       - Create a Connection: sharing-and-reusing/create-a-connection.md
       - Use a Connection in Your Integration: sharing-and-reusing/use-a-connection-in-your-integration.md
       - Use a Database Connection in Your Integration: sharing-and-reusing/use-a-database-connection-in-your-integration.md
+  - Devant Concepts:
+      - Resource Hierarchy: devant-concepts/resource-hierarchy.md
+      - Organization: devant-concepts/organization.md
+      - Project: devant-concepts/project.md
+      - Component: devant-concepts/integration.md
+      - Endpoint: devant-concepts/endpoint.md
+      - CI/CD: devant-concepts/ci-cd.md
+      - Deployment Tracks: devant-concepts/deployment-tracks.md
+      - Connections: devant-concepts/connections.md
+      - Data Planes: devant-concepts/data-planes.md
+      - Environments: devant-concepts/environments.md
   - Devant-Managed Databases and Caches:
       - Overview: manage-databases-and-caches/devant-managed-databases-and-caches.md
       - PostgreSQL:  manage-databases-and-caches/devant-managed-postgresql-databases.md
