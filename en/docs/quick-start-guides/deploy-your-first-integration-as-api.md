@@ -21,16 +21,15 @@ In this guide, you will:
 3. VSCode: [Install VSCode](https://code.visualstudio.com/download) if you don't have it installed already.
 
 ## Step 1: Attach a Git repository
-1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in. This opens the organization overview page and lists the projects.
-2. Select the **Default** project.
-3. On the project overview page, click **Attach a Git Repository**.
+1. Go to [https://console.devant.dev/new](https://console.devant.dev/new) and sign in. This opens the new integration page.
+2. On the new integration page, click **Attach a Git Repository**.
 
     !!! tip
         If you're using a public Git repository, you can skip ahead to sub-step 9. Click **Use a Third-Party Public Git Repository** and enter the repository URL.
 
-4. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
-5. Under the **Organization**  dropdown click **+ Add**. This redirects you to the **Install WSO2 Cloud App Stage** page.
-6. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
+3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
+4. Under the **Organization**  dropdown click **+ Add**. This redirects you to the **Install WSO2 Cloud App Stage** page.
+5. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
 
     !!! note
         The **WSO2 Cloud App** requires:
@@ -40,12 +39,12 @@ In this guide, you will:
 
          You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) at any time. Write access is used to push changes directly to your repository.
 
-7. Under the **Organization**  dropdown, select your organization. If it is still not listed, click the Refetch button.
-8. Select a repository to save your integration.
-9. Select a **Branch** and a **Path** of the selected repository to save your integration.
-10. **Name** and **Identifier** fields are automatically populated. Additionally, you can edit them to your preference.
-11. Select the **Technology** as `WSO2 MI`.
-12. Choose the **Integration Type** as `Integration as API` and Click **Create**.
+6. Under the **Organization**  dropdown, select your organization. If it is still not listed, click the Refetch button.
+7. Select a repository to save your integration.
+8. Select a **Branch** and a **Path** of the selected repository to save your integration.
+9. **Name** and **Identifier** fields are automatically populated. Additionally, you can edit them to your preference.
+10. Select the **Technology** as `WSO2 MI`.
+11. Choose the **Integration Type** as `Integration as API` and Click **Create**.
 
 This redirects you to the overview page of the integration. Now, let's design the integration.
 
