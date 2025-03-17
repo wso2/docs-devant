@@ -8,7 +8,7 @@ The Devant cloud data plane provides two default environments (i.e., development
 
 Devant adopts a *build once, deploy many* strategy to manage integrations across multiple environments. It automatically builds an integration for each commit, which is then promoted to subsequent environments. This allows testing changes in lower, non-production environments like development before promoting the build to production.
 
-Devant injects configurations and secrets that you maintain at the environment level into integrations at runtime. This ensures a strict separation of environment-specific configurations from source code. Although configurations can vary across environments, the build artifacts remain unchanged. Configurations and secrets include:
+Devant injects configurations and secrets you maintain at the environment level into integrations at runtime. This ensures a strict separation of environment-specific configurations from source code. Although configurations can vary across environments, the build artifacts remain unchanged. Configurations and secrets include:
 
 - Resource credentials to a database, cache, or other backing services.
 - Credentials to external cloud services such as Amazon S3 or external APIs.
