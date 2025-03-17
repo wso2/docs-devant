@@ -111,6 +111,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-ai-agent/</loc>
+         <lastmod>2025-03-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wso2.com/devant/docs/quick-start-guides/schedule-your-first-automation/</loc>
          <lastmod>2025-03-17</lastmod>
          <changefreq>daily</changefreq>
