@@ -23,24 +23,30 @@ In this guide, you will:
 
 <!-- Todo finalize the names and structure -->
 ## Step 1: Attach a Git repository
-1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in. This redirects you to the **Default** project or to the project you visited last.
-2. On the project overview page, click **Attach a Git Repository**.
+1. Go to [https://console.devant.dev/new](https://console.devant.dev/new) and sign in. This opens the new integration page.
+2. On the new integration page, click **Attach a Git Repository**.
+
+    !!! tip
+        If you're using a public Git repository, you can skip ahead to sub-step 9. Click **Use a Third-Party Public Git Repository** and enter the repository URL.
+
 3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
-4. Under the **Organization** dropdown, click **+ Add**. This redirects you to the **Install WSO2 Cloud App** page.
+4. Under the **Organization**  dropdown click **+ Add**. This redirects you to the **Install WSO2 Cloud App** page.
 5. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
 
     !!! note
         The **WSO2 Cloud App** requires:
+
         - Read and write access to code and pull requests.
         - Read access to issues and metadata.
 
-        You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) at any time. Write access is used to push changes directly to your repository.
+         You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) at any time. Write access is used to push changes directly to your repository.
 
-6. Select your organization under the **Organization** dropdown. If your organization is not listed, click the Refetch button.
-7. Select a repository to save your AI Agent. Optionally, you may select a **Branch** and a **Path** of the selected repository to save your AI Agent.
-8. The **Name** and **Identifier** fields are automatically populated. Optionally, you can edit them to your preference.
-9. Select the **Technology** as `Ballerina Integrator`.
-10. Choose the **Integration Type** as `AI Agent` and click **Create**.
+6. Under the **Organization**  dropdown, select your organization. If it is still not listed, click the Refetch button.
+7. Select a repository to save your integration.
+8. Select a **Branch** and a **Path** of the selected repository to save your integration.
+9. **Name** and **Identifier** fields are automatically populated. Additionally, you can edit them to your preference.
+10. Select the **Technology** as `Ballerina Integrator`.
+11. Choose the **Integration Type** as `AI Agent` and Click **Create**.
 
 This redirects you to the overview page of the AI Agent. Now, let's develop the AI Agent.
 
@@ -61,16 +67,29 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 2. In the Ballerina Integrator design view, click **Add Artifact**.
 3. Select **AI Chat Agent** from the Constructs menu. Since **AI Agent** has been chosen from the Devant console, other options are disabled.
 4. Provide the name of the Agent as `MathTutor` and click **Create**. This directs you to the AI Chat Agent diagram view.
-5. From the left side panel, create a new function. Name it as `mult`.
-6. Create two `decimal` parameters, `a` and `b` as the **Function parameters**.
-7. Set the **Return Type** as `decimal` and click **Create**.
-8. Click the plus icon after the **Start** node to open the node panel.
-9. Select **Return** and enter the **Expression** as `a * b`.
-10. In the Agent box, click the plus icon to create a tool and click the **+ Create New Tool** on the right panel.
-11. Select the `mult` function you just created under **Current Integrations**.
-12. Provide the **Tool Name** as `getMult` and click **Save Tool**.
-13. Click the agent box and enter `Math Tutor` as the role and enter the instructions as ***"You are a school tutor assistant. Provide answers to students' questions so they can compare their answers. Use the tools when there is query related to math".*** Then click on save.
-14. From the left side panel, click **Configurations**, and add the following configurables,
+5. Click the OpenAI icon in the diagram view to configure the LLM model, and add the following configurables:
+
+    | Field                   | Value              |
+    |-------------------------|--------------------|
+    | **Select Model Family** | `AzureOpenAiModel` |
+    | **Variable Name**       | `_mathTutorModel`  |
+    | **API Key**             | `apiKey`           |
+    | **API Version**         | `apiVersion`       |
+    | **Deployment ID**       | `deploymentId`     |
+    | **Service URL**         | `serviceUrl`       |
+
+6. Click on save in order to save the configurations.
+
+7. From the left side panel, create a new function. Name it as `mult`.
+8. Create two `decimal` parameters, `a` and `b` as the **Function parameters**.
+9. Set the **Return Type** as `decimal` and click **Create**.
+10. Click the plus icon after the **Start** node to open the node panel.
+11. Select **Return** and enter the **Expression** as `a * b`.
+12. In the Agent box, click the plus icon to create a tool and click the **+ Create New Tool** on the right panel.
+13. Select the `mult` function you just created under **Current Integrations**.
+14. Provide the **Tool Name** as `getMult` and click **Save Tool**.
+15. Click the agent box and enter `Math Tutor` as the role and enter the instructions as ***"You are a school tutor assistant. Provide answers to students' questions so they can compare their answers. Use the tools when there is query related to math".*** Then click on save.
+16. From the left side panel, click **Configurations**, and add the following configurables,
 
     | Variable            | Type       |
     |---------------------|------------|
