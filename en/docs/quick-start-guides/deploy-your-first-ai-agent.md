@@ -129,5 +129,5 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
    
     <a href="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/test-agent-in-devant.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/test-agent-in-devant.gif" alt="Ballerina Integrator Icon" width="80%"></a>
 
-4. After successfully testing, you can promote your AI Agent to production by clicking **Promote** button.
+4. After successfully testing, you can promote your AI Agent to production by clicking the **Promote** button.
 5. Once deployed to production, you can access your AI Agent through the API endpoints and embed it in your applications.
