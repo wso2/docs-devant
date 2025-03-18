@@ -18,22 +18,15 @@ In this guide, you will build a simple event handler that monitors RabbitMQ for 
     - Use an existing RabbitMQ instance or start a new [RabbitMQ](https://www.rabbitmq.com/download.html) instance on a server that can be accessed via the internet.
     - Obtain the `username`, `hostname`, `password`, and `vhost` from the RabbitMQ instance to use later as environment variables.
 
-3. Fork the [integration-samples](https://github.com/wso2/integration-samples), which contains the sample integration for this guide.
-
 ## Step 1: Attach a Git repository
 
 1. Go to [https://console.devant.dev/new](https://console.devant.dev/new) and sign in. This opens the new integration page.
 2. On the new integration page, click **Attach a Git Repository**.
-3. Click **Use a Third-Party Public Git Repository** under **Authorize with GitHub** and use the following values.
-    
-    | **Field**                             | **Value**                                      |
-    |---------------------------------------|------------------------------------------------|
-    | **Third-Party Public Repository URL** | `https://github.com/wso2/integration-samples`  |
-    | **Path**                              | `/micro-integrator/RabbitMQIntegration`        |
-    | **Description**                       | `RabbitMQ integration`                         |
-
-4. Other fields are automatically populated for you. Choose the **Integration Type** as `Event Integration`.
-5. Click **Create**.
+3. Click **Use a Third-Party Public Git Repository** under **Authorize with GitHub**.
+4. Click **Try with a sample**. This will automatically pick a sample repository managed by wso2.
+5. Choose `/micro-integrator/RabbitMQIntegration` in the **Path** field.
+6. Other fields are automatically populated for you. Choose the **Integration Type** as `Event Integration`.
+7. Click **Create**.
 
 ## Step 2: Configure the event handler
 
@@ -69,6 +62,6 @@ Once you create the event handler, Devant will automatically build and deploy it
     ```
 
 2. Observe the logs:
-    - You can see the order message in the logs pane in the development card.
+    - You can view the order message in the logs pane of the development card.
 
 Now you have gained hands-on experience in creating, configuring, deploying, and testing an event handler.
