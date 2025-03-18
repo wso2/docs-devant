@@ -76,6 +76,7 @@ nav:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
       - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
       - Deploy Your First AI Agent: quick-start-guides/deploy-your-first-ai-agent.md
+      - Deploy Your First Event Handler: quick-start-guides/deploy-your-first-event-handler.md
   - Devant Samples:
       - Explore the Samples Collection:
           - Samples Overview: devant-samples/samples-overview.md
