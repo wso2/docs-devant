@@ -137,7 +137,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#this-document-will-be-available-soon" class="md-skip">
+        <a href="#deploy-your-first-event-handler" class="md-skip">
           Skip to content
         </a>
       
@@ -469,9 +469,61 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Deploy Your First Event Handler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Deploy Your First Event Handler
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-attach-a-git-repository" class="md-nav__link">
+    Step 1: Attach a Git repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-configure-the-event-handler" class="md-nav__link">
+    Step 2: Configure the event handler
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-test-the-integration" class="md-nav__link">
+    Step 3: Test the integration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -997,6 +1049,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-attach-a-git-repository" class="md-nav__link">
+    Step 1: Attach a Git repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-configure-the-event-handler" class="md-nav__link">
+    Step 2: Configure the event handler
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-test-the-integration" class="md-nav__link">
+    Step 3: Test the integration
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1026,7 +1114,102 @@
   
 
 
-<h1 id="this-document-will-be-available-soon">This document will be available soon.<a class="headerlink" href="#this-document-will-be-available-soon" title="Permanent link">&para;</a></h1>
+<h1 id="deploy-your-first-event-handler">Deploy Your First Event Handler<a class="headerlink" href="#deploy-your-first-event-handler" title="Permanent link">&para;</a></h1>
+<p>An event handler executes predefined actions in response to specific events. Devant simplifies the process of creating and deploying such integrations.</p>
+<p>This guide walks you through the steps to create and deploy an Event Handler using WSO2 MI and Devant.</p>
+<p>In this guide, you will build a simple event handler that monitors RabbitMQ for new messages and displays them once they become available.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>If signing in to Devant for the first time, create an organization:</p>
+<ol>
+<li>Go to <a href="https://console.devant.dev/">https://console.devant.dev/</a> and sign in using your preferred sign-in option.</li>
+<li>Enter a unique organization name. For example, <code>Stark Industries</code>.</li>
+<li>Read and accept the privacy policy and terms of use and click <strong>Create</strong>.</li>
+<li>Select your region and click <strong>Confirm</strong>.</li>
+</ol>
+</li>
+<li>
+<p>Set up RabbitMQ:</p>
+<ul>
+<li>Use an existing RabbitMQ instance or start a new <a href="https://www.rabbitmq.com/download.html">RabbitMQ</a> instance on a server that can be accessed via the internet.</li>
+<li>Obtain the <code>username</code>, <code>hostname</code>, <code>password</code>, and <code>vhost</code> from the RabbitMQ instance to use later as environment variables.</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-1-attach-a-git-repository">Step 1: Attach a Git repository<a class="headerlink" href="#step-1-attach-a-git-repository" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Go to <a href="https://console.devant.dev/new">https://console.devant.dev/new</a> and sign in. This opens the new integration page.</li>
+<li>On the new integration page, click <strong>Attach a Git Repository</strong>.</li>
+<li>Click <strong>Use a Third-Party Public Git Repository</strong> under <strong>Authorize with GitHub</strong>.</li>
+<li>Click <strong>Try with a sample</strong>. This will automatically pick a sample repository managed by wso2.</li>
+<li>Choose <code>/micro-integrator/RabbitMQIntegration</code> in the <strong>Path</strong> field.</li>
+<li>Other fields are automatically populated for you. Choose the <strong>Integration Type</strong> as <code>Event Integration</code>.</li>
+<li>Click <strong>Create</strong>.</li>
+</ol>
+<h2 id="step-2-configure-the-event-handler">Step 2: Configure the event handler<a class="headerlink" href="#step-2-configure-the-event-handler" title="Permanent link">&para;</a></h2>
+<p>Once you create the event handler, Devant will automatically build and deploy it to the development environment. You can now configure the event handler.</p>
+<ol>
+<li>On the Development environment card, click <strong>Configure</strong>.</li>
+<li>
+<p>In the <strong>Configure</strong> pane, click <strong>+ Add</strong> corresponding to <strong>Environment Configurations</strong> and add the following environment variables:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use the values from your RabbitMQ instance as per the <a href="#prerequisites">Prerequisites</a> section for the environment variables.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HOSTNAME</strong></td>
+<td>Hostname of your RabbitMQ server</td>
+</tr>
+<tr>
+<td><strong>VHOST</strong></td>
+<td>Virtual hostname of your RabbitMQ server</td>
+</tr>
+<tr>
+<td><strong>USERNAME</strong></td>
+<td>Username for connecting to RabbitMQ</td>
+</tr>
+<tr>
+<td><strong>PASSWORD</strong></td>
+<td>Password associated with the RabbitMQ username</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Update</strong>. This updates the event handler in the development environment.</p>
+</li>
+</ol>
+<h2 id="step-3-test-the-integration">Step 3: Test the integration<a class="headerlink" href="#step-3-test-the-integration" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Send a sales order message to the <strong>SalesOrderQueue</strong> on the RabbitMQ server. You can send a sample sales order message similar to the following:</p>
+<div class="language-json highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;12345&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&quot;customer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&quot;product&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Widget&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&quot;quantity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&quot;total_amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100.00</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+</code></pre></div>
+
+</li>
+<li>
+<p>Observe the logs:</p>
+<ul>
+<li>You can view the order message in the logs pane of the development card.</li>
+</ul>
+</li>
+</ol>
+<p>Now you have gained hands-on experience in creating, configuring, deploying, and testing an event handler.</p>
 
 
 
