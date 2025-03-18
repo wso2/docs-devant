@@ -61,9 +61,16 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 2. In the Ballerina Integrator design view, click **Add Artifact**.
 3. Select **AI Chat Agent** from the Constructs menu. Since **AI Agent** has been chosen from the Devant console, other options are disabled.
 4. Provide the name of the Agent as `MathTutor` and click **Create**. This directs you to the AI Chat Agent diagram view.
-5. From the left side panel, add a new function. Name it as `multiply`. Add two `decimal` parameters and a `decimal` return type. Add a return node with the expression `a * b`.
-6. In the Agent box, click the plus icon to create a tool. Select the `multiply` function you just created.
-7. Edit the agent and add 'Math Tutor' as role and an appropriate set of instructions. Eg: "You are a school math tutor assistant. Use the tools to provide answers to students' questions". 
+5. From the left side panel, create a new function. Name it as `mult`.
+6. Create two `decimal` parameters, `a` and `b` as the **Function parameters**.
+7. Give the **Return Type** as `decimal` and click **Create**.
+8. Click the plus icon after the **Start** node to open the node panel.
+9. Select **Return** and enter the **Expression** as `a * b`.
+10. In the Agent box, click the plus icon to create a tool and click the **+ Create New Tool** on the right panel.
+11. Select the `mult` function you just created under **Current Integrations**.
+12. Provide the **Tool Name** as `getMult` and click **Save Tool**.
+13. Edit the agent and enter `Math Tutor` as the role and an appropriate set of instructions. ***Eg: "You are a school tutor assistant. Provide answers to students' questions so they can compare their answers. Use the tools when there is query related to math".*** Then click on save.
+14. From the left side panel, create four `string` **Configurations**, `apiKey`, `apiVersion`, `deploymentId`, and `serviceUrl`. 
 
 
 ## Step 5: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself -->
