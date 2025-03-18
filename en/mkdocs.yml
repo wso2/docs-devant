@@ -23,7 +23,7 @@ site_url: https://wso2.com/devant/docs
 # Repository
 repo_name: wso2/docs-devant
 repo_url: https://github.com/wso2/docs-devant/
-edit_uri: https://github.com/wso2/docs-devant/edit/dev/en/docs/
+edit_uri: https://github.com/wso2/docs-devant/edit/main/en/docs/
 dev_addr: localhost:8000
 
 # Copyright
@@ -74,6 +74,7 @@ nav:
   - What is Devant?: index.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
+      - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
       - Deploy Your First AI Agent: quick-start-guides/deploy-your-first-ai-agent.md
   - Devant Samples:
       - Explore the Samples Collection:
