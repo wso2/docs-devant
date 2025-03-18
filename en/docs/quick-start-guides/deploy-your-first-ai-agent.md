@@ -25,8 +25,8 @@ In this guide, you will:
 ## Step 1: Attach a Git repository
 1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in. This redirects you to the **Default** project or to the project you visited last.
 2. On the project overview page, click **Attach a Git Repository**.
-3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
-4. Under the **Organization** dropdown, click **+ Add**. This redirects you to the **Install WSO2 Cloud App Stage** page.
+3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
+4. Under the **Organization** dropdown, click **+ Add**. This redirects you to the **Install WSO2 Cloud App** page.
 5. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
 
     !!! note
@@ -39,7 +39,7 @@ In this guide, you will:
 6. Select your organization under the **Organization** dropdown. If your organization is not listed, click the Refetch button.
 7. Select a repository to save your AI Agent. Optionally, you may select a **Branch** and a **Path** of the selected repository to save your AI Agent.
 8. The **Name** and **Identifier** fields are automatically populated. Optionally, you can edit them to your preference.
-9. Select the **Technology** as `Ballerina`.
+9. Select the **Technology** as `Ballerina Integrator`.
 10. Choose the **Integration Type** as `AI Agent` and click **Create**.
 
 This redirects you to the overview page of the AI Agent. Now, let's develop the AI Agent.
@@ -55,10 +55,6 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 2. Click **`Set Up Ballerina Integrator`**. The setup wizard installs and configures the [Ballerina](https://ballerina.io/) distribution required for the Ballerina Integrator.
 3. Click **`Restart VS Code`** to complete the setup.
    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
-
-???+ info "Update Ballerina Integrator's Ballerina Distribution"
-    The setup wizard installs the Ballerina distribution required for the Ballerina Integrator into the `<USER_HOME>/.ballerina/ballerina-home` directory.
-    Press `Ctrl + Shift + P` on Windows and Linux, or `Shift + ⌘ + P` on a Mac and type `Ballerina: Update Ballerina Integrator` to update the installed Ballerina distribution.
 
 ## Step 4: Develop AI Agent in VSCode
 1. Go to the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open in Ballerina Integrator.
