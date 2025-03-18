@@ -27,8 +27,8 @@ In this guide, you will:
     !!! tip
         If you're using a public Git repository, you can skip ahead to sub-step 9. Click **Use a Third-Party Public Git Repository** and enter the repository URL.
 
-3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
-4. Under the **Organization**  dropdown click **+ Add**. This redirects you to the **Install WSO2 Cloud App Stage** page.
+3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
+4. Under the **Organization**  dropdown click **+ Add**. This redirects you to the **Install WSO2 Cloud App** page.
 5. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
 
     !!! note
@@ -43,7 +43,7 @@ In this guide, you will:
 7. Select a repository to save your integration.
 8. Select a **Branch** and a **Path** of the selected repository to save your integration.
 9. **Name** and **Identifier** fields are automatically populated. Additionally, you can edit them to your preference.
-10. Select the **Technology** as `WSO2 MI`.
+10. Select the **Technology** as `Micro Integrator`.
 11. Choose the **Integration Type** as `Integration as API` and Click **Create**.
 
 This redirects you to the overview page of the integration. Now, let's design the integration.
