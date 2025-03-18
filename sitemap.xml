@@ -116,6 +116,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-event-handler/</loc>
+         <lastmod>2025-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-integration-as-api/</loc>
          <lastmod>2025-03-18</lastmod>
          <changefreq>daily</changefreq>
