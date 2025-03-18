@@ -25,7 +25,7 @@ In this guide, you will:
 2. On the new integration page, click **Attach a Git Repository**.
 
     !!! tip
-        If you're using a public Git repository, you can skip ahead to sub-step 9. Click **Use a Third-Party Public Git Repository** and enter the repository URL.
+        If you're using a public Git repository, you can skip ahead to sub-step 8. Click **Use a Third-Party Public Git Repository** and enter the repository URL.
 
 3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
 4. Under the **Organization**  dropdown click **+ Add**. This redirects you to the **Install WSO2 Cloud App** page.
@@ -177,5 +177,5 @@ Select `HelloWorldAPI`, which you have developed, and test the resource.
 5. Click **Try it out**.
 6. Click **Execute**. You will see the response from the backend service as `{"message": "Hello World!!!"}`.
 
-[//]: # (    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-integration/test-api-response.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-integration/test-api-response.gif" alt="Test API Response" width="80%"></a>  <!-- Todo Update this gif with the real one after choreo supports MI 4.4.0 -->)
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-integration/test-api-in-devant.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-integration/test-api-in-devant.gif" alt="Test API Response" width="80%"></a> 
 [//]: # (After successfully testing your service, explore other Devant features like [managing]&#40;../api-management/lifecycle-management.md&#41;, [observing]&#40;../monitoring-and-insights/observability-overview.md&#41;, and [DevOps]&#40;../devops-and-ci-cd/view-runtime-details.md&#41;.  <!-- Todo Update this with the real features -->)

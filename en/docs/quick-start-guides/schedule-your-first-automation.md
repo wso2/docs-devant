@@ -26,7 +26,7 @@ In this guide, you will:
 2. On the new integration page, click **Attach a Git Repository**.
 
     !!! tip
-        If you're using a public Git repository, you can skip ahead to sub-step 9. Click **Use a Third-Party Public Git Repository** and enter the repository URL.
+        If you're using a public Git repository, you can skip ahead to sub-step 8. Click **Use a Third-Party Public Git Repository** and enter the repository URL.
 
 3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
 4. Under the **Organization** dropdown, click **+ Add**. This redirects you to the **Install WSO2 Cloud App** page.
