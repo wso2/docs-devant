@@ -28,8 +28,8 @@ In this guide, you will:
     !!! tip
         If you're using a public Git repository, you can skip ahead to sub-step 9. Click **Use a Third-Party Public Git Repository** and enter the repository URL.
 
-3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app stage with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
-4. Under the **Organization** dropdown, click **+ Add**. This redirects you to the **Install WSO2 Cloud App Stage** page.
+3. Click **Authorize with GitHub** to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app with your GitHub account [WSO2 Cloud App](https://github.com/marketplace/choreo-apps).
+4. Under the **Organization** dropdown, click **+ Add**. This redirects you to the **Install WSO2 Cloud App** page.
 5. Select your GitHub account and install [WSO2 Cloud App](https://github.com/marketplace/choreo-apps)
 
     !!! note
@@ -44,7 +44,7 @@ In this guide, you will:
 7. Select a repository to save your integration.
 8. Select a **Branch** and a **Path** of the selected repository to save your integration.
 9. The **Name** and **Identifier** fields are automatically populated. Optionally, you can edit them to your preference.
-10. Select the **Technology** as `Ballerina`.
+10. Select the **Technology** as `Ballerina Integrator`.
 11. Choose the **Integration Type** as `Automation` and click **Create**.
 
 This redirects you to the overview page of the automation. Now, let's design the automation.
@@ -64,12 +64,8 @@ This redirects you to the overview page of the automation. Now, let's design the
 
     <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
 
-???+ info "Update Ballerina Integrator's Ballerina Distribution"
-    The setup wizard installs the Ballerina distribution required for the Ballerina Integrator into the `<USER_HOME>/.ballerina/ballerina-home` directory.
-    Press `Ctrl + Shift + P` on Windows and Linux, or `Shift + ⌘ + P` on a Mac and type `Ballerina: Update Ballerina Dev Pack` to update the installed Ballerina distribution.
-
 ## Step 4: Develop automation in VSCode
-1. Goto the Overview page of the integration you have created and click **Develop automation in VSCode**. This will clone your project and open in Ballerina Integrator.
+1. Go to the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open in Ballerina Integrator.
 2. In Ballerina Integrator design view, click **Add Artifact**.
 3. Select **Automation** from the Constructs menu. Since **Automation** is chosen from the Devant console, other options are disabled.
 4. Click **Create** to create an automation. This directs you to the automation diagram view.
