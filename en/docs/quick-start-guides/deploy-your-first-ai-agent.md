@@ -78,6 +78,8 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 2. Click **+** to stage all changes.
 3. Add an appropriate commit message and commit.
 4. Click **Sync Changes** to push the changes to remote.
+5. Go back to the **Design** view using the back arrow on the top left coner.
+5. From the right side panel, click the **View in Devant** to view this integration in Devant.
 
 ## Step 6: Test and Consume AI Agent
 1. Once you push the changes, the overview page of the Devant AI Agent will automatically refresh and show you the **Latest Commit** and automatically builds and shows the **Build Status**.
