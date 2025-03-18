@@ -91,8 +91,6 @@ This redirects you to the overview page of the integration. Now, let's design th
 
 Once you create the API, a default resource is automatically generated. You can see this default resource listed in the **Service Designer** under **Available resources**. You'll use this resource in this tutorial.
 
-## Step 3 - Design the integration
-
 ## Step 4: Design the integration
 
 Now, it's time to design your API. This underlying logic is executed behind the scenes when an API request is made. In this scenario, you first need to call the endpoint. For that, you have to add an [HTTP connection](https://mi.docs.wso2.com/en/latest/reference/connectors/http-connector/http-connector-overview/). Follow the below steps to create an HTTPS connection.
