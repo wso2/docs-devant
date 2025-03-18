@@ -75,12 +75,24 @@ nav:
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
       - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
+      - Deploy Your First AI Agent: quick-start-guides/deploy-your-first-ai-agent.md
   - Devant Samples:
       - Explore the Samples Collection:
           - Samples Overview: devant-samples/samples-overview.md
           - Quick Deploy a Sample: devant-samples/quick-deploy-a-sample.md
       - Explore the Demo Organization: devant-samples/explore-the-demo-organization.md
   - RAG Ingestion: rag-ingestion.md
+  - Devant Concepts:
+      - Resource Hierarchy: devant-concepts/resource-hierarchy.md
+      - Organization: devant-concepts/organization.md
+      - Project: devant-concepts/project.md
+      - Component: devant-concepts/integration.md
+      - Endpoint: devant-concepts/endpoint.md
+      - CI/CD: devant-concepts/ci-cd.md
+      - Deployment Tracks: devant-concepts/deployment-tracks.md
+      - Connections: devant-concepts/connections.md
+      - Data Planes: devant-concepts/data-planes.md
+      - Environments: devant-concepts/environments.md
   - Share and Reuse Integrations:
       - Create a Connection: sharing-and-reusing/create-a-connection.md
       - Use a Connection in Your Integration: sharing-and-reusing/use-a-connection-in-your-integration.md
