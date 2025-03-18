@@ -79,7 +79,6 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
     | **Service URL**         | `serviceUrl`       |
 
 6. Click on save in order to save the configurations.
-
 7. From the left side panel, create a new function. Name it as `mult`.
 8. Create two `decimal` parameters, `a` and `b` as the **Function parameters**.
 9. Set the **Return Type** as `decimal` and click **Create**.
