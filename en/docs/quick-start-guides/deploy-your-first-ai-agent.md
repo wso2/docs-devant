@@ -65,13 +65,9 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 2. In the Ballerina Integrator design view, click **Add Artifact**.
 3. Select **AI Chat Agent** from the Constructs menu. Since **AI Agent** has been chosen from the Devant console, other options are disabled.
 4. Provide the name of the Agent as `MathTutor` and click **Create**. This directs you to the AI Chat Agent diagram view.
-5. Click **Create Integration** to create the integration project.
-   <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create-integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/create-integration.gif" alt="Create Integration" width="80%"></a>
-6. In the design view, click **Add Construct**.
-7. Select **AI Chat Agent** from the Constructs menu.
-8. From the left side panel, add a new function. Name it as `multiply`. Add two `decimal` parameters and a `decimal` return type. Add a return node with the expression `a * b`.
-9. In the Agent box, click the plus icon to create a tool. Select the `multiply` function you just created.
-10. Edit the agent and add 'Math Tutor' as role and an appropriate set of instructions. Eg: "You are a school math tutor assistant. Use the tools to provide answers to students' questions". 
+5. From the left side panel, add a new function. Name it as `multiply`. Add two `decimal` parameters and a `decimal` return type. Add a return node with the expression `a * b`.
+6. In the Agent box, click the plus icon to create a tool. Select the `multiply` function you just created.
+7. Edit the agent and add 'Math Tutor' as role and an appropriate set of instructions. Eg: "You are a school math tutor assistant. Use the tools to provide answers to students' questions". 
 
 
 ## Step 5: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself -->
