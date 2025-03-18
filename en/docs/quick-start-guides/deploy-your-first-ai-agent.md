@@ -72,12 +72,12 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 13. Click the agent box and enter `Math Tutor` as the role and enter the instructions as ***"You are a school tutor assistant. Provide answers to students' questions so they can compare their answers. Use the tools when there is query related to math".*** Then click on save.
 14. From the left side panel, click **Configurations**, and add the following configurables,
 
-    | Variable          | Type     |
-    |-------------------|----------|
-    | apiKey            | string   |
-    | apiVersion        | string   |
-    | deploymentId      | string   |
-    | serviceUrl        | string   |
+    | Variable            | Type       |
+    |---------------------|------------|
+    | `apiKey`            | `string`   |
+    | `apiVersion`        | `string`   |
+    | `deploymentId`      | `string`   |
+    | `serviceUrl`        | `string`   |
 
 ## Step 5: Push to Devant <!-- Todo Update this if this is supported by the Ballerina Integrator extension itself -->
 1. Click the **Source Control** icon on the sidebar.
