@@ -67,7 +67,7 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 ## Step 4: Develop AI Agent in VSCode
 1. Go to the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open it in Ballerina Integrator.
 2. In the Ballerina Integrator design view, click **Add Artifact**.
-3. Select **AI Chat Agent** from the Constructs menu. Since **AI Agent** has been chosen from the Devant console, other options are disabled.
+3. Select **AI Chat Agent** from the Constructs menu. Choosing the **AI Agent** from the Devant console disables the other options.
 4. Provide the name of the Agent as `MathTutor` and click **Create**. This directs you to the AI Chat Agent diagram view.
 5. Click the OpenAI icon in the diagram view to configure the LLM model, and add the following configurables:
 
