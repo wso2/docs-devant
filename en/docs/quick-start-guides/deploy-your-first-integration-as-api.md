@@ -18,7 +18,7 @@ In this guide, you will:
     2. Enter a unique organization name. For example, `Stark Industries`.
     3. Read and accept the privacy policy and terms of use and Click **Create**.
     4. Select your region and click **Confirm**.
-3. VSCode: [Install VSCode](https://code.visualstudio.com/download) if you don't have it installed already.
+3. VS Code: [Install VS Code](https://code.visualstudio.com/download) if you don't have it installed already.
 
 ## Step 1: Attach a Git repository
 1. Go to [https://console.devant.dev/new](https://console.devant.dev/new) and sign in. This opens the new integration page.
@@ -49,19 +49,19 @@ In this guide, you will:
 This redirects you to the overview page of the integration. Now, let's design the integration.
 
 ## Step 2: Install the MI extension
-1. Click **Install Micro Integrator extension** on the overview page. This opens the VSCode extensions page.
-2. Click **Install** to install the extension. This installs the development environment for MI on VSCode.
+1. Click **Install Micro Integrator extension** on the overview page. This opens the VS Code extensions page.
+2. Click **Install** to install the extension. This installs the development environment for MI on VS Code.
 
-## Step 3: Develop API in VSCode
+## Step 3: Develop API in VS Code
 1. Go to the Overview page of the integration you have created and click **Develop in Micro Integrator**. This will clone your project and open it in Micro Integrator.
 
 !!! note
-    You need the following to work with the MI for VSCode extension.
+    You need the following to work with the MI for VS Code extension.
 
     - Java Development Kit (JDK) version 21
     - WSO2 Micro Integrator (MI) 4.4.0 runtime
 
-    If you don't have them installed on your local machine, the MI for VSCode extension automatically prompts you to download and configure them during the project creation step:
+    If you don't have them installed on your local machine, the MI for VS Code extension automatically prompts you to download and configure them during the project creation step:
 
     1. Click **Download Java & MI** to download and set up Java and MI runtime.
 
@@ -137,19 +137,19 @@ Now, it's time to design your API. This underlying logic is executed behind the 
 Now you have successfully designed the integration.
 
 !!! note
-    You can view the source view by clicking on the **Show Source** (`</>`) icon located in the top right corner of the VSCode.
+    You can view the source view by clicking on the **Show Source** (`</>`) icon located in the top right corner of the VS Code.
 
 ## Step 5: Run the integration artifacts
 
 Now that you have developed an integration using the MI for the Visual Studio Code plugin, it's time to deploy the integration to the MI server runtime.
 
-Click the **Build and Run** icon located in the top right corner of VSCode.
+Click the **Build and Run** icon located in the top right corner of VS Code.
 
 <a href="{{base_path}}/assets/img/get-started/deploy-your-first-integration/build-and-run-project.png"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-integration/build-and-run-project.png" alt="Build and run" width="80%"></a>
 
 ## Step 6: Test the integration service locally
 
-Now, let's test the integration service. For that, you can use the inbuilt try-it functionality in the MI for the VSCode extension.
+Now, let's test the integration service. For that, you can use the inbuilt try-it functionality in the MI for the VS Code extension.
 When you run the integration artifact as in [Step 4](#step-4-run-the-integration-artifacts), the **Runtime Services** interface opens. You can see all the available services.
 
 Select `HelloWorldAPI`, which you have developed, and test the resource.

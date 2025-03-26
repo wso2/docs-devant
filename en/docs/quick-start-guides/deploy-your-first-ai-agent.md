@@ -19,7 +19,7 @@ In this guide, you will:
     1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in using Google, GitHub, or Microsoft account.
     2. Enter a unique organization name. For example, `Stark Industries`.
     3. Read and accept the privacy policy and terms of use and click **Create**.
-3. VSCode: [Install VSCode](https://code.visualstudio.com/download) if you don't have it installed already.
+3. VS Code: [Install VS Code](https://code.visualstudio.com/download) if you don't have it installed already.
 
 ## Step 1: Attach a Git repository
 1. Go to [https://console.devant.dev/new](https://console.devant.dev/new) and sign in. This opens the new integration page.
@@ -51,8 +51,8 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 
 ## Step 2: Install the Ballerina Integrator extension
 
-1. Click **Install Ballerina Integrator extension** on the overview page. This opens the VSCode extensions page.
-2. Click **Install** to install the extension. This installs both **Ballerina Integrator** and **Ballerina** extensions on VSCode.
+1. Click **Install Ballerina Integrator extension** on the overview page. This opens the VS Code extensions page.
+2. Click **Install** to install the extension. This installs both **Ballerina Integrator** and **Ballerina** extensions on VS Code.
 
 ## Step 3: Set up Ballerina Integrator for the first time
 1. Click the Ballerina Integrator icon on the sidebar.
@@ -64,7 +64,7 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 
     <a href="{{base_path}}/assets/img/get-started/bi-setup.gif"><img src="{{base_path}}/assets/img/get-started/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
 
-## Step 4: Develop AI Agent in VSCode
+## Step 4: Develop AI Agent in VS Code
 1. Go to the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open it in Ballerina Integrator.
 2. In the Ballerina Integrator design view, click **Add Artifact**.
 3. Select **AI Chat Agent** from the Constructs menu. Choosing the **AI Agent** from the Devant console disables the other options.
