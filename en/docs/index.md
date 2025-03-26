@@ -5,7 +5,7 @@ Devant is a powerful IPaaS with first-class AI support. Incorporate AI agents in
 ## Key capabilities of Devant
 
 ### Efficient and effective development
-- **AI-Assisted Development**: Devant includes a developer friendly VSCode-based editor with an integrated AI copilot, which aids developers at every stage, from code generation to refactoring.
+- **AI-Assisted Development**: Devant includes a developer friendly VS Code-based editor with an integrated AI copilot, which aids developers at every stage, from code generation to refactoring.
 - **Unified Low-Code and Pro-Code Development**: Allows seamless transitions between low-code and pro-code development with [Ballerina Integrator](https://wso2.com/integrator/ballerina-integrator/) and [WSO2 Micro Integrator](https://wso2.com/integrator/micro-integrator/), accommodating a diverse range of developer skills and preferences.
 - **Comprehensive Protocol and AI Support**: Built-in capabilities to integrate with third-party AI services, vector databases, and support for protocols such as TCP, UDP, FILE, Websub, and Websubhub.
 - **Developer-Centric Design**: Tools and workflows tailored specifically for integration developers, enhancing debugging, testing, and issue identification.
