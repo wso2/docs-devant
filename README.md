@@ -213,7 +213,9 @@ Navigate to the location where you want to clone the repository and clone the fo
    >
    > 2. Update the `base_path` to `http://localhost:8000/` by uncommenting the entry.
    >
-   > 3. Make sure to undo this change before submitting the pull request.
+   > 3. Comment the `site_url` entry.
+   > 
+   > 4. Make sure to undo this change before submitting the pull request.
 >
 
 ## Sign the CLA

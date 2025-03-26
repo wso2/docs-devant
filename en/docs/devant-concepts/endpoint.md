@@ -5,4 +5,4 @@ An Endpoint is a network-exposed function that resides within an integration. In
 Each endpoint exposed in a component is considered a single API. Therefore, Devant allows you to do API management per endpoint for a given component. For example, you can perform lifecycle management and configure security settings per endpoint in a given component.
 
 [//]: # (Todo: Uncomment the following after the required page is completed)
-See [Configure Endpoints](../develop-components/configure-endpoints.md) to learn how to configure endpoints when developing components in Devant.
+[//]: # (See [Configure Endpoints]&#40;../develop-components/configure-endpoints.md&#41; to learn how to configure endpoints when developing components in Devant.)
