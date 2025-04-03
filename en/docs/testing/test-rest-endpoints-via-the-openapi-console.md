@@ -1,12 +1,12 @@
 # Test REST Endpoints via the OpenAPI Console
 
-Devant offers an integrated OpenAPI Console to test REST endpoints for the Service components you create and deploy. Since Devant secures REST APIs with OAuth 2.0 authentication, the OpenAPI Console generates test keys to help you test your APIs.
+Devant provides an integrated OpenAPI Console for testing REST endpoints of your deployed integrations. Since Devant secures REST APIs with OAuth 2.0 authentication, the console automatically generates test keys to facilitate API testing.
 
 Follow these steps to test a REST endpoint using the OpenAPI Console:
 
 1. Go to the [Devant Console](https://console.devant.dev/) and log in.
 2. Select the project.
-3. In the **Integrations** pane, click on the component you want to test.
+3. In the **Integrations** pane, click on the integration you want to test.
 4. Click **Test** in the left navigation menu, then select **Console**. This will open the **OpenAPI Console** pane.
 5. In the **OpenAPI Console** pane, select the desired environment from the drop-down menu.
 6. Choose the endpoint you want to test from the **Endpoint** list.
@@ -25,7 +25,7 @@ Follow these steps to test a REST endpoint using the OpenAPI Console:
     ![OpenAPI Console](../assets/img/testing/openapi-console-org.png){.cInlineImage-full}
 
 8. Expand the resource you want to test.
-9. Click the **Try it out** button to enable testing.
+9. Click **Try it out** to enable testing.
 10. Provide values for any parameters, if applicable.
 11. Click **Execute**. The response will be displayed under the **Responses** section.
 
