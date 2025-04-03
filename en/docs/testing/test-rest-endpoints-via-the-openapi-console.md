@@ -11,7 +11,7 @@ Follow these steps to test a REST endpoint using the OpenAPI Console:
 5. In the **OpenAPI Console** pane, choose the endpoint you want to test from the **Endpoint** list.
 
     !!! note
-        - The **Network Visibility** of an endpoint is configured in the `component.yaml` file. You can set it to `Public`, `Organization`, or `Project`.
+        - The **Network Visibility** of an endpoint is configured in the Configurations Drawer, which appears when you click `Configure` in a specific environment on the Integration Overview page. You can set the visibility to `Public`, `Organization`, or `Project`.
         - If the **Network Visibility** is set to `Public`, skip to step 7.
         - If the **Network Visibility** is set to `Organization`, the endpoint remains private. However, Devant lets you generate a temporary, publicly accessible test URL (secured with OAuth 2.0) for testing. This URL stays active for 15 minutes. To generate it, proceed to step 6.
 
