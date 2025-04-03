@@ -106,6 +106,8 @@ nav:
       - Add Devant-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md
   - Testing: 
       - Test REST Endpoints via the OpenAPI Console: testing/test-rest-endpoints-via-the-openapi-console.md
+  - Monitoring and Insights:
+      - Observability Overview: monitoring-and-insights/observability-overview.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
