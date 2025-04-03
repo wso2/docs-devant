@@ -13,7 +13,7 @@ The Observability dashboard allows you to:
 
 ## Logs
 
-The **Logs** pane serves as a centralized view to observe logs of the components you deploy on Devant. This facilitates rigorous troubleshooting and analysis.
+The **Logs** pane serves as a centralized view to observe logs of the integrations you deploy on Devant. This facilitates rigorous troubleshooting and analysis.
 
 ![Runtime logs](../assets/img/monitoring-and-insights/observability/runtime-logs.png){.cInlineImage-full}
 
