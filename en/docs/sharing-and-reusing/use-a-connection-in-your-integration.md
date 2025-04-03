@@ -4,7 +4,7 @@ Devant allows you to share and reuse your services, accelerating development and
 
 For step-by-step on instruction on creating a connection, see [Create a Connection](create-a-connection.md).
 
-To learn more about Devant Connections, see the documentation on [Connections](../../Devant-concepts/connections.md).
+To learn more about Devant Connections, see the documentation on [Connections](../devant-concepts/connections.md).
 
 ## Consume a service through a connection
 
