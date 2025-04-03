@@ -104,6 +104,8 @@ nav:
       - MySQL: manage-databases-and-caches/devant-managed-mysql-databases.md
       - Devant-Managed Cache: manage-databases-and-caches/devant-managed-caches.md
       - Add Devant-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md
+  - Monitoring and Insights:
+      - Observability Overview: monitoring-and-insights/observability-overview.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
