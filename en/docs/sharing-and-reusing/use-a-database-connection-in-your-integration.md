@@ -35,7 +35,7 @@ To integrate a database into your application, click the appropriate tab below b
           | resourceRef      | A unique, readable identifier of the database being connected to.    |
 
 
-    2. If you've previously added a `connectionReferences` section under `dependencies`, append this as another item under `connectionReferences`. Upon deploying the component, the necessary configurations to establish the connection will be injected into Devant-defined environment variables.
+    2. If you've previously added a `connectionReferences` section under `dependencies`, append this as another item under `connectionReferences`. Upon deploying the integration, the necessary configurations to establish the connection will be injected into Devant-defined environment variables.
 
           The following table details the Devant-defined environment variables:
 
@@ -73,7 +73,7 @@ To integrate a database into your application, click the appropriate tab below b
 === "Component.yaml file (v1.0)"
 
     !!! note
-        The `component.yaml v1.0` file is considered legacy. For new components, we recommend using the latest version, `component.yaml v1.1`, which offers enhanced usability and features.
+        The `component.yaml v1.0` file is considered legacy. For new integrations, we recommend using the latest version, `component.yaml v1.1`, which offers enhanced usability and features.
 
     1. Copy and paste the snippet from the  developer guide into the `component.yaml` file.
 
@@ -111,7 +111,7 @@ To integrate a database into your application, click the appropriate tab below b
 
     2. Replace `<YOUR_ENV_VARIABLE_NAME_HERE>` with an appropriate environment variable name of your choice. If you have previously added a service reference section under `dependencies`, append this as another item under `serviceReferences`.
 
-          Upon deploying the component, Devant automatically populates the specified environment variables with actual values.
+          Upon deploying the integration, Devant automatically populates the specified environment variables with actual values.
 
           The following table provides details on the configuration keys associated with the connection:
 
@@ -136,7 +136,7 @@ To integrate a database into your application, click the appropriate tab below b
 === "Component-config.yaml file"
 
     !!! note
-        The `component-config.yaml` file is considered legacy. For new components, we recommend using the latest version, `component.yaml v1.1`, which offers enhanced usability and features.
+        The `component-config.yaml` file is considered legacy. For new integrations, we recommend using the latest version, `component.yaml v1.1`, which offers enhanced usability and features.
 
     1. Copy and paste the snippet from the  developer guide into the `component-config` file under the `spec` section.
 
@@ -173,7 +173,7 @@ To integrate a database into your application, click the appropriate tab below b
 
     2. Replace `<YOUR_ENV_VARIABLE_NAME_HERE>` with an appropriate environment variable name of your choice. If you have previously added an outbound service reference, append this as another item under `serviceReferences`.
 
-          Upon deploying the component, Devant automatically populates the specified environment variables with actual values.
+          Upon deploying the integration, Devant automatically populates the specified environment variables with actual values.
 
 
           The following table provides details on the configuration keys associated with the connection:
@@ -243,4 +243,4 @@ connection.connect((err) => {
 
 ```
 
-By following these steps, your component can interact with the Devant-managed database seamlessly.
+By following these steps, your integration can interact with the Devant-managed database seamlessly.

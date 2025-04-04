@@ -46,4 +46,4 @@ Once the database is added to the Marketplace, it can be consumed via a connecti
 !!! note
     To remove a database or cache that you added to the Marketplace, click the corresponding **Remove from Marketplace**. This action prevents new connections to the removed database, but existing connections remain unaffected.
 
-For details on using a database connection in your component, see [Use a Database Connection in Your Component](../sharing-and-reusing/use-a-database-connection-in-your-integration.md).
+For details on using a database connection in your integration, see [Use a Database Connection in Your Integration](../sharing-and-reusing/use-a-database-connection-in-your-integration.md).

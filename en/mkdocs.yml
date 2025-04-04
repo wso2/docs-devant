@@ -87,7 +87,7 @@ nav:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
       - Organization: devant-concepts/organization.md
       - Project: devant-concepts/project.md
-      - Component: devant-concepts/integration.md
+      - Integration: devant-concepts/integration.md
       - Endpoint: devant-concepts/endpoint.md
       - CI/CD: devant-concepts/ci-cd.md
       - Deployment Tracks: devant-concepts/deployment-tracks.md
@@ -104,6 +104,8 @@ nav:
       - MySQL: manage-databases-and-caches/devant-managed-mysql-databases.md
       - Devant-Managed Cache: manage-databases-and-caches/devant-managed-caches.md
       - Add Devant-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md
+  - API Management:
+      - Lifecycle Management: api-management/lifecycle-management.md
   - Testing: 
       - Test REST Endpoints via the OpenAPI Console: testing/test-rest-endpoints-via-the-openapi-console.md
   - Monitoring and Insights:
