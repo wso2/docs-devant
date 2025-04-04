@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wso2.com/devant/docs/api-management/lifecycle-management/</loc>
+         <lastmod>2025-04-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/ci-cd/</loc>
          <lastmod>2025-04-04</lastmod>
          <changefreq>daily</changefreq>
