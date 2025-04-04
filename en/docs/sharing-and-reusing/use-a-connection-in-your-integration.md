@@ -35,7 +35,7 @@ To integrate another service into your application, click the appropriate tab be
           | resourceRef      | A unique, readable identifier of the service being connected to.    |
 
 
-    2. If you've previously added a `connectionReferences` section under `dependencies`, append this as another item under `connectionReferences`. Upon deploying the component, Devant automatically creates a subscription if applicable and the necessary configurations to establish the connection will be injected into the Devant-defined environment variables.
+    2. If you've previously added a `connectionReferences` section under `dependencies`, append this as another item under `connectionReferences`. Upon deploying the integration, Devant automatically creates a subscription if applicable and the necessary configurations to establish the connection will be injected into the Devant-defined environment variables.
       
           The following table details the Devant-defined environment variables:
 
@@ -123,7 +123,7 @@ To integrate another service into your application, click the appropriate tab be
 
     2. Replace `<YOUR_ENV_VARIABLE_NAME_HERE>` with an appropriate environment variable name of your choice. If you have previously added a service reference section under `dependencies`, append this as another item under `serviceReferences`. 
 
-          Upon deploying the component, Devant automatically creates a subscription if applicable and populates the specified environment variables with actual values.
+          Upon deploying the integration, Devant automatically creates a subscription if applicable and populates the specified environment variables with actual values.
 
 
           The following table provides details on the configuration keys associated with the connection:
@@ -186,7 +186,7 @@ To integrate another service into your application, click the appropriate tab be
 
     2. Replace `<YOUR_ENV_VARIABLE_NAME_HERE>` with an appropriate environment variable name of your choice. If you have previously added an outbound service reference, append this as another item under `serviceReferences`. 
 
-          Upon deploying the component, Devant automatically creates a subscription if applicable and populates the specified environment variables with actual values.
+          Upon deploying the integration, Devant automatically creates a subscription if applicable and populates the specified environment variables with actual values.
 
 
           The following table provides details on the configuration keys associated with the connection:

@@ -24,6 +24,6 @@ When you join the demo organization, you gain access to a comprehensive, read-on
 Key aspects you can explore include:
 
 - **Projects and integrations**: View the sample projects and their respective integrations, where each integration serves a distinct function within the customer rewards management system.
-- **Component details and architecture**: Understand the architecture by exploring how each integration is configured, including environment variables, API keys, and other dependencies that enable the required functionality.
+- **Integration details and architecture**: Understand the architecture by exploring how each integration is configured, including environment variables, API keys, and other dependencies that enable the required functionality.
 - **Build and deployment pipelines**: Inspect the build configurations and deployment history for each integration.
 - **Delivery insights, usage insights, and observability metrics**: Analyze metrics and insights for each integration.

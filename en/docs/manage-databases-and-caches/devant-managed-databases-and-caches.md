@@ -1,7 +1,7 @@
 # Devant-Managed Databases, Vector Databases, and Caches
 
 Devant allows you to create PostgreSQL and MySQL databases as well as Devant-Managed Cache instances on all major cloud providers (AWS, Azure, GCP, and DigitalOcean) as fully Devant-managed platform services.
-These databases and caches can be seamlessly provisioned to offer persistence and caching capabilities for all your Devant components. Devant provides various service plans for each type, ranging from smaller instances for development purposes to production-grade databases with automatic backups and high-availability multi-nodes.
+These databases and caches can be seamlessly provisioned to offer persistence and caching capabilities for all your Devant integrations. Devant provides various service plans for each type, ranging from smaller instances for development purposes to production-grade databases with automatic backups and high-availability multi-nodes.
 
 !!! info "Note"
     - The capability to create Devant-managed databases, vector databases, and cache services is available only for paid Devant users.
