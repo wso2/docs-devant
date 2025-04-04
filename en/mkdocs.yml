@@ -108,6 +108,8 @@ nav:
       - Test REST Endpoints via the OpenAPI Console: testing/test-rest-endpoints-via-the-openapi-console.md
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
+  - References:
+      - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
