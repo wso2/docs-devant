@@ -47,12 +47,12 @@ To create a connection to an API or a database, follow the step-by-step instruct
 
     Prerequisites:
 
-     - Create a Devant-managed database. For details, see [Devant-Managed Databases and Caches](../../manage-databases-and-caches/Devant-managed-databases-and-caches.md).
-     - Add the database to the Marketplace. For details, see [Add Devant-Managed Databases and Caches to the Marketplace](../../manage-databases-and-caches/add-Devant-managed-databases-and-caches-to-the-marketplace.md).
+     - Create a Devant-managed database. For details, see [Devant-Managed Databases and Caches](../manage-databases-and-caches/devant-managed-databases-and-caches.md).
+     - Add the database to the Marketplace. For details, see [Add Devant-Managed Databases and Caches to the Marketplace](../manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md).
 
     Follow these steps to create a connection to a Devant-managed database:
 
-    1. In the Devant Console, go to the top navigation menu and set the visibility level as [project](../../Devant-concepts/connections.md#project-connections) or [component](../../Devant-concepts/connections.md#component-connections) as follows: 
+    1. In the Devant Console, go to the top navigation menu and set the visibility level as [project](../devant-concepts/connections.md#project-connections) or [component](../devant-concepts/connections.md#component-connections) as follows: 
 
         - **Project Connection**: Select an organization and a project in that organization. 
         - **Component Connection**: Select an organization, a project in that organization, and a component in the selected project. 
