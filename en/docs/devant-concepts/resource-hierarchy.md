@@ -14,10 +14,9 @@ Data planes are connected to the organization and are available for all projects
 
 Devant allows multiple Kubernetes clusters to be associated with an environment. This enables you to build highly resilient and resource-efficient solutions that utilize multiple clusters. Devant synchronizes your integrations and workloads between associated clusters in an environment, allowing you to perform multi-cluster deployment with a single click.
 
-[//]: # (Todo: Uncomment the following line with the updated diagram)
-[//]: # (The following diagram illustrates how multiple clusters associate with different environments:)
+The following diagram illustrates how multiple clusters associate with different environments:
 
-[//]: # (![Environments and dataplanes]&#40;../assets/img/devant-concepts/environments-and-dataplanes.png&#41;{.cInlineImage-full})
+![Devant environments](../assets/img/devant-concepts/env-n-data-planes.png){.cInlineImage-full}
 
 !!! info "Note"
     It is not necessary to use a different cluster per environment. You can create multiple environments on the same cluster. The above diagram is an example of a specific solution. Your integration architecture may require a different configuration than what is depicted.
