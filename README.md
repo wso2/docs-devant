@@ -87,10 +87,6 @@ To locally execute the project, ensure that both [Python](https://www.python.org
    python3 --version
    ```
 
-   > **NOTE:**
-   >
-   > For a seamless experience and compatibility with the versions of MkDocs and other plugins we utilize, it is recommended to use Python 3.8.x, 3.9.x, or 3.10.x.
-
 3. If you don't have Python installed, download Python from the [official downloads page](https://www.python.org/downloads/) and install.
 
 4. Verify the python3 version by running the following command:
