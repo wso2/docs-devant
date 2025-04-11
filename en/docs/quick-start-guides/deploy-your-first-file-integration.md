@@ -73,9 +73,7 @@ This redirects you to the overview page of the File Integration. Now, let's deve
 
 ## Step 4: Develop File Integration in VS Code
 1. Go to the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open it in Ballerina Integrator.
-2. In the Ballerina Integrator design view, click **Add Artifact**.
-3. Select **FTP Service** from the Constructs menu. Choosing the **File Integration** from the Devant console disables the other options.
-4. From the left side panel, click **+** on the **Configurations**, and add the following configurables,
+2. From the left side panel, click **+** on the **Configurations**, and add the following configurables,
 
     | Configurable        | Type       | Default                |
     |---------------------|------------|------------------------|
@@ -83,9 +81,14 @@ This redirects you to the overview page of the File Integration. Now, let's deve
     | `ftpPassword`       | `string`   | `""`                   |
     | `ftpHost`           | `string`   | `"tgftp.nws.noaa.gov"` |
 
-5. Provide the name of the **Listener Configuration** as `WeatherListener`.
+3. Go to the **Design View** by clicking the Home icon on top left corner.
 
-6. Then expand the **Advanced Configurations** and enter the following configurables:
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/add-configurables.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/add-configurables.gif" alt="Add Configurations" width="80%"></a>
+
+4. In the Ballerina Integrator design view, click **Add Artifact**.
+5. Select **FTP Service** from the Constructs menu. Choosing the **File Integration** from the Devant console disables the other options.
+6. Provide the name of the **Listener Configuration** as `WeatherListener`.
+7. Then expand the **Advanced Configurations** and enter the following configurables:
 
     | Field                   | Value                                                          |
     |-------------------------|----------------------------------------------------------------|
@@ -97,15 +100,18 @@ This redirects you to the overview page of the File Integration. Now, let's deve
     | **FileNamePattern**     | `"(.*).TXT"`                                                   |
     | **PollingInterval**     | `10`                                                           |
 
-7. Click **Next**.
-8. Then enter the **Service Configuration** name as `WeatherListener` and click on **Create**. It will redirect you to the
+8. Click **Next**.
+9. Then enter the **Service Configuration** name as `WeatherListener` and click on **Create**. It will redirect you to the
 **Service Designer** view.
-9. Click the `+ Function` button on top right corner in the **Service Designer** view.
-10. Select the `onFileChange` as the **Available Function** and click **Save**.
-11. Then go to the **Design** view by clicking the Home icon on top left corner of the **Service Designer** view.
-12. In the **Design** view, click the `onFileChange` function box. It will redirect you to the flow diagram view.
-13. Click the plus icon after the **Start** node to open the node panel.
-14. Select **Foreach** and enter the following values in relevant fields:
+10. Click the `+ Function` button on top right corner in the **Service Designer** view.
+11. Select the `onFileChange` as the **Available Function** and click **Save**.
+12. Then go to the **Design** view by clicking the Home icon on top left corner of the **Service Designer** view.
+
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif" alt="Setup listener & service configs" width="80%"></a>
+
+13. In the **Design** view, click the `onFileChange` function box. It will redirect you to the flow diagram view.
+14. Click the plus icon after the **Start** node to open the node panel.
+15. Select **Foreach** and enter the following values in relevant fields:
 
     | Field               | Value              |
     |---------------------|--------------------|
@@ -113,7 +119,7 @@ This redirects you to the overview page of the File Integration. Now, let's deve
     | **Variable Type**   | `ftp:FileInfo`     |
     | **Collection**      | `event.addedFiles` |
 
-15. Under the **Foreach** node, add a **Declare Variable** node with the following values:
+16. Under the **Foreach** node, add a **Declare Variable** node with the following values:
 
     | Field          | Value                                  |
     |----------------|----------------------------------------|
@@ -121,7 +127,7 @@ This redirects you to the overview page of the File Integration. Now, let's deve
     | **Type**       | `stream<byte[] & readonly, io:Error?>` |
     | **Expression** | `caller->get(addedFile.pathDecoded)`   |
 
-16. Add another **Declare Variable** node with:
+17. Add another **Declare Variable** node with:
 
     | Field          | Value                             |
     |----------------|-----------------------------------|
@@ -129,10 +135,10 @@ This redirects you to the overview page of the File Integration. Now, let's deve
     | **Type**       | `record {\|byte[] value;\|}\|()`  |
     | **Expression** | `check fileStream.next()`         |
 
-17. Add an **If** node with the following condition: `content is record {| byte[] value; |}` Also, 
+18. Add an **If** node with the following condition: `content is record {| byte[] value; |}` Also, 
 click **+ Add Else Block** to define an alternative execution path.
-18. The same way, select the **Call Function** from the node panel and search for `fromBytes` and select it.
-19. Enter the following values in relevant fields and save it:
+19. The same way, select the **Call Function** from the node panel and search for `fromBytes` and select it.
+20. Enter the following values in relevant fields and save it:
 
     | Field               | Value           |
     |---------------------|-----------------|
@@ -140,7 +146,7 @@ click **+ Add Else Block** to define an alternative execution path.
     | **Variable Type**   | `string`        |
     | **Bytes**           | `content.value` |
 
-20. Next, select **Declare Variable** from the node panel and enter the following values:
+21. Next, select **Declare Variable** from the node panel and enter the following values:
 
     | Field          | Value                       |
     |----------------|-----------------------------|
@@ -148,8 +154,11 @@ click **+ Add Else Block** to define an alternative execution path.
     | **Type**       | `int\|()`                   |
     | **Expression** | `fileContent.indexOf("\n")` |
 
-21. Add another **If** node with the condition: `firstLineIndex is int`.
-22. Inside the if block (where the condition is `firstLineIndex is int`), add a **Declare Variable** node with 
+
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif" alt="Setup listener & service configs" width="80%"></a>
+
+22. Add another **If** node with the condition: `firstLineIndex is int`.
+23. Inside the if block (where the condition is `firstLineIndex is int`), add a **Declare Variable** node with 
 the following properties:
 
     | Field          | Value                                      |
@@ -158,8 +167,10 @@ the following properties:
     | **Type**       | `string`                                   |
     | **Expression** | `fileContent.substring(0, firstLineIndex)` |
 
-23. Add a **Log Info** node below the location variable. Set the **Msg** to: `"Received weather information from: " + location`.
-24. In the else block of the first if condition (which checks content is `record {| byte[] value; |}`), add a **Log Error** node. Set the **Msg** to: `"Failed to read weather content"`.
+24. Add a **Log Info** node below the location variable. Set the **Msg** to: `"Received weather information from: " + location`.
+25. In the else block of the first if condition (which checks content is `record {| byte[] value; |}`), add a **Log Error** node. Set the **Msg** to: `"Failed to read weather content"`.
+
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif" alt="Setup listener & service configs" width="80%"></a>
 
 ## Step 5: Push to Devant
 1. Click the **Source Control** icon on the sidebar.
