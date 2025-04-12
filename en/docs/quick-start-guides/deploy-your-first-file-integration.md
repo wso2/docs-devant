@@ -135,6 +135,8 @@ This redirects you to the overview page of the File Integration. Now, let's deve
     | **Type**       | `record {\|byte[] value;\|}\|()`  |
     | **Expression** | `check fileStream.next()`         |
 
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-foreach.gif" alt="Develop in VS Code foreach" width="80%"></a>
+
 18. Add an **If** node with the following condition: `content is record {| byte[] value; |}` Also, 
 click **+ Add Else Block** to define an alternative execution path.
 19. The same way, select the **Call Function** from the node panel and search for `fromBytes` and select it.
@@ -155,7 +157,7 @@ click **+ Add Else Block** to define an alternative execution path.
     | **Expression** | `fileContent.indexOf("\n")` |
 
 
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif" alt="Setup listener & service configs" width="80%"></a>
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-if-else.gif" alt="Develop in VS Code if-else" width="80%"></a>
 
 22. Add another **If** node with the condition: `firstLineIndex is int`.
 23. Inside the if block (where the condition is `firstLineIndex is int`), add a **Declare Variable** node with 
@@ -170,7 +172,7 @@ the following properties:
 24. Add a **Log Info** node below the location variable. Set the **Msg** to: `"Received weather information from: " + location`.
 25. In the else block of the first if condition (which checks content is `record {| byte[] value; |}`), add a **Log Error** node. Set the **Msg** to: `"Failed to read weather content"`.
 
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif" alt="Setup listener & service configs" width="80%"></a>
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-last-if.gif" alt="Develop in VS Code last if" width="80%"></a>
 
 ## Step 5: Push to Devant
 1. Click the **Source Control** icon on the sidebar.
