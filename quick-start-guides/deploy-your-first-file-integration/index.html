@@ -1477,8 +1477,6 @@ skip directly to <a href="#step-5-push-to-devant">Step 5: Push to Devant</a></p>
 <h2 id="step-4-develop-file-integration-in-vs-code">Step 4: Develop File Integration in VS Code<a class="headerlink" href="#step-4-develop-file-integration-in-vs-code" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Go to the Overview page of the integration you have created and click <strong>Develop in Ballerina Integrator</strong>. This will clone your project and open it in Ballerina Integrator.</li>
-<li>In the Ballerina Integrator design view, click <strong>Add Artifact</strong>.</li>
-<li>Select <strong>FTP Service</strong> from the Constructs menu. Choosing the <strong>File Integration</strong> from the Devant console disables the other options.</li>
 <li>
 <p>From the left side panel, click <strong>+</strong> on the <strong>Configurations</strong>, and add the following configurables,</p>
 <table>
@@ -1509,8 +1507,14 @@ skip directly to <a href="#step-5-push-to-devant">Step 5: Push to Devant</a></p>
 </table>
 </li>
 <li>
-<p>Provide the name of the <strong>Listener Configuration</strong> as <code>WeatherListener</code>.</p>
+<p>Go to the <strong>Design View</strong> by clicking the Home icon on top left corner.</p>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/add-configurables.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/add-configurables.gif" alt="Add Configurations" width="80%"></a></p>
 </li>
+<li>
+<p>In the Ballerina Integrator design view, click <strong>Add Artifact</strong>.</p>
+</li>
+<li>Select <strong>FTP Service</strong> from the Constructs menu. Choosing the <strong>File Integration</strong> from the Devant console disables the other options.</li>
+<li>Provide the name of the <strong>Listener Configuration</strong> as <code>WeatherListener</code>.</li>
 <li>
 <p>Then expand the <strong>Advanced Configurations</strong> and enter the following configurables:</p>
 <table>
@@ -1559,8 +1563,13 @@ skip directly to <a href="#step-5-push-to-devant">Step 5: Push to Devant</a></p>
 <strong>Service Designer</strong> view.</li>
 <li>Click the <code>+ Function</code> button on top right corner in the <strong>Service Designer</strong> view.</li>
 <li>Select the <code>onFileChange</code> as the <strong>Available Function</strong> and click <strong>Save</strong>.</li>
-<li>Then go to the <strong>Design</strong> view by clicking the Home icon on top left corner of the <strong>Service Designer</strong> view.</li>
-<li>In the <strong>Design</strong> view, click the <code>onFileChange</code> function box. It will redirect you to the flow diagram view.</li>
+<li>
+<p>Then go to the <strong>Design</strong> view by clicking the Home icon on top left corner of the <strong>Service Designer</strong> view.</p>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif" alt="Setup listener & service configs" width="80%"></a></p>
+</li>
+<li>
+<p>In the <strong>Design</strong> view, click the <code>onFileChange</code> function box. It will redirect you to the flow diagram view.</p>
+</li>
 <li>Click the plus icon after the <strong>Start</strong> node to open the node panel.</li>
 <li>
 <p>Select <strong>Foreach</strong> and enter the following values in relevant fields:</p>
@@ -1636,6 +1645,7 @@ skip directly to <a href="#step-5-push-to-devant">Step 5: Push to Devant</a></p>
 </tr>
 </tbody>
 </table>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-foreach.gif" alt="Develop in VS Code foreach" width="80%"></a></p>
 </li>
 <li>
 <p>Add an <strong>If</strong> node with the following condition: <code>content is record {| byte[] value; |}</code> Also, 
@@ -1691,6 +1701,7 @@ click <strong>+ Add Else Block</strong> to define an alternative execution path.
 </tr>
 </tbody>
 </table>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-if-else.gif" alt="Develop in VS Code if-else" width="80%"></a></p>
 </li>
 <li>
 <p>Add another <strong>If</strong> node with the condition: <code>firstLineIndex is int</code>.</p>
@@ -1724,7 +1735,10 @@ the following properties:</p>
 <li>
 <p>Add a <strong>Log Info</strong> node below the location variable. Set the <strong>Msg</strong> to: <code>"Received weather information from: " + location</code>.</p>
 </li>
-<li>In the else block of the first if condition (which checks content is <code>record {| byte[] value; |}</code>), add a <strong>Log Error</strong> node. Set the <strong>Msg</strong> to: <code>"Failed to read weather content"</code>.</li>
+<li>
+<p>In the else block of the first if condition (which checks content is <code>record {| byte[] value; |}</code>), add a <strong>Log Error</strong> node. Set the <strong>Msg</strong> to: <code>"Failed to read weather content"</code>.</p>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-last-if.gif" alt="Develop in VS Code last if" width="80%"></a></p>
+</li>
 </ol>
 <h2 id="step-5-push-to-devant">Step 5: Push to Devant<a class="headerlink" href="#step-5-push-to-devant" title="Permanent link">&para;</a></h2>
 <ol>
