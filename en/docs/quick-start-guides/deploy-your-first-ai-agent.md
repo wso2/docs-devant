@@ -4,11 +4,11 @@
 
 In this guide, you will:
 
-- Create a simple AI Agent that provides math tutoring assistance.
-- Use Ballerina Integrator to develop the AI Agent integration.
-- Push the AI Agent to Devant from Ballerina Integrator, which will automatically build and deploy it into the development environment.
-- Test the AI Agent by sending prompts.
-- Promote it to the production environment and use it as an API.
+- Create a simple AI agent that provides math tutoring assistance.
+- Use Ballerina Integrator to develop the AI agent integration.  
+- Push the AI agent to Devant from Ballerina Integrator. This will automatically build and deploy it to the development environment.
+- Test the AI agent by sending prompts.
+- Once verified, promote it to the production environment and expose it as an API.
 
 <!-- Todo add a YouTube video tutorial for this quick start -->
 
@@ -64,51 +64,8 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
 
     <a href="{{base_path}}/assets/img/get-started/bi-setup.gif"><img src="{{base_path}}/assets/img/get-started/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
 
-## Step 4: Develop AI Agent in VS Code
-1. Go to the Overview page of the integration you have created and click **Develop in Ballerina Integrator**. This will clone your project and open it in Ballerina Integrator.
-2. In the Ballerina Integrator design view, click **Add Artifact**.
-3. Select **AI Chat Agent** from the Constructs menu. Choosing the **AI Agent** from the Devant console disables the other options.
-4. Provide the name of the Agent as `MathTutor` and click **Create**. This directs you to the AI Chat Agent diagram view.
-5. Click the OpenAI icon in the diagram view to configure the LLM model, and add the following configurables:
-
-    | Field                   | Value              |
-    |-------------------------|--------------------|
-    | **Select Model Family** | `AzureOpenAiModel` |
-    | **Variable Name**       | `_mathTutorModel`  |
-    | **API Key**             | `apiKey`           |
-    | **API Version**         | `apiVersion`       |
-    | **Deployment ID**       | `deploymentId`     |
-    | **Service URL**         | `serviceUrl`       |
-
-6. Click **Save**.
-
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/initialize-agent.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/initialize-agent.gif" alt="Initialize AI Agent" width="80%"></a>
-
-7. From the left side panel, click **+** on the **Functions** to create a new function. Name it as `mult`.
-8. Click **+ Add Parameter** and add two `decimal` parameters, `a` and `b`.
-9. Set the **Return Type** as `decimal` and click **Create**.
-10. Now, let's create the function return logic. Click the plus icon after the **Start** node to open the node panel.
-11. Select **Return** and enter the **Expression** as `a * b`.
-12. Click the source icon `(<\>)` in the top right corner to view the source code of the function.
-13. Add the `isolated` keyword before the function definition to make it an isolated function.
-
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/add-function.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/add-function.gif" alt="Initialize AI Agent" width="80%"></a>
-
-14. Now, let's add the `mult` function as a tool to the AI Agent. Click `mathTutor` under **Entry Points** on the left navigation. This brings up the AI Agent diagram view.
-15. In the Agent box, click the plus icon to create a tool and click **+ Create New Tool** on the right panel.
-16. Select the `mult` function you just created under **Current Integrations**.
-17. Provide the **Tool Name** as `getMult` and click **Save Tool**.
-18. Click the agent box and enter `Math Tutor` as the role and enter the instructions as `"You are a school tutor assistant. Provide answers to students' questions so they can compare their answers. Use the tools when there is query related to math".` Then click **Save**.
-19. From the left side panel, click **+** on the **Configurations**, and add the following configurables,
-
-    | Variable            | Type       |
-    |---------------------|------------|
-    | `apiKey`            | `string`   |
-    | `apiVersion`        | `string`   |
-    | `deploymentId`      | `string`   |
-    | `serviceUrl`        | `string`   |
-
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/add-tool.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/add-tool.gif" alt="Add as a Tool" width="80%"></a>
+## Step 4: Develop the AI Agent in VS Code  
+To build your AI Agent using Ballerina Integrator, refer to the [AI Agent Integration](https://wso2.github.io/docs-bi/learn/ai-agent-integration) guide on the Learn page.
 
 ## Step 5: Push to Devant
 1. Click the **Source Control** icon on the sidebar.
@@ -125,9 +82,10 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
         The build process may take some time. Once complete, the build status changes to **Success**. You can see the Build History by clicking **Build** in the left navigation.
 
 2. Once the **Build Status** shows `Build completed`, it will be automatically deployed into the development card.
-3. Send the prompt `What is 2343282 * 392011` to test your Math Tutor agent. Even though typically LLMs are bad at large multiplication, this agent has tool support to give an accurate answer.
+3. Then, click the **Configure to Continue** button, enter the configurable values, and click **`Apply`**.
+4. Send the prompt `What is 87,657 * 67,997` to test your Math Tutor agent. Even though typically LLMs are bad at large multiplication, this agent has tool support to give an accurate answer.
    
     <a href="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/test-agent-in-devant.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/test-agent-in-devant.gif" alt="Ballerina Integrator Icon" width="80%"></a>
 
-4. After successfully testing, you can promote your AI Agent to production by clicking the **Promote** button.
-5. Once deployed to production, you can access your AI Agent through the API endpoints and embed it in your applications.
+5. After successfully testing, you can promote your AI Agent to production by clicking the **Promote** button.
+6. Once deployed to production, you can access your AI Agent through the API endpoints and embed it in your applications.
