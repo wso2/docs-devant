@@ -5,7 +5,7 @@
 In this guide, you will:
 
 - Create a simple AI agent that provides math tutoring assistance.
-- Use Ballerina Integrator to develop the AI agent integration.  
+- Use Ballerina Integrator to develop the AI agent integration.
 - Push the AI agent to Devant from Ballerina Integrator. This will automatically build and deploy it to the development environment.
 - Test the AI agent by sending prompts.
 - Once verified, promote it to the production environment and expose it as an API.
