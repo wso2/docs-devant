@@ -515,8 +515,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-develop-ai-agent-in-vs-code" class="md-nav__link">
-    Step 4: Develop AI Agent in VS Code
+  <a href="#step-4-develop-the-ai-agent-in-vs-code" class="md-nav__link">
+    Step 4: Develop the AI Agent in VS Code
   </a>
   
 </li>
@@ -1337,8 +1337,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-develop-ai-agent-in-vs-code" class="md-nav__link">
-    Step 4: Develop AI Agent in VS Code
+  <a href="#step-4-develop-the-ai-agent-in-vs-code" class="md-nav__link">
+    Step 4: Develop the AI Agent in VS Code
   </a>
   
 </li>
@@ -1392,11 +1392,11 @@
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>In this guide, you will:</p>
 <ul>
-<li>Create a simple AI Agent that provides math tutoring assistance.</li>
-<li>Use Ballerina Integrator to develop the AI Agent integration.</li>
-<li>Push the AI Agent to Devant from Ballerina Integrator, which will automatically build and deploy it into the development environment.</li>
-<li>Test the AI Agent by sending prompts.</li>
-<li>Promote it to the production environment and use it as an API.</li>
+<li>Create a simple AI agent that provides math tutoring assistance.</li>
+<li>Use Ballerina Integrator to develop the AI agent integration.  </li>
+<li>Push the AI agent to Devant from Ballerina Integrator. This will automatically build and deploy it to the development environment.</li>
+<li>Test the AI agent by sending prompts.</li>
+<li>Once verified, promote it to the production environment and expose it as an API.</li>
 </ul>
 <!-- Todo add a YouTube video tutorial for this quick start -->
 
@@ -1466,103 +1466,8 @@
 <p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/bi-setup.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a></p>
 </li>
 </ol>
-<h2 id="step-4-develop-ai-agent-in-vs-code">Step 4: Develop AI Agent in VS Code<a class="headerlink" href="#step-4-develop-ai-agent-in-vs-code" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Go to the Overview page of the integration you have created and click <strong>Develop in Ballerina Integrator</strong>. This will clone your project and open it in Ballerina Integrator.</li>
-<li>In the Ballerina Integrator design view, click <strong>Add Artifact</strong>.</li>
-<li>Select <strong>AI Chat Agent</strong> from the Constructs menu. Choosing the <strong>AI Agent</strong> from the Devant console disables the other options.</li>
-<li>Provide the name of the Agent as <code>MathTutor</code> and click <strong>Create</strong>. This directs you to the AI Chat Agent diagram view.</li>
-<li>
-<p>Click the OpenAI icon in the diagram view to configure the LLM model, and add the following configurables:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Select Model Family</strong></td>
-<td><code>AzureOpenAiModel</code></td>
-</tr>
-<tr>
-<td><strong>Variable Name</strong></td>
-<td><code>_mathTutorModel</code></td>
-</tr>
-<tr>
-<td><strong>API Key</strong></td>
-<td><code>apiKey</code></td>
-</tr>
-<tr>
-<td><strong>API Version</strong></td>
-<td><code>apiVersion</code></td>
-</tr>
-<tr>
-<td><strong>Deployment ID</strong></td>
-<td><code>deploymentId</code></td>
-</tr>
-<tr>
-<td><strong>Service URL</strong></td>
-<td><code>serviceUrl</code></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>Click <strong>Save</strong>.</p>
-<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-ai-agent/initialize-agent.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-ai-agent/initialize-agent.gif" alt="Initialize AI Agent" width="80%"></a></p>
-</li>
-<li>
-<p>From the left side panel, click <strong>+</strong> on the <strong>Functions</strong> to create a new function. Name it as <code>mult</code>.</p>
-</li>
-<li>Click <strong>+ Add Parameter</strong> and add two <code>decimal</code> parameters, <code>a</code> and <code>b</code>.</li>
-<li>Set the <strong>Return Type</strong> as <code>decimal</code> and click <strong>Create</strong>.</li>
-<li>Now, let's create the function return logic. Click the plus icon after the <strong>Start</strong> node to open the node panel.</li>
-<li>Select <strong>Return</strong> and enter the <strong>Expression</strong> as <code>a * b</code>.</li>
-<li>Click the source icon <code>(&lt;\&gt;)</code> in the top right corner to view the source code of the function.</li>
-<li>
-<p>Add the <code>isolated</code> keyword before the function definition to make it an isolated function.</p>
-<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-ai-agent/add-function.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-ai-agent/add-function.gif" alt="Initialize AI Agent" width="80%"></a></p>
-</li>
-<li>
-<p>Now, let's add the <code>mult</code> function as a tool to the AI Agent. Click <code>mathTutor</code> under <strong>Entry Points</strong> on the left navigation. This brings up the AI Agent diagram view.</p>
-</li>
-<li>In the Agent box, click the plus icon to create a tool and click <strong>+ Create New Tool</strong> on the right panel.</li>
-<li>Select the <code>mult</code> function you just created under <strong>Current Integrations</strong>.</li>
-<li>Provide the <strong>Tool Name</strong> as <code>getMult</code> and click <strong>Save Tool</strong>.</li>
-<li>Click the agent box and enter <code>Math Tutor</code> as the role and enter the instructions as <code>"You are a school tutor assistant. Provide answers to students' questions so they can compare their answers. Use the tools when there is query related to math".</code> Then click <strong>Save</strong>.</li>
-<li>
-<p>From the left side panel, click <strong>+</strong> on the <strong>Configurations</strong>, and add the following configurables,</p>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>apiKey</code></td>
-<td><code>string</code></td>
-</tr>
-<tr>
-<td><code>apiVersion</code></td>
-<td><code>string</code></td>
-</tr>
-<tr>
-<td><code>deploymentId</code></td>
-<td><code>string</code></td>
-</tr>
-<tr>
-<td><code>serviceUrl</code></td>
-<td><code>string</code></td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-ai-agent/add-tool.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-ai-agent/add-tool.gif" alt="Add as a Tool" width="80%"></a></p>
-</li>
-</ol>
+<h2 id="step-4-develop-the-ai-agent-in-vs-code">Step 4: Develop the AI Agent in VS Code<a class="headerlink" href="#step-4-develop-the-ai-agent-in-vs-code" title="Permanent link">&para;</a></h2>
+<p>To build your AI Agent using Ballerina Integrator, refer to the <a href="https://wso2.github.io/docs-bi/learn/ai-agent-integration">AI Agent Integration</a> guide on the Learn page.</p>
 <h2 id="step-5-push-to-devant">Step 5: Push to Devant<a class="headerlink" href="#step-5-push-to-devant" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Click the <strong>Source Control</strong> icon on the sidebar.</li>
@@ -1584,8 +1489,9 @@
 <li>
 <p>Once the <strong>Build Status</strong> shows <code>Build completed</code>, it will be automatically deployed into the development card.</p>
 </li>
+<li>Then, click the <strong>Configure to Continue</strong> button, enter the configurable values, and click <strong><code>Apply</code></strong>.</li>
 <li>
-<p>Send the prompt <code>What is 2343282 * 392011</code> to test your Math Tutor agent. Even though typically LLMs are bad at large multiplication, this agent has tool support to give an accurate answer.</p>
+<p>Send the prompt <code>What is 87,657 * 67,997</code> to test your Math Tutor agent. Even though typically LLMs are bad at large multiplication, this agent has tool support to give an accurate answer.</p>
 <p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-ai-agent/test-agent-in-devant.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-ai-agent/test-agent-in-devant.gif" alt="Ballerina Integrator Icon" width="80%"></a></p>
 </li>
 <li>
