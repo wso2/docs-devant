@@ -71,7 +71,9 @@ theme:
 strict: false
 # Navigation
 nav:
-  - What is Devant?: index.md
+  - Home: index.md
+  - Introduction:
+      - What is Devant?: what-is-devant.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
       - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
