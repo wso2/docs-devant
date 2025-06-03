@@ -47,7 +47,7 @@ The Organization ID serves as a unique identifier for each organization. To get 
 
 1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in. This opens the project home page.
 2. Click on the **Organization** list on the header and select your organization.
-3. In the left navigation, expand **Admin** dropdown and *click **Settings**.
+3. In the left navigation, expand **Admin** dropdown and click **Settings**.
 4. Under **Access Control**, click **Copy ID**.
 
 ## Organization Handle
@@ -56,5 +56,5 @@ The organization handle is a unique string that directly corresponds to your org
 
 1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in. This opens the project home page.
 2. Click on the **Organization** list on the header and select your organization.
-3. In the left navigation, click **Settings**.
-4. Under **Organization** click **Copy Handle**.
+3. In the left navigation, expand **Admin** dropdown and click **Settings**.
+4. Under **Access Control**, click **Copy Handle**.

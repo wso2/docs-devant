@@ -76,8 +76,8 @@ nav:
       - What is Devant?: what-is-devant.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
-      - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
       - Deploy Your First AI Agent: quick-start-guides/deploy-your-first-ai-agent.md
+      - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
       - Deploy Your First Event Handler: quick-start-guides/deploy-your-first-event-handler.md
       - Deploy Your First File Integration: quick-start-guides/deploy-your-first-file-integration.md
   - Devant Samples:
