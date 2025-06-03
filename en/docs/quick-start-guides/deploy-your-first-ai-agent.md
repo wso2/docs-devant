@@ -65,7 +65,7 @@ This redirects you to the overview page of the AI Agent. Now, let's develop the 
     <a href="{{base_path}}/assets/img/get-started/bi-setup.gif"><img src="{{base_path}}/assets/img/get-started/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a>
 
 ## Step 4: Develop the AI Agent in VS Code  
-To build your AI Agent using Ballerina Integrator, refer to the [AI Agent Integration](https://wso2.github.io/docs-bi/learn/ai-agent-integration) guide on the Learn page.
+To build your AI Agent using Ballerina Integrator, refer to the [AI Agent Integration](https://bi.docs.wso2.com/learn/ai/agents/introduction-to-inline-agents/) guide on the Learn page.
 
 ## Step 5: Push to Devant
 1. Click the **Source Control** icon on the sidebar.
