@@ -35,8 +35,8 @@ This section explains how to upgrade from the free tier to the PAYG tier.
     <a href="{{base_path}}/assets/img/references/signup-and-upgrade/review-subscription.png"><img src="{{base_path}}/assets/img/references/signup-and-upgrade/review-subscription.png" alt="Review subscription" width="80%"></a>
 
 6. Complete the upgrade by
-   - checking the box for **I agree to the terms of the payment**.
-   - selecting **Upgrade to Pay-As-You-Go Plan** to complete the process.
+    - checking the box for **I agree to the terms of the payment**.
+    - selecting **Upgrade to Pay-As-You-Go Plan** to complete the process.
 
 You’ll receive a confirmation email once your upgrade is complete.
 
