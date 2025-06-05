@@ -4,7 +4,7 @@ In Devant, an organization is a logical grouping of users and their associated r
 
 Users and resources within an organization are isolated from other organizations. Access to resources in another organization is only possible if an admin from that organization explicitly invites and adds the user as a member.
 
-## Step 1: Login into Devant
+## Step 1: Log in to Devant
 
 Go to [Devant Console](https://console.devant.dev/) and sign in using your preferred sign-in option.
 
