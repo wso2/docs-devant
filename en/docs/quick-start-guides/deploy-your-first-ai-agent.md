@@ -10,15 +10,10 @@ In this guide, you will:
 - Test the AI agent by sending prompts.
 - Once verified, promote it to the production environment and expose it as an API.
 
-<!-- Todo add a YouTube video tutorial for this quick start -->
-
 ## Prerequisites
 
 1. GitHub account: [Create a GitHub account](https://github.com/signup) if you don't have one already.
-2. If signing in to Devant for the first time, create an organization:
-    1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in using Google, GitHub, or Microsoft account.
-    2. Enter a unique organization name. For example, `Stark Industries`.
-    3. Read and accept the privacy policy and terms of use and click **Create**.
+2. If signing in to Devant for the first time, [create an organization](../references/create-an-organization.md) to begin with.
 3. VS Code: [Install VS Code](https://code.visualstudio.com/download) if you don't have it installed already.
 
 ## Step 1: Attach a Git repository

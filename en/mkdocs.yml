@@ -115,6 +115,8 @@ nav:
       - Observability Overview: monitoring-and-insights/observability-overview.md
   - References:
       - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
+      - Create an Organization: references/create-an-organization.md
+      - Sign-Up and Upgrade Guide: references/signup-and-upgrade-guide.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
