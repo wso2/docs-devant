@@ -8,7 +8,7 @@ Users and resources within an organization are isolated from other organizations
 
 Go to [Devant Console](https://console.devant.dev/) and sign in using your preferred sign-in option.
 
-## Step 2: Define name for the organization
+## Step 2: Define a name for the organization
 
 Enter a unique organization name. 
 
