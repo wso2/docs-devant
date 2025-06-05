@@ -49,7 +49,7 @@ This section explains how to upgrade from the free tier to the **Enterprise** ti
     - The [WSO2 contact form](https://wso2.com/contact/?src=devant)
 2. If you don’t have an Account Manager, WSO2 will assign one to guide you through the contracting process.
 3. After your contract is finalized [sign up](#sign-up-for-devant) for Devant if you haven’t already.
-4. Share your [Organization ID](../devant-concepts/organization/#organization-id) with your Account Manager or Technical Owner and WSO2 will complete the upgrade on your behalf.
+4. Share your [Organization ID](/devant/docs/devant-concepts/organization/#organization-id) with your Account Manager or Technical Owner and WSO2 will complete the upgrade on your behalf.
 
 ???+ note  "Use shared service email"
 
