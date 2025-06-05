@@ -8,12 +8,7 @@ In this guide, you will build a simple event handler that monitors RabbitMQ for 
 
 ## Prerequisites
 
-1. If signing in to Devant for the first time, create an organization:
-    1. Go to [https://console.devant.dev/](https://console.devant.dev/) and sign in using your preferred sign-in option.
-    2. Enter a unique organization name. For example, `Stark Industries`.
-    3. Read and accept the privacy policy and terms of use and click **Create**.
-    4. Select your region and click **Confirm**.
-
+1. If signing in to Devant for the first time, [create an organization](../references/create-an-organization.md) to begin with.
 2. Set up RabbitMQ:
     - Use an existing RabbitMQ instance or start a new [RabbitMQ](https://www.rabbitmq.com/download.html) instance on a server that can be accessed via the internet.
     - Obtain the `username`, `hostname`, `password`, and `vhost` from the RabbitMQ instance to use later as environment variables.
