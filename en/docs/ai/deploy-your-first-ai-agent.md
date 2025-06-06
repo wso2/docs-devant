@@ -80,7 +80,7 @@ To build your AI Agent using Ballerina Integrator, refer to the [AI Agent Integr
 3. Then, click the **Configure to Continue** button, enter the configurable values, and click **`Apply`**.
 4. Send the prompt `What is 87,657 * 67,997` to test your Math Tutor agent. Even though typically LLMs are bad at large multiplication, this agent has tool support to give an accurate answer.
    
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/test-agent-in-devant.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-ai-agent/test-agent-in-devant.gif" alt="Ballerina Integrator Icon" width="80%"></a>
+    <a href="{{base_path}}/assets/img/ai/deploy-your-first-ai-agent/test-agent-in-devant.gif"><img src="{{base_path}}/assets/img/ai/deploy-your-first-ai-agent/test-agent-in-devant.gif" alt="Ballerina Integrator Icon" width="80%"></a>
 
 5. After successfully testing, you can promote your AI Agent to production by clicking the **Promote** button.
 6. Once deployed to production, you can access your AI Agent through the API endpoints and embed it in your applications.
