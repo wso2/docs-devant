@@ -1,13 +1,17 @@
 ## Introduction
 
-Retrieval-Augmented Generation (RAG) is an AI framework that enhances Large Language Model (LLM) accuracy by providing contextual data sources.
+Retrieval-Augmented Generation (RAG) is an AI framework that improves how Large Language Models (LLMs) answer questions by giving them access to additional, relevant information.
+
+RAG works through two main processes, which are ingestion and retrieval.
+
+## RAG ingestion
 To make use of RAG effectively, data must be systematically ingested into vector databases. This process, known as RAG Ingestion, involves setting up a vector database, utilizing embedding models, processing source files and chunking data.
 Devant offers a platform to efficiently ingest and manage unstructured documents for RAG.
 This guide walks through the key steps of RAG Ingestion in Devant.
 
 Go to your Organization by selecting the organization from the **Organization** dropdown in the top left corner. Select **RAG Ingestion** from the **Admin** dropdown at the bottom of the left navigation. 
 
-## Step 1: Initialize Vector Store
+### Step 1: Initialize Vector Store
 
 LLMs receive contextual information as numerical vectors (embeddings). A vector database stores these embeddings for efficient retrieval.
 Devant supports a wide range of vector databases like Pinecone, Weaviate, Chroma, and so on. 
@@ -21,7 +25,7 @@ Devant supports a wide range of vector databases like Pinecone, Weaviate, Chroma
 3. Enter the **Collection Name**. The collection will be automatically created if it does not exist.
 4. Click **Next**.
 
-## Step 2: Configure the Embedding Model
+### Step 2: Configure the Embedding Model
 
 1. Select `text-embedding-ada-002` embedding model from the **Open AI** dropdown.
 2. Enter the API key in the **Embedding Model API Key** field.
@@ -31,7 +35,7 @@ Devant supports a wide range of vector databases like Pinecone, Weaviate, Chroma
 
 3. Click **Next**.
 
-## Step 3: Configure Chunking
+### Step 3: Configure Chunking
 
 Chunking is used to break large documents into manageable parts because processing them all at once is not feasible.
 **Chunking strategy**, **Max segment size**, and **Max overlap size** are automatically populated with default values. You can modify them if needed.
@@ -41,7 +45,7 @@ Chunking is used to break large documents into manageable parts because processi
     - **Max segment size** determines the maximum length of tokens for each chunk.
     - **Max overlap size** defines how many tokens repeat between consecutive chunks.
 
-## Step 4: Upload Source Files
+### Step 4: Upload Source Files
 
 Next, upload your source files (e.g., PDFs, CSVs, or text documents) for processing.
 
@@ -52,7 +56,7 @@ Next, upload your source files (e.g., PDFs, CSVs, or text documents) for process
     !!! note
         When you click **Upload** it will generate embeddings for the uploaded files and store them in the vector database.
 
-## Step 5: Verify
+### Step 5: Verify
 
 Once processing is complete, execute test queries to ensure proper data retrieval.
 
@@ -65,4 +69,10 @@ Once processing is complete, execute test queries to ensure proper data retrieva
 
 3. Click **Retrieve**. The search results will display the chunks that match the query.
    
-<a href="{{base_path}}/assets/img/rag-ingestion.gif"><img src="{{base_path}}/assets/img/rag-ingestion.gif" alt="RAG Ingestion" width="80%"></a>
+<a href="{{base_path}}/assets/img/ai/rag-ingestion.gif"><img src="{{base_path}}/assets/img/ai/rag-ingestion.gif" alt="RAG Ingestion" width="80%"></a>
+
+## RAG retrieval
+
+After completing the RAG ingestion process, you need to implement a rag retrieval to connect your vector database with user queries and generate responses.
+
+For detailed implementation steps and configuration, refer to the [RAG retrieval](https://bi.docs.wso2.com/learn/ai/rag/build-a-rag-application/#rag-retrieval) tutorial in the Ballerina Integrator documentation.
