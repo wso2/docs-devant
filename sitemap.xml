@@ -2,187 +2,187 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wso2.com/devant/docs/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/page-not-found/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://wso2.com/devant/docs/rag-ingestion/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/what-is-devant/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/administer/inviting-members/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/ai/deploy-your-first-ai-agent/</loc>
+         <lastmod>2025-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/ai/rag-application/</loc>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/api-management/lifecycle-management/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/ci-cd/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/connections/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/data-planes/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/deployment-tracks/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/endpoint/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/environments/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/integration/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/organization/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/project/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/resource-hierarchy/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-samples/explore-the-demo-organization/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-samples/quick-deploy-a-sample/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/devant-samples/samples-overview/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/manage-databases-and-caches/devant-managed-caches/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/manage-databases-and-caches/devant-managed-databases-and-caches/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/manage-databases-and-caches/devant-managed-mysql-databases/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/manage-databases-and-caches/devant-managed-postgresql-databases/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/monitoring-and-insights/observability-overview/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-ai-agent/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-event-handler/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-file-integration/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-integration-as-api/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/quick-start-guides/schedule-your-first-automation/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/references/create-an-organization/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/references/devant-platform-services-billing-and-upgrades/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/references/signup-and-upgrade-guide/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/sharing-and-reusing/create-a-connection/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/sharing-and-reusing/use-a-connection-in-your-integration/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/sharing-and-reusing/use-a-database-connection-in-your-integration/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wso2.com/devant/docs/testing/test-rest-endpoints-via-the-openapi-console/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
