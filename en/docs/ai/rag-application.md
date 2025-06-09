@@ -69,7 +69,7 @@ Once processing is complete, execute test queries to ensure proper data retrieva
 
 3. Click **Retrieve**. The search results will display the chunks that match the query.
    
-<a href="{{base_path}}/assets/img/ai/rag-ingestion.gif"><img src="{{base_path}}/assets/img/ai/rag-ingestion.gif" alt="RAG Ingestion" width="80%"></a>
+    <a href="{{base_path}}/assets/img/ai/rag-application/rag-ingestion.gif"><img src="{{base_path}}/assets/img/ai/rag-application/rag-ingestion.gif" alt="RAG Ingestion" width="80%"></a>
 
 !!! note  
     Follow this detailed tutorial [video](https://www.youtube.com/watch?v=8GlrHYS-EYI&list=PLp0TUr0bmhX4colDnjhEKAnZ3RmjCv5y2&ab_channel=WSO2) to understand how to set up the RAG ingestion and create your vector index.
