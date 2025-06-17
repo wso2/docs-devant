@@ -71,7 +71,7 @@ This redirects you to the **Create New Integration in VS Code** page.
 5. Go back to the **Design** view using the back arrow in the top left corner.
 6. From the right side panel, click the **View in Devant** to view this integration in Devant.
 
-## Step 3: Test the integration
+## Step 5: Test the integration
 
 1. Once you push the changes, the overview page of the Devant File Integration will automatically refresh and show you the **Latest Commit** and automatically build and show the **Build Status**.
 

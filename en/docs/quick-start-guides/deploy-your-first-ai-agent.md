@@ -29,11 +29,11 @@ This redirects you to the **Create New Integration in VS Code** page.
 1. Intall WSO2 Integrator: BI extension. Refer [Install and Set Up WSO2 Integrator: BI](../references/install-and-setup-wso2-integrator-bi.md) for more details.
 2. Click **Develop in WSO2 Integrator: BI**. This will clone your integration project and open it in BI.
 
-## Step 4: Develop the AI Agent in WSO2 Integrator: BI  
+## Step 3: Develop the AI Agent in WSO2 Integrator: BI  
 
 To build your AI Agent using WSO2 Integrator: BI, refer to the [AI Agent Integration](https://bi.docs.wso2.com/learn/ai/agents/introduction-to-inline-agents/) guide on the Learn page.
 
-## Step 5: Push to Devant
+## Step 4: Push to Devant
 
 1. Click the **Source Control** icon on the sidebar.
 2. Click **+** to stage all changes.
@@ -42,7 +42,7 @@ To build your AI Agent using WSO2 Integrator: BI, refer to the [AI Agent Integra
 5. Go back to the **Design** view using the back arrow in the top left corner.
 6. From the right side panel, click the **View in Devant** to view this integration in Devant.
 
-## Step 6: Test AI Agent
+## Step 5: Test AI Agent
 
 1. Once you push the changes, the overview page of the Devant AI Agent will automatically refresh and show you the **Latest Commit** and automatically build and show the **Build Status**.
 
