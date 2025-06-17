@@ -76,8 +76,9 @@ nav:
       - What is Devant?: what-is-devant.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
+      - Deploy Your First AI Agent: quick-start-guides/deploy-your-first-ai-agent.md
       - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
-      - Deploy Your First Event Handler: quick-start-guides/deploy-your-first-event-handler.md
+      - Deploy Your First Event Integration: quick-start-guides/deploy-your-first-event-integration.md
       - Deploy Your First File Integration: quick-start-guides/deploy-your-first-file-integration.md
   - Devant Samples:
       - Explore the Samples Collection:
@@ -85,7 +86,6 @@ nav:
           - Quick Deploy a Sample: devant-samples/quick-deploy-a-sample.md
       - Explore the Demo Organization: devant-samples/explore-the-demo-organization.md
   - AI:
-      - Deploy Your First AI Agent:  ai/deploy-your-first-ai-agent.md
       - RAG Application: ai/rag-application.md
   - Devant Concepts:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
@@ -115,8 +115,10 @@ nav:
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
   - References:
-      - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
       - Create an Organization: references/create-an-organization.md
+      - Attach a Repository: references/attach-a-repository.md
+      - "Install and Set Up WSO2 Integrator: BI": references/install-and-setup-wso2-integrator-bi.md
+      - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
       - Sign-Up and Upgrade Guide: references/signup-and-upgrade-guide.md
 # Extensions
 markdown_extensions:
