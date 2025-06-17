@@ -76,7 +76,6 @@ nav:
       - What is Devant?: what-is-devant.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
-      - Deploy Your First AI Agent: quick-start-guides/deploy-your-first-ai-agent.md
       - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
       - Deploy Your First Event Integration: quick-start-guides/deploy-your-first-event-integration.md
       - Deploy Your First File Integration: quick-start-guides/deploy-your-first-file-integration.md
@@ -86,6 +85,7 @@ nav:
           - Quick Deploy a Sample: devant-samples/quick-deploy-a-sample.md
       - Explore the Demo Organization: devant-samples/explore-the-demo-organization.md
   - AI:
+      - Deploy Your First AI Agent: ai/deploy-your-first-ai-agent.md
       - RAG Application: ai/rag-application.md
   - Devant Concepts:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
