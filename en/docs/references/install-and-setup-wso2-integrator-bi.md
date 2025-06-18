@@ -31,4 +31,3 @@
 1. Click **Develop in WSO2 Integrator: BI**. This will clone your integration project and open it in BI.
  
     ![Design Integration](../assets/img/references/setup-wso2-integrator-bi/develop-in-bi.png)
-
