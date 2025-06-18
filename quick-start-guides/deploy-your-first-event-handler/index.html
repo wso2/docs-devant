@@ -26,7 +26,7 @@
     
     
       
-        <title>Deploy Your First Event Handler - </title>
+        <title>Deploy Your First Event Integration - </title>
       
     
     
@@ -137,7 +137,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploy-your-first-event-handler" class="md-skip">
+        <a href="#deploy-your-first-event-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -182,7 +182,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deploy Your First Event Handler
+              Deploy Your First Event Integration
             
           </span>
         </div>
@@ -507,12 +507,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Deploy Your First Event Handler
+          Deploy Your First Event Integration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Deploy Your First Event Handler
+        Deploy Your First Event Integration
       </a>
       
         
@@ -538,22 +538,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-attach-a-git-repository" class="md-nav__link">
-    Step 1: Attach a Git repository
+  <a href="#step-1-create-the-new-integration" class="md-nav__link">
+    Step 1: Create the new integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-configure-the-event-handler" class="md-nav__link">
-    Step 2: Configure the event handler
+  <a href="#step-2-install-the-wso2-integrator-bi-extension-and-open-the-integration" class="md-nav__link">
+    Step 2: Install the WSO2 Integrator: BI extension and open the integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-test-the-integration" class="md-nav__link">
-    Step 3: Test the integration
+  <a href="#step-3-develop-event-integration-in-wso2-integrator-bi" class="md-nav__link">
+    Step 3: Develop Event Integration in WSO2 Integrator: BI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-push-to-devant" class="md-nav__link">
+    Step 4: Push to Devant
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-test-the-integration" class="md-nav__link">
+    Step 5: Test the integration
   </a>
   
 </li>
@@ -1320,8 +1334,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../references/devant-platform-services-billing-and-upgrades/" class="md-nav__link">
-        Devant Platform Service Billing and Upgrades
+      <a href="../../references/create-an-organization/" class="md-nav__link">
+        Create an Organization
       </a>
     </li>
   
@@ -1334,8 +1348,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../../references/create-an-organization/" class="md-nav__link">
-        Create an Organization
+      <a href="../../references/attach-a-repository/" class="md-nav__link">
+        Attach a Repository
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/install-and-setup-wso2-integrator-bi/" class="md-nav__link">
+        Install and Set Up WSO2 Integrator: BI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/devant-platform-services-billing-and-upgrades/" class="md-nav__link">
+        Devant Platform Service Billing and Upgrades
       </a>
     </li>
   
@@ -1396,22 +1438,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-attach-a-git-repository" class="md-nav__link">
-    Step 1: Attach a Git repository
+  <a href="#step-1-create-the-new-integration" class="md-nav__link">
+    Step 1: Create the new integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-configure-the-event-handler" class="md-nav__link">
-    Step 2: Configure the event handler
+  <a href="#step-2-install-the-wso2-integrator-bi-extension-and-open-the-integration" class="md-nav__link">
+    Step 2: Install the WSO2 Integrator: BI extension and open the integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-test-the-integration" class="md-nav__link">
-    Step 3: Test the integration
+  <a href="#step-3-develop-event-integration-in-wso2-integrator-bi" class="md-nav__link">
+    Step 3: Develop Event Integration in WSO2 Integrator: BI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-push-to-devant" class="md-nav__link">
+    Step 4: Push to Devant
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-test-the-integration" class="md-nav__link">
+    Step 5: Test the integration
   </a>
   
 </li>
@@ -1447,74 +1503,128 @@
   
 
 
-<h1 id="deploy-your-first-event-handler">Deploy Your First Event Handler<a class="headerlink" href="#deploy-your-first-event-handler" title="Permanent link">&para;</a></h1>
-<p>An event handler executes predefined actions in response to specific events. Devant simplifies the process of creating and deploying such integrations.</p>
-<p>This guide walks you through the steps to create and deploy an Event Handler using WSO2 MI and Devant.</p>
-<p>In this guide, you will build a simple event handler that monitors RabbitMQ for new messages and displays them once they become available.</p>
+<h1 id="deploy-your-first-event-integration">Deploy Your First Event Integration<a class="headerlink" href="#deploy-your-first-event-integration" title="Permanent link">&para;</a></h1>
+<p>An event handle executes predefined actions in response to specific events. Devant simplifies the process of creating and deploying such integrations.</p>
+<p>This guide walks you through the steps to create and deploy an event integration using WSO2 Integrator:BI and Devant.</p>
+<p>In this guide, you will build a simple event integration that monitors RabbitMQ for new messages and displays them once they become available.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ol>
+<li>GitHub account: <a href="https://github.com/signup">Create a GitHub account</a> if you don't have one already.</li>
 <li>If signing in to Devant for the first time, <a href="../../references/create-an-organization/">create an organization</a> to begin with.</li>
+<li>VS Code: <a href="https://code.visualstudio.com/download">Install VS Code</a> if you don't have it installed already.</li>
 <li>Set up RabbitMQ:<ul>
 <li>Use an existing RabbitMQ instance or start a new <a href="https://www.rabbitmq.com/download.html">RabbitMQ</a> instance on a server that can be accessed via the internet.</li>
-<li>Obtain the <code>username</code>, <code>hostname</code>, <code>password</code>, and <code>vhost</code> from the RabbitMQ instance to use later as environment variables.</li>
+<li>Obtain the <code>host</code>, <code>port</code>, <code>username</code>, and <code>password</code> from the RabbitMQ instance.</li>
 </ul>
 </li>
 </ol>
-<h2 id="step-1-attach-a-git-repository">Step 1: Attach a Git repository<a class="headerlink" href="#step-1-attach-a-git-repository" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-create-the-new-integration">Step 1: Create the new integration<a class="headerlink" href="#step-1-create-the-new-integration" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Go to <a href="https://console.devant.dev/new">https://console.devant.dev/new</a> and sign in. This opens the new integration page.</li>
-<li>On the new integration page, click <strong>Attach a Git Repository</strong>.</li>
-<li>Click <strong>Use a Third-Party Public Git Repository</strong> under <strong>Authorize with GitHub</strong>.</li>
-<li>Click <strong>Try with a sample</strong>. This will automatically pick a sample repository managed by wso2.</li>
-<li>Choose <code>/micro-integrator/RabbitMQIntegration</code> in the <strong>Path</strong> field.</li>
-<li>Other fields are automatically populated for you. Choose the <strong>Integration Type</strong> as <code>Event Integration</code>.</li>
-<li>Click <strong>Create</strong>.</li>
+<li>Attach a new repository to beign your integration. Refer <a href="../../references/attach-a-repository/">Attach a Repository</a> for more details.</li>
+<li>Select the <strong>Technology</strong> as <code>WSO2 Integrator: BI</code>.</li>
+<li>Choose the <strong>Integration Type</strong> as <code>Event Integration</code> and click <strong>Create</strong>.</li>
 </ol>
-<h2 id="step-2-configure-the-event-handler">Step 2: Configure the event handler<a class="headerlink" href="#step-2-configure-the-event-handler" title="Permanent link">&para;</a></h2>
-<p>Once you create the event handler, Devant will automatically build and deploy it to the development environment. You can now configure the event handler.</p>
+<p>This redirects you to the <strong>Create New Integration in VS Code</strong> page. </p>
+<h2 id="step-2-install-the-wso2-integrator-bi-extension-and-open-the-integration">Step 2: Install the WSO2 Integrator: BI extension and open the integration<a class="headerlink" href="#step-2-install-the-wso2-integrator-bi-extension-and-open-the-integration" title="Permanent link">&para;</a></h2>
 <ol>
-<li>On the Development environment card, click <strong>Configure</strong>.</li>
+<li>Intall WSO2 Integrator: BI extension. Refer <a href="../../references/install-and-setup-wso2-integrator-bi/">Install and Set Up WSO2 Integrator: BI</a> for more details.</li>
+<li>Click <strong>Develop in WSO2 Integrator: BI</strong>. This will clone your integration project and open it in BI.</li>
+</ol>
+<h2 id="step-3-develop-event-integration-in-wso2-integrator-bi">Step 3: Develop Event Integration in WSO2 Integrator: BI<a class="headerlink" href="#step-3-develop-event-integration-in-wso2-integrator-bi" title="Permanent link">&para;</a></h2>
+<ol>
 <li>
-<p>In the <strong>Configure</strong> pane, click <strong>+ Add</strong> corresponding to <strong>Environment Configurations</strong> and add the following environment variables:</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Use the values from your RabbitMQ instance as per the <a href="#prerequisites">Prerequisites</a> section for the environment variables.</p>
-</div>
+<p>From the left side panel, click <strong>+</strong> on the <strong>Configurations</strong>, and add the following configurables.</p>
 <table>
 <thead>
 <tr>
-<th><strong>Name</strong></th>
-<th><strong>Value</strong></th>
+<th>Configurable</th>
+<th>Type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>HOSTNAME</strong></td>
-<td>Hostname of your RabbitMQ server</td>
+<td><code>host</code></td>
+<td><code>string</code></td>
 </tr>
 <tr>
-<td><strong>VHOST</strong></td>
-<td>Virtual hostname of your RabbitMQ server</td>
+<td><code>port</code></td>
+<td><code>int</code></td>
 </tr>
 <tr>
-<td><strong>USERNAME</strong></td>
-<td>Username for connecting to RabbitMQ</td>
+<td><code>username</code></td>
+<td><code>string</code></td>
 </tr>
 <tr>
-<td><strong>PASSWORD</strong></td>
-<td>Password associated with the RabbitMQ username</td>
+<td><code>password</code></td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-event-integration/add-configurables.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-event-integration/add-configurables.gif" alt="Add Configurations" width="80%"></a></p>
+</li>
+<li>
+<p>Go to the <strong>Design View</strong> by clicking the Home icon on the top left corner and click <strong>Add Artifact</strong>.</p>
+</li>
+<li>Select <strong>RabbitMQ Event Handler</strong>. Choosing the <strong>Event Integration</strong> from the Devant console disables the other options.</li>
+<li>Provide the name of the <strong>RabbitMQ Configuration</strong> as <code>eventListener</code>.</li>
+<li>Select previously defined <code>host</code> and <code>port</code> configuration variables for the <strong>Host</strong> and <strong>Port</strong>.</li>
+<li>
+<p>Then, expand the <strong>Advanced Configurations</strong> and enter the following configurables. Then click <strong>Next</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>username</strong></td>
+<td><code>username</code></td>
+</tr>
+<tr>
+<td><strong>password</strong></td>
+<td><code>password</code></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>Click <strong>Update</strong>. This updates the event handler in the development environment.</p>
+<p>Add <code>Orders</code> as the <strong>Queue Name</strong> and click <strong>Create</strong>. If there is no queue named <code>Orders</code> in RabbitMQ server, this will create a new queue with this name. </p>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-event-integration/add-event-listener.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-event-integration/add-event-listener.gif" alt="Add Configurations" width="80%"></a></p>
+</li>
+<li>
+<p>In the <strong>Design</strong> view, click the <code>onMessage</code> function box. It will redirect you to the flow diagram view.</p>
+</li>
+<li>Click the plus icon after the <strong>Start</strong> node to open the node panel.</li>
+<li>
+<p>Add a <strong>Log Info</strong> node with the <strong>Msg</strong> as <code>message.toString()</code>. </p>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-event-integration/implement-event-handler.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-event-integration/implement-event-handler.gif" alt="Add Configurations" width="80%"></a></p>
 </li>
 </ol>
-<h2 id="step-3-test-the-integration">Step 3: Test the integration<a class="headerlink" href="#step-3-test-the-integration" title="Permanent link">&para;</a></h2>
+<h2 id="step-4-push-to-devant">Step 4: Push to Devant<a class="headerlink" href="#step-4-push-to-devant" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Click the <strong>Source Control</strong> icon on the sidebar.</li>
+<li>Click <strong>+</strong> to stage all changes.</li>
+<li>Add an appropriate commit message and commit.</li>
+<li>Click <strong>Sync Changes</strong> to push the changes to remote.</li>
+<li>Go back to the <strong>Design</strong> view using the back arrow in the top left corner.</li>
+<li>From the right side panel, click the <strong>View in Devant</strong> to view this integration in Devant.</li>
+</ol>
+<h2 id="step-5-test-the-integration">Step 5: Test the integration<a class="headerlink" href="#step-5-test-the-integration" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Send a sales order message to the <strong>SalesOrderQueue</strong> on the RabbitMQ server. You can send a sample sales order message similar to the following:</p>
+<p>Once you push the changes, the overview page of the Devant File Integration will automatically refresh and show you the <strong>Latest Commit</strong> and automatically build and show the <strong>Build Status</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The build process may take some time. Once complete, the build status changes to <strong>Success</strong>. You can see the Build History by clicking <strong>Build</strong> in the left navigation.</p>
+</div>
+</li>
+<li>
+<p>Once the <strong>Build Status</strong> shows <code>Build completed</code>, click on <code>Configure to Continue</code> and details of RabbitMQ instance.</p>
+</li>
+<li>
+<p>Send a sales order message to the <strong>Orders</strong> on the RabbitMQ server. You can send a sample sales order message similar to the following:</p>
 <div class="language-json highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;12345&quot;</span><span class="p">,</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&quot;customer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
@@ -1531,8 +1641,11 @@
 <li>You can view the order message in the logs pane of the development card.</li>
 </ul>
 </li>
+<li>
+<p>After successfully testing, you can promote your event integration to production by clicking the <strong>Promote</strong> button.</p>
+</li>
 </ol>
-<p>Now you have gained hands-on experience in creating, configuring, deploying, and testing an event handler.</p>
+<p>Now you have gained hands-on experience in creating, configuring, deploying, and testing an event integration.</p>
 
 
 

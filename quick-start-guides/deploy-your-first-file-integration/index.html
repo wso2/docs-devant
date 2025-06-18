@@ -498,7 +498,7 @@
   
     <li class="md-nav__item">
       <a href="../deploy-your-first-event-handler/" class="md-nav__link">
-        Deploy Your First Event Handler
+        Deploy Your First Event Integration
       </a>
     </li>
   
@@ -559,43 +559,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-attach-a-git-repository" class="md-nav__link">
-    Step 1: Attach a Git repository
+  <a href="#step-1-create-the-new-integration" class="md-nav__link">
+    Step 1: Create the new integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-install-the-ballerina-integrator-extension" class="md-nav__link">
-    Step 2: Install the Ballerina Integrator extension
+  <a href="#step-2-install-the-wso2-integrator-bi-extension-and-open-the-integration" class="md-nav__link">
+    Step 2: Install the WSO2 Integrator: BI extension and open the integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-set-up-ballerina-integrator-for-the-first-time" class="md-nav__link">
-    Step 3: Set up Ballerina Integrator for the first time
+  <a href="#step-3-develop-file-integration-in-wso2-integrator-bi" class="md-nav__link">
+    Step 3: Develop File Integration in WSO2 Integrator: BI
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-develop-file-integration-in-vs-code" class="md-nav__link">
-    Step 4: Develop File Integration in VS Code
+  <a href="#step-4-push-to-devant" class="md-nav__link">
+    Step 4: Push to Devant
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-5-push-to-devant" class="md-nav__link">
-    Step 5: Push to Devant
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-6-test-file-integration" class="md-nav__link">
-    Step 6: Test File Integration
+  <a href="#step-5-test-file-integration" class="md-nav__link">
+    Step 5: Test File Integration
   </a>
   
 </li>
@@ -1348,8 +1341,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../references/devant-platform-services-billing-and-upgrades/" class="md-nav__link">
-        Devant Platform Service Billing and Upgrades
+      <a href="../../references/create-an-organization/" class="md-nav__link">
+        Create an Organization
       </a>
     </li>
   
@@ -1362,8 +1355,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../../references/create-an-organization/" class="md-nav__link">
-        Create an Organization
+      <a href="../../references/attach-a-repository/" class="md-nav__link">
+        Attach a Repository
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/install-and-setup-wso2-integrator-bi/" class="md-nav__link">
+        Install and Set Up WSO2 Integrator: BI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/devant-platform-services-billing-and-upgrades/" class="md-nav__link">
+        Devant Platform Service Billing and Upgrades
       </a>
     </li>
   
@@ -1431,43 +1452,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-attach-a-git-repository" class="md-nav__link">
-    Step 1: Attach a Git repository
+  <a href="#step-1-create-the-new-integration" class="md-nav__link">
+    Step 1: Create the new integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-install-the-ballerina-integrator-extension" class="md-nav__link">
-    Step 2: Install the Ballerina Integrator extension
+  <a href="#step-2-install-the-wso2-integrator-bi-extension-and-open-the-integration" class="md-nav__link">
+    Step 2: Install the WSO2 Integrator: BI extension and open the integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-set-up-ballerina-integrator-for-the-first-time" class="md-nav__link">
-    Step 3: Set up Ballerina Integrator for the first time
+  <a href="#step-3-develop-file-integration-in-wso2-integrator-bi" class="md-nav__link">
+    Step 3: Develop File Integration in WSO2 Integrator: BI
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-develop-file-integration-in-vs-code" class="md-nav__link">
-    Step 4: Develop File Integration in VS Code
+  <a href="#step-4-push-to-devant" class="md-nav__link">
+    Step 4: Push to Devant
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-5-push-to-devant" class="md-nav__link">
-    Step 5: Push to Devant
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-6-test-file-integration" class="md-nav__link">
-    Step 6: Test File Integration
+  <a href="#step-5-test-file-integration" class="md-nav__link">
+    Step 5: Test File Integration
   </a>
   
 </li>
@@ -1507,124 +1521,71 @@
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>In this guide, you will:</p>
 <ul>
-<li>Create a FTP listener that fetches recent weather data.</li>
-<li>Use Ballerina Integrator to develop the File integration.</li>
-<li>Push the File Integration to Devant from Ballerina Integrator, which will automatically build and deploy it into the development environment.</li>
+<li>Create an FTP listener that fetches recent weather data.</li>
+<li>Use WSO2 Integrator: BI to develop the File integration.</li>
+<li>Push the File Integration to Devant from WSO2 Integrator: BI, which will automatically build and deploy it into the development environment.</li>
 <li>Test the File Integration.</li>
 <li>Promote it to the production environment and use it as an API.</li>
 </ul>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ol>
-<li>GitHub account: <a href="https://github.com/signup">Create a GitHub account</a> if you don't have one already. </li>
+<li>GitHub account: <a href="https://github.com/signup">Create a GitHub account</a> if you don't have one already.</li>
 <li>If signing in to Devant for the first time, <a href="../../references/create-an-organization/">create an organization</a> to begin with.</li>
 <li>VS Code: <a href="https://code.visualstudio.com/download">Install VS Code</a> if you don't have it installed already.</li>
 </ol>
-<h2 id="step-1-attach-a-git-repository">Step 1: Attach a Git repository<a class="headerlink" href="#step-1-attach-a-git-repository" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-create-the-new-integration">Step 1: Create the new integration<a class="headerlink" href="#step-1-create-the-new-integration" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Go to <a href="https://console.devant.dev/new">https://console.devant.dev/new</a> and sign in. This opens the new integration page.</li>
-<li>
-<p>On the new integration page, click <strong>Attach a Git Repository</strong>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you're using a public Git repository, you can skip ahead to sub-step 8. Click <strong>Use a Third-Party Public Git Repository</strong> and enter the repository URL.</p>
-</div>
-</li>
-<li>
-<p>Click <strong>Authorize with GitHub</strong> to connect Devant to your GitHub account. If you haven't connected your GitHub repository to Devant, authorize the WSO2 cloud app with your GitHub account <a href="https://github.com/marketplace/choreo-apps">WSO2 Cloud App</a>.</p>
-</li>
-<li>Under the <strong>Organization</strong>  dropdown click <strong>+ Add</strong>. This redirects you to the <strong>Install WSO2 Cloud App</strong> page.</li>
-<li>
-<p>Select your GitHub account and install <a href="https://github.com/marketplace/choreo-apps">WSO2 Cloud App</a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The <strong>WSO2 Cloud App</strong> requires:</p>
-<ul>
-<li>Read and write access to code and pull requests.</li>
-<li>Read access to issues and metadata.</li>
-</ul>
-<p>You can <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps">revoke access</a> at any time. Write access is used to push changes directly to your repository.</p>
-</div>
-</li>
-<li>
-<p>Under the <strong>Organization</strong>  dropdown, select your organization. If it is still not listed, click the Refetch button.</p>
-</li>
-<li>Select a repository to save your integration.</li>
-<li>Select a <strong>Branch</strong> and a <strong>Path</strong> of the selected repository to save your integration.</li>
-<li><strong>Name</strong> and <strong>Identifier</strong> fields are automatically populated. Additionally, you can edit them to your preference.</li>
-<li>Select the <strong>Technology</strong> as <code>Ballerina Integrator</code>.</li>
-<li>Choose the <strong>Integration Type</strong> as <code>File Integration</code> and Click <strong>Create</strong>.</li>
+<li>Attach a new repository to beign your integration. Refer <a href="../../references/attach-a-repository/">Attach a Repository</a> for more details.</li>
+<li>Select the <strong>Technology</strong> as <code>WSO2 Integrator: BI</code>.</li>
+<li>Choose the <strong>Integration Type</strong> as <code>File Integration</code> and click <strong>Create</strong>.</li>
 </ol>
-<p>This redirects you to the overview page of the File Integration. Now, let's develop the File Integration.</p>
-<h2 id="step-2-install-the-ballerina-integrator-extension">Step 2: Install the Ballerina Integrator extension<a class="headerlink" href="#step-2-install-the-ballerina-integrator-extension" title="Permanent link">&para;</a></h2>
+<p>This redirects you to the <strong>Create New Integration in VS Code</strong> page. </p>
+<h2 id="step-2-install-the-wso2-integrator-bi-extension-and-open-the-integration">Step 2: Install the WSO2 Integrator: BI extension and open the integration<a class="headerlink" href="#step-2-install-the-wso2-integrator-bi-extension-and-open-the-integration" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Click <strong>Install Ballerina Integrator extension</strong> on the overview page. This opens the VS Code extensions page.</li>
-<li>Click <strong>Install</strong> to install the extension. This installs both <strong>Ballerina Integrator</strong> and <strong>Ballerina</strong> extensions on VS Code.</li>
+<li>Intall WSO2 Integrator: BI extension. Refer <a href="../../references/install-and-setup-wso2-integrator-bi/">Install and Set Up WSO2 Integrator: BI</a> for more details.</li>
+<li>Click <strong>Develop in WSO2 Integrator: BI</strong>. This will clone your integration project and open it in BI.</li>
 </ol>
-<h2 id="step-3-set-up-ballerina-integrator-for-the-first-time">Step 3: Set up Ballerina Integrator for the first time<a class="headerlink" href="#step-3-set-up-ballerina-integrator-for-the-first-time" title="Permanent link">&para;</a></h2>
+<h2 id="step-3-develop-file-integration-in-wso2-integrator-bi">Step 3: Develop File Integration in WSO2 Integrator: BI<a class="headerlink" href="#step-3-develop-file-integration-in-wso2-integrator-bi" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Click the Ballerina Integrator icon on the sidebar.</p>
-<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/bi-icon.png"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/bi-icon.png" alt="Ballerina Integrator Icon" width="80%"></a></p>
-</li>
-<li>
-<p>Click <strong><code>Set Up Ballerina Integrator</code></strong>. The setup wizard installs and configures the <a href="https://ballerina.io/">Ballerina</a> distribution required for the Ballerina Integrator.</p>
-</li>
-<li>
-<p>Click <strong><code>Restart VS Code</code></strong> to complete the setup.</p>
-<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/bi-setup.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/bi-setup.gif" alt="Ballerina Integrator Setup" width="80%"></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you already have the integration logic configured or want to immediately push your existing changes to Devant, you can
-skip directly to <a href="#step-5-push-to-devant">Step 5: Push to Devant</a></p>
-<ul>
-<li>You can find a ready-made file integration example here: 
-<a href="https://github.com/wso2/integration-samples/tree/main/ballerina-integrator/weather-data-listener">weather-data-listener</a></li>
-</ul>
-<p>Otherwise, continue with the steps below to build the FTP-based file integration flow from scratch.</p>
-</div>
-</li>
-</ol>
-<h2 id="step-4-develop-file-integration-in-vs-code">Step 4: Develop File Integration in VS Code<a class="headerlink" href="#step-4-develop-file-integration-in-vs-code" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Go to the Overview page of the integration you have created and click <strong>Develop in Ballerina Integrator</strong>. This will clone your project and open it in Ballerina Integrator.</li>
-<li>
-<p>From the left side panel, click <strong>+</strong> on the <strong>Configurations</strong>, and add the following configurables,</p>
+<p>From the left side panel, click <strong>+</strong> on the <strong>Configurations</strong>, and add the following configurables.</p>
 <table>
 <thead>
 <tr>
 <th>Configurable</th>
 <th>Type</th>
-<th>Default</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>ftpUser</code></td>
+<td><code>host</code></td>
 <td><code>string</code></td>
-<td><code>"anonymous"</code></td>
 </tr>
 <tr>
-<td><code>ftpPassword</code></td>
+<td><code>username</code></td>
 <td><code>string</code></td>
-<td><code>""</code></td>
 </tr>
 <tr>
-<td><code>ftpHost</code></td>
+<td><code>password</code></td>
 <td><code>string</code></td>
-<td><code>"tgftp.nws.noaa.gov"</code></td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td><code>string</code></td>
+</tr>
+<tr>
+<td><code>pattern</code></td>
+<td><code>string</code></td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>Go to the <strong>Design View</strong> by clicking the Home icon on top left corner.</p>
 <p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/add-configurables.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/add-configurables.gif" alt="Add Configurations" width="80%"></a></p>
 </li>
 <li>
-<p>In the Ballerina Integrator design view, click <strong>Add Artifact</strong>.</p>
+<p>Go to the <strong>Design View</strong> by clicking the Home icon on the top left corner and click <strong>Add Artifact</strong>.</p>
 </li>
-<li>Select <strong>FTP Service</strong> from the Constructs menu. Choosing the <strong>File Integration</strong> from the Devant console disables the other options.</li>
-<li>Provide the name of the <strong>Listener Configuration</strong> as <code>WeatherListener</code>.</li>
+<li>Select <strong>FTP Service</strong>. Choosing the <strong>File Integration</strong> from the Devant console disables the other options.</li>
+<li>Provide the name of the <strong>Listener Configuration</strong> as <code>weatherListener</code>.</li>
 <li>
 <p>Then expand the <strong>Advanced Configurations</strong> and enter the following configurables:</p>
 <table>
@@ -1636,45 +1597,29 @@ skip directly to <a href="#step-5-push-to-devant">Step 5: Push to Devant</a></p>
 </thead>
 <tbody>
 <tr>
-<td><strong>Protocol</strong></td>
-<td><code>ftp:FTP</code></td>
-</tr>
-<tr>
 <td><strong>Host</strong></td>
-<td><code>ftpHost</code></td>
-</tr>
-<tr>
-<td><strong>Port</strong></td>
-<td><code>21</code></td>
+<td><code>host</code></td>
 </tr>
 <tr>
 <td><strong>Auth</strong></td>
-<td><code>{ credentials: { username: ftpUser, password: ftpPassword }}</code></td>
+<td><code>{ credentials: { username: username, password: password }}</code></td>
 </tr>
 <tr>
 <td><strong>Path</strong></td>
-<td><code>"/data/observations/metar/decoded/"</code></td>
+<td><code>path</code></td>
 </tr>
 <tr>
 <td><strong>FileNamePattern</strong></td>
-<td><code>"(.*).TXT"</code></td>
-</tr>
-<tr>
-<td><strong>PollingInterval</strong></td>
-<td><code>10</code></td>
+<td><code>pattern</code></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>Click <strong>Next</strong>.</p>
+<p>Click <strong>Next</strong>, and you will see the created listener with the name <code>weatherListener</code>. </p>
 </li>
-<li>Then enter the <strong>Service Configuration</strong> name as <code>WeatherListener</code> and click on <strong>Create</strong>. It will redirect you to the
-<strong>Service Designer</strong> view.</li>
-<li>Click the <code>+ Function</code> button on top right corner in the <strong>Service Designer</strong> view.</li>
-<li>Select the <code>onFileChange</code> as the <strong>Available Function</strong> and click <strong>Save</strong>.</li>
 <li>
-<p>Then go to the <strong>Design</strong> view by clicking the Home icon on top left corner of the <strong>Service Designer</strong> view.</p>
+<p>Then click on <strong>Create</strong>. It will redirect you to the <strong>Service Designer</strong> view.</p>
 <p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif" alt="Setup listener & service configs" width="80%"></a></p>
 </li>
 <li>
@@ -1693,11 +1638,11 @@ skip directly to <a href="#step-5-push-to-devant">Step 5: Push to Devant</a></p>
 <tbody>
 <tr>
 <td><strong>Variable Name</strong></td>
-<td><code>addedFile</code></td>
+<td><code>addFile</code></td>
 </tr>
 <tr>
 <td><strong>Variable Type</strong></td>
-<td><code>ftp:FileInfo</code></td>
+<td><code>var</code></td>
 </tr>
 <tr>
 <td><strong>Collection</strong></td>
@@ -1707,150 +1652,11 @@ skip directly to <a href="#step-5-push-to-devant">Step 5: Push to Devant</a></p>
 </table>
 </li>
 <li>
-<p>Under the <strong>Foreach</strong> node, add a <strong>Declare Variable</strong> node with the following values:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Name</strong></td>
-<td><code>fileStream</code></td>
-</tr>
-<tr>
-<td><strong>Type</strong></td>
-<td><code>stream&lt;byte[] &amp; readonly, io:Error?&gt;</code></td>
-</tr>
-<tr>
-<td><strong>Expression</strong></td>
-<td><code>caller-&gt;get(addedFile.pathDecoded)</code></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>Add another <strong>Declare Variable</strong> node with:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Name</strong></td>
-<td><code>content</code></td>
-</tr>
-<tr>
-<td><strong>Type</strong></td>
-<td><code>record {\|byte[] value;\|}\|()</code></td>
-</tr>
-<tr>
-<td><strong>Expression</strong></td>
-<td><code>check fileStream.next()</code></td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-foreach.gif" alt="Develop in VS Code foreach" width="80%"></a></p>
-</li>
-<li>
-<p>Add an <strong>If</strong> node with the following condition: <code>content is record {| byte[] value; |}</code> Also, 
-click <strong>+ Add Else Block</strong> to define an alternative execution path.</p>
-</li>
-<li>The same way, select the <strong>Call Function</strong> from the node panel and search for <code>fromBytes</code> and select it.</li>
-<li>
-<p>Enter the following values in relevant fields and save it:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Variable Name</strong></td>
-<td><code>fileContent</code></td>
-</tr>
-<tr>
-<td><strong>Variable Type</strong></td>
-<td><code>string</code></td>
-</tr>
-<tr>
-<td><strong>Bytes</strong></td>
-<td><code>content.value</code></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>Next, select <strong>Declare Variable</strong> from the node panel and enter the following values:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Name</strong></td>
-<td><code>firstLineIndex</code></td>
-</tr>
-<tr>
-<td><strong>Type</strong></td>
-<td><code>int\|()</code></td>
-</tr>
-<tr>
-<td><strong>Expression</strong></td>
-<td><code>fileContent.indexOf("\n")</code></td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-if-else.gif" alt="Develop in VS Code if-else" width="80%"></a></p>
-</li>
-<li>
-<p>Add another <strong>If</strong> node with the condition: <code>firstLineIndex is int</code>.</p>
-</li>
-<li>
-<p>Inside the if block (where the condition is <code>firstLineIndex is int</code>), add a <strong>Declare Variable</strong> node with 
-the following properties:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Name</strong></td>
-<td><code>location</code></td>
-</tr>
-<tr>
-<td><strong>Type</strong></td>
-<td><code>string</code></td>
-</tr>
-<tr>
-<td><strong>Expression</strong></td>
-<td><code>fileContent.substring(0, firstLineIndex)</code></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>Add a <strong>Log Info</strong> node below the location variable. Set the <strong>Msg</strong> to: <code>"Received weather information from: " + location</code>.</p>
-</li>
-<li>
-<p>In the else block of the first if condition (which checks content is <code>record {| byte[] value; |}</code>), add a <strong>Log Error</strong> node. Set the <strong>Msg</strong> to: <code>"Failed to read weather content"</code>.</p>
-<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/setup-listener-and-service-configs.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/develop-in-vs-code-last-if.gif" alt="Develop in VS Code last if" width="80%"></a></p>
+<p>Under the <strong>Foreach</strong> node, add a <strong>Log Info</strong> node with the <strong>Msg</strong> as <code>"File added:" + addedFiles.name</code>. </p>
+<p><a href="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/implement-onfilechange.gif"><img src="https://wso2.github.io/docs-devant/assets/img/get-started/deploy-your-first-file-integration/implement-onfilechange.gif" alt="Setup listener & service configs" width="80%"></a></p>
 </li>
 </ol>
-<h2 id="step-5-push-to-devant">Step 5: Push to Devant<a class="headerlink" href="#step-5-push-to-devant" title="Permanent link">&para;</a></h2>
+<h2 id="step-4-push-to-devant">Step 4: Push to Devant<a class="headerlink" href="#step-4-push-to-devant" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Click the <strong>Source Control</strong> icon on the sidebar.</li>
 <li>Click <strong>+</strong> to stage all changes.</li>
@@ -1859,19 +1665,51 @@ the following properties:</p>
 <li>Go back to the <strong>Design</strong> view using the back arrow in the top left corner.</li>
 <li>From the right side panel, click the <strong>View in Devant</strong> to view this integration in Devant.</li>
 </ol>
-<h2 id="step-6-test-file-integration">Step 6: Test File Integration<a class="headerlink" href="#step-6-test-file-integration" title="Permanent link">&para;</a></h2>
+<h2 id="step-5-test-file-integration">Step 5: Test File Integration<a class="headerlink" href="#step-5-test-file-integration" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Once you push the changes, the overview page of the Devant File Integration will automatically refresh and show you the <strong>Latest Commit</strong> and automatically builds and shows the <strong>Build Status</strong>.</p>
+<p>Once you push the changes, the overview page of the Devant File Integration will automatically refresh and show you the <strong>Latest Commit</strong> and automatically build and show the <strong>Build Status</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The build process may take some time. Once complete, the build status changes to <strong>Success</strong>. You can see the Build History by clicking <strong>Build</strong> in the left navigation.</p>
 </div>
 </li>
 <li>
-<p>Once the <strong>Build Status</strong> shows <code>Build completed</code>, it will be automatically deployed into the development card.</p>
+<p>Once the <strong>Build Status</strong> shows <code>Build completed</code>, click on <code>Configure to Continue</code> and add the sample FTP service details.</p>
+<table>
+<thead>
+<tr>
+<th>Configurable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>host</code></td>
+<td><code>tgftp.nws.noaa.gov</code></td>
+</tr>
+<tr>
+<td><code>username</code></td>
+<td><code>anonymous</code></td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td><code>""</code></td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td><code>/data/observations/metar/decoded/</code></td>
+</tr>
+<tr>
+<td><code>pattern</code></td>
+<td><code>(.*).TXT</code></td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>Once the deployment is successful, you can view the logs printed by the weather listener in the development card. If no logs are visible, try clicking the refresh button.</li>
+<li>
+<p>Once the deployment is successful, you can view the logs printed by the weather listener in the development card.</p>
+</li>
 <li>After successfully testing, you can promote your File Integration to production by clicking the <strong>Promote</strong> button.</li>
 <li>Once deployed to production, you can access your File Integration through the API endpoints and embed it in your applications.</li>
 </ol>
@@ -1901,7 +1739,7 @@ the following properties:</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../deploy-your-first-event-handler/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Deploy Your First Event Handler" rel="prev">
+          <a href="../deploy-your-first-event-handler/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Deploy Your First Event Integration" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1910,7 +1748,7 @@ the following properties:</p>
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                Deploy Your First Event Handler
+                Deploy Your First Event Integration
               </div>
             </div>
           </a>
