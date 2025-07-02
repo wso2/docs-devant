@@ -1212,8 +1212,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-configure-and-deploy-the-tailscale-proxy" class="md-nav__link">
-    Step 2: Configure and deploy the Tailscale proxy
+  <a href="#step-2-add-required-volume-mounts" class="md-nav__link">
+    Step 2: Add required volume mounts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-configure-and-deploy-the-component" class="md-nav__link">
+    Step 3: Configure and deploy the component
   </a>
   
 </li>
@@ -1578,8 +1585,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-configure-and-deploy-the-tailscale-proxy" class="md-nav__link">
-    Step 2: Configure and deploy the Tailscale proxy
+  <a href="#step-2-add-required-volume-mounts" class="md-nav__link">
+    Step 2: Add required volume mounts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-configure-and-deploy-the-component" class="md-nav__link">
+    Step 3: Configure and deploy the component
   </a>
   
 </li>
@@ -1832,22 +1846,22 @@
 </li>
 </ol>
 <p>Now you have successfully created the Tailscale proxy. You can proceed to configure and deploy it.</p>
-<h3 id="step-2-configure-and-deploy-the-tailscale-proxy">Step 2: Configure and deploy the Tailscale proxy<a class="headerlink" href="#step-2-configure-and-deploy-the-tailscale-proxy" title="Permanent link">&para;</a></h3>
-<p>Here, you will add the required volume mounts, set the Tailscale authentication key, configure the TCP forwarder, configure endpoints, and deploy the Tailscale proxy. Follow the steps given below:</p>
-<h4>Step 2.1: Add required volume mounts</h4>
+<h3 id="step-2-add-required-volume-mounts">Step 2: Add required volume mounts<a class="headerlink" href="#step-2-add-required-volume-mounts" title="Permanent link">&para;</a></h3>
 <p>Tailscale requires the following volume mounts for its operations:</p>
 <ul>
 <li><code>/var/run/tailscale</code></li>
 <li><code>/.local</code></li>
 </ul>
-<p>To create the volume mounts, 
-1. Click the <strong>Storage</strong> from the <strong>Admin</strong> section.
-2. Click <strong>Create</strong>.
-3. Enter a <code>Volume Name</code>, keep the default selection of <code>Empty Directory</code>, and click <code>Next</code>.
-4. Enter <code>/var/run/tailscale</code> in the <code>Mount Path</code> field and click <code>Add mount</code>.
-5. Again, enter <code>/.local</code> in the <code>Mount Path</code> field and click <code>Add mount</code>. 
-6. Click <code>Create</code>.</p>
-<h4>Step 2.2: Configure and deploy the component</h4>
+<p>To create the volume mounts, </p>
+<ol>
+<li>Click the <strong>Storage</strong> from the <strong>Admin</strong> section.</li>
+<li>Click <strong>Create</strong>.</li>
+<li>Enter a <code>Volume Name</code>, keep the default selection of <code>Empty Directory</code>, and click <code>Next</code>.</li>
+<li>Enter <code>/var/run/tailscale</code> in the <code>Mount Path</code> field and click <code>Add mount</code>.</li>
+<li>Again, enter <code>/.local</code> in the <code>Mount Path</code> field and click <code>Add mount</code>. </li>
+<li>Click <code>Create</code>.</li>
+</ol>
+<h3 id="step-3-configure-and-deploy-the-component">Step 3: Configure and deploy the component<a class="headerlink" href="#step-3-configure-and-deploy-the-component" title="Permanent link">&para;</a></h3>
 <p>To configure and deploy the component, follow the steps given below:</p>
 <ol>
 <li>In the left navigation menu, click <strong>Deploy</strong>.</li>
