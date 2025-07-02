@@ -110,6 +110,8 @@ nav:
       - Add Devant-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md
   - API Management:
       - Lifecycle Management: api-management/lifecycle-management.md
+  - Configure VPN:
+      - Configure VPNs on the Devant Cloud Data Plane: configure-vpn/configure-tailscale-vpn.md      
   - Testing: 
       - Test REST Endpoints via the OpenAPI Console: testing/test-rest-endpoints-via-the-openapi-console.md
   - Monitoring and Insights:
