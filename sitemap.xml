@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wso2.com/devant/docs/configure-vpn/configure-tailscale-vpn/</loc>
+         <lastmod>2025-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wso2.com/devant/docs/devant-concepts/ci-cd/</loc>
          <lastmod>2025-07-02</lastmod>
          <changefreq>daily</changefreq>
