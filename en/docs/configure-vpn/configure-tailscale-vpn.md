@@ -97,11 +97,7 @@ Follow the steps given below to create a project:
 
 Now you have successfully created the Tailscale proxy. You can proceed to configure and deploy it.
 
-### Step 2: Configure and deploy the Tailscale proxy
-
-Here, you will add the required volume mounts, set the Tailscale authentication key, configure the TCP forwarder, configure endpoints, and deploy the Tailscale proxy. Follow the steps given below:
-
-#### Step 2.1: Add required volume mounts
+### Step 2: Add required volume mounts
 
 Tailscale requires the following volume mounts for its operations:
 
@@ -109,6 +105,7 @@ Tailscale requires the following volume mounts for its operations:
  - `/.local`
 
 To create the volume mounts, 
+
 1. Click the **Storage** from the **Admin** section.
 2. Click **Create**.
 3. Enter a `Volume Name`, keep the default selection of `Empty Directory`, and click `Next`.
@@ -116,7 +113,7 @@ To create the volume mounts,
 5. Again, enter `/.local` in the `Mount Path` field and click `Add mount`. 
 6. Click `Create`.
 
-#### Step 2.2: Configure and deploy the component
+### Step 3: Configure and deploy the component
 
 To configure and deploy the component, follow the steps given below:
 
