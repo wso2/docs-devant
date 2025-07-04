@@ -32,7 +32,7 @@ Let's take a look at the specifics of each part to understand the deployment arc
 
 - **User applications and the Devant API gateway**
 
-    User applications within the same namespace (project) can use the Kubernetes service created to front the Tailscale proxy, for connecting to the corresponding private endpoints. You can either expose this service within the organization via the internal API gateway or expose it to the public via the external API gateway. For more details, see the documentation on [Devant endpoints](../develop-components/configure-endpoints.md).
+    User applications within the same namespace (project) can use the Kubernetes service created to front the Tailscale proxy, for connecting to the corresponding private endpoints. You can either expose this service within the organization via the internal API gateway or expose it to the public via the external API gateway. 
 
 <hr>
 
