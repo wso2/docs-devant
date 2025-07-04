@@ -1951,10 +1951,10 @@
 <h3 id="use-tailscale-acls">Use Tailscale ACLs<a class="headerlink" href="#use-tailscale-acls" title="Permanent link">&para;</a></h3>
 <p>You can use <a href="https://tailscale.com/kb/1018/acls">Tailscale ACLs</a> to precisely manage permission for users and devices on your Tailnet.</p>
 <h3 id="disable-scale-to-zero-for-the-tailscale-proxy">Disable scale-to-zero for the Tailscale proxy<a class="headerlink" href="#disable-scale-to-zero-for-the-tailscale-proxy" title="Permanent link">&para;</a></h3>
-<p>It is recommended to disable <a href="./autoscale/autoscale-components-with-scale-to-zero.md">Scale-to-Zero</a> for the Tailscale proxy because it acts as a forward proxy and should always be up and running to make consistent connections with the Tailscale VPN mesh.
+<p>It is recommended to disable Scale-to-Zero for the Tailscale proxy because it acts as a forward proxy and should always be up and running to make consistent connections with the Tailscale VPN mesh.
 If you enable Scale-to-Zero, you may experience service downtime.</p>
 <h3 id="run-multiple-replicas-with-hpa-horizontal-pod-autoscaler">Run multiple replicas with HPA (horizontal pod autoscaler)<a class="headerlink" href="#run-multiple-replicas-with-hpa-horizontal-pod-autoscaler" title="Permanent link">&para;</a></h3>
-<p>To achieve high availability and resiliency for the Tailscale proxy, you must run multiple replicas with HPA. To configure multiple replicas for the Tailscale proxy component, go to the <strong>Scaling</strong> page under <strong>DevOps</strong>. For more details, see <a href="./autoscale/autoscale-component-replicas.md">Autoscale component replicas</a></p>
+<p>To achieve high availability and resiliency for the Tailscale proxy, you must run multiple replicas with HPA. To configure multiple replicas for the Tailscale proxy component, go to the <strong>Scaling</strong> page under <strong>Admin</strong>. </p>
 <h2 id="security-best-practices">Security best practices<a class="headerlink" href="#security-best-practices" title="Permanent link">&para;</a></h2>
 <p>Before deploying the Tailscale proxy in production environments, it is recommended to follow the Tailscale <a href="https://tailscale.com/kb/1300/production-best-practices">production best practices</a> and <a href="https://tailscale.com/kb/1196/security-hardening">security best practices</a>.</p>
 <div class="admonition note">
