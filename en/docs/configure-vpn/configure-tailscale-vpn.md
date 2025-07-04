@@ -197,11 +197,11 @@ If you want to add a new private endpoint to your network and access it via the 
 You can use [Tailscale ACLs](https://tailscale.com/kb/1018/acls) to precisely manage permission for users and devices on your Tailnet.
 
 ### Disable scale-to-zero for the Tailscale proxy
-It is recommended to disable [Scale-to-Zero](./autoscale/autoscale-components-with-scale-to-zero.md) for the Tailscale proxy because it acts as a forward proxy and should always be up and running to make consistent connections with the Tailscale VPN mesh.
+It is recommended to disable Scale-to-Zero for the Tailscale proxy because it acts as a forward proxy and should always be up and running to make consistent connections with the Tailscale VPN mesh.
 If you enable Scale-to-Zero, you may experience service downtime.
 
 ### Run multiple replicas with HPA (horizontal pod autoscaler) 
-To achieve high availability and resiliency for the Tailscale proxy, you must run multiple replicas with HPA. To configure multiple replicas for the Tailscale proxy component, go to the **Scaling** page under **DevOps**. For more details, see [Autoscale component replicas](./autoscale/autoscale-component-replicas.md)
+To achieve high availability and resiliency for the Tailscale proxy, you must run multiple replicas with HPA. To configure multiple replicas for the Tailscale proxy component, go to the **Scaling** page under **Admin**. 
 
 ## Security best practices
 
