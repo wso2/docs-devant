@@ -21,11 +21,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wso2.com/devant/docs/ai/deploy-your-first-ai-agent/</loc>
-         <lastmod>2025-07-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://wso2.com/devant/docs/ai/rag-application/</loc>
          <lastmod>2025-07-09</lastmod>
          <changefreq>daily</changefreq>
@@ -136,7 +131,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-event-handler/</loc>
+         <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-ai-agent/</loc>
+         <lastmod>2025-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wso2.com/devant/docs/quick-start-guides/deploy-your-first-event-integration/</loc>
          <lastmod>2025-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
