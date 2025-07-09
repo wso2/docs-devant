@@ -78,4 +78,4 @@ Once processing is complete, execute test queries to ensure proper data retrieva
 
 After completing the RAG ingestion process, you need to implement a rag retrieval to connect your vector database with user queries and generate responses.
 
-For detailed implementation steps and configuration, refer to the [RAG retrieval](https://bi.docs.wso2.com/learn/ai/rag/build-a-rag-application/#rag-retrieval) tutorial in the WSO2 Integrator: BI documentation.
+For detailed implementation steps and configuration, refer to the [RAG retrieval](https://bi.docs.wso2.com/integration-guides/ai/rag/build-a-rag-application/#rag-retrieval) tutorial in the WSO2 Integrator: BI documentation.
