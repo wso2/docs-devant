@@ -210,6 +210,42 @@ Before deploying the Tailscale proxy in production environments, it is recommend
 !!! Note
      Devant blocks incoming connections from other nodes in your Tailnet to the Tailscale proxy to prevent access to your project’s namespace in the Devant cloud data plane. 
 
-## Troubleshoot issues
+## Troubleshoot Tailscale proxy issues
 
-For assistance in resolving common Tailscale proxy issues, see [Troubleshoot Tailscale proxy issues](../references/troubleshoot-Devant.md#troubleshoot-tailscale-proxy-issues).
+- ### Where can I find logs to troubleshoot Tailscale proxy issues?
+
+      To troubleshoot Tailscale proxy issues, you can view the Runtime Logs by navigating to the `Observability -> Logs` of the running container for your Tailscale proxy deployment. These logs can help you diagnose most of the issues. 
+      You can also view real-time container logs via the **Runtime** page under **Admin**.
+
+- ### I'm not able to connect the Tailscale proxy node to my Tailscale network due to an authentication failure.
+
+      - If you encounter the following log lines in your Tailscale proxy deployment, it indicates a misconfiguration of the `TS_AUTH_KEY`:
+
+         ```
+         2024-06-04T10:38:53.885800940Z To authenticate, visit:
+         2024-06-04T10:38:53.885802684Z 
+         2024-06-04T10:38:53.885815708Z https://login.tailscale.com/a/696841f011517
+         2024-06-04T10:38:53.885817457Z 
+         2024-06-04T10:38:55.194344862Z Waiting for tailscale up to complete...
+         2024-06-04T10:38:57.198970796Z Waiting for tailscale up to complete...
+         2024-06-04T10:38:59.203265659Z Waiting for tailscale up to complete...
+         ```
+        To resolve this, you must re-check your authentication key and ensure you have entered the correct key.
+
+      - If you encounter the following log lines in your Tailscale proxy deployment, it indicates that your authentication key is invalid or expired.
+         ```
+         2024-06-04T11:33:58.762363181Z 2024/06/04 11:33:58 Received error: invalid key: unable to validate API key
+         2024-06-04T11:33:58.762458209Z backend error: invalid key: unable to validate API key
+         ```
+       
+         To resolve this, you must verify the correctness of your authentication key. If the key has expired, you must generate a new key from Tailscale admin console. 
+
+
+- ### I'm not able to access private endpoints although the Tailscale proxy is properly connected to my Tailscale network.
+
+      To resolve this, do the following:
+
+       - Ensure your on-premises setup is properly connected to the Tailscale network and that specific services, database servers, etc., are running as expected in your on-premises setup.
+       - Verify that the IP addresses and ports specified in your `Config.yaml` file (mounted to Tailscale proxy during deployment) match the IP addresses in your Tailscale network.
+       - Cross-check the ports defined in the `endpoints.yaml` file with the port mappings in the `Config.yaml` file.
+
