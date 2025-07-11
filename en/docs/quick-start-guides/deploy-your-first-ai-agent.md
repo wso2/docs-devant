@@ -31,7 +31,7 @@ This redirects you to the **Create New Integration in VS Code** page.
 
 ## Step 3: Develop the AI Agent in WSO2 Integrator: BI  
 
-To build your AI Agent using WSO2 Integrator: BI, refer to the [AI Agent Integration](https://bi.docs.wso2.com/integration-guides/ai/agents/introduction-to-inline-agents/) guide on the Learn page.
+To build your AI Agent using WSO2 Integrator: BI, refer to the [AI Agent Integration](https://bi.docs.wso2.com/integration-guides/ai/agents/introduction-to-chat-agents/) guide on the Learn page.
 
 ## Step 4: Push to Devant
 
