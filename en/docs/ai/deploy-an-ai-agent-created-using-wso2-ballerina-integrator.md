@@ -14,7 +14,7 @@ Before you begin, ensure that you have:
 * A **Devant account** with access to at least one **organization** and **project**.
 * A **GitHub account** with a public repository to push your integration code.
 
-## Step 1: Start the Deployment from Ballerina Integrator
+## Step 1: Start the deployment from Ballerina Integrator
 
 1. In the **Home Screen**, under **Deployment Options**, you’ll see that **Deploy to Devant** is selected by default.
 2. Click **Deploy** to initiate the process.
@@ -33,7 +33,7 @@ Since this integration was created locally, you’ll need to push it to GitHub b
 3. After publishing, click **Open repository in GitHub** from the snackbar notification.
 4. A new browser tab will open with the repository—verify the contents.
 
-## Step 4: Authorize Devant to Access Your Repository
+## Step 4: Authorize Devant to access your repository
 
 1. In Devant, click **Grant Access** to authorize access to your GitHub repository.
 2. Select the same repository and click **Save**.
@@ -43,13 +43,13 @@ Since this integration was created locally, you’ll need to push it to GitHub b
 1. Once authorized, click **Open Visual Studio Code** in the confirmation message.
 2. When prompted, click **Open** and allow the **WSO2 Platform** extension to open the URI.
 
-## Step 6: Review Integration Settings
+## Step 6: Review integration settings
 
 1. The **repository URL** and **branch** will be automatically detected. Click **Next**.
 2. The technology will be auto-detected as **Ballerina**. Click **Next** to continue.
 3. On the **Summary** screen, review all details and click **Create**.
 
-## Step 7: View Integration in Devant
+## Step 7: View integration in Devant
 
 1. Once the integration is created, click **Open in Devant** from the snackbar.
 2. A new tab will open showing your integration’s **Overview** page.
@@ -57,7 +57,7 @@ Since this integration was created locally, you’ll need to push it to GitHub b
 
 ![Deploy an AI Agent Created Using WSO2 Ballerina Integrator](../assets/img/ai/deploy-bi/deploy.gif){.cInlineImage-full}
 
-## Step 8: Configure Environment Variables
+## Step 8: Configure environment variables
 
 1. Once the build succeeds, your integration will be **automatically deployed** to the **Development** environment.
 2. Click **Configure to Continue** to enter any required API keys or tokens.
@@ -65,7 +65,7 @@ Since this integration was created locally, you’ll need to push it to GitHub b
 
 ![Add Configurables](../assets/img/ai/deploy-bi/configure.png){.cInlineImage-full}
 
-## Step 9: Test and Promote
+## Step 9: Test and promote
 
 1. Once the **deployment status** is marked **Active**, you can test the AI Agent.
 2. Try chatting with the **Personal Assistant AI Agent** to:
@@ -78,6 +78,3 @@ Since this integration was created locally, you’ll need to push it to GitHub b
     </div>
 
 3. When ready, click **Promote** to deploy your integration to **Production**.
-
-
-
