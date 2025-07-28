@@ -87,7 +87,7 @@ nav:
       - Explore the Demo Organization: devant-samples/explore-the-demo-organization.md
   - AI:
       - RAG Application: ai/rag-application.md
-      - Deploy an AI Agent Created Using WSO2 Ballerina Integrator: ai/deploy-an-ai-agent-created-using-wso2-ballerina-integrator.md
+      - 'Deploy an AI Agent Created Using WSO2 Integrator: BI': ai/deploy-an-ai-agent-created-using-wso2-integrator-bi.md
   - Devant Concepts:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
       - Organization: devant-concepts/organization.md

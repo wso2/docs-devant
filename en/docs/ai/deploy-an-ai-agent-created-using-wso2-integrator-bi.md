@@ -1,6 +1,6 @@
-# Deploy an AI Agent Created Using WSO2 Ballerina Integrator
+# Deploy an AI Agent Created Using WSO2 Integrator: BI
 
-This guide walks you through deploying an AI Agent built with WSO2 Ballerina Integrator to Devant, using the **Deploy to Devant** option available in the Ballerina Integrator UI.
+This guide walks you through deploying an AI Agent created using WSO2 Integrator: BI to Devant, using the **Deploy to Devant** option available in its UI.
 
 !!! note
         This guide assumes you have already created an AI Agent by following the tutorial [Integrating AI Agents with External Endpoints](https://bi.docs.wso2.com/integration-guides/ai/agents/integrating-agents-with-external-endpoints/).
@@ -9,12 +9,12 @@ This guide walks you through deploying an AI Agent built with WSO2 Ballerina Int
 
 Before you begin, ensure that you have:
 
-* Installed **WSO2 Ballerina Integrator** on your local machine.
+* Installed **WSO2 Integrator: BI** on your local machine.
 * Created an AI Agent using the [AI Agent Integration Tutorial](https://bi.docs.wso2.com/integration-guides/ai/agents/integrating-agents-with-external-endpoints/).
 * A **Devant account** with access to at least one **organization** and **project**.
 * A **GitHub account** with a public repository to push your integration code.
 
-## Step 1: Start the deployment from Ballerina Integrator
+## Step 1: Start the deployment from WSO2 Integrator: BI
 
 1. In the **Home Screen**, under **Deployment Options**, you’ll see that **Deploy to Devant** is selected by default.
 2. Click **Deploy** to initiate the process.
@@ -55,7 +55,7 @@ Since this integration was created locally, you’ll need to push it to GitHub b
 2. A new tab will open showing your integration’s **Overview** page.
 3. Wait for the build to complete.
 
-![Deploy an AI Agent Created Using WSO2 Ballerina Integrator](../assets/img/ai/deploy-bi/deploy.gif){.cInlineImage-full}
+![Deploy an AI Agent Created Using WSO2 Integrator: BI](../assets/img/ai/deploy-bi/deploy.gif){.cInlineImage-full}
 
 ## Step 8: Configure environment variables
 
