@@ -111,7 +111,9 @@ nav:
   - API Management:
       - Lifecycle Management: api-management/lifecycle-management.md
   - Configure VPN:
-      - Configure VPNs on the Devant Cloud Data Plane: configure-vpn/configure-tailscale-vpn.md      
+      - Configure VPNs on the Devant Cloud Data Plane: configure-vpn/configure-tailscale-vpn.md    
+  - Create MCP servers:
+      - Create MCP servers from existing REST services: mcp-servers/generate-mcp-servers.md       
   - Testing: 
       - Test REST Endpoints via the OpenAPI Console: testing/test-rest-endpoints-via-the-openapi-console.md
   - Monitoring and Insights:
