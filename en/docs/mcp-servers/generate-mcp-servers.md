@@ -10,7 +10,7 @@ For more information, refer to the official [specification](https://modelcontext
 
 ## Remote MCP Servers with Devant
 
-Devant now includes support for MCP servers. It provides a complete solution for transforming existing APIs into intelligent, AI-ready tools. With a centralized control plane, Devant simplifies the entire lifecycle of MCP server management—from creation to discovery—delivering a seamless experience for both API developers and AI agent builders. Additionally, 
+Devant now includes support for MCP servers. It provides a complete solution for transforming existing APIs into intelligent, AI-ready tools. With a centralized control plane, Devant simplifies the entire lifecycle of MCP server management from creation to discovery, while delivering a seamless experience for both API developers and AI agent builders.  
 
 In summary, Devant provides the following capabilities related to MCP.
 
@@ -75,7 +75,7 @@ The following options are supported when modifying the Tools
 
 1. **Add new Tool** - You can create a new tool by selecting the **+** icon at the top. You have to provide the name and description at this stage. The schema will be auto generated once  you create the mapping to the REST resource
 2. **Edit Tool details** - You can modify the tool name and description of each tool by clicking on the Tool icon. The tool schema cannot be modified.
-3. **Delete Tools** - By default tools are created for all the resources of the API proxy or the backend service. You can remove unwanted ones by deleting the tool.
+3. **Delete Tools** - By default tools are created for all the resources of the REST service or the backend service. You can remove unwanted ones by deleting the tool.
 
 !!!tip
     Clear and well-defined tool names and descriptions make it easier for LLMs to recognize and use the tools effectively. If the auto-generated versions don’t meet your needs, you should feel free to customize them to better suit your use case.
