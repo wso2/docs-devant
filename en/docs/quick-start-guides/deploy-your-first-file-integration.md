@@ -18,7 +18,7 @@ In this guide, you will:
 
 ## Step 1: Create the new integration
 
-1. Attach a new repository to beign your integration. Refer [Attach a Repository](../references/attach-a-repository.md) for more details.
+1. Attach a new repository to begin your integration. Refer [Attach a Repository](../references/attach-a-repository.md) for more details.
 2. Select the **Technology** as `WSO2 Integrator: BI`.
 3. Choose the **Integration Type** as `File Integration` and click **Create**.
 
@@ -66,11 +66,11 @@ This redirects you to the **Create New Integration in VS Code** page.
 
     | Field               | Value              |
     |---------------------|--------------------|
-    | **Variable Name**   | `addFile`          |
+    | **Variable Name**   | `addedFile`        |
     | **Variable Type**   | `var`              |
     | **Collection**      | `event.addedFiles` |
 
-11. Under the **Foreach** node, add a **Log Info** node with the **Msg** as `"File added:" + addedFiles.name`. 
+11. Under the **Foreach** node, add a **Log Info** node with the **Msg** as `"File added:" + addedFile.name`. 
 
     <a href="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/implement-onfilechange.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-file-integration/implement-onfilechange.gif" alt="Setup listener & service configs" width="80%"></a>
 
