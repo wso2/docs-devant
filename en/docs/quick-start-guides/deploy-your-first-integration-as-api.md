@@ -29,7 +29,7 @@ This redirects you to the **Create New Integration in VS Code** page.
 1. Intall WSO2 Integrator: BI extension. Refer [Install and Set Up WSO2 Integrator: BI](../references/install-and-setup-wso2-integrator-bi.md) for more details.
 2. Click **Develop in WSO2 Integrator: BI**. This will clone your integration project and open it in BI.
 
-## Step 3: Develop automation in WSO2 Integrator: BI
+## Step 3: Develop the integration as an API in WSO2 Integrator: BI
 
 Let’s build an API that calls the [https://dev-tools.wso2.com/gs/helpers/v1.0/countries](https://dev-tools.wso2.com/gs/helpers/v1.0/countries) endpoint and returns its response.
 
