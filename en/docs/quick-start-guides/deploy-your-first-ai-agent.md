@@ -26,7 +26,7 @@ This redirects you to the **Create New Integration in VS Code** page.
 
 ## Step 2: Install the WSO2 Integrator: BI extension and open the integration
 
-1. Intall WSO2 Integrator: BI extension. Refer [Install and Set Up WSO2 Integrator: BI](../references/install-and-setup-wso2-integrator-bi.md) for more details.
+1. Install WSO2 Integrator: BI extension. Refer [Install and Set Up WSO2 Integrator: BI](../references/install-and-setup-wso2-integrator-bi.md) for more details.
 2. Click **Develop in WSO2 Integrator: BI**. This will clone your integration project and open it in BI.
 
 ## Step 3: Develop the AI Agent in WSO2 Integrator: BI  

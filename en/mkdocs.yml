@@ -150,6 +150,8 @@ markdown_extensions:
       alternate_style: true 
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.tilde
   - pymdownx.snippets:
       base_path: docs
@@ -170,6 +172,7 @@ extra_javascript:
   - assets/lib/json-formatter/json-formatter.umd.js
   - assets/lib/highlightjs/highlight.min.js
   - assets/js/devanttheme.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
 extra:
   social:
     - icon: fontawesome/brands/github
