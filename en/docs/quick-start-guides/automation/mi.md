@@ -58,7 +58,7 @@ This redirects you to the **Create New Integration in VS Code** page.
 
 2. Once the **Build Status** shows `Build completed`, click **Test** to run your automation once.
 3. The development card automatically updates with execution details. Click the refresh button in the top right corner if it is not automatically updated.
-4. Click **View Logs** on and execution. You will see the `Hello World` log printed along with the execution time.
+4. Click **View Logs** on an execution. You will see the `Hello World` log printed along with the execution time.
 5. Click **Schedule** to schedule the automation.
 6. In the **BY INTERVAL** tab, select **Day** from the dropdown.
 7. Enter `1` in the **Repeat every** text box.
