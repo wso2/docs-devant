@@ -17,7 +17,7 @@ In this guide, you will build a simple event integration that monitors RabbitMQ 
 
 ## Step 1: Create the new integration
 
-1. Attach a new repository to begin your integration. Refer [Attach a Repository](../references/attach-a-repository.md) for more details.
+1. Import a new repository to begin your integration. Refer [Import a Repository](../references/import-a-repository.md) for more details.
 2. Select the **Technology** as `WSO2 Integrator: BI`.
 3. Choose the **Integration Type** as `Event Integration` and click **Create**.
 

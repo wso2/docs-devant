@@ -15,7 +15,7 @@ In this guide, you will:
 
 ## Step 1: Create the new integration
 
-1. Attach a new repository to begin your integration. Refer [Attach a Repository](../references/attach-a-repository.md) for more details.
+1. Import a new repository to begin your integration. Refer [Import a Repository](../references/import-a-repository.md) for more details.
 2. Select the **Technology** as `WSO2 Integrator: MI`.
 3. Choose the **Integration Type** as `Automation` and click **Create**.
 
@@ -59,6 +59,10 @@ This redirects you to the **Create New Integration in VS Code** page.
 2. Once the **Build Status** shows `Build completed`, click **Test** to run your automation once.
 3. The development card automatically updates with execution details. Click the refresh button in the top right corner if it is not automatically updated.
 4. Click **View Logs** on an execution. You will see the `Hello World` log printed along with the execution time.
+
+    !!! tip
+        You can search for the `Hello World` keyword to locate the log quickly.
+
 5. Click **Schedule** to schedule the automation.
 6. In the **BY INTERVAL** tab, select **Day** from the dropdown.
 7. Enter `1` in the **Repeat every** text box.

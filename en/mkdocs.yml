@@ -119,7 +119,7 @@ nav:
       - Observability Overview: monitoring-and-insights/observability-overview.md
   - References:
       - Create an Organization: references/create-an-organization.md
-      - Attach a Repository: references/attach-a-repository.md
+      - Import a Repository: references/import-a-repository.md
       - "Install and Set Up WSO2 Integrator: BI": references/install-and-setup-wso2-integrator-bi.md
       - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
       - Sign-Up and Upgrade Guide: references/signup-and-upgrade-guide.md
