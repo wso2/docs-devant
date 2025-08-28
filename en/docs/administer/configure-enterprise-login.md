@@ -112,7 +112,6 @@ Before you proceed with the configuration, make sure you complete the following:
     
     Before you map Devant groups to enterprise IdP groups, ensure you meet the following criteria:
 
-    - Asgardeo is your key manager.
     - You have permission to perform actions of the organization administrator role.
 
 1. Sign in to the [Devant Console](https://console.devant.dev/).
