@@ -117,6 +117,11 @@ nav:
       - Test REST Endpoints via the OpenAPI Console: testing/test-rest-endpoints-via-the-openapi-console.md
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
+  - Administer:
+      - Configure Enterprise Login: administer/configure-enterprise-login.md
+      - Configure an External IdP:
+          - Configure Asgardeo as an External IdP: administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp.md
+          - Configure Azure as an External IdP: administer/configure-an-external-idp/configure-azure-ad-as-an-external-idp.md
   - References:
       - Create an Organization: references/create-an-organization.md
       - Attach a Repository: references/attach-a-repository.md
