@@ -19,7 +19,7 @@ Follow the steps below to add Azure AD as an IdP in Devant:
 4. On the **Application Security** tab, click **Identity Providers** and then click **+ Identity Provider**.
 5. Select  **Microsoft Entra ID (Azure AD)** as the Identity Provider.
 6. Provide a name and a description for the IdP.
-7. To obtain the `Well-Known URL` of your Azure AD instance, on your Azure account, under **Azure Active Directory** go to **App registrations**, and then **Endpoints**. Copy the URI under`OpenID Connect metadata document`.
+7. To obtain the `Well-Known URL` of your Azure AD instance, on your Azure account, under **Azure Active Directory** go to **App registrations**, and then **Endpoints**. Copy the URI under `OpenID Connect metadata document`.
 
     !!! info
         - In Azure, there are two versions of access tokens available. By default, the IDP applications you create use the v1 access token. Therefore, if you intend to use the v1 access token, when providing the `Well-Known URL`, omit the v2.0 path segment from the URL. [Learn more](https://learn.microsoft.com/en-us/azure/active-directory/develop/access-tokens#token-formats)
