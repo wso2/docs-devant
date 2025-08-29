@@ -1,10 +1,10 @@
 # Attach a Repository
 
-Once you’ve logged into [Devant Cosole](https://console.devant.dev/), you’ll land in the default project automatically created under your organization. Alternatively, you can choose to create a new project within the organization.
+Once you’ve logged into [Devant Console](https://console.devant.dev/), you’ll land in the default project automatically created under your organization. Alternatively, you can choose to create a new project within the organization.
 
 Once you're inside the desired project, follow the steps below to start creating an integration by attaching a repository.
 
-The steps provided are for a [GitHub](https://github.com/) repository, but you can follow a similar approach to authorize and connect with [Bitbucket]https://bitbucket.org/product) or [GitLab](https://about.gitlab.com/).
+The steps provided are for a [GitHub](https://github.com/) repository, but you can follow a similar approach to authorize and connect with [Bitbucket](https://bitbucket.org/product) or [GitLab](https://about.gitlab.com/).
 
 
 1. On the Attach a Repository page, click **Connect Now**.
