@@ -60,7 +60,7 @@ Follow the steps given below to configure the federated IdP:
 
 1. Sign in to [Asgardeo](https://asgardeo.io/).
 2. To configure a federated enterprise identity provider for your Asgardeo organization, follow the steps in [Asgardeo documentation - Add Standard-Based Login](https://wso2.com/asgardeo/docs/guides/authentication/enterprise-login/).
-3. In the Asgardeo Console left navigation menu, click **Applications**. You will see an application named **WSO2_LOGIN_FOR_DEVANT_CONSOLE**.
+3. In the Asgardeo Console left navigation menu, click **Applications**. You will see an application named **WSO2_LOGIN_FOR_DEVANT**.
 4. Click on the application to edit it.
 5. Click the **Sign-in Method** tab. You can observe the configured connection.
 
