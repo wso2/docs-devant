@@ -4,7 +4,7 @@
 
 ## Step 1: Install the WSO2 Integrator: BI Extension
 
-1. Once you start the integration creation in Devant by attaching a repository, you will be redirected to the **Create New Integration in VS Code** page.
+1. Once you start the integration creation in Devant by importing a repository, you will be redirected to the **Create New Integration in VS Code** page.
 
     <a href="{{base_path}}/assets/img/references/setup-wso2-integrator-bi/create-new-integration.png"><img src="{{base_path}}/assets/img/references/setup-wso2-integrator-bi/create-new-integration.png" alt="Setup WSO2 Integrator BI" width="80%"></a>
 
