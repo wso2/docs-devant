@@ -85,6 +85,7 @@ nav:
           - Samples Overview: devant-samples/samples-overview.md
           - Quick Deploy a Sample: devant-samples/quick-deploy-a-sample.md
       - Explore the Demo Organization: devant-samples/explore-the-demo-organization.md
+      - "Deploy with WSO2 Integrator: MI": devant-samples/deploy-with-wso2-integrator-mi.md
   - AI:
       - RAG Application: ai/rag-application.md
       - 'Deploy an AI Agent Created Using WSO2 Integrator: BI': ai/deploy-an-ai-agent-created-using-wso2-integrator-bi.md
@@ -124,7 +125,7 @@ nav:
           - Configure Azure as an External IdP: administer/configure-an-external-idp/configure-azure-ad-as-an-external-idp.md
   - References:
       - Create an Organization: references/create-an-organization.md
-      - Attach a Repository: references/attach-a-repository.md
+      - Import a Repository: references/import-a-repository.md
       - "Install and Set Up WSO2 Integrator: BI": references/install-and-setup-wso2-integrator-bi.md
       - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
       - Sign-Up and Upgrade Guide: references/signup-and-upgrade-guide.md
@@ -180,4 +181,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/wso2
   base_path: https://wso2.github.io/docs-devant
-#base_path: http://localhost:8000
+# base_path: http://localhost:8000/devant/docs
