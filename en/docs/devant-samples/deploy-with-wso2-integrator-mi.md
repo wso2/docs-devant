@@ -53,7 +53,7 @@ This redirects you to the **Create New Integration in VS Code** page.
 3. Add an appropriate commit message and commit.
 4. Click **Sync Changes** to push the changes to the remote.
 
-## Step 5: Schedule automation
+## Step 5: Schedule the automation
 
 1. Once you push the changes, the overview page of the Devant automation will automatically refresh and show you the **Latest Commit**. Then Devant will automatically build your automation, showing the **Build Status**.
 
