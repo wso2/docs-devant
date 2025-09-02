@@ -1,6 +1,6 @@
 # Deploy a WSO2 Integrator: MI project on Devant
 
-WSO2 Integrator: MI is a 100% open source low-code integration solution with an AI-powered development experience. This guide will help you deploy a WSO2 Integrator: MI project on Devant.
+[WSO2 Integrator: MI](https://wso2.com/integrator/mi/) is a 100% open source low-code integration solution with an AI-powered development experience. This guide will help you deploy a WSO2 Integrator: MI project on Devant.
 
 ## Overview
 
@@ -38,7 +38,7 @@ This redirects you to the **Create New Integration in VS Code** page.
 
 1. In the WSO2 Integrator: MI Design View, it will automatically open the Sequence Form, where you can create the automation.
 2. Give the automation an appropriate **Name** and click **Create**.
-3. A notification would pop up saying "The pom.xml file has been modified. Do you want to update the dependencies?" in the bottom right corner. Click **Yes**.
+3. A notification would pop up saying `The pom.xml file has been modified. Do you want to update the dependencies?` in the bottom right corner. Click **Yes**.
 4. Click **+** after the **Start** node to open the node panel.
 5. Select **Log** and enter `Hello World` in the **Message** field. Then click **Add**.
 
@@ -51,11 +51,11 @@ This redirects you to the **Create New Integration in VS Code** page.
 1. Click the **Source Control** icon on the sidebar.
 2. Click **+** to stage all changes.
 3. Add an appropriate commit message and commit.
-4. Click **Sync Changes** to push the changes to remote.
+4. Click **Sync Changes** to push the changes to the remote.
 
-## Step 5: Schedule Automation
+## Step 5: Schedule automation
 
-1. Once you push the changes, the overview page of the Devant automation will automatically refresh and show you the **Latest Commit**. Then Devant will automatically build your automation showing the **Build Status**.
+1. Once you push the changes, the overview page of the Devant automation will automatically refresh and show you the **Latest Commit**. Then Devant will automatically build your automation, showing the **Build Status**.
 
     !!! note
         The build process may take some time. Once complete, the build status changes to **Success**. You can see the Build History by clicking **Build** in the left navigation.
