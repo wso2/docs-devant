@@ -196,6 +196,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wso2.com/devant/docs/references/faq/</loc>
+         <lastmod>2025-09-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wso2.com/devant/docs/references/import-a-repository/</loc>
          <lastmod>2025-09-04</lastmod>
          <changefreq>daily</changefreq>
