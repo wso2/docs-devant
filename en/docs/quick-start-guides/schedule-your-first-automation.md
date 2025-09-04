@@ -38,7 +38,9 @@ This redirects you to the **Create New Integration in VS Code** page.
 6. Click **+ Add Another Value**, type `"Hello World"` and click **Save**.
 7. Click **Run** in the top right corner to run the automation. This compiles the automation and runs it in the embedded Ballerina runtime.
 
-    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/design-integration.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/design-integration.gif" alt="Design Integration" width="80%"></a>
+    <div style="width: 80%;">
+    ![Design Integration](../../assets/img/get-started/schedule-your-first-automation/design-integration.gif)
+    </div>
 
 ## Step 4: Push to Devant
 
@@ -63,6 +65,18 @@ This redirects you to the **Create New Integration in VS Code** page.
 8. Enter `01:00 AM` in the **At** text box and click **Update**.
 9. Your automation will now run every day at 01:00 AM. You can see the next execution time as **Next run in** in the Development card.
 
-    <a href="{{base_path}}/assets/img/get-started/schedule-your-first-automation/view-logs.gif"><img src="{{base_path}}/assets/img/get-started/schedule-your-first-automation/view-logs.gif" alt="View Logs" width="80%"></a>
+    <div style="width: 80%;">
+    ![View Logs](../../assets/img/get-started/schedule-your-first-automation/view-logs.gif)
+    </div>
 
 10. After successfully testing, you can promote your automation to production by clicking the **Promote** button.
+11. In critical environments (Production), you will be able to see automation metrics such as:
+
+    - **Error Rate**: Percentage of failed executions
+    - **Average Duration**: Average time taken for executions
+    - **99th Percentile Latency**: Latency at the 99th percentile for executions
+    - **Total Executions**: Total number of times the automation has been executed
+
+    <div style="width: 80%;">
+    ![Automation Metrics](../../assets/img/get-started/schedule-your-first-automation/metrics.png)
+    </div>
