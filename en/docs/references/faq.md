@@ -11,14 +11,14 @@ An organization is a logical grouping of users and their resources. It may repre
 ### Q: What is a project in Devant?
 A project is a logical grouping of related integrations to help you organize your work. Each project provides runtime isolation through namespaces when you deploy integrations.
 
-### Q: What is a integration in Devant?
+### Q: What is an integration in Devant?
 An integration in Devant is a solution that connects systems, automates processes, or exposes functionality. Integrations can take many forms, such as automations, AI agents, APIs, event-driven flows, or file-based processes.
 
 ### Q: What is the difference between an internal and external API?
 In Devant, you can publish an API as an internal or an external API. A user or an application can access an external API publicly over the internet, whereas an internal API is only accessible through other integrations within the same organization.
 
 ### Q: What is a connector in Devant Marketplace?
-A connector is a reusable WSO2 Integrator package that simplifies connecting to external or internal systems and APIs, such as Salesforce, SAP, GitHub, and Twilio. You can use the connectors available in the Devant marketplace to implement your integration use cases.  Connectors can be created and published by both WSO2 and Devant users.
+A connector is a reusable WSO2 Integrator package that simplifies connecting to external or internal systems and APIs, such as Salesforce, SAP, GitHub, and Twilio. You can use the connectors available in the Devant marketplace to implement your integration use cases. Connectors can be created and published by both WSO2 and Devant users.
 
 ### Q: What is a trigger in Devant Marketplace?
 A trigger is a construct that enables users to receive known event payloads from external systems, facilitating event-driven programming.
@@ -117,7 +117,7 @@ Initially, you will receive the requested number of environments when establishi
 You can reach out to cloud-billing-support@wso2.com or create a support ticket via our support portal.
 
 ### Q: What's a Developer plan?
-A Developer plan allows you to try out Devant’s capabilities at no cost. It’s ideal for proof of concept (PoC)  tasks or workloads with limited transactions. This plan allows you to experiment with up to 5 integrations and provides US$1,000/year of Devant data plane (CDP) credits.
+A Developer plan allows you to try out Devant’s capabilities at no cost. It’s ideal for proof of concept (PoC) tasks or workloads with limited transactions. This plan allows you to experiment with up to 5 integrations and provides US$1,000/year of Devant data plane (CDP) credits.
 
 ### Q: How do I calculate the infrastructure costs?
 Calculating infrastructure costs depends on the type of workload you want to manage. Here are a few examples:
