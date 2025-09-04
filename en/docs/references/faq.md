@@ -77,7 +77,7 @@ To ensure this, the requests coming from the Devant data plane must be allowed b
 ## Data planes
 
 ### Q: What is a Devant control plane?
-The Devant control plane is a centralized management integration that oversees and coordinates the workloads deployed by customers. It provides a unified point of control and visibility for the organization, allowing administrators to manage, monitor, and orchestrate the organization’s resources efficiently.
+The Devant control plane is a centralized management component that oversees and coordinates the workloads deployed by customers. It provides a unified point of control and visibility for the organization, allowing administrators to manage, monitor, and orchestrate the organization’s resources efficiently.
 
 ### Q: What is a data plane?
 A data plane in Devant is a computing environment designed for running customer workloads. These environments are hosted in either a dedicated cloud infrastructure owned by the customer (private data planes) or on public cloud infrastructure owned by WSO2, also known as the Devant data plane.
@@ -92,7 +92,7 @@ Private data planes can be deployed in any region where Azure and AWS are availa
 We recommend using a minimum of two (2) workload nodes to ensure high availability.
 
 ### Q: Are the Devant control plane and data planes highly available? Are they running on multiple clusters?
-The Devant control plane and data plane are designed for high availability using Azure integrations like AKS, MSSQL, ACR, KV, Service Bus, and so on, with a high availability of 99.99%, which allows at least three workload nodes. In the event of a node failure or upgrade, this setup provides reliable failover. WSO2 also has a backup and recovery strategy in place, including continuous restore drills. If you require AKS cluster-level redundancy, we can consider multiple zones. In this case, the cost will include an additional infrastructure cost.
+The Devant control plane and data plane are designed for high availability using Azure components like AKS, MSSQL, ACR, KV, Service Bus, and so on, with a high availability of 99.99%, which allows at least three workload nodes. In the event of a node failure or upgrade, this setup provides reliable failover. WSO2 also has a backup and recovery strategy in place, including continuous restore drills. If you require AKS cluster-level redundancy, we can consider multiple zones. In this case, the cost will include an additional infrastructure cost.
 
 ## Environments
 
@@ -122,7 +122,7 @@ A Developer plan allows you to try out Devant’s capabilities at no cost. It’
 ### Q: How do I calculate the infrastructure costs?
 Calculating infrastructure costs depends on the type of workload you want to manage. Here are a few examples:
 
-- **Example 1**: Creating, deploying, and managing a new API or integration within Devant; pay for 1 x integration + infrastructure cost. Each container deployed will be approximately US$57.25 per month on the default configuration provided by Devant. Additional resources will be charged based on the type of resource required.
+- **Example 1**: Creating, deploying, and managing a new Integration as an API within Devant; pay for 1 x integration + infrastructure cost. Each container deployed will be approximately US$57.25 per month on the default configuration provided by Devant. Additional resources will be charged based on the type of resource required.
 - **Example 2**: Creating, deploying, and managing a microservice; the same approach as example 1.
 
 ### Q: What are the integration limitations?
