@@ -70,7 +70,7 @@ This redirects you to the **Create New Integration in VS Code** page.
     </div>
 
 10. After successfully testing, you can promote your automation to production by clicking the **Promote** button.
-11. In Production environments, you will be able to see automation metrics such as:
+11. In critical environments (Production), you will be able to see automation metrics such as:
 
     - **Error Rate**: Percentage of failed executions
     - **Average Duration**: Average time taken for executions
