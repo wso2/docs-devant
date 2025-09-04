@@ -1,13 +1,13 @@
 # Alerts Overview
 
-This section explains how you can configure alerts for your Devant components. Setting up alerts allows you to proactively monitor your component ecosystem and take corrective measures when necessary.
+This section explains how you can configure alerts for your Devant integrations. Setting up alerts allows you to proactively monitor your integrations and take corrective measures when necessary.
 
 !!! note
-    Setting up alerts is only available at the component level.
+    Setting up alerts is only available at the integration level.
 
 ## Alert types
 
-Devant supports the following types of alerts to help you monitor and manage your components effectively:
+Devant supports the following types of alerts to help you monitor and manage your integrations effectively:
 
 - [Latency alerts](#latency-alerts)
 - [Traffic alerts](#traffic-alerts)
@@ -17,7 +17,7 @@ Devant supports the following types of alerts to help you monitor and manage you
 
 ### Latency alerts
 
-Latency alerts notify you when the response latency of a component exceeds a predefined threshold within a specified time period. This is useful for components that need to meet specific SLAs and proactively identify slow components.
+Latency alerts notify you when the response latency of an integration exceeds a predefined threshold within a specified time period. This is useful for integrations that need to meet specific SLAs and proactively identify slow integrations.
 
 Configurable parameters
 
@@ -29,7 +29,7 @@ Configurable parameters
 
 ### Traffic alerts
 
-Traffic alerts notify you when the request count of a component exceeds a predefined threshold. This is useful for managing components with backend traffic limits or monetized backends that require proactive scaling based on incoming traffic.
+Traffic alerts notify you when the request count of an integration exceeds a predefined threshold. This is useful for managing integrations with backend traffic limits or monetized backends that require proactive scaling based on incoming traffic.
 
 Configurable parameters
 
@@ -40,7 +40,7 @@ Configurable parameters
 
 ### Resource alerts
 
-Resource alerts notify you when your component’s CPU or memory usage exceeds predefined thresholds. This ensures that you can adjust the resource allocations early to avoid performance issues or downtime.
+Resource alerts notify you when your integration’s CPU or memory usage exceeds predefined thresholds. This ensures that you can adjust the resource allocations early to avoid performance issues or downtime.
 
 Configurable parameters
 
@@ -52,11 +52,11 @@ Configurable parameters
 
 !!! tip
     - **CPU**: mCPU (milliCPU) measures CPU usage in fractions of a core, where 1000 mCPU = 1 full core.
-    - **Memory**: MiB (Mebibyte) measures memory in binary units, where 1 MiB = 2^20^ bytes.
+    - **Memory**: MiB (Mebibyte) measures memory in binary units, where 1 MiB = 2<sup>20</sup> bytes.
 
 ### Log alerts
 
-Log alerts trigger notifications when a given phrase appears **a specific number of times** in your component logs within a defined time window. This helps to identify recurring issues or critical errors quickly, enabling faster troubleshooting.
+Log alerts trigger notifications when a given phrase appears **a specific number of times** in your integration logs within a defined time window. This helps to identify recurring issues or critical errors quickly, enabling faster troubleshooting.
 
 Configurable parameters
 
@@ -68,13 +68,13 @@ Configurable parameters
 
 ### Build failure alerts
 
-Build failure alerts inform you when a build failure occurs for your component. This is essential for maintaining smooth development workflows.
+Build failure alerts inform you when a build failure occurs for your integration. This is essential for maintaining smooth development workflows.
 
 ## Configure an alert
 
 Follow these steps to configure an alert:
 
-1. Navigate to the component you wish to configure alerts for.
+1. Navigate to the integration you wish to configure alerts for.
 
     !!! info
         You need to have a scope of **Devant DevOps** or **Devant Platform Engineer** in order to create alerts.
@@ -86,7 +86,7 @@ Follow these steps to configure an alert:
 
 4. Select the **[Alert Type](#alert-types)** you want to create.
 5. Select the **Environment** you want to create the alert for.
-6. Select the **Deployment Track** or **Version** as required for the component.
+6. Select the **Deployment Track** or **Version** as required for the integration.
 7. Configure the remaining fields specific to your selected alert type.
 8. In the **Emails** field, specify the email addresses that should be notified when the alert is triggered.
 
@@ -95,26 +95,23 @@ Follow these steps to configure an alert:
         - You can add a maximum of 5 email addresses per alert.
 
 9. You can configure additional parameters in the **Advanced Configurations** dropdown as needed, which vary based on alert type.
-10. The **Explanation** callout provides a summary of the configured alert based on the alert configurations.
+10. The **Explanation** callout provides a summary of the configured alert.
 11. Click **Create** to save and activate your alert rule.
 
     !!! info
-        - You can configure a maximum of 10 alerts per component.
+        - You can configure a maximum of 10 alerts per integration.
 
-12. Once successfully added, your alert will be listed in the **Configure Alerts** pane alongside any existing alerts for the component.
+12. Once successfully added, your alert will be listed in the **Configure Alerts** pane alongside any existing alerts for the integration.
 13. Each alert can be **edited**, **removed**, and **disabled** or **enabled** via this pane.
 
     !!! note
         When editing an alert, **Alert Type**, **Environment**, and **Deployment Track** cannot be changed.
 
-## Alert history & notifications
+## Alerts history & notifications
 
-### View alert history
+### View alerts history
 
-You can check the past alerts that have triggered for your component in the **Alerts History** pane. You can filter the alert history by **Alert Type**, **Environment**, **Deployment Track** or **Version**, and **Time Range**.
-
-!!! note  
-    When filtering, **API Proxy** components show a **Version** filter, and other components display a **Deployment Track** filter based on their monitoring context.
+You can check the past alerts that have triggered for your integration in the **Alerts History** pane. You can filter the alerts history by **Alert Type**, **Environment**, **Deployment Track** or **Version**, and **Time Range**.
 
 You can click on an alert to expand it to see more details about the alert.
 
