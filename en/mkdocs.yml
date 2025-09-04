@@ -118,6 +118,7 @@ nav:
       - Test REST Endpoints via the OpenAPI Console: testing/test-rest-endpoints-via-the-openapi-console.md
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
+      - Alerts Overview: monitoring-and-insights/alerts-overview.md
   - Administer:
       - Configure Enterprise Login: administer/configure-enterprise-login.md
       - Configure an External IdP:
