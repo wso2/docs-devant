@@ -119,6 +119,7 @@ nav:
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
       - Alerts Overview: monitoring-and-insights/alerts-overview.md
+      - Logs Overview: monitoring-and-insights/logs-overview.md
   - Administer:
       - Configure Enterprise Login: administer/configure-enterprise-login.md
       - Configure an External IdP:
