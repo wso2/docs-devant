@@ -119,7 +119,11 @@ nav:
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
       - Alerts Overview: monitoring-and-insights/alerts-overview.md
+      - Usage Insights:
+          - Usage Insights Overview: monitoring-and-insights/insights-overview.md
+          - Generate Custom Reports: monitoring-and-insights/generate-custom-reports.md
   - Administer:
+      - Control Access in the Devant Console: administer/control-access-in-the-devant-console.md
       - Configure Enterprise Login: administer/configure-enterprise-login.md
       - Configure an External IdP:
           - Configure Asgardeo as an External IdP: administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp.md
