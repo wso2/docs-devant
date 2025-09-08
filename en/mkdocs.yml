@@ -120,12 +120,17 @@ nav:
       - Observability Overview: monitoring-and-insights/observability-overview.md
       - Alerts Overview: monitoring-and-insights/alerts-overview.md
       - Logs Overview: monitoring-and-insights/logs-overview.md
+      - Usage Insights:
+          - Usage Insights Overview: monitoring-and-insights/insights-overview.md
+          - Generate Custom Reports: monitoring-and-insights/generate-custom-reports.md
   - Administer:
+      - Control Access in the Devant Console: administer/control-access-in-the-devant-console.md
       - Configure Enterprise Login: administer/configure-enterprise-login.md
       - Configure an External IdP:
           - Configure Asgardeo as an External IdP: administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp.md
           - Configure Azure as an External IdP: administer/configure-an-external-idp/configure-azure-ad-as-an-external-idp.md
   - References:
+      - FAQ: references/faq.md
       - Create an Organization: references/create-an-organization.md
       - Import a Repository: references/import-a-repository.md
       - "Install and Set Up WSO2 Integrator: BI": references/install-and-setup-wso2-integrator-bi.md
