@@ -1,6 +1,6 @@
 # Insights Overview
 
-Devant provides comprehensive insights into APIs created within Devant. Devant usage insights provide a range of metrics, including API traffic, error rates, and latency, allowing you to monitor and optimize API performance effectively.
+Devant provides comprehensive insights into APIs created within Devant. Usage insights provide a range of metrics, including API traffic, error rates, and latency, allowing you to monitor and optimize API performance effectively.
 
 With Devant usage insights, you can:
 
@@ -283,7 +283,7 @@ To generate a custom report, follow the steps below:
 2. If you need to further filter the content printed in the report, select one or more applications in the **Consumer** field. By default, all the applications that have subscribed to one or more of the selected APIs are selected.
 
     !!! Tip
-        If you want to filter the report content by the API consumer instead of the application, click on the toggle switch to the right of the **Consumer** field, and then select the required consumer. Only consumers who have subscribed to one or more of the selected APIs are displayed in the list. You can either select one or all of them.
+        If you want to filter the report content by the API consumer instead of the application, click the toggle switch to the right of the **Consumer** field, and then select the required consumer. Only consumers who have subscribed to one or more of the selected APIs are displayed in the list. You can either select one or all of them.
 
 3. Select the required year and the month in the **Year** and **Month** fields to specify the time interval for which you want to generate the report.
 
