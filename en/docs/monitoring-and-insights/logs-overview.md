@@ -77,9 +77,8 @@ As of now, Devant captures the following user-specific operations as audit logs:
 - Integration promotion initiation.
 - Integration version creation.
 - Integration deployment, redeployment, and undeployment initiation for all integrations.
-- Integration API access mode update.
+- Integration as API access mode update.
 - Enabling and disabling integration auto-deployment on commit. 
-- Integration build configuration update.
 - Integration endpoint creation, update, and deletion.
 - Organization user management.
 - On-premises key management.
