@@ -13,20 +13,20 @@
         <meta name="author" content="WSO2">
       
       
-        <link rel="canonical" href="https://wso2.com/devant/docs/monitoring-and-insights/generate-custom-reports/">
+        <link rel="canonical" href="https://wso2.com/devant/docs/monitoring-and-insights/logs-overview/">
       
       
-        <link rel="prev" href="../insights-overview/">
+        <link rel="prev" href="../alerts-overview/">
       
       
-        <link rel="next" href="../../administer/control-access-in-the-devant-console/">
+        <link rel="next" href="../insights-overview/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>Generate Custom Reports - </title>
+        <title>Logs Overview - </title>
       
     
     
@@ -137,7 +137,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#generate-custom-reports" class="md-skip">
+        <a href="#logs-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -182,7 +182,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Generate Custom Reports
+              Logs Overview
             
           </span>
         </div>
@@ -1312,11 +1312,92 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../logs-overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Logs Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Logs Overview
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#runtime-logs" class="md-nav__link">
+    Runtime logs
+  </a>
+  
+    <nav class="md-nav" aria-label="Runtime logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understand-runtime-logs" class="md-nav__link">
+    Understand runtime logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audit-logs" class="md-nav__link">
+    Audit logs
+  </a>
+  
+    <nav class="md-nav" aria-label="Audit logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audit-log-retention" class="md-nav__link">
+    Audit log retention
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manage-audit-log-access" class="md-nav__link">
+    Manage audit log access
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1326,16 +1407,16 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_4" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12_4" >
       
       
       
@@ -1344,7 +1425,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_12_4">
           <span class="md-nav__icon md-icon"></span>
           Usage Insights
@@ -1369,66 +1450,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Generate Custom Reports
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../generate-custom-reports/" class="md-nav__link">
         Generate Custom Reports
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    Metrics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#group-by" class="md-nav__link">
-    Group-by
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#download-reports" class="md-nav__link">
-    Download Reports
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1724,23 +1750,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    Metrics
+  <a href="#runtime-logs" class="md-nav__link">
+    Runtime logs
   </a>
+  
+    <nav class="md-nav" aria-label="Runtime logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understand-runtime-logs" class="md-nav__link">
+    Understand runtime logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#group-by" class="md-nav__link">
-    Group-by
+  <a href="#audit-logs" class="md-nav__link">
+    Audit logs
+  </a>
+  
+    <nav class="md-nav" aria-label="Audit logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audit-log-retention" class="md-nav__link">
+    Audit log retention
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#download-reports" class="md-nav__link">
-    Download Reports
+        
+          <li class="md-nav__item">
+  <a href="#manage-audit-log-access" class="md-nav__link">
+    Manage audit log access
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1759,7 +1811,7 @@
                   
 
   
-    <a href="https://github.com/wso2/docs-devant/edit/main/en/docs/monitoring-and-insights/generate-custom-reports.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-devant/edit/main/en/docs/monitoring-and-insights/logs-overview.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1768,74 +1820,161 @@
     
       
     
-    <a href="https://github.com/wso2/docs-devant/raw/main/en/docs/monitoring-and-insights/generate-custom-reports.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-devant/raw/main/en/docs/monitoring-and-insights/logs-overview.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="generate-custom-reports">Generate Custom Reports<a class="headerlink" href="#generate-custom-reports" title="Permanent link">&para;</a></h1>
-<p>Devant usage insights allow you to generate custom reports to view important information and make timely decisions for the betterment of your business. With custom reports, you can generate reports for a set of metrics of your choice and aggregate results by specific fields. Once generated, the metrics can be filtered out using any selected group-by filters. Custom reports can be visualized as overtime charts, pie charts, or tables.</p>
-<h2 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">&para;</a></h2>
-<p>Devant usage insights allow you to retrieve data for the following metrics:</p>
-<ul>
-<li>Total Hit Count</li>
-<li>Response Cache Hit Count</li>
-<li>Request Mediation Latency</li>
-<li>Response Mediation Latency</li>
-<li>Backend Latency</li>
-<li>Total Latency</li>
-<li>API Error Count</li>
-<li>Target Error Count</li>
-</ul>
-<h2 id="group-by">Group-by<a class="headerlink" href="#group-by" title="Permanent link">&para;</a></h2>
-<p><strong>Group-by</strong> fields specify how to group the metric data. For example, You can select <strong>Total Hit Count</strong> in the <strong>Metrics</strong> field and <strong>API Name</strong> under <strong>Group-by</strong> to retrieve the total hit count grouped by API name.</p>
-<p>Devant usage insights allow you to group metric data by the following fields:</p>
-<ul>
-<li>API Name</li>
-<li>API Version</li>
-<li>API Resource Template</li>
-<li>API Method</li>
-<li>API Creator</li>
-<li>Application</li>
-<li>Application Owner</li>
-<li>Destination</li>
-<li>User Agent</li>
-<li>Platform</li>
-</ul>
-<p>To generate a custom report, follow the steps below:</p>
+<h1 id="logs-overview">Logs Overview<a class="headerlink" href="#logs-overview" title="Permanent link">&para;</a></h1>
+<p>The unified log view in Devant allows you to view runtime and audit logs to gain insights into applications and users while preserving data privacy.</p>
+<p>Devant provides real-time insights through live logs and allows you to view historical logs for insights into the past. You also have the flexibility to define a required time range to view relevant log entries, where an intuitive scrolling capability facilitates easy viewing of logs within the selected time frame.</p>
+<p>The log view also provides advanced filtering capabilities that allow you to efficiently navigate through logs to expedite troubleshooting in distributed environments.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All personally identifiable information (PII) is resolved at the frontend service level, with only relevant UUIDs stored in logs.</p>
+</div>
+<h2 id="runtime-logs">Runtime logs<a class="headerlink" href="#runtime-logs" title="Permanent link">&para;</a></h2>
+<p>Devant runtime logs provide insights into both project and integration-level logs, covering application and gateway logs. These logs streamline the debugging process by centralizing diverse log sources.</p>
+<p>In Devant, any organization member can view runtime logs via the runtime logs page. Devant allows you to apply filters based on parameters such as log <strong>Type</strong> (error, warn, info, debug), <strong>Environment</strong> (Development, Production), and <strong>Time Range</strong> to simplify debugging. </p>
+<p>To access runtime logs, follow the steps below:</p>
 <ol>
+<li>Sign in to <a href="https://console.devant.dev/">Devant</a>.</li>
 <li>
-<p>Navigate to the <strong>Usage Insights</strong> page under <strong>Insights</strong>, <strong>Usage</strong> in the left navigation menu.</p>
-</li>
-<li>
-<p>In the left sub-navigation menu of <strong>Usage Insights</strong>, click <strong>Custom Reports</strong>.</p>
-<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Select Custom Reports" src="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-1.png" style="width:80%;" /></a></p>
-</li>
-<li>
-<p>Select metric(s) from the <strong>Metrics</strong> drop-down selector.</p>
-<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-2-to-4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Generate report" src="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-2-to-4.png" style="width:80%;" /></a></p>
-</li>
-<li>
-<p>Select between 1 and 3 group-by fields from the <strong>Group By</strong> drop-down selector.</p>
-</li>
-<li>
-<p>Set the order of the group-by filters by drag and drop to determine the grouping order of the selected metric(s).</p>
-</li>
-<li>
-<p>Once you determine the order of the group-by fields, you can set values for each group-by field from the respective dropdown.</p>
-<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Group by field selection" src="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-5.png" style="width:80%;" /></a></p>
-</li>
-<li>
-<p>Click <strong>Generate</strong>.</p>
-<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Generate" src="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-6.png" style="width:80%;" /></a></p>
+<p>In the left navigation menu, click <strong>Observability</strong> and then click <strong>Logs</strong>. This displays runtime logs for the past 30 days by default.</p>
+<p>To view logs based on a specific time range and other requirements, you can apply the necessary filter criteria.</p>
+<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/view-logs/runtime-logs.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Runtime logs" src="../../assets/img/monitoring-and-insights/view-logs/runtime-logs.png" /></a></p>
 </li>
 </ol>
-<h2 id="download-reports">Download Reports<a class="headerlink" href="#download-reports" title="Permanent link">&para;</a></h2>
-<p>Devant usage insights allow you to download report data for each chart as a <strong>PDF</strong> or a <strong>CSV</strong> file.</p>
-<p>To do this, click the <strong>Download</strong> icon on the top right of the relevant chart and select the required file format.
-    <a class="glightbox" href="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Download Report" src="../../assets/img/monitoring-and-insights/usage-insights/custom-reports/custom-reports-step-7.png" style="width:80%;" /></a></p>
+<h3 id="understand-runtime-logs">Understand runtime logs<a class="headerlink" href="#understand-runtime-logs" title="Permanent link">&para;</a></h3>
+<p>When you view integration-level logs on the <strong>Runtime Logs</strong> page, you will see both application and gateway logs.</p>
+<h4>Application logs</h4>
+<p>Each application log entry displays the following details:</p>
+<ul>
+<li><code>timestamp</code>: The time when the log entry was created.</li>
+<li><code>environment</code>: The environment in which the integration is running (e.g., Development).</li>
+<li><code>logType</code>: The type of log entry (e.g., Application, Gateway).</li>
+<li><code>version</code>: The version or deployment track of the integration.</li>
+<li><code>message</code>: The log message providing details about the event.</li>
+</ul>
+<h4>Gateway logs</h4>
+<p>Each gateway log entry displays the following details:</p>
+<ul>
+<li><code>timestamp</code>: The time when the request is received by the gateway component.</li>
+<li><code>logLine</code>: Contains the following details about the request, including inbound and outbound information from the gateway perspective.<ul>
+<li><code>Method</code>: The HTTP method of the request.</li>
+<li><code>RequestPath</code>: The path of the inbound request.</li>
+<li><code>ServicePath</code>: The path of the outbound request.</li>
+<li><code>UserAgent</code>: The user-agent header of the request.</li>
+<li><code>CorrelationID</code>: The request identifier of the inbound request. This is useful to track a request.</li>
+<li><code>ServiceHost</code>: The host IP of the backend.</li>
+<li><code>Duration</code>: The time taken for the gateway to serve the request.  </li>
+</ul>
+</li>
+<li><code>gatewayCode</code>: Indicates the state of the request from the gateway perspective. Possible values are as follows:<ul>
+<li><code>BACKEND_RESPONSE</code>:  Indicates successful processing of the request by the gateway with a response to the client from the backend application.</li>
+<li><code>CORS_RESPONSE</code>: Denotes a CORS (Cross-Origin Resource Sharing) request.</li>
+<li><code>AUTH_FAILURE</code>: Indicates a request failure at the gateway due to authentication or authorization issues, such as an invalid token.</li>
+<li><code>NO_HEALTHY_BACKEND</code>: Indicates a request failure at the gateway due to a non-existent backend.</li>
+<li><code>RATE_LIMITED</code>: Indicates a request failure at the gateway due to surpassing the rate limit enforced within the integration.</li>
+<li><code>RESOURCE_NOT_FOUND</code>: Indicates a request failure at the gateway due to the absence of a matching API resource for the inbound request. This can be caused by a mismatch in the HTTP method, path, or host.</li>
+<li><code>BACKEND_TIMEOUT</code>: Indicates a request timeout when calling the backend application from the gateway.</li>
+<li><code>GATEWAY_ERROR</code>: Indicates a request failure due to an erroneous behavior in the gateway.</li>
+</ul>
+</li>
+<li><code>statusCode</code>: The HTTP status code returned to the client.</li>
+<li><code>integrationVersion</code>: The version of the invoked integration.</li>
+<li><code>envName</code>: The environment of the inbound request. For example, Development, Production, etc.</li>
+</ul>
+<h2 id="audit-logs">Audit logs<a class="headerlink" href="#audit-logs" title="Permanent link">&para;</a></h2>
+<p>Audit logs, also called audit trails, enhance security, ensure compliance, provide operational insights, and help manage risks. </p>
+<p>In Devant, an audit log records organization-level user-specific operations performed via the Devant Console. It also captures the timestamp and the outcome of the action. </p>
+<p>As of now, Devant captures the following user-specific operations as audit logs:</p>
+<ul>
+<li>Project creation, update, and deletion.</li>
+<li>Integration creation, update, and deletion.</li>
+<li>Integration promotion initiation.</li>
+<li>Integration version creation.</li>
+<li>Integration deployment, redeployment, and undeployment initiation for all integrations.</li>
+<li>Integration as API access mode update.</li>
+<li>Enabling and disabling integration auto-deployment on commit. </li>
+<li>Integration endpoint creation, update, and deletion.</li>
+<li>Organization user management.</li>
+<li>On-premises key management.</li>
+<li>Project-level configuration management.</li>
+</ul>
+<p>In Devant, organization administrators are allowed to view audit logs by default. If other members need to access organization-specific audit logs, the administrator can create a role with the relevant permissions and assign it to members. For step-by-step instructions on how to create and assign a role with the relevant permissions, see <a href="#manage-audit-log-access">Manage audit log access</a>.</p>
+<p>To view audit logs, follow these steps:</p>
+<ol>
+<li>Sign in to <a href="https://console.devant.dev/">Devant</a>.</li>
+<li>
+<p>In the Devant Console, go to the top navigation menu and click <strong>Organization</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Currently, you can only view organization-level audit logs.</p>
+</div>
+</li>
+<li>
+<p>If you're using Devant as a Developer, click <strong>Admin</strong> and then click <strong>Audit Logs</strong>. If you're using Devant as a Platform Engineer, click <strong>Observability</strong> and then click <strong>Audit Logs</strong>.</p>
+<p>To view audit logs based on a specific time range and other requirements, you can apply the necessary filter criteria.</p>
+</li>
+</ol>
+<h3 id="audit-log-retention">Audit log retention<a class="headerlink" href="#audit-log-retention" title="Permanent link">&para;</a></h3>
+<p>Devant retains audit logs for one year and archives them for an additional year. Therefore, the total retention period for audit logs is two years.</p>
+<h3 id="manage-audit-log-access">Manage audit log access<a class="headerlink" href="#manage-audit-log-access" title="Permanent link">&para;</a></h3>
+<p>Follow the steps given below to create a role with audit log access permissions and assign it to organization members who need access to audit logs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You must be the organization administrator to perform this action.</p>
+</div>
+<h4>Step 1: Create a role with audit log access permissions</h4>
+<ol>
+<li>In the Devant Console top navigation, click <strong>Organization</strong>.</li>
+<li>In the left navigation menu, click <strong>Admin</strong> and then click <strong>Settings</strong>.</li>
+<li>On the <strong>Access Control</strong> tab, click <strong>Roles</strong> and then click <strong>+ Create Role</strong>.</li>
+<li>
+<p>Enter a name and description for the role.</p>
+<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/view-logs/create-role-to-view-audit-logs.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Create role" src="../../assets/img/monitoring-and-insights/view-logs/create-role-to-view-audit-logs.png" /></a></p>
+</li>
+<li>
+<p>Under the <strong>Permissions</strong> list, select <strong>LOG-MANAGEMENT</strong>.</p>
+<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/view-logs/log-management-permission.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Select log management permission" src="../../assets/img/monitoring-and-insights/view-logs/log-management-permission.png" /></a></p>
+</li>
+<li>
+<p>Click <strong>Create</strong>.  </p>
+</li>
+</ol>
+<h4>Step 2: Create a group and assign the role and user to the group</h4>
+<ol>
+<li>On the <strong>Access Control</strong> tab, click <strong>Groups</strong>, and then click <strong>+ Create Group</strong>. </li>
+<li>
+<p>Enter a name and description for the group, and then click <strong>Create</strong>.</p>
+<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/view-logs/create-user-group.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Create user group" src="../../assets/img/monitoring-and-insights/view-logs/create-user-group.png" /></a></p>
+</li>
+<li>
+<p>On the <strong>Groups</strong> view, on the group you just created, click <strong>Edit</strong>.</p>
+<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/view-logs/edit-user-group.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Edit user group" src="../../assets/img/monitoring-and-insights/view-logs/edit-user-group.png" /></a></p>
+</li>
+<li>
+<p>Add the user to the group by clicking <strong>+ Add Users</strong>.</p>
+</li>
+<li>
+<p>Assign the role you created in <a href="#step-1-create-a-role-with-audit-log-access-permissions">Step 1</a> to the group.</p>
+<p><a class="glightbox" href="../../assets/img/monitoring-and-insights/view-logs/assign-user-role-to-group.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Assign role and user to group" src="../../assets/img/monitoring-and-insights/view-logs/assign-user-role-to-group.png" /></a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to invite one or more users and add them to the Auditor group, follow the steps given below:</p>
+<ol>
+<li>Navigate to the <strong>Users</strong> tab under <strong>Access Control</strong>.</li>
+<li>Click <strong>+ Invite Users</strong>.</li>
+<li>In the <strong>Emails</strong> field, enter the email addresses of users you want to invite.</li>
+<li>Click on <strong>Groups</strong> to expand the groups list. Select the group you created.</li>
+<li>Click <strong>Invite</strong>. This sends an invitation email to each email address so that the users can accept and obtain access to view audit logs.</li>
+</ol>
+</div>
+</li>
+</ol>
 
 
 
@@ -1862,7 +2001,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../insights-overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Usage Insights Overview" rel="prev">
+          <a href="../alerts-overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Alerts Overview" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1871,20 +2010,20 @@
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                Usage Insights Overview
+                Alerts Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../administer/control-access-in-the-devant-console/" class="md-footer__link md-footer__link--next" aria-label="Next: Control Access in the Devant Console" rel="next">
+          <a href="../insights-overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Usage Insights Overview" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Control Access in the Devant Console
+                Usage Insights Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
