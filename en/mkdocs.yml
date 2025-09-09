@@ -119,6 +119,7 @@ nav:
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
       - Alerts Overview: monitoring-and-insights/alerts-overview.md
+      - Logs Overview: monitoring-and-insights/logs-overview.md
       - Usage Insights:
           - Usage Insights Overview: monitoring-and-insights/insights-overview.md
           - Generate Custom Reports: monitoring-and-insights/generate-custom-reports.md
