@@ -111,7 +111,13 @@ nav:
       - Devant-Managed Cache: manage-databases-and-caches/devant-managed-caches.md
       - Add Devant-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md
   - API Management:
+      - Overview: api-management/api-management-overview.md
       - Lifecycle Management: api-management/lifecycle-management.md
+      - API Security: api-management/api-security.md
+      - Consuming APIs:
+        - Consuming an API secured with an API Key: api-management/consuming-apis/consuming-an-api-secured-with-an-api-key.md
+        - Consuming an API secured with OAuth2: api-management/consuming-apis/consuming-an-api-secured-with-oauth2.md
+      - API Rate Limiting: api-management/api-rate-limiting.md
   - Configure VPN:
       - Configure VPNs on the Devant Cloud Data Plane: configure-vpn/configure-tailscale-vpn.md      
   - Testing: 
@@ -121,7 +127,7 @@ nav:
       - Alerts Overview: monitoring-and-insights/alerts-overview.md
       - Logs Overview: monitoring-and-insights/logs-overview.md
       - Usage Insights:
-          - Usage Insights Overview: monitoring-and-insights/insights-overview.md
+          - Usage Insights Overview: monitoring-and-insights/usage-insights-overview.md
           - Generate Custom Reports: monitoring-and-insights/generate-custom-reports.md
   - Administer:
       - Control Access in the Devant Console: administer/control-access-in-the-devant-console.md
