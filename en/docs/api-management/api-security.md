@@ -4,7 +4,7 @@ This document outlines key practices for securing APIs against threats and vulne
 
 ## Supported security schemes in Devant
 
-Devant primarily supports two security schemes for APIs: API Key and OAuth2.
+Devant primarily supports two security schemes for APIs: `API Key` and `OAuth2`.
 
 ### API Key 
 
