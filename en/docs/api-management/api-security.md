@@ -23,8 +23,9 @@ Follow the steps given below.
 3. Select the Integration as API you want to configure security for.
 4. In the Integration **Overview** page, on the right side, click **Configure Security**.
 5. In the **Configure Security** pane, select the **Security Scheme** you want to use (API Key or OAuth2).
-6. If you select **API Key**, you can select Resource Level security for the API. By default, security is applied at the API level.
-7. If you select **OAuth2**, you can also configure permissions for the API. You can select from the available scopes or create new ones, and then assign them to each resource.
+
+    - With **API Key** scheme, you can select Resource Level security for the API. By default, security is applied at the API level.
+    - With **OAuth2** scheme, in addition to Resource Level security configurations, you can also configure permissions for the API. You can select from the available scopes or create new ones, and then assign them to each resource.
 
     !!! note
         If you select both **API Key** and **OAuth2**, authentication requirements depend on the resource:
@@ -32,7 +33,7 @@ Follow the steps given below.
         - For unscoped resources, clients can use either an API Key or OAuth2 access token to authenticate.
         - For resources with OAuth2 scopes assigned (permissions), only OAuth2 authentication is permitted.
 
-8. Click **Apply** to save the changes. The changes will be deployed to the Development environment immediately. For other environments, you need to promote the changes.
+6. Click **Apply** to save the changes. The changes will be deployed to the Development environment immediately. For other environments, you need to promote the changes.
 
     <div style="width: 80%;">
     ![API Security](../../assets/img/api-management/api-security.gif)
