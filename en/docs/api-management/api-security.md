@@ -27,7 +27,10 @@ Follow the steps given below.
 7. If you select **OAuth2**, you can also configure permissions for the API. You can select from the available scopes or create new ones, and then assign them to each resource.
 
     !!! note
-        If you select both **API Key** and **OAuth2**, the API will require either authentication method for access. However, access to scoped API resources will be restricted to OAuth2 only.
+        If you select both **API Key** and **OAuth2**, authentication requirements depend on the resource:
+        
+        - For unscoped resources, clients can use either an API Key or OAuth2 access token to authenticate.
+        - For resources with OAuth2 scopes assigned (permissions), only OAuth2 authentication is permitted.
 
 8. Click **Apply** to save the changes. The changes will be deployed to the Development environment immediately. For other environments, you need to promote the changes.
 
