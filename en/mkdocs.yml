@@ -142,6 +142,7 @@ nav:
       - "Install and Set Up WSO2 Integrator: BI": references/install-and-setup-wso2-integrator-bi.md
       - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
       - Sign-Up and Upgrade Guide: references/signup-and-upgrade-guide.md
+      - Manage Configurations and Secrets: devops-and-ci-cd/manage-configurations-and-secrets.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
