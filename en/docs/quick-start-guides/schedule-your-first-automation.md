@@ -51,11 +51,14 @@ This redirects you to the **Create New Integration in VS Code** page.
 
 ## Optional: Test the Automation manually
 
-1. In the left navigation menu, click **Execute**.
-2. Click **Run Now**. This triggers the task.
+You can test your automation directly from the **Development** card on the **Overview** page:
+
+1. On the Overview page, locate the **Development** card.
+2. Click **Test** to run your automation immediately.
 
     !!! info "Inject Dynamic Values into Your Application as Command-Line Arguments"
-        If you want to inject dynamic values into your application as command-line arguments when you run a manual task, follow these steps:
+        To pass dynamic values to your application when testing manually,follow these steps:
+
         1. Click the drop-down icon next to **Run Now** and then click **Run with Arguments**.
         2. In the **Runtime Arguments** pane, enter the arguments you want to pass to your application.
         3. Click **Execute**. This triggers the task with the specified arguments.
@@ -73,6 +76,8 @@ This redirects you to the **Create New Integration in VS Code** page.
 
             !!! info
                 If you want to pass arguments to Ballerina main functions, use the **Run with Arguments** capability. For details on the arguments you can pass, see the [Ballerina documentation](https://ballerina.io/learn/by-example/main-function/). You can also override configurable values in the same manner. For more information, see [Provide values to configurable variables](https://ballerina.io/learn/provide-values-to-configurable-variables/#provide-via-command-line-arguments).
+    !!! note
+        As user portal features are added, testing and other actions will be accessible directly from the **Overview** page, making it easier to manage and validate your automations.
 
 ## Step 5: Schedule Automation
 
