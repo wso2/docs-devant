@@ -57,25 +57,25 @@ You can test your automation directly from the **Development** card on the **Ove
 2. Click **Test** to run your automation immediately.
 
     !!! info "Inject Dynamic Values into Your Application as Command-Line Arguments"
-        To pass dynamic values to your application when testing manually,follow these steps:
+        To pass dynamic values to your application when testing manually, follow these steps:
 
-        1. Click the drop-down icon next to **Run Now** and then click **Run with Arguments**.
+        1. Click the drop-down icon next to **Test** and then click **Test with Arguments**.
         2. In the **Runtime Arguments** pane, enter the arguments you want to pass to your application.
         3. Click **Execute**. This triggers the task with the specified arguments.
 
         The capability to run a manual task with arguments is supported for the following build presets:
 
         === "WSO2 MI"
-            To explore a WSO2 MI-based manual task with arguments, try out the [Weather to Logs Task](https://github.com/wso2/choreo-samples/tree/main/weather-to-logs-mi-manual-task) sample. For instructions, see the `readme.md` file in the sample repository.
+            To explore a WSO2 MI-based manual task with arguments, try out the [Weather to Logs Task](https://github.com/wso2/choreo-samples/tree/main/weather-to-logs-mi-manual-task) sample. For instructions, see the `README.md` file in the sample repository.
 
             !!! info
-                When working on WSO2 MI projects and deploying a WSO2 MI integration as a manual task in Choreo, use the WSO2 MI automation mode. For details, see [Running the Micro Integrator in Automation Mode](https://apim.docs.wso2.com/en/latest/install-and-setup/install/running-the-mi-in-automation-mode/).
+                When working on WSO2 MI projects and deploying a WSO2 MI integration as a manual task in Choreo, use the WSO2 MI automation mode. For details, see [Running the Micro Integrator in Automation Mode](https://mi.docs.wso2.com/en/latest/install-and-setup/install/running-the-mi-in-automation-mode/).
 
         === "Ballerina"
-            To explore a Ballerina manual task with arguments, try out the [Weather to Email Task](https://github.com/wso2/choreo-samples/tree/main/weather-to-email-integration) sample. For instructions, see the README.md file in the sample repository.
+            To explore a Ballerina manual task with arguments, try out the [Weather to Email Task](https://github.com/wso2/choreo-samples/tree/main/weather-to-email-integration) sample. For instructions, see the `README.md` file in the sample repository.
 
             !!! info
-                If you want to pass arguments to Ballerina main functions, use the **Run with Arguments** capability. For details on the arguments you can pass, see the [Ballerina documentation](https://ballerina.io/learn/by-example/main-function/). You can also override configurable values in the same manner. For more information, see [Provide values to configurable variables](https://ballerina.io/learn/provide-values-to-configurable-variables/#provide-via-command-line-arguments).
+                If you want to pass arguments to Ballerina main functions, use the **Test with Arguments** capability. For details on the arguments you can pass, see the [Ballerina documentation](https://ballerina.io/learn/by-example/main-function/). You can also override configurable values in the same manner. For more information, see [Provide values to configurable variables](https://ballerina.io/learn/provide-values-to-configurable-variables/#provide-via-command-line-arguments).
     !!! note
         As user portal features are added, testing and other actions will be accessible directly from the **Overview** page, making it easier to manage and validate your automations.
 
