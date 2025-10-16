@@ -100,7 +100,12 @@ You can test your automation directly from the **Development** card on the **Ove
     </div>
 
 10. After successfully testing, you can promote your automation to production by clicking the **Promote** button.
-11. In critical environments (Production), you will be able to see automation metrics such as:
+11. Once promoted to production, click **Run** to run your automation immediately.
+    
+    !!!info
+        If you want to pass runtime arguments when running in production, use the **Run with Arguments** option in the same way as described above in the [Test the Automation manually](#optional-test-the-automation-manually) section.
+
+12. In critical environments (Production), you will be able to see automation metrics such as:
 
     - **Error Rate**: Percentage of failed executions
     - **Average Duration**: Average time taken for executions
