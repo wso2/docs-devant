@@ -51,7 +51,7 @@ This redirects you to the **Create New Integration in VS Code** page.
 
 ## Optional: Test the Automation manually
 
-You can test your automation directly from the **Development** card on the **Overview** page:
+You can execute your automation directly from the environment card on the **Overview** page:
 
 1. On the Overview page, locate the **Development** card.
 2. Click **Test** to run your automation immediately.
