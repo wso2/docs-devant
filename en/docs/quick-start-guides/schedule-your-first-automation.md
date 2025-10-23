@@ -71,7 +71,7 @@ You can execute your automation directly from the environment card on the **Over
             !!! info
                 When working on WSO2 MI projects and deploying a WSO2 MI integration as a manual task in Choreo, use the WSO2 MI automation mode. For details, see [Running the Micro Integrator in Automation Mode](https://mi.docs.wso2.com/en/latest/install-and-setup/install/running-the-mi-in-automation-mode/).
 
-        === "Ballerina"
+        === "WSO2 BI"
             To explore a Ballerina manual task with arguments, try out the [Weather to Email Task](https://github.com/wso2/choreo-samples/tree/main/weather-to-email-integration) sample. For instructions, see the `README.md` file in the sample repository.
 
             !!! info
