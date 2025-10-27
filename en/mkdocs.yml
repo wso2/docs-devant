@@ -76,10 +76,10 @@ nav:
       - What is Devant?: what-is-devant.md
   - Quick Start Guides:
       - Schedule Your First Automation: quick-start-guides/schedule-your-first-automation.md
-      - Deploy Your First AI Agent: quick-start-guides/deploy-your-first-ai-agent.md
-      - Deploy Your First Integration as API: quick-start-guides/deploy-your-first-integration-as-api.md
-      - Deploy Your First Event Integration: quick-start-guides/deploy-your-first-event-integration.md
-      - Deploy Your First File Integration: quick-start-guides/deploy-your-first-file-integration.md
+      - Develop Your First AI Agent: quick-start-guides/develop-your-first-ai-agent.md
+      - Develop Your First Integration as API: quick-start-guides/develop-your-first-integration-as-api.md
+      - Develop Your First Event Integration: quick-start-guides/develop-your-first-event-integration.md
+      - Develop Your First File Integration: quick-start-guides/develop-your-first-file-integration.md
   - Devant Samples:
       - Explore the Samples Collection:
           - Samples Overview: devant-samples/samples-overview.md
@@ -88,7 +88,7 @@ nav:
       - "Deploy with WSO2 Integrator: MI": devant-samples/deploy-with-wso2-integrator-mi.md
   - AI:
       - RAG Application: ai/rag-application.md
-      - 'Deploy an AI Agent Created Using WSO2 Integrator: BI': ai/deploy-an-ai-agent-created-using-wso2-integrator-bi.md
+      - 'Develop an AI Agent Created Using WSO2 Integrator: BI': ai/develop-an-ai-agent-created-using-wso2-integrator-bi.md
   - Devant Concepts:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
       - Organization: devant-concepts/organization.md

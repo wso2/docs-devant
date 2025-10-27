@@ -1,8 +1,8 @@
-# Deploy Your First Event Integration
+# Develop Your First Event Integration
 
-An event handle executes predefined actions in response to specific events. Devant simplifies the process of creating and deploying such integrations.
+An event handle executes predefined actions in response to specific events. Devant simplifies the process of developing such integrations.
 
-This guide walks you through the steps to create and deploy an event integration using WSO2 Integrator:BI and Devant.
+This guide walks you through the steps to develop an event integration using WSO2 Integrator:BI and Devant.
 
 In this guide, you will build a simple event integration that monitors RabbitMQ for new messages and displays them once they become available.
 
