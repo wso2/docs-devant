@@ -111,7 +111,13 @@ nav:
       - Devant-Managed Cache: manage-databases-and-caches/devant-managed-caches.md
       - Add Devant-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace.md
   - API Management:
+      - Overview: api-management/overview.md
       - Lifecycle Management: api-management/lifecycle-management.md
+      - API Security: api-management/api-security.md
+      - Consuming APIs:
+        - Consuming an API secured with an API Key: api-management/consuming-apis/consuming-an-api-secured-with-an-api-key.md
+        - Consuming an API secured with OAuth2: api-management/consuming-apis/consuming-an-api-secured-with-oauth2.md
+      - API Rate Limiting: api-management/api-rate-limiting.md
   - Configure VPN:
       - Configure VPNs on the Devant Cloud Data Plane: configure-vpn/configure-tailscale-vpn.md      
   - Testing: 
@@ -119,7 +125,12 @@ nav:
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
       - Alerts Overview: monitoring-and-insights/alerts-overview.md
+      - Logs Overview: monitoring-and-insights/logs-overview.md
+      - Usage Insights:
+          - Usage Insights Overview: monitoring-and-insights/usage-insights-overview.md
+          - Generate Custom Reports: monitoring-and-insights/generate-custom-reports.md
   - Administer:
+      - Control Access in the Devant Console: administer/control-access-in-the-devant-console.md
       - Configure Enterprise Login: administer/configure-enterprise-login.md
       - Configure an External IdP:
           - Configure Asgardeo as an External IdP: administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp.md
@@ -131,6 +142,7 @@ nav:
       - "Install and Set Up WSO2 Integrator: BI": references/install-and-setup-wso2-integrator-bi.md
       - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
       - Sign-Up and Upgrade Guide: references/signup-and-upgrade-guide.md
+      - Manage Configurations and Secrets: devops-and-ci-cd/manage-configurations-and-secrets.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
