@@ -1,4 +1,4 @@
-# Deploy Your First Integration as API
+# Develop Your First Integration as API
 
 ## Overview
 
