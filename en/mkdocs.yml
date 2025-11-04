@@ -143,6 +143,9 @@ nav:
       - Devant Platform Service Billing and Upgrades: references/devant-platform-services-billing-and-upgrades.md
       - Sign-Up and Upgrade Guide: references/signup-and-upgrade-guide.md
       - Manage Configurations and Secrets: devops-and-ci-cd/manage-configurations-and-secrets.md
+      - Autoscale:
+        - Autoscale Component Replicas: devops-and-ci-cd/autoscale/autoscale-component-replicas.md
+        - Autoscale Components with Scale-to-Zero: devops-and-ci-cd/autoscale/autoscale-components-with-scale-to-zero.md
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
