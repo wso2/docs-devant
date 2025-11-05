@@ -6,7 +6,7 @@ Scale to zero is very useful in lower environments, where you can significantly 
 
 ## How Scale to Zero works in Devant
 
-When Scale to Zero is enabled, your apps will automatically scale down to zero unless they receive HTTP traffic. When the application receives an HTTP request, your workload quickly scales up from zero to handle the request. When a new request is received by the deployment, the deployment will scale up to one replica and serve the request. When the deployment remains idle for a set period (approximately 5 minutes), it will automatically scale back to zero until a new request is received.
+Scale-to-Zero automatically scales your apps down to zero unless they receive HTTP traffic. Upon receiving an HTTP request, your workload quickly scales up from zero to handle the request. New requests trigger scale-up to one replica to serve the request. After remaining idle for approximately 5 minutes, the deployment automatically scales back to zero until the next request arrives.
 
 When Scale to Zero is enabled, you can set the maximum number of replicas for deployments with this capability. Devant dynamically scales deployments up to meet high HTTP traffic demand, up to the specified number of replicas. If the pending requests surpass the defined threshold under **Number of pending requests to spawn a new pod**, Devant automatically adds a new replica to handle the increased load.
 
@@ -48,7 +48,7 @@ When you turn on the scale-to-zero for your application, the minimum replicas fo
 
 ## Limitations
 
-- The scale-to-zero feature currently exclusively supports web applications and HTTP services. TCP and HTTPS services are not supported to be scaled to zero.
+- The scale-to-zero feature exclusively supports HTTP services. TCP and HTTPS services are not supported to be scaled to zero.
 - To scale to zero, your HTTP service must run on one of the specified ports: 5000, 6000, 7000, 8000, 9000, 7070 to 7079, 8080 to 8089, and 9090 to 9099 or 8290. If you have an endpoint in your integration running in any other port, your integration will not automatically scale-to-zero when deploying or promoting. Also, if you try to switch to the “scale-to-zero” option in the “Admin” → “Scaling” view, it will fail.
 - Automations cannot connect to a service on a project scope if scale-to-zero is enabled. Attempting to do so results in the following error:
 
