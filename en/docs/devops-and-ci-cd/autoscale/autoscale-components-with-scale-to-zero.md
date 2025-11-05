@@ -40,7 +40,7 @@ To enable scale-to-zero for integrations as APIs created before February 23, 202
     !!! note 
          The scale-to-zero service should start within 60 seconds. If it doesn’t, the gateway will timeout the request.
 
-You can independently scale Devant integrations in both the **Development** and **Production** environments. The deployment card indicates the scaling status of each environment. To configure the scale-to-zero feature for a specific environment, click on the **scale-to-zero** link, which redirects to the **Devops** → **Scaling** page.
+You can independently scale Devant integrations in both the **Development** and **Production** environments. The deployment card indicates the scaling status of each environment. To configure the scale-to-zero feature for a specific environment, click on the **scale-to-zero** link, which redirects to the **Admin** → **Scaling** page.
 
 ![Deploy View - Scale to Zero](../../assets/img/devops-and-ci-cd/scaling/scale-to-zero-in-deploy-view.png){.cInlineImage-full}
 
@@ -49,7 +49,7 @@ When you turn on the scale-to-zero for your application, the minimum replicas fo
 ## Limitations
 
 - The scale-to-zero feature currently exclusively supports web applications and HTTP services. TCP and HTTPS services are not supported to be scaled to zero.
-- To scale to zero, your HTTP service must run on one of the specified ports: 5000, 6000, 7000, 8000, 9000, 7070 to 7079, 8080 to 8089, and 9090 to 9099 or 8290. If you have an endpoint in your integration running in any other port, your integration will not automatically scale-to-zero when deploying or promoting. Also, if you try to switch to the “scale-to-zero” option in the “Devops” → “Scaling” view, it will fail.
+- To scale to zero, your HTTP service must run on one of the specified ports: 5000, 6000, 7000, 8000, 9000, 7070 to 7079, 8080 to 8089, and 9090 to 9099 or 8290. If you have an endpoint in your integration running in any other port, your integration will not automatically scale-to-zero when deploying or promoting. Also, if you try to switch to the “scale-to-zero” option in the “Admin” → “Scaling” view, it will fail.
 - Automations cannot connect to a service on a project scope if scale-to-zero is enabled. Attempting to do so results in the following error:
 
     `Host not found, not forwarding request.`
@@ -67,4 +67,4 @@ If your application remains without HTTP traffic for an extended period (default
 
 ## Troubleshooting
 
-When Devant enables scale-to-zero by default, it will configure the readiness probe with some default values. However, in some cases, you may observe that your first request responds with a 503 status code. To overcome these behaviors, fine-tune the readiness probe in the **DevOps** → **Health Checks** view to match your application's needs.
+When Devant enables scale-to-zero by default, it will configure the readiness probe with some default values. However, in some cases, you may observe that your first request responds with a 503 status code. To overcome these behaviors, fine-tune the readiness probe in the **Admin** → **Health Checks** view to match your application's needs.
