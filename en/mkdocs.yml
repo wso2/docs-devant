@@ -135,6 +135,7 @@ nav:
       - Configure an External IdP:
           - Configure Asgardeo as an External IdP: administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp.md
           - Configure Azure as an External IdP: administer/configure-an-external-idp/configure-azure-ad-as-an-external-idp.md
+      - Configure a Custom Domain for Your Organization: administer/configure-a-custom-domain-for-your-organization.md    
   - References:
       - FAQ: references/faq.md
       - Create an Organization: references/create-an-organization.md
