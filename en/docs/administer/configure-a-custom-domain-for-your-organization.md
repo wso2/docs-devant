@@ -1,6 +1,6 @@
 # Configure a Custom Domain for Your Organization
 
-A custom domain is essential for effective branding, discoverability, and credibility of an integration as API. Devant allows you to easily configure custom domains for your organization, enabling developers to utilize it to configure custom URLs for their integrations as APIs, and webhooks.
+A custom domain is essential for effective branding, discoverability, and credibility of an integration as API. Devant allows you to easily configure custom domains for your organization, enabling developers to utilize it to configure custom URLs for their integrations as APIs.
 
 !!! info "Note"
     The Custom Domains feature is provided exclusively to paid subscribers. Free-tier organizations do not have access to custom domain configuration.
