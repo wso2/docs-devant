@@ -13,7 +13,7 @@ The log view also provides advanced filtering capabilities that allow you to eff
 
 Devant runtime logs provide insights into both project and integration-level logs, covering application and gateway logs. These logs streamline the debugging process by centralizing diverse log sources.
 
-In Devant, any organization member can view runtime logs via the runtime logs page. Devant allows you to apply filters based on parameters such as log **Type** (error, warn, info, debug), **Environment** (Development, Production), and **Time Range** to simplify debugging. 
+In Devant, any organization member can view runtime logs via the runtime logs page.
 
 To access runtime logs, follow the steps below:
 
@@ -67,6 +67,7 @@ Each gateway log entry displays the following details:
 ### Filtering runtime logs
 
 Runtime logs can be filtered based on the following parameters:
+
 - **Type**: Filter logs based on their type. Possible values are `Error`, `Warn`, `Info`, and `Debug`.
 - **Environment**: Filter logs based on the environment in which the integration is running.
 - **Deployment Track**: Filter logs based on the deployment track of the integration.
