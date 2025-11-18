@@ -64,18 +64,18 @@ Each gateway log entry displays the following details:
   - `integrationVersion`: The version of the invoked integration.
   - `envName`: The environment of the inbound request. For example, Development, Production, etc.
 
-### Filtering runtime logs
+### Filter runtime logs
 
 Runtime logs can be filtered based on the following parameters:
 
-- **Type**: Filter logs based on their type. Possible values are `Error`, `Warn`, `Info`, and `Debug`.
-- **Environment**: Filter logs based on the environment in which the integration is running.
-- **Deployment Track**: Filter logs based on the deployment track of the integration.
-- **Time Range**: Filter logs based on a specific time range.
-- **Content Search**: Filter logs based on specific keywords or phrases within the log messages.
-- **Regex Search**: Filter logs using regular expressions to match specific patterns within the log messages.
+- Type: Filter logs based on their type. Possible values are `Error`, `Warn`, `Info`, and `Debug`.
+- Environment: Filter logs based on the environment in which the integration is running.
+- Deployment Track: Filter logs based on the deployment track of the integration.
+- Time Range: Filter logs based on a specific time range.
+- Content Search: Filter logs based on specific keywords or phrases within the log messages.
+- Regex Search: Filter logs using regular expressions to match specific patterns within the log messages.
 
-You can simply type your search query in the search bar and press **Enter** to apply the content or regex search filter. 
+You can type your search query in the search bar and press **Enter** to apply the content or regex search filter. 
 
 !!! note
      Devant uses Lucene query syntax for regex search. For more information on Lucene syntax, see [Lucene Query Syntax Documentation](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html).
