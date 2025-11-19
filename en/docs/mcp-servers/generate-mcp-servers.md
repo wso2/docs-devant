@@ -80,7 +80,7 @@ You can modify the details of the Tools of your generated MCP Server by clicking
 
 The following options are supported when modifying the Tools
 
-1. **Add new tool** - You can create a new tool by selecting the **+** icon at the top. You have to provide the name and description at this stage. The schema will be auto-generated once  you create the mapping to the REST resource
+1. **Add new tool** - You can create a new tool by selecting the **+** icon at the top. You have to provide the name and description at this stage. The schema will be auto-generated once you create the mapping to the REST resource
 2. **Edit tool details** - You can modify the tool name and description of each tool by clicking on the Tool icon. The tool schema cannot be modified.
 3. **Delete tools** - By default tools are created for all the resources of the REST service or the backend service. You can remove unwanted ones by deleting the tool.
 
