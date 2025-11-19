@@ -54,7 +54,7 @@ This creates the organization and opens the organization home page.
 
 ### Create MCP Servers for existing HTTP integrations under the `Integration as API`  category in Devant.
 
-1. Navigate to an HTTP based `Integration as API` type integration in Devant. At the top right corner of the integration's overview page, click the `Generate MCP server` button. 
+1. Navigate to an HTTP-based `Integration as API` type integration in Devant. At the top right corner of the integration's overview page, click the `Generate MCP server` button. 
 
      **Note:** The `Generate MCP server` button is only enabled if the API has been promoted to production. If the API is not yet in production, promote it first to enable this option.
 
@@ -80,7 +80,7 @@ You can modify the details of the Tools of your generated MCP Server by clicking
 
 The following options are supported when modifying the Tools
 
-1. **Add new tool** - You can create a new tool by selecting the **+** icon at the top. You have to provide the name and description at this stage. The schema will be auto generated once  you create the mapping to the REST resource
+1. **Add new tool** - You can create a new tool by selecting the **+** icon at the top. You have to provide the name and description at this stage. The schema will be auto-generated once  you create the mapping to the REST resource
 2. **Edit tool details** - You can modify the tool name and description of each tool by clicking on the Tool icon. The tool schema cannot be modified.
 3. **Delete tools** - By default tools are created for all the resources of the REST service or the backend service. You can remove unwanted ones by deleting the tool.
 
@@ -154,7 +154,7 @@ Promote the REST service (used to generate the MCP server) to production. It wil
 
     ![MCP Inspector](../assets/img/mcp/mcp-inspector.png)
 
-💡 **Note:** Clicking Connect sends an Initialize call to the MCP Server deployed in the gateway, establishing a connection.
+💡 **Note:** Clicking `Connect` sends an initialize call to the MCP server deployed in the gateway, establishing a connection.
 
 #### Step 6: Invoke MCP tools
 
