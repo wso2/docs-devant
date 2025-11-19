@@ -1,13 +1,13 @@
 # What is Devant?
 
-Devant is a powerful IPaaS with first-class AI support. Incorporate AI agents into the integrations you build in low-code and pro-code, and move away from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.
+Devant is a powerful iPaaS with first-class AI support. Incorporate AI agents into the integrations you build in low-code and pro-code, and move away from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.
 
 ## Key capabilities of Devant
 
 ### Efficient and effective development
 - **AI-Assisted Development**: Devant includes a developer friendly VS Code-based editor with an integrated AI copilot, which aids developers at every stage, from code generation to refactoring.
-- **Unified Low-Code and Pro-Code Development**: Allows seamless transitions between low-code and pro-code development with [WSO2 Integrator: BI](https://wso2.com/integrator/bi) and [WSO2 Integrator: MI](https://wso2.com/integrator/micro-integrator/), accommodating a diverse range of developer skills and preferences.
-- **Comprehensive Protocol and AI Support**: Built-in capabilities to integrate with third-party AI services, vector databases, and support for protocols such as TCP, UDP, FILE, Websub, and Websubhub.
+- **Unified Low-Code and Pro-Code Development**: Allows seamless transitions between low-code and pro-code development with [WSO2 Integrator: BI](https://wso2.com/integrator/bi) and [WSO2 Integrator: MI](https://wso2.com/integrator/mi/), accommodating a diverse range of developer skills and preferences.
+- **Comprehensive Protocol and AI Support**: Built-in capabilities to integrate with third-party AI services, vector databases, and support for protocols such as TCP, UDP, File, Websub, and Websubhub.
 - **Developer-Centric Design**: Tools and workflows tailored specifically for integration developers, enhancing debugging, testing, and issue identification.
 - **Git Repository Integration**: Effortlessly connect to Git-based platforms like GitHub, Bitbucket, or GitLab to develop components by linking an existing repository.
 
