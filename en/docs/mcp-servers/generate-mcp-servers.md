@@ -165,4 +165,4 @@ Once connected, you can:
 - Execute the tool calls directly from the MCP Inspector UI.
 
 !!!important
-    If you are using another AI Agent or an MCP Client, you need to configure the MCP server urL and set the authorization token appropriately. You can retrieve the tokens as given in the 4th step under `Invoke the MCP` server section.
+    If you are using another AI Agent or an MCP Client, you need to configure the MCP server urL and set the authorization token appropriately. You can retrieve the tokens as given in the 4th step under `Invoke the MCP server` section.
