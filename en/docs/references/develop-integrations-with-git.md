@@ -74,3 +74,26 @@ Authorizing using a personal access token (PAT) obtained from your GitLab self-m
 |Permission    | Description                                                                         |
 |--------------|-------------------------------------------------------------------------------------|
 |API           | Grants full read/write access to the API, covering all groups and projects, as well as read/write access to the repository.|
+
+## Connect an Azure DevOps repository to Devant
+
+1. Sign in to [Devant](https://console.devant.dev/).
+2. In the Devant Console header, go to the **Organization** list and select your organization. 
+3. In the left navigation menu, under **Admin**, click **Settings**. This opens the organization-level settings page. 
+4. Click the **Credentials** tab.
+5. Click **+Add Git Credentials** to configure the Git repository connection.
+6. Enter a **Credential Name** and select Azure DevOps as the Git provider.
+7. Enter your Azure DevOps **Organization Name**.
+8. Enter the **Access Token** you obtained from Azure DevOps.
+
+    !!! tip
+        You can refer to [Azure DevOps Documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows) to create a PAT in Azure devOps.
+
+10. Click **Save**.
+
+Authorizing using a personal access token (PAT) obtained from your Azure DevOps organization grants Devant the following permissions to perform the respective actions on your behalf within the repository.
+
+|Permission       | Read| Write| Description                                                                                                           |
+|-----------------|-----|------|-----------------------------------------------------------------------------------------------------------------------|
+|Code             | Y   | N    | Allows viewing and cloning repositories, branches, commits, and pull requests.                                        |
+|Project and Team | Y   | N    | Allows reading project-level information, including team details, project settings, and other project configurations. |
