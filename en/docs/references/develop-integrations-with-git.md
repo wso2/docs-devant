@@ -81,15 +81,15 @@ Authorizing using a personal access token (PAT) obtained from your GitLab self-m
 2. In the Devant Console header, go to the **Organization** list and select your organization. 
 3. In the left navigation menu, under **Admin**, click **Settings**. This opens the organization-level settings page. 
 4. Click the **Credentials** tab.
-5. Click **+Add Git Credentials** to configure the Git repository connection.
+5. Click **+Add Credentials** to configure the Git repository connection.
 6. Enter a **Credential Name** and select Azure DevOps as the Git provider.
 7. Enter your Azure DevOps **Organization Name**.
 8. Enter the **Access Token** you obtained from Azure DevOps.
 
     !!! tip
-        You can refer to [Azure DevOps Documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows) to create a PAT in Azure devOps.
+        You can refer to [Azure DevOps Documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows) to create a PAT in Azure DevOps.
 
-10. Click **Save**.
+9. Click **Save**.
 
 Authorizing using a personal access token (PAT) obtained from your Azure DevOps organization grants Devant the following permissions to perform the respective actions on your behalf within the repository.
 
