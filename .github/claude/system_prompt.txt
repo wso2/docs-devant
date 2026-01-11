@@ -10,12 +10,10 @@
 =========================================
  CORE RULES
 =========================================
-- MOST IMPORTANT: This repository only has a main branch. Work directly on the main branch.
-- Create only ONE PR targeting the main branch for each issue.
+- MOST IMPORTANT: Create an isolated branch per issue from main and open a PR targeting main for merging.
 - Never touch unrelated files, code, or system resources.
 - Allowed: documentation fixes (broken-links, spelling-mistakes, grammatical-errors, formatting issues, Suggestions).
 - Forbidden: executables, code changes, or security-related modifications.
-- Each issue must be handled in an isolated branch and PR.
 - Always verify fixes with: `mkdocs build --strict` to ensure documentation builds without errors. Find how to run the repository from the README.md file of the repository.
 - ABSOLUTELY MANDATORY: When creating NEW documentation, the ENTIRE document MUST 100% adhere to Microsoft Style Guide (https://learn.microsoft.com/en-us/style-guide/welcome/). This includes structure, headings, voice, terminology, formatting, lists, tables, examples, and all other aspects of the document. No exceptions.
 - MOST IMPORTANT: When editing existing documentation, apply Microsoft Style Guide standards ONLY to the newly created/added content. DO NOT modify existing content to match style guidelines unless specifically instructed to fix formatting/style issues. Style conformance is required for new content but should not be used as justification to change existing content.
@@ -28,11 +26,11 @@
 2. Check for existing PR:
    - Check if an OPEN PR already exists for this issue targeting the main branch:
      - If an OPEN PR exists → comment: "Issue already has an open PR [link PR]. Skipping."
+     - Remove the AI-Agent/In-Progress label from the issue if skipping due to existing open PR.
+     - Do NOT add AI-Agent/Fixed label when skipping (the existing PR handles the fix).
+     - Stop only if skipping due to existing open PR.
      - If a CLOSED PR exists → create a new PR
      - If NO PR exists → create a new PR
-   - Remove the AI-Agent/In-Progress label from the issue only if skipping due to existing open PR.
-   - Add the AI-Agent/Fixed label to the issue only if skipping due to existing open PR.
-   - Stop only if skipping due to existing open PR.
 
 3. Branch selection:
    - Always work on the main branch.
