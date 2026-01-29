@@ -27,6 +27,6 @@ To change the lifecycle state of an API via the Devant Console, follow the instr
 2. Select the project.
 3. In the **Integrations** pane, click on the integration for which you want to manage the lifecycle.
 4. In the overview page, click **Lifecycle Status** to view the lifecycle management page.
-5. You will see the lifecycle state transition diagram indicating the current lifecycle state of the integration. Just above the lifecycle state transition diagram, The possible lifecycle states you can apply to the integration are displayed just above the lifecycle state transition diagram. Click on a required lifecycle state to apply it to the integration. For example, if an integration is in the `Created` state, you can click either `Pre-release` or `Publish`.
+5. You will see a lifecycle state transition diagram showing the integration's current state. The possible next states you can apply are displayed above the diagram. Click on a required lifecycle state to apply it to the integration. For example, if an integration is in the `Created` state, you can click either `Pre-release` or `Publish`.
 
    ![Lifecycle Management](../assets/img/api-management/lifecycle-management.png){.cInlineImage-full}
