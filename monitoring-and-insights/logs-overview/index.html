@@ -1468,6 +1468,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#filter-runtime-logs" class="md-nav__link">
+    Filter runtime logs
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1976,6 +1983,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#filter-runtime-logs" class="md-nav__link">
+    Filter runtime logs
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2049,7 +2063,7 @@
 </div>
 <h2 id="runtime-logs">Runtime logs<a class="headerlink" href="#runtime-logs" title="Permanent link">&para;</a></h2>
 <p>Devant runtime logs provide insights into both project and integration-level logs, covering application and gateway logs. These logs streamline the debugging process by centralizing diverse log sources.</p>
-<p>In Devant, any organization member can view runtime logs via the runtime logs page. Devant allows you to apply filters based on parameters such as log <strong>Type</strong> (error, warn, info, debug), <strong>Environment</strong> (Development, Production), and <strong>Time Range</strong> to simplify debugging. </p>
+<p>In Devant, any organization member can view runtime logs via the runtime logs page.</p>
 <p>To access runtime logs, follow the steps below:</p>
 <ol>
 <li>Sign in to <a href="https://console.devant.dev/">Devant</a>.</li>
@@ -2099,6 +2113,21 @@
 <li><code>integrationVersion</code>: The version of the invoked integration.</li>
 <li><code>envName</code>: The environment of the inbound request. For example, Development, Production, etc.</li>
 </ul>
+<h3 id="filter-runtime-logs">Filter runtime logs<a class="headerlink" href="#filter-runtime-logs" title="Permanent link">&para;</a></h3>
+<p>Runtime logs can be filtered based on the following parameters:</p>
+<ul>
+<li>Type: Filter logs based on their type. Possible values are <code>Error</code>, <code>Warn</code>, <code>Info</code>, and <code>Debug</code>.</li>
+<li>Environment: Filter logs based on the environment in which the integration is running.</li>
+<li>Deployment Track: Filter logs based on the deployment track of the integration.</li>
+<li>Time Range: Filter logs based on a specific time range.</li>
+<li>Content Search: Filter logs based on specific keywords or phrases within the log messages.</li>
+<li>Regex Search: Filter logs using regular expressions to match specific patterns within the log messages.</li>
+</ul>
+<p>You can type your search query in the search bar and press <strong>Enter</strong> to apply the content or regex search filter. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Devant uses Lucene query syntax for regex search. For more information on Lucene syntax, see <a href="https://lucene.apache.org/core/2_9_4/queryparsersyntax.html">Lucene Query Syntax Documentation</a>.</p>
+</div>
 <h2 id="audit-logs">Audit logs<a class="headerlink" href="#audit-logs" title="Permanent link">&para;</a></h2>
 <p>Audit logs, also called audit trails, enhance security, ensure compliance, provide operational insights, and help manage risks. </p>
 <p>In Devant, an audit log records organization-level user-specific operations performed via the Devant Console. It also captures the timestamp and the outcome of the action. </p>
