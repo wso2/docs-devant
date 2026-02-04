@@ -31,43 +31,41 @@ copyright: ©2025 WSO2 LLC.
 
 # Configuration
 theme:
-  name: material
-  custom_dir: theme/material
-  logo: assets/images/logo.png
-  font:
-    text: Montserrat
-  favicon: assets/images/favicon.png
-  features:    
-    - navigation.expand
-    - navigation.path
-    - navigation.top
-    - content.code.copy
-    - content.action.edit
-    - content.action.view
-  language: 'en'
-  palette:
-   # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to dark mode
+    name: material
+    custom_dir: theme/material
+    font: false
+    toc: false
+    palette:
+      # Palette toggle for light mode
+       - media: "(prefers-color-scheme: light)"
+         scheme: default 
+         toggle:
+          icon: material/brightness-4
+          name: Switch to dark mode
+      # Palette toggle for dark mode
+       - media: "(prefers-color-scheme: dark)"
+         scheme: slate
+         toggle:
+           icon: material/brightness-7
+           name: Switch to light mode
+    logo: images/devant-docs.png
+    logo_light: images/devant-docs.png
+    favicon: images/favicon.png
+    features:
+       - navigation.indexes
+       - navigation.path
+       - navigation.top
+       - navigation.footer
+       - navigation.instant.progress
+       - content.code.copy
+       - content.action.edit
+       - content.action.view
+       - content.tabs.link
+       - search.suggest
+       - search.share
+    language: 'en'
 
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      toggle:
-        icon: material/brightness-7
-        name: Switch to system preference
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  icon:
-    logo: logo
-#Breaks build if there's a warning
+# Strict Mode
 strict: false
 # Navigation
 nav:
@@ -148,11 +146,13 @@ nav:
       - Autoscale:
         - Autoscale Component Replicas: devops-and-ci-cd/autoscale/autoscale-component-replicas.md
         - Autoscale Components with Scale-to-Zero: devops-and-ci-cd/autoscale/autoscale-components-with-scale-to-zero.md
-# Extensions
+
+# Markdown extensions
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
+  - admonition
   - markdown.extensions.toc:
       permalink: true
       toc_depth: 3
@@ -164,9 +164,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
-      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -178,26 +176,98 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.snippets:
       base_path: docs
+  - markdown_include.include:
+      base_path: docs
   - attr_list
-plugins:
-  - search
-  - include-markdown
-  - glightbox
-  - open-in-new-tab
-  - markdownextradata: {}
 
+# Plugins
+plugins:
+    - search:
+        lang: ['en']
+    - open-in-new-tab
+
+    - exclude:
+          glob:
+              - wip/*
+    - redirects:
+          redirect_maps: {}
+
+# Extra configuration
 extra_css:
-  - assets/css/blue-palette-alt2.css
-  - assets/css/devanttheme.css
-  - assets/lib/json-formatter/json-formatter.css
-  - assets/css/config-catalog.css
+    - assets/lib/highlightjs/default.min.css
+    - assets/css/blue-palette-alt2.css
+    - assets/css/devanttheme.css
+    - assets/css/theme.css
+    - assets/lib/json-formatter/json-formatter.css
+    - assets/css/config-catalog.css
 extra_javascript:
-  - assets/lib/json-formatter/json-formatter.umd.js
-  - assets/lib/highlightjs/highlight.min.js
-  - assets/js/devanttheme.js
+    - assets/lib/json-formatter/json-formatter.umd.js
+    - assets/lib/highlightjs/highlight.min.js
+    - assets/js/devanttheme.js
+    - assets/js/theme.js
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/wso2
-  base_path: https://wso2.github.io/docs-devant
-# base_path: http://localhost:8000/devant/docs
+    material:
+      jinja2content: true
+    generator: false
+    expanded_navs:
+    - title: Introduction
+      options: [verticle-line]
+    - title: Quick Start Guides
+      options: [verticle-line]
+    nav_icons:
+      Home:
+        icon: octicons/home-16
+        level: 1
+      Introduction:
+        icon: octicons/info-16
+        level: 1
+      Quick Start Guides:
+        icon: octicons/rocket-16
+        level: 1
+      Devant Samples:
+        icon: octicons/code-square-16
+        level: 1
+      AI:
+        icon: octicons/hubot-16
+        level: 1
+      Devant Concepts:
+        icon: octicons/mortar-board-16
+        level: 1
+      Share and Reuse Integrations:
+        icon: octicons/share-16
+        level: 1
+      Devant-Managed Databases and Caches:
+        icon: octicons/database-16
+        level: 1
+      API Management:
+        icon: octicons/shield-check-16
+        level: 1
+      Configure VPN:
+        icon: octicons/lock-16
+        level: 1
+      Testing:
+        icon: octicons/beaker-16
+        level: 1
+      Monitoring and Insights:
+        icon: octicons/graph-16
+        level: 1
+      Administer:
+        icon: octicons/gear-16
+        level: 1
+      References:
+        icon: octicons/book-16
+        level: 1
+    social:
+        - icon: fontawesome/brands/github-alt
+          link: https://github.com/wso2
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/wso2
+        - icon: fontawesome/brands/linkedin-in
+          link: https://www.linkedin.com/company/wso2
+        - icon: fontawesome/brands/youtube
+          link: https://www.youtube.com/user/WSO2TechFlicks
+        - icon: fontawesome/brands/x-twitter
+          link: https://twitter.com/intent/follow?screen_name=wso2
+    # site_version: Uncomment to specify a version
+    base_path: https://wso2.github.io/docs-devant
+    #base_path: http://localhost:8000
