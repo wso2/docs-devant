@@ -1,0 +1,356 @@
+<!--
+ * Copyright (c) 2023-2024, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+{% macro home_card_icon(icon) %}
+{% if icon.endswith(".svg") or icon.endswith(".png") %}
+{% include icon %}
+{% else %}
+{% include ".icons/" ~ icon ~ ".svg" %}
+{% endif %}
+{% endmacro %}
+
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{ 'assets/css/home.css' | url }}">
+{% endblock %}
+
+{% block container %}
+<div class="md-content">
+  <article class="md-content__inner md-typeset">
+    <div class="md-home-search-container">
+      <h1 class="md-home-search-input-label">Devant Documentation</h1>
+      {% include "partials/search.html" %}
+
+    </div>
+    <div class="description-section">
+      <p>
+        Devant is a cloud-native integration platform for deploying, managing, and scaling your integrations, APIs, and
+        AI-powered applications.
+        Deploy and monitor integrations with built-in CI/CD, observability, autoscaling, and managed databases.
+      </p>
+    </div>
+
+    {{ page.content }}
+
+    <a href="{{base_path}}/devant/docs/get-started/quick-start-guide/" rel="noopener" class="quickstart-cta">
+
+      <div class="cta-icon">
+        {{ home_card_icon("octicons/rocket-16") }}
+      </div>
+
+      <div class="cta-content">
+        <span class="cta-title">New to Devant?</span>
+        <span class="cta-desc">Take our quick start guide to deploy your first integration.</span>
+      </div>
+    </a>
+
+    <div class="components-hub-container">
+
+      <div class="components-grid-split">
+
+        <div>
+          <div class="components-section-header">
+            <h2>Get Started</h2>
+            <p>Set up your organization and deploy your first integration.</p>
+          </div>
+          <div class="components-card">
+            <div>
+              <div class="md-column-grid-item-header-icon icon-color-4">
+                {{ home_card_icon("octicons/download-16") }}
+              </div>
+              <h3>Quick Start</h3>
+              <div class="components-card-content">
+                Create your Devant organization, explore the demo, and deploy your first integration to the cloud.
+              </div>
+            </div>
+            <div class="components-card-footer">
+
+              <a href="{{base_path}}/devant/docs/references/create-an-organization/" rel="noopener"
+                class="components-resource-link">
+                Create an Organization <span>&rarr;</span>
+              </a>
+              <a href="{{base_path}}/devant/docs/devant-samples/explore-the-demo-organization/" rel="noopener"
+                class="components-resource-link">
+                Explore Demo Organization <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="components-section-header">
+            <h2>Core Concepts</h2>
+            <p>Understand Devant's platform architecture and features.</p>
+          </div>
+          <div class="components-card">
+            <div>
+              <div class="md-column-grid-item-header-icon icon-color-4">
+                {{ home_card_icon("octicons/code-16") }}
+              </div>
+              <h3>Platform Concepts</h3>
+              <div class="components-card-content">
+                Learn about organizations, projects, environments, data planes, and deployment tracks.
+              </div>
+            </div>
+            <div class="components-card-footer">
+
+              <a href="{{base_path}}/devant/docs/devant-concepts/organization/" rel="noopener"
+                class="components-resource-link">
+                Organizations <span>&rarr;</span>
+              </a>
+              <a href="{{base_path}}/devant/docs/devant-concepts/project/" rel="noopener"
+                class="components-resource-link">
+                Projects <span>&rarr;</span>
+              </a>
+              <a href="{{base_path}}/devant/docs/devant-concepts/environments/" rel="noopener"
+                class="components-resource-link">
+                Environments <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="components-section-header">
+        <h2>Quick Start Guides</h2>
+        <p>Deploy your first integrations and AI applications.</p>
+      </div>
+
+      <div class="components-grid-2">
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              {{ home_card_icon("octicons/hubot-16") }}
+            </div>
+            <h3>AI Agents</h3>
+            <div class="components-card-content">
+              Deploy AI agents and RAG applications to Devant. Build intelligent applications with WSO2 Integrator.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="{{base_path}}/devant/docs/quick-start-guides/develop-your-first-ai-agent/" rel="noopener"
+              class="components-resource-link">
+              Develop Your First AI Agent <span>&rarr;</span>
+            </a>
+            <a href="{{base_path}}/devant/docs/ai/rag-application/" rel="noopener" class="components-resource-link">
+              RAG Application <span>&rarr;</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              {{ home_card_icon("octicons/workflow-16") }}
+            </div>
+            <h3>Integrations as API</h3>
+            <div class="components-card-content">
+              Deploy and expose your integrations as managed APIs on Devant with built-in API management.
+            </div>
+          </div>
+          <div class="components-card-footer">
+            <a href="{{base_path}}/devant/docs/quick-start-guides/develop-your-first-integration-as-api/" rel="noopener"
+              class="components-resource-link">
+              Develop Your First Integration as API <span>&rarr;</span>
+            </a>
+          </div>
+          <div class="components-card-footer">
+            <a href="{{base_path}}/devant/docs/api-management/overview/" rel="noopener"
+              class="components-resource-link">
+              API Management Overview <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              {{ home_card_icon("octicons/file-16") }}
+            </div>
+            <h3>Event & File Integrations</h3>
+            <div class="components-card-content">
+              Deploy event-driven and file-based integrations. Process files and handle events in the cloud.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="{{base_path}}/devant/docs/quick-start-guides/develop-your-first-event-integration/" rel="noopener"
+              class="components-resource-link">
+              Develop Your First Event Integration <span>&rarr;</span>
+            </a>
+            <a href="{{base_path}}/devant/docs/quick-start-guides/develop-your-first-file-integration/" rel="noopener"
+              class="components-resource-link">
+              Develop Your First File Integration <span>&rarr;</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              {{ home_card_icon("octicons/clock-16") }}
+            </div>
+            <h3>Scheduled Automations</h3>
+            <div class="components-card-content">
+              Deploy scheduled tasks and automations to run on Devant with cron-based scheduling.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="{{base_path}}/devant/docs/quick-start-guides/schedule-your-first-automation/" rel="noopener"
+              class="components-resource-link">
+              Schedule Your First Automation <span>&rarr;</span>
+            </a>
+            <a href="{{base_path}}/devant/docs/devant-samples/quick-deploy-a-sample/" rel="noopener"
+              class="components-resource-link">
+              Quick Deploy a Sample <span>&rarr;</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="components-section-header">
+        <h2>Deploy & Monitor</h2>
+        <p>Deploy your integrations and monitor their performance.</p>
+      </div>
+
+      <div class="components-grid-2">
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              {{ home_card_icon("octicons/server-16") }}
+            </div>
+            <h3>CI/CD & DevOps</h3>
+            <div class="components-card-content">
+              Leverage built-in CI/CD pipelines, manage configurations and secrets, and enable autoscaling for your
+              deployments.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="{{base_path}}/devant/docs/devant-concepts/ci-cd/" rel="noopener" class="components-resource-link">
+              CI/CD Overview <span>&rarr;</span>
+            </a>
+            <a href="{{base_path}}/devant/docs/devops-and-ci-cd/manage-configurations-and-secrets/" rel="noopener"
+              class="components-resource-link">
+              Manage Configurations and Secrets <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              {{ home_card_icon("octicons/graph-16") }}
+            </div>
+            <h3>Monitoring & Insights</h3>
+            <div class="components-card-content">
+              Monitor your integrations with built-in observability. View logs, metrics, alerts, and usage insights in
+              real-time.
+            </div>
+          </div>
+          <div class="components-card-footer">
+            <a href="{{base_path}}/devant/docs/monitoring-and-insights/observability-overview/" rel="noopener"
+              class="components-resource-link">
+              Observability Overview <span>&rarr;</span>
+            </a>
+          </div>
+          <div class="components-card-footer">
+            <a href="{{base_path}}/devant/docs/monitoring-and-insights/logs-overview/" rel="noopener"
+              class="components-resource-link">
+              Logs Overview <span>&rarr;</span>
+            </a>
+          </div>
+          <div class="components-card-footer">
+            <a href="{{base_path}}/devant/docs/monitoring-and-insights/alerts-overview/" rel="noopener"
+              class="components-resource-link">
+              Alerts Overview <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="components-section-header">
+        <h2>Administration & Platform</h2>
+        <p>Manage your organization, users, and platform services.</p>
+      </div>
+
+      <div class="components-grid-2">
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              {{ home_card_icon("octicons/organization-16") }}
+            </div>
+
+            <h3>Organization Management</h3>
+            <div class="components-card-content">
+              Manage your Devant organization, invite members, configure access control, and set up enterprise login.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="{{base_path}}/devant/docs/administer/inviting-members/" rel="noopener"
+              class="components-resource-link">
+              Inviting Members <span>&rarr;</span>
+            </a>
+            <a href="{{base_path}}/devant/docs/administer/control-access-in-the-devant-console/" rel="noopener"
+              class="components-resource-link">
+              Control Access <span>&rarr;</span>
+            </a>
+            <a href="{{base_path}}/devant/docs/administer/configure-enterprise-login/" rel="noopener"
+              class="components-resource-link">
+              Configure Enterprise Login <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              {{ home_card_icon("octicons/database-16") }}
+            </div>
+
+            <h3>Managed Services</h3>
+            <div class="components-card-content">
+              Use Devant-managed databases, caches, and configure VPN for secure connectivity.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="{{base_path}}/devant/docs/manage-databases-and-caches/devant-managed-databases-and-caches/"
+              rel="noopener" class="components-resource-link">
+              Managed Databases and Caches <span>&rarr;</span>
+            </a>
+            <a href="{{base_path}}/devant/docs/references/devant-platform-services-billing-and-upgrades/" rel="noopener"
+              class="components-resource-link">
+              Platform Services & Billing <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</article>
+{% endblock %}
