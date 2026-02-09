@@ -148,7 +148,7 @@ Yes. Devant uses underlying buildpack technology to scan your source code and co
 However, if an endpoint cannot be automatically identified, you must manually define it in your component.yaml file. Automatic identification may not work if:
 - Your service uses a non-standard port that isn't commonly recognized.
 - The port is assigned dynamically at runtime.
-- The .choreo/component.yaml file is missing or contains formatting errors.
+- The `.choreo/component.yaml` file is missing or contains formatting errors.
 
 How to manually define an endpoint: If automatic detection fails, add an endpoints section to your `component.yaml` as shown below:
 ```yaml
