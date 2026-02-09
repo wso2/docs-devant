@@ -142,3 +142,22 @@ You can start by using a basic plan or contact us for an Enterprise support plan
 
 ### Q: I want to upgrade from PAYG to an Enterprise subscription. Will there be an outage during the upgrade?
 No, there are no outages when upgrading a plan.
+
+### Q: Can Devant automatically identify my endpoints?
+Yes. Devant uses underlying buildpack technology to scan your source code and configuration files for standard web framework patterns and port declarations.
+However, if an endpoint cannot be automatically identified, you must manually define it in your component.yaml file. Automatic identification may not work if:
+- Your service uses a non-standard port that is not commonly recognized.
+- The port is assigned dynamically at runtime.
+- The `.choreo/component.yaml` file is missing or contains formatting errors.
+
+How to manually define an endpoint: If automatic detection fails, add an endpoints section to your `component.yaml` as shown below:
+```yaml
+endpoints:
+  - name: "Greeter API"
+    port: 9090
+    type: "REST"
+    scheme: "http"
+    context: "/"
+    visibility: "Public"
+```
+By explicitly defining these attributes, you provide a "source of truth" that ensures your service is correctly exposed regardless of the automatic detection outcome.
