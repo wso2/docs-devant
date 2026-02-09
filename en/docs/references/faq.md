@@ -146,7 +146,7 @@ No, there are no outages when upgrading a plan.
 ### Q: Can Devant automatically identify my endpoints?
 Yes. Devant uses underlying buildpack technology to scan your source code and configuration files for standard web framework patterns and port declarations.
 However, if an endpoint cannot be automatically identified, you must manually define it in your component.yaml file. Automatic identification may not work if:
-- Your service uses a non-standard port that isn't commonly recognized.
+- Your service uses a non-standard port that is not commonly recognized.
 - The port is assigned dynamically at runtime.
 - The `.choreo/component.yaml` file is missing or contains formatting errors.
 
