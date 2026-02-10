@@ -29,6 +29,42 @@
       {% endif %}
       <link rel="icon" href="{{ config.theme.favicon | url }}">
       <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-9.1.2">
+      
+      {# Open Graph tags #}
+      {# og:title - match the <title> tag logic #}
+      {% if page.meta and page.meta.extra and page.meta.extra['og:title'] %}
+        <meta property="og:title" content="{{ page.meta.extra['og:title'] }}">
+      {% elif page.meta and page.meta.title %}
+        <meta property="og:title" content="{{ page.meta.title }} - {{ config.site_name }}">
+      {% elif page.title and not page.is_homepage %}
+        <meta property="og:title" content="{{ page.title | striptags }} - {{ config.site_name }}">
+      {% else %}
+        <meta property="og:title" content="{{ config.site_name }}">
+      {% endif %}
+      
+      {# Other Open Graph tags #}
+      {% if page.meta and page.meta.extra %}
+        {% if page.meta.extra['og:description'] %}
+          <meta property="og:description" content="{{ page.meta.extra['og:description'] }}">
+        {% endif %}
+        {% if page.meta.extra['og:image'] %}
+          <meta property="og:image" content="{{ page.meta.extra['og:image'] }}">
+        {% endif %}
+        {% if page.meta.extra['og:type'] %}
+          <meta property="og:type" content="{{ page.meta.extra['og:type'] }}">
+        {% endif %}
+      {% else %}
+        <meta property="og:description" content="{{ config.site_description }}">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://wso2.com/devant/docs/assets/images/og-devant.png">
+      {% endif %}
+      
+      {# og:url - use page canonical URL if available, otherwise custom URL from metadata #}
+      {% if page.meta and page.meta.extra and page.meta.extra['og:url'] %}
+        <meta property="og:url" content="{{ page.meta.extra['og:url'] }}">
+      {% elif page.canonical_url %}
+        <meta property="og:url" content="{{ page.canonical_url }}">
+      {% endif %}
     {% endblock %}
     {% block htmltitle %}
       {% if page.meta and page.meta.title %}
