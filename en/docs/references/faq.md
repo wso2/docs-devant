@@ -50,6 +50,25 @@ Asgardeo is an identity provider (IdP) that allows developers to secure access f
 ### Q: As a Cloud Data Plane user, how can I create integrations in multiple data planes?
 When an organization admin onboards a new organization in Devant, they can choose the preferred data plane. Devant then sets the selected data plane as the default for the entire organization. Subsequently, users within the free tier of the cloud data plane can create integrations only in the set default data plane. If a free-tier user needs to create integrations in a different data plane, the user must get a paid subscription.
 
+### Q: Can Devant automatically identify my endpoints?
+Yes. Devant uses underlying buildpack technology to scan your source code and configuration files for standard web framework patterns and port declarations.
+However, if an endpoint cannot be automatically identified, you must manually define it in your component.yaml file. Automatic identification may not work if:
+- Your service uses a non-standard port that is not commonly recognized.
+- The port is assigned dynamically at runtime.
+- The `.choreo/component.yaml` file is missing or contains formatting errors.
+
+How to manually define an endpoint: If automatic detection fails, add an endpoints section to your `component.yaml` as shown below:
+```yaml
+endpoints:
+  - name: "Greeter API"
+    port: 9090
+    type: "REST"
+    scheme: "http"
+    context: "/"
+    visibility: "Public"
+```
+By explicitly defining these attributes, you provide a "source of truth" that ensures your service is correctly exposed regardless of the automatic detection outcome.
+
 ## Security and data protection
 
 ### Q: How is data managed in Devant?
@@ -142,22 +161,3 @@ You can start by using a basic plan or contact us for an Enterprise support plan
 
 ### Q: I want to upgrade from PAYG to an Enterprise subscription. Will there be an outage during the upgrade?
 No, there are no outages when upgrading a plan.
-
-### Q: Can Devant automatically identify my endpoints?
-Yes. Devant uses underlying buildpack technology to scan your source code and configuration files for standard web framework patterns and port declarations.
-However, if an endpoint cannot be automatically identified, you must manually define it in your component.yaml file. Automatic identification may not work if:
-- Your service uses a non-standard port that is not commonly recognized.
-- The port is assigned dynamically at runtime.
-- The `.choreo/component.yaml` file is missing or contains formatting errors.
-
-How to manually define an endpoint: If automatic detection fails, add an endpoints section to your `component.yaml` as shown below:
-```yaml
-endpoints:
-  - name: "Greeter API"
-    port: 9090
-    type: "REST"
-    scheme: "http"
-    context: "/"
-    visibility: "Public"
-```
-By explicitly defining these attributes, you provide a "source of truth" that ensures your service is correctly exposed regardless of the automatic detection outcome.
