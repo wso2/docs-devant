@@ -1830,6 +1830,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#q-can-devant-automatically-identify-my-endpoints" class="md-nav__link">
+    Q: Can Devant automatically identify my endpoints?
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2039,13 +2046,6 @@
           <li class="md-nav__item">
   <a href="#q-i-want-to-upgrade-from-payg-to-an-enterprise-subscription-will-there-be-an-outage-during-the-upgrade" class="md-nav__link">
     Q: I want to upgrade from PAYG to an Enterprise subscription. Will there be an outage during the upgrade?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#q-can-devant-automatically-identify-my-endpoints" class="md-nav__link">
-    Q: Can Devant automatically identify my endpoints?
   </a>
   
 </li>
@@ -2378,6 +2378,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#q-can-devant-automatically-identify-my-endpoints" class="md-nav__link">
+    Q: Can Devant automatically identify my endpoints?
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2591,13 +2598,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#q-can-devant-automatically-identify-my-endpoints" class="md-nav__link">
-    Q: Can Devant automatically identify my endpoints?
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2668,6 +2668,22 @@
 <p>Asgardeo is an identity provider (IdP) that allows developers to secure access for consumers, business partners, employees, and APIs. Asgardeo is Devant’s default IDP. To learn more, visit https://wso2.com/asgardeo/.</p>
 <h3 id="q-as-a-cloud-data-plane-user-how-can-i-create-integrations-in-multiple-data-planes">Q: As a Cloud Data Plane user, how can I create integrations in multiple data planes?<a class="headerlink" href="#q-as-a-cloud-data-plane-user-how-can-i-create-integrations-in-multiple-data-planes" title="Permanent link">&para;</a></h3>
 <p>When an organization admin onboards a new organization in Devant, they can choose the preferred data plane. Devant then sets the selected data plane as the default for the entire organization. Subsequently, users within the free tier of the cloud data plane can create integrations only in the set default data plane. If a free-tier user needs to create integrations in a different data plane, the user must get a paid subscription.</p>
+<h3 id="q-can-devant-automatically-identify-my-endpoints">Q: Can Devant automatically identify my endpoints?<a class="headerlink" href="#q-can-devant-automatically-identify-my-endpoints" title="Permanent link">&para;</a></h3>
+<p>Yes. Devant uses underlying buildpack technology to scan your source code and configuration files for standard web framework patterns and port declarations.
+However, if an endpoint cannot be automatically identified, you must manually define it in your component.yaml file. Automatic identification may not work if:
+- Your service uses a non-standard port that is not commonly recognized.
+- The port is assigned dynamically at runtime.
+- The <code>.choreo/component.yaml</code> file is missing or contains formatting errors.</p>
+<p>How to manually define an endpoint: If automatic detection fails, add an endpoints section to your <code>component.yaml</code> as shown below:
+<div class="language-yaml highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">endpoints</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Greeter</span><span class="nv"> </span><span class="s">API&quot;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9090</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;REST&quot;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;http&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">context</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/&quot;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">visibility</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Public&quot;</span>
+</code></pre></div>
+By explicitly defining these attributes, you provide a "source of truth" that ensures your service is correctly exposed regardless of the automatic detection outcome.</p>
 <h2 id="security-and-data-protection">Security and data protection<a class="headerlink" href="#security-and-data-protection" title="Permanent link">&para;</a></h2>
 <h3 id="q-how-is-data-managed-in-devant">Q: How is data managed in Devant?<a class="headerlink" href="#q-how-is-data-managed-in-devant" title="Permanent link">&para;</a></h3>
 <p>Devant manages data using WSO2 containers and Kubernetes clusters, which provide scalability, resilience, and security. Find out more <a href="https://wso2.cachefly.net/wso2/sites/all/trust/wso2-public-cloud-data-protection-faq.pdf">here</a>.</p>
@@ -2736,22 +2752,6 @@ To ensure this, the requests coming from the Devant data plane must be allowed b
 <p>You can start by using a basic plan or contact us for an Enterprise support plan.</p>
 <h3 id="q-i-want-to-upgrade-from-payg-to-an-enterprise-subscription-will-there-be-an-outage-during-the-upgrade">Q: I want to upgrade from PAYG to an Enterprise subscription. Will there be an outage during the upgrade?<a class="headerlink" href="#q-i-want-to-upgrade-from-payg-to-an-enterprise-subscription-will-there-be-an-outage-during-the-upgrade" title="Permanent link">&para;</a></h3>
 <p>No, there are no outages when upgrading a plan.</p>
-<h3 id="q-can-devant-automatically-identify-my-endpoints">Q: Can Devant automatically identify my endpoints?<a class="headerlink" href="#q-can-devant-automatically-identify-my-endpoints" title="Permanent link">&para;</a></h3>
-<p>Yes. Devant uses underlying buildpack technology to scan your source code and configuration files for standard web framework patterns and port declarations.
-However, if an endpoint cannot be automatically identified, you must manually define it in your component.yaml file. Automatic identification may not work if:
-- Your service uses a non-standard port that is not commonly recognized.
-- The port is assigned dynamically at runtime.
-- The <code>.choreo/component.yaml</code> file is missing or contains formatting errors.</p>
-<p>How to manually define an endpoint: If automatic detection fails, add an endpoints section to your <code>component.yaml</code> as shown below:
-<div class="language-yaml highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">endpoints</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Greeter</span><span class="nv"> </span><span class="s">API&quot;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9090</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;REST&quot;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;http&quot;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">context</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/&quot;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">visibility</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Public&quot;</span>
-</code></pre></div>
-By explicitly defining these attributes, you provide a "source of truth" that ensures your service is correctly exposed regardless of the automatic detection outcome.</p>
 
 
 
