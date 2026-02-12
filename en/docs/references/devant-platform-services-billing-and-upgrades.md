@@ -1,3 +1,8 @@
+---
+title: Devant Platform Services Billing and Upgrades
+description: Learn about billing and upgrades for Devant platform services.
+---
+
 # Devant Platform Service Billing and Upgrades
 
 Devant bills the platform services you create, such as databases, caches, or Kafka services, as part of your existing subscription. The cost depends on the service plan and the usage of each resource.

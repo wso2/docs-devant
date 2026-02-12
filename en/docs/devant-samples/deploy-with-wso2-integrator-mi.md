@@ -1,3 +1,8 @@
+---
+title: Deploy a WSO2 Integrator MI Project on Devant
+description: Learn how to deploy a WSO2 Integrator MI project on Devant.
+---
+
 # Deploy a WSO2 Integrator: MI project on Devant
 
 [WSO2 Integrator: MI](https://wso2.com/integrator/mi/) is a 100% open source low-code integration solution with an AI-powered development experience. This guide will help you deploy a WSO2 Integrator: MI project on Devant.

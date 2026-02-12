@@ -1,3 +1,8 @@
+---
+title: Autoscale Integrations with Scale to Zero
+description: Learn how to use the scale-to-zero capability for HTTP applications in Devant.
+---
+
 # Autoscale Integrations with Scale-to-Zero
 
 Devant provides the scale-to-zero capability for HTTP applications you deploy in the data plane. This lets you run your integrations in a serverless mode.

@@ -1,3 +1,8 @@
+---
+title: Manage Configurations and Secrets
+description: Learn how to manage configurations and secrets in Devant using environment variables and file mounts.
+---
+
 # Manage Configurations and Secrets
 
 Devant allows you to easily manage and version your component's configurations and secrets as **file mounts** or **environment variables**.

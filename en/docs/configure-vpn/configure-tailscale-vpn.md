@@ -1,3 +1,8 @@
+---
+title: Configure Tailscale VPN
+description: Learn how to secure access to private networks from the Devant cloud data plane using Tailscale.
+---
+
 # Configure VPNs on the Devant Cloud Data Plane
 
 Secure access to private networks from the Devant cloud data plane is an essential use case for cloud data plane users.

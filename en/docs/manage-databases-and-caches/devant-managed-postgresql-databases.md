@@ -1,3 +1,8 @@
+---
+title: Devant Managed PostgreSQL Databases and Vector Databases
+description: Learn how to create and manage PostgreSQL databases and vector databases on Devant.
+---
+
 # Devant-Managed PostgreSQL Databases and Vector Databases
 
 PostgreSQL on Devant offers fully Devant-managed, efficient object-relational databases on AWS, Azure, GCP, and Digital Ocean. Additionally, Devant allows you to create fully-managed PostgreSQL vector databases if you want to perform efficient vector similarity search.

@@ -1,3 +1,8 @@
+---
+title: Test REST Endpoints via the OpenAPI Console
+description: Learn how to test REST endpoints using the OpenAPI console in Devant.
+---
+
 # Test REST Endpoints via the OpenAPI Console
 
 Devant provides an integrated OpenAPI Console for testing REST endpoints of your deployed integrations. Since Devant secures REST APIs with OAuth 2.0 authentication, the console automatically generates test keys to facilitate API testing.

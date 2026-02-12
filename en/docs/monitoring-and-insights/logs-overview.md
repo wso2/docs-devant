@@ -1,3 +1,8 @@
+---
+title: Logs Overview
+description: Learn about runtime and audit logs in Devant for troublehsooting and security.
+---
+
 # Logs Overview
 
 The unified log view in Devant allows you to view runtime and audit logs to gain insights into applications and users while preserving data privacy.
