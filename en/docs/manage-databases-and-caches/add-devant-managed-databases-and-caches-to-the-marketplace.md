@@ -1,3 +1,8 @@
+---
+title: Add Devant Managed Databases and Caches to the Marketplace
+description: Learn how to add Devant-managed databases and caches to the Marketplace for consumption.
+---
+
 # Add Devant-Managed Databases and Caches to the Marketplace
 
 When you create a Devant-managed database or cache, you can add it to the Marketplace, making it available for consumption through a connection.

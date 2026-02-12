@@ -1,3 +1,8 @@
+---
+title: Explore the Demo Organization
+description: Explore the demo organization in Devant to understand its capabilities.
+---
+
 # Explore the Demo Organization
 
 The demo organization in Devant provides a hands-on view of a fully deployed system in read-only mode. This organization, maintained by Devant, demonstrates a real-world use case to help you understand how Devant simplifies developing, deploying, and managing cloud-native applications.

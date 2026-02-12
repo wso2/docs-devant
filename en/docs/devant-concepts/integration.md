@@ -1,4 +1,9 @@
-﻿# Integration
+﻿---
+title: Integration
+description: Learn about Integrations in Devant.
+---
+
+# Integration
 
 An integration within a project represents a single unit of work in an integration solution. An integration is usually a single microservice, API, or job/task. Each integration in Devant is attached to a given directory path in a Git repository which contains the program source. An integration is Devant’s unit of deployment. Each integration maps to a single pod in the Kubernetes cluster (data plane) at deployment time. Therefore, you can deploy, manage, and scale each integration in Devant independently.
 

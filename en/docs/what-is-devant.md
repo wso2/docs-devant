@@ -1,3 +1,8 @@
+---
+title: What is Devant?
+description: Discover Devant - a powerful AI-capable iPaaS platform by WSO2. Build intelligent integrations with AI agents, seamless low-code/pro-code development, and comprehensive API management capabilities.
+---
+
 # What is Devant?
 
 Devant is a powerful iPaaS with first-class AI support. Incorporate AI agents into the integrations you build in low-code and pro-code, and move away from siloed systems to intelligent digital experiences with Devant by WSO2—the AI iPaaS that your AI Agents can call “home”.

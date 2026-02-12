@@ -1,3 +1,8 @@
+---
+title: API Security
+description: Learn about API security schemes in Devant, including API Key and OAuth2.
+---
+
 # API Security
 
 This document outlines key practices for securing APIs against threats and vulnerabilities. API security relies on authentication, which involves verifying identity with methods like API keys, tokens, or OAuth2, and authorization, which defines user permissions and enforces role-based access.

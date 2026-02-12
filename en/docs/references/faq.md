@@ -1,3 +1,8 @@
+---
+title: FAQ
+description: Frequently asked questions about Devant.
+---
+
 # Frequently Asked Questions
 
 ## General

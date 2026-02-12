@@ -1,3 +1,8 @@
+---
+title: CI/CD
+description: Learn about Continuous Integration and Continuous Deployment (CI/CD) in Devant.
+---
+
 # CI/CD
 
 Devant provides a streamlined continuous integration and continuous deployment (CI/CD) experience to deploy integrations and services efficiently across multiple environments.

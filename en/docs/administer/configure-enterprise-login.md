@@ -1,3 +1,8 @@
+---
+title: Configure Enterprise Login
+description: Learn how to configure enterprise login for your organization in Devant using an external Identity Provider (IdP).
+---
+
 # Configure Enterprise Login
 
 With Devant, you can configure enterprise login to allow users from an external identity provider (IdP) to sign in to Devant seamlessly without changing their credentials.

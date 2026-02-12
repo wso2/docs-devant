@@ -1,3 +1,8 @@
+---
+title: Signup and Upgrade Guide
+description: Guide on how to sign up and upgrade your Devant account.
+---
+
 # Sign-Up and Upgrade Guide
 
 ## Sign up for Devant

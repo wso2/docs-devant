@@ -1,3 +1,8 @@
+---
+title: Usage Insights Overview
+description: Learn about Devant Usage Insights for analyzing API traffic, errors, and latency.
+---
+
 # Usage Insights Overview
 
 Devant provides comprehensive insights into APIs created within Devant. Usage insights provide a range of metrics, including API traffic, error rates, and latency, allowing you to monitor and optimize API performance effectively.

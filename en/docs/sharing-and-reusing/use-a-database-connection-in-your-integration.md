@@ -1,3 +1,8 @@
+---
+title: Use a Database Connection in Your Integration
+description: Learn how to use a database connection in your integration.
+---
+
 # Use a Database Connection in Your Integration
 
 Devant allows you to share and reuse Devant-managed databases, accelerating development and enhancing efficiency in building integrated applications through connections.

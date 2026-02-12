@@ -1,3 +1,8 @@
+---
+title: Install and Set Up WSO2 Integrator BI
+description: Learn how to install and set up WSO2 Integrator BI for Devant.
+---
+
 # Install and Set Up WSO2 Integrator: BI
 
 [WSO2 Integrator: BI](https://wso2.com/integrator/bi/) is a low-code integration solution built on [Ballerina](https://ballerina.io/), enabling fast and efficient integration development with minimal coding. It enables you to build integrations easily from your local development environment. This guide walks you through the steps to install and set up BI using Visual Studio Code (VS Code).

@@ -1,3 +1,8 @@
+---
+title: Develop Your First File Integration
+description: Learn how to develop your first file integration in Devant.
+---
+
 # Develop Your First File Integration
 
 ## Overview

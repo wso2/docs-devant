@@ -1,3 +1,8 @@
+---
+title: Alerts Overview
+description: Learn how to configure alerts for Devant integrations to proactively monitor performance.
+---
+
 # Alerts Overview
 
 This section explains how you can configure alerts for your Devant integrations. Setting up alerts allows you to proactively monitor your integrations and take corrective measures when necessary.

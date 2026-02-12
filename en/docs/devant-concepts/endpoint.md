@@ -1,4 +1,9 @@
-﻿# Endpoint
+﻿---
+title: Endpoint
+description: Learn about Endpoints in Devant integrations.
+---
+
+# Endpoint
 
 An Endpoint is a network-exposed function that resides within an integration. In Devant, **Integration Type** `Integration as API` exposes one or more endpoints. Each endpoint in an integration can have a service contract (OpenAPI, GraphQL SDL) associated with it. This contract is used to expose the endpoint to consumers. In the absence of a contract, Devant uses /* exposed on all HTTP verbs as the default contract to expose the service or the integration.
 

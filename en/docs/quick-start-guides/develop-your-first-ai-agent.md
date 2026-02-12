@@ -1,3 +1,8 @@
+---
+title: Develop Your First AI Agent
+description: Build your first AI agent with Devant by WSO2. Learn to integrate AI capabilities into your workflows using WSO2 Integrator BI and third-party AI services.
+---
+
 # Develop Your First AI Agent
 
 ## Overview
