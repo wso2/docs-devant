@@ -48,8 +48,8 @@ theme:
          toggle:
            icon: material/brightness-7
            name: Switch to light mode
-    logo: images/devant-docs.png
-    logo_light: images/devant-docs.png
+    logo: assets/images/Devant_Docs_Black.svg
+    logo_light: assets/images/Devant_Docs_White.svg
     favicon: images/favicon.png
     features:
        - navigation.indexes
