@@ -1,3 +1,8 @@
+---
+title: Develop Integrations with Git
+description: Learn about developing integrations using Git in Devant.
+---
+
 # Develop Integrations With Git
 
 Devant enables you to develop integrations by connecting your GitHub, Bitbucket, or GitLab repository. You have the flexibility to either connect an existing repository or start with an empty repository and commit the source code later. By integrating your repositories with Devant, you can automate tasks and optimize workflows across multiple systems, all within Devant.  Devant currently supports GitHub, Bitbucket, and GitLab as Git providers. 

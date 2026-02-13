@@ -1,3 +1,8 @@
+---
+title: Lifecycle Management
+description: Learn about the API lifecycle states and how to manage them in Devant.
+---
+
 # Lifecycle Management
 
 API lifecycle management is an important aspect of API management. The API lifecycle consists of various states that an API passes through, from creation to retirement. In Devant, there are five distinct lifecycle states: `created`, `pre-released`, `published`, `deprecated`, and `retired`.

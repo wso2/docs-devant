@@ -1,3 +1,8 @@
+---
+title: Develop an AI Agent Created Using WSO2 Integrator BI
+description: Step-by-step guide to developing and deploying an AI Agent using WSO2 Integrator BI to Devant.
+---
+
 # Develop an AI Agent Created Using WSO2 Integrator: BI
 
 This guide walks you through developing an AI Agent created using WSO2 Integrator: BI to Devant, using the **Deploy to Devant** option available in its UI.

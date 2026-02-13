@@ -1,3 +1,8 @@
+---
+title: Control Access in the Devant Console
+description: Learn how to manage access to projects and resources in the Devant Console using roles, groups, and mapping levels.
+---
+
 # Control Access in the Devant Console
 
 In the Devant Console, you have the ability to manage access to projects and the actions that can be performed within them. Administrators can restrict project access to specific user groups. This feature is useful when you need certain user groups to have access to particular projects or for a set of projects.

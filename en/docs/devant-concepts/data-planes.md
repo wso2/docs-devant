@@ -1,3 +1,8 @@
+---
+title: Data Planes
+description: Understand the architecture of Devant data planes, including cloud and private data planes.
+---
+
 # Data Planes
 
 Devant's architecture comprises two key components: the control plane and the data plane. The control plane handles essential tasks such as administering organizations, users, and projects. In addition, it also governs the entire journey of integration development, from the initial stages of creation, progressing to deployment, including measures to enforce governance and the provision for observability. The Devant control plane is a SaaS that manages all cloud data planes and private data planes. It caters to diverse user personas, including CIOs, architects, and developers, as well as DevOps, and platform engineers.

@@ -1,3 +1,8 @@
+---
+title: Observability Overview
+description: Overview of Devant Observability features including logs and metrics.
+---
+
 # Observability Overview
 
 The Devant observability dashboard provides a comprehensive interface to visualize and monitor the performance of services deployed on Devant.

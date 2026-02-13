@@ -1,3 +1,8 @@
+---
+title: Environments
+description: Learn about environments in Devant and how to promote integrations across them.
+---
+
 # Environments
 
 Devant offers developers one or more environments to run their integrations within a given data plane. By default, the Devant cloud data plane provides two environments (i.e., development and production). Each project in Devant is associated with one or more environments available in the organization. For example, project A may choose to utilize dev, staging, and production environments, while project B may only use development and production environments.

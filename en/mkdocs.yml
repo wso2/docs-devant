@@ -15,8 +15,8 @@
 # under the License.
 
 # Project information
-site_name: ""
-site_description: Devant Learning Portal
+site_name: "Devant Documentation"
+site_description: Learn how to build AI-powered integrations with Devant by WSO2. Comprehensive guides for iPaaS development, API management, and integration solutions.
 site_author: WSO2
 site_url: https://wso2.com/devant/docs
 

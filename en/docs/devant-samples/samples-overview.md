@@ -1,3 +1,8 @@
+---
+title: Samples Overview
+description: Overview of Devant samples and how to use them.
+---
+
 # Samples Overview
 
 Devant provides an extensive collection of samples for a wide range of use cases. You can quickly deploy and explore these samples to easily understand the core functionalities of the platform.

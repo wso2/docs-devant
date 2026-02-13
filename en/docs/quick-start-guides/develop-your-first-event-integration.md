@@ -1,3 +1,8 @@
+---
+title: Develop Your First Event Integration
+description: Learn how to develop your first event integration in Devant.
+---
+
 # Develop Your First Event Integration
 
 An event handle executes predefined actions in response to specific events. Devant simplifies the process of developing such integrations.

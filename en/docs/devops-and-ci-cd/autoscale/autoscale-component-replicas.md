@@ -1,3 +1,8 @@
+---
+title: Autoscale Integration Replicas
+description: Learn how to autoscale integration replicas in Devant based on resource consumption.
+---
+
 # Autoscale Integration Replicas
 
 Devant allows you to automatically scale your integration replicas up or down in number based on resource consumption to ensure high availability.

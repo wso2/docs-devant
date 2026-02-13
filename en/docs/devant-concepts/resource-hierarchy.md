@@ -1,3 +1,8 @@
+---
+title: Resource Hierarchy
+description: Understand Devant's resource hierarchy and organizational structure. Learn about organizations, projects, integrations, and how resources are organized in the platform.
+---
+
 # Resource Hierarchy
 
 

@@ -1,3 +1,8 @@
+---
+title: RAG Application
+description: Learn about Retrieval-Augmented Generation (RAG) ingestion and retrieval in Devant.
+---
+
 ## Introduction
 
 Retrieval-Augmented Generation (RAG) is an AI framework that improves how Large Language Models (LLMs) answer questions by giving them access to additional, relevant information.

@@ -1,3 +1,8 @@
+---
+title: Devant Managed MySQL Databases
+description: Learn how to create and manage MySQL databases on Devant.
+---
+
 # Devant-managed MySQL Databases
 
 MySQL on Devant offers fully managed, flexible relational databases on AWS, Azure, GCP, and Digital Ocean.
