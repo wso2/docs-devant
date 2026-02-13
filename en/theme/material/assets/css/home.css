@@ -389,7 +389,7 @@
     box-shadow: var(--md-shadow-z2);
 }
 
-.components-card h3 {
+.md-typeset .components-card h3 {
     margin-top: 0;
     margin-bottom: 1rem;
     font-weight: 500;

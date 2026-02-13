@@ -120,10 +120,17 @@
 }
 
 /* Logo */
+.md-header__button.md-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-    height: 1.4rem;
-    padding: .1rem 0;
+    height: 2.5rem !important;
+    width: auto !important;
+    padding: .4rem 0 .1rem 0;
 }
 
 /* Theme Toggle */
