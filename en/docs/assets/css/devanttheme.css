@@ -33,6 +33,21 @@
     color: #ff7300 !important;
 }
 
+html .md-nav--secondary .md-nav__link--passed:not(.md-nav__link--active) {
+    color: var(--md-default-fg-color) !important;
+    opacity: 0.6 !important;
+}
+
+html .md-nav--secondary .md-nav__link--active {
+    color: #ff7300 !important;
+    opacity: 1 !important;
+}
+
+html .md-nav--secondary .md-nav__link:not(.md-nav__link--passed) {
+    color: var(--md-default-fg-color) !important;
+    opacity: 1 !important;
+}
+
 /*
 * Footer styles
 */

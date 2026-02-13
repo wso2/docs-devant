@@ -991,13 +991,13 @@
 
 /* Broaden RHS Font Size Fix */
 .md-sidebar--secondary {
-    font-size: 0.8rem !important;
+    font-size: 16px !important;
 }
 
 .md-sidebar--secondary .md-nav,
 .md-sidebar--secondary .md-nav__link,
 .md-sidebar--secondary .md-nav__item {
-    font-size: 0.8rem !important;
+    font-size: 16px !important;
     line-height: 1.4 !important;
     white-space: normal !important;
     display: block !important;
@@ -1007,5 +1007,5 @@
 
 /* Ensure nested lists inherit or enforce size */
 .md-sidebar--secondary .md-nav__list li {
-    font-size: 0.8rem !important;
+    font-size: 16px !important;
 }
