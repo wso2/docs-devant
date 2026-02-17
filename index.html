@@ -1,3 +1,23 @@
+<!--
+ * Copyright (c) 2023-2024, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -18,15 +38,16 @@
       
         <link rel="next" href="what-is-devant/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title style="color: blue;">Devant Documentation - AI-Powered iPaaS by WSO2 - Devant Documentation</title>
+        <title>Devant Documentation - AI-Powered iPaaS by WSO2 - Devant Documentation</title>
       
     
     
+
       <link rel="stylesheet" href="assets/stylesheets/main.7bf56d0a.min.css">
       
         
@@ -35,48 +56,43 @@
       
 
     
+<link rel="stylesheet" href="assets/css/home.css">
+
     
     
       
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Added the font from google fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
-      
     
+    
+      <link rel="stylesheet" href="assets/lib/highlightjs/default.min.css">
     
       <link rel="stylesheet" href="assets/css/blue-palette-alt2.css">
     
       <link rel="stylesheet" href="assets/css/devanttheme.css">
     
+      <link rel="stylesheet" href="assets/css/theme.css">
+    
       <link rel="stylesheet" href="assets/lib/json-formatter/json-formatter.css">
     
       <link rel="stylesheet" href="assets/css/config-catalog.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-    <link rel="stylesheet" href="https://unpkg.com/highlightjs/styles/vs.css" />
-<!-- scripts -->
-<script type="text/javascript" src="../../assets/lib/highlightjs/highlight.min.js"></script>
-<script type="text/javascript" src="../../assets/lib/highlightjs/ballerina.min.js"></script>
-<script type="text/javascript">
-	hljs.highlightAll();
+    <!-- Fix for HTML files loads with wrong resource relative paths when the trailing slash is missing -->
+<script>
+    // Check if the path does not end with a slash and has no file extension
+    if (!window.location.pathname.endsWith('/') && !window.location.pathname.split('/').pop().includes('.')) {
+        var newPath = window.location.pathname + '/' + window.location.search + window.location.hash;
+        window.location.replace(newPath);
+    }
 </script>
-   <!-- Google Tag Manager -->
-   <script>
+
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+<!-- Google Tag Manager -->
+<script>
+  if (window.location.hostname.endsWith('wso2.com')) {
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
-       'gtm.start': new Date().getTime(),
+        'gtm.start': new Date().getTime(),
         event: 'gtm.js'
       });
       var f = d.getElementsByTagName(s)[0],
@@ -88,29 +104,30 @@
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-PSTXMT');
-   </script>
-   <!-- End Google Tag Manager -->
+  } else {
+    console.warn("GTM not loaded: not on an allowed domain");
+  }
+</script>
+<!-- End Google Tag Manager -->
 
-   <!-- CookiePro cookie consent notice start -->
-   <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="486163bc-a8c5-40d8-b185-c707cc718a23" ></script>
-   <script src="https://wso2.com//sites/all/themes/wso2_d7/js/cookie-revoke.js"></script>
 
-   <!-- CookiePro cookies consent notice end -->
-   
-  </script>
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-        html.glightbox-open { overflow: initial; height: 100%; }
-        .gslide-title { margin-top: 0px; user-select: text; }
-        .gslide-desc { color: #666; user-select: text; }
-        .gslide-image img { background: white; }
-        
-            .gscrollbar-fixer { padding-right: 15px; }
-            .gdesc-inner { font-size: 0.75rem; }
-            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+<script src="assets/lib/json-formatter/json-formatter.umd.js"></script>
 
+<script src="assets/lib/highlightjs/highlight.min.js"></script>
+
+<script src="assets/js/devanttheme.js"></script>
+
+<script src="assets/js/theme.js"></script>
+
+<script src="js/open_in_new_tab.js"></script>
+
+    
+      
+
+    
+    
+    
+  </head>
   
   
     
@@ -124,7 +141,8 @@
   
     
     
-
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -136,23 +154,63 @@
     </div>
     
     
+      <!--
+ * Copyright (c) 2024, WSO2 LLC. (http://www.wso2.com) All Rights Reserved.
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
 
 
 
 
 
-<header class="md-header" data-md-component="header" style="height: 13.5rem; position: relative;">
-  <nav class="md-header__inner md-grid md-header--shadow-nav" aria-label="Header" "
-  ">
-    <a href="." title="Devant Documentation"
-      class="md-header__button md-logo" aria-label="Devant Documentation" data-md-component="logo">
-      
-  <img src="assets/images/logo.png" alt="logo" style="vertical-align: middle;">
-
-    </a>
+<header class="md-header md-header--shadow" data-md-component="header" id="page-header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
+    <a href="." title="Devant Documentation"
+      class="md-header__button md-logo" aria-label="Devant Documentation" data-md-component="logo">
+      <!--
+ * Copyright (c) 2023, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+    
+        <img src="assets/images/Devant_Docs_Black.svg" alt="logo" data-md-component="logo" data-md-color="default">
+    
+    
+        <img src="assets/images/Devant_Docs_White.svg" alt="logo" data-md-component="logo" data-md-color="slate">
+    
+
+    </a>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
@@ -160,141 +218,147 @@
             Devant Documentation
           </span>
         </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-            Devant Documentation - AI-Powered iPaaS by WSO2
-            
-          </span>
-        </div>
+      </div>
+    </div>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        
       </div>
     </div>
     
-    <div class="md-header__source">
-      <div class="row" style="width: 10rem;">
-  <div style="display: block; float: left; width: 49%;">
-     <a class="md-source" data-md-component="source" href="https://discord.com/invite/wso2">
-    <div class="md-source__icon md-icon">
+    
+    <form class="md-header__option" data-md-component="palette">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>  
+      
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+      
+            <label class="md-header__button md-icon md-theme-switch md-icon--hover" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+      
+      
+      
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+      
+            <label class="md-header__button md-icon md-theme-switch md-icon--hover" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+      
+      
+    </form>
+    
+    
+    <div class="md-header__community">
+      <!--
+ * Copyright (c) 2023, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+<div class="md-header__extra">
+  <div class="md-header__links">
+    <div class="md-header__link">
+      <button class="md-typeset md-button md-button--link md-button--small md-button--flex md-button--discord"
+              onclick="javascript:window.open('https://discord.com/invite/wso2', '_blank', 'noopener')">
+        <div class="md-icon">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+        </div>
+      </button>
+      <button class="md-header__button md-icon md-icon--hover md-button--asgardeo-mini"
+              onclick="javascript:window.open('https://discord.com/invite/wso2', '_blank', 'noopener')">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+      </button>
     </div>
-    <label>Get Help</label>
-  </a>
-</div> 
-<div style="width:49%; float: right; display: block;;">
-  <a class="md-source" data-md-component="source" href="https://console.devant.dev/login/">
-    <div class="md-source__icon md-icon">
-        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-            <defs>
-                <style>.cls-1{fill:#2f5fa7;}</style>
-            </defs>
-            <path class="cls-1"
-                  d="M32,9.15c-.11-2.7-2.34-4.86-5.07-4.86h-13.48c-2.7.12-4.86,2.34-4.86,5.07v5.85s-3.22,0-3.22,0
-                  h-.12c-.76-.06-1.34-.66-1.34-1.37v-4.36c.92-.44,1.56-1.38,1.56-2.47,0-1.51-1.22-2.73-2.73-2.73
-                  S0,5.52,0,7.02c0,1.09.64,2.03,1.56,2.47v4.38s0,.17,0,.17c.09,1.98,1.76,3.54,3.8,3.54h3.22
-                  s0,5.05,0,5.05v.21c.12,2.7,2.34,4.86,5.07,4.86h13.48c2.7-.12,4.86-2.34,4.86-5.07v-13.48Z
-                  M29.66,22.63v.17c-.09,1.43-1.28,2.57-2.73,2.57h-13.43c-1.43-.09-2.57-1.28-2.57-2.73v-13.43
-                  c.09-1.43,1.28-2.57,2.73-2.57h13.27c1.51,0,2.73,1.22,2.73,2.73v13.27Z"/>
-            <path class="cls-1"
-                  d="M15.66,22.52v-13.01h4.26c1.35,0,2.52.27,3.52.82,1,.55,1.77,1.31,2.31,2.28.55.97.82,2.1.82,3.4
-                  s-.27,2.41-.82,3.4c-.55.98-1.32,1.75-2.31,2.3-1,.55-2.17.82-3.52.82h-4.26ZM17.72,20.69
-                  h2.24c.92,0,1.72-.19,2.39-.58.68-.38,1.2-.93,1.57-1.62.37-.7.56-1.53.56-2.48s-.19-1.78-.56-2.47
-                  c-.37-.69-.9-1.23-1.57-1.62-.68-.38-1.47-.58-2.39-.58h-2.24v9.35Z"/>
-        </svg>
-      </div>
-      <label>Try Devant</label>
-    </a>
-  </div>  
+    <div class="md-header__link">
+      <button class="md-typeset md-button md-button--link md-button--small md-button--flex md-button--discord"
+              onclick="javascript:window.open('https://www.linkedin.com/company/wso2', '_blank', 'noopener')">
+        <div class="md-icon">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+        </div>
+      </button>
+      <button class="md-header__button md-icon md-icon--hover md-button--asgardeo-mini"
+              onclick="javascript:window.open('https://www.linkedin.com/company/wso2', '_blank', 'noopener')">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+      </button>
+    </div>
+    <div class="md-header__link">
+      <button class="md-typeset md-button md-button--link md-button--small md-button--flex md-button--discord"
+              onclick="javascript:window.open('https://www.youtube.com/user/WSO2TechFlicks', '_blank', 'noopener')">
+        <div class="md-icon">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+        </div>
+      </button>
+      <button class="md-header__button md-icon md-icon--hover md-button--asgardeo-mini"
+              onclick="javascript:window.open('https://www.youtube.com/user/WSO2TechFlicks', '_blank', 'noopener')">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </button>
+  </div>
+  <div class="md-header__link">
+      <button class="md-typeset md-button md-button--link md-button--small md-button--flex md-button--discord"
+              onclick="javascript:window.open('https://twitter.com/intent/follow?screen_name=wso2', '_blank', 'noopener')">
+        <div class="md-icon">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"/></svg>
+        </div>
+      </button>
+      <button class="md-header__button md-icon md-icon--hover md-button--asgardeo-mini"
+              onclick="javascript:window.open('https://twitter.com/intent/follow?screen_name=wso2', '_blank', 'noopener')">
+        <span class="md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"/></svg>
+        </span>
+      </button>
+  </div>
+</div>
+    </div>
+    <div class="md-header__issues">
+      <!--
+ * Copyright (c) 2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+<link rel="stylesheet" href="assets/css/report-issues.css">
+
+<div class="report-issues-fixed">
+  <button class="md-typeset md-button md-button--small md-button--flex md-button--report-issues"
+    onclick="javascript:window.open('https://github.com/wso2/docs-devant/issues')" title="Report Issues">
+    <label class="md-header__link__label">Report Issues</label>
+  </button>
 </div>
     </div>
   </nav>
-  
-  
-  <label class="md-header__button md-icon" for="__search">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-  </label>
-  
-  <section class="md-section">
-    <div class="md-grid md-typeset">
-      <div class="section01"
-        style="display: block;  text-align: center; width: 70%;  flex-shrink: 0;min-width: 40%; max-height: 280px; max-width:100%; margin-left:10px; padding-top: 0.5rem; text-align: -webkit-center; margin:auto; margin-top: 1rem;margin-bottom: 1rem; ">
-        <h1 style="font-weight: 700; font-size: 43px; line-height: 48px; padding-top: 2.5rem;">How can we help?</h1>
-      </div>
-      <div class="md-search" data-md-component="search" role="dialog"
-        style="align-items:center; width: 100%; height: 100%;">
-        <label class="md-search__overlay" for="__search"></label>
-        <div class="md-search__inner md-search__inner-home" role="search"
-          style="float: none; align-items: center; background-color: transparent;">
-          <form class="md-search__form md-search__form-home" name="search" style="background-color: #F0F1FB;">
-
-            <!-- Search input -->
-            <input type="text" class="md-search__input md-search__input-home" name="query" id="query"
-              aria-label="Search" placeholder="Search for any topic in our documentation"
-              autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" padding-left="10px"
-              data-md-component="search-query" required />
-            <br />
-            <label class="md-search_label" for="search_input"> For example, </label>
-            <label class="md-search_label md-search_label2" for="search_input"> REST API, Automation, Services, RAG
-            </label>
-            <br />
-            <!-- Search options -->
-            <nav class="md-search__options" aria-label="Search" style="width: inherit;">
-
-              <!-- Button to share search -->
-              
-
-              <!-- Button to reset search -->
-              <button type="reset" class="md-search__icon md-icon" title="Clear"
-                aria-label="Clear" tabindex="-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-              </button>
-            </nav>
-
-            <!-- Search suggestions -->
-            
-          </form>
-          <div class="md-search__output md-search__output-home">
-            <div class="md-search__scrollwrap" style="width: inherit;" data-md-scrollfix>
-
-              <!-- Search results -->
-              <div class="md-search-result" data-md-component="search-result">
-                <div class="md-search-result__meta" style=" padding-top: 1rem;">
-                  Initializing search
-                </div>
-                <ol class="md-search-result__list" role="presentation"></ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <style>
-    .md-header {
-      box-shadow: none !important;
-    }
-
-    .md-header--shadow {
-      box-shadow: none !important;
-      transition: none !important;
-    }
-
-    .md-header--shadow-nav {
-      box-shadow: 0 0 0.2rem #0000001a, 0 0.2rem 0.4rem #0003;
-      transition: transform .25s cubic-bezier(.1, .7, .1, 1), box-shadow .25s;
-    }
-
-    [data-md-toggle=search]:checked~.md-header .md-search_label {
-      visibility: hidden;
-    }
-
-    .md-section {
-      background-image: url('assets/img/home/background.svg') !important;
-      background-position-y: -24rem;
-    }
-  </style>
 </header>
-
+    
     <div class="md-container" data-md-component="container">
       
       
@@ -302,407 +366,6130 @@
           
         
       
-      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+ * Copyright (c) 2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+<!-- Determine class according to configuration -->
 
 
 
 
 
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
 
-<main class="md-main" data-md-component="main">
-
-  <div class="md-container-home data-md-component=" container">
-    <div style="height: 5rem;"></div>
-    <div class="row md_home_link_container_row">
-      <div class="md_home_column column">
-        <!-- Start of first column-->
-        <div class="md_home_link_container">
-          <div class="cIconContainer">
-            <div class="hText">Get Started </div>
-            <div class="hIcon">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M9.94686 5.82054L8.00011 0.5L6.05337 5.82054L0.391663 6.02786L4.85022 9.52346L3.29783 14.9721L8.00011 11.812L12.7024 14.9721L11.15 9.52346L15.6086 6.02786L9.94686 5.82054ZM12.8408 6.92718L9.23867 6.79527L8.00011 3.41024L6.76156 6.79527L3.15947 6.92718L5.99609 9.15115L5.00843 12.6177L8.00011 10.6072L10.9918 12.6177L10.0041 9.15115L12.8408 6.92718Z"
-                  fill="#40404B" />
-              </svg>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer" style="border-bottom: none; margin-bottom:auto;">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="quick-start-guides/schedule-your-first-automation/"> Schedule Your First Automation</a>
-              </div>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer" style="border-bottom: none; margin-bottom:auto;">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="quick-start-guides/develop-your-first-ai-agent/"> Develop Your First AI Agent</a>
-              </div>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer" style="border-bottom: none; margin-bottom:auto;">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="quick-start-guides/develop-your-first-integration-as-api/"> Develop Your First Integration as
-                  API</a>
-              </div>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer" style="border-bottom: none; margin-bottom:auto;">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="quick-start-guides/develop-your-first-event-integration/"> Develop Your First Event Integration</a>
-              </div>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer" style="border-bottom: none; margin-bottom:auto;">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="quick-start-guides/develop-your-first-file-integration/"> Develop Your First File Integration</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of first card - first column-->
-
-        <div class="spacer_div_verticle first_column_space"></div>
-
-        <!--Start of 3rd card- first column-->
-        <div class="md_home_link_container">
-          <div class="cIconContainer">
-            <div class="hText">
-              About Devant
-            </div>
-            <div class="hIcon">
-              <svg width="16" height="15" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M8.46562 13.4822C8.56106 13.4749 8.65587 13.4653 8.75 13.4536C11.464 13.1151 13.6151 10.964 13.9536 8.25C13.9653 8.15587 13.9749 8.06106 13.9822 7.96562C13.9871 7.90216 13.991 7.83842 13.9938 7.77441C13.9979 7.68346 14 7.59197 14 7.5C14 4.18629 11.3137 1.5 8 1.5C4.68629 1.5 2 4.18629 2 7.5C2 7.567 2.0011 7.63374 2.00327 7.70021C2.10714 10.8682 4.66684 13.4149 7.84002 13.4979C7.89317 13.4993 7.94649 13.5 8 13.5C8.05732 13.5 8.11444 13.4992 8.17134 13.4976C8.27005 13.4948 8.36816 13.4897 8.46562 13.4822ZM8.53452 11.9686C8.60277 11.989 8.6751 12 8.75 12C10.8211 12 12.5 10.3211 12.5 8.25C12.5 8.1751 12.489 8.10277 12.4686 8.03452C12.376 7.72533 12.0893 7.5 11.75 7.5C11.3358 7.5 11 7.83579 11 8.25C11 9.49264 9.99264 10.5 8.75 10.5C8.33579 10.5 8 10.8358 8 11.25C8 11.5893 8.22533 11.876 8.53452 11.9686ZM9.5 14.85C9.01534 14.9484 8.5137 15 8 15C7.4863 15 6.98466 14.9484 6.5 14.85C5.97829 14.7441 5.47625 14.584 5 14.3759V18.75C5 19.1642 5.33579 19.5 5.75 19.5H10.25C10.6642 19.5 11 19.1642 11 18.75V14.3759C10.9732 14.3876 10.9463 14.3992 10.9193 14.4106C10.4672 14.6019 9.99234 14.75 9.5 14.85ZM12.5 13.5005C14.3217 12.1322 15.5 9.95373 15.5 7.5C15.5 3.35786 12.1421 0 8 0C3.85786 0 0.5 3.35786 0.5 7.5C0.5 9.82995 1.56245 11.9118 3.2293 13.2874C3.31785 13.3604 3.40811 13.4315 3.5 13.5005V18.75C3.5 19.9926 4.50736 21 5.75 21V21.75C5.75 22.9926 6.75736 24 8 24C9.24264 24 10.25 22.9926 10.25 21.75V21C11.4926 21 12.5 19.9926 12.5 18.75V13.5005ZM7.25 21.75C7.25 22.1642 7.58579 22.5 8 22.5C8.41421 22.5 8.75 22.1642 8.75 21.75V21H7.25V21.75Z"
-                  fill="black" />
-              </svg>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="what-is-devant/"> What is Devant?</a>
-              </div>
-            </div>
-            <div class="iconTextcontainer last_in_card">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="devant-concepts/resource-hierarchy/"> Devant Concepts</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of 3rd card- 1st column-->
-      </div>
-      <!-- End of 1st column-->
-      <div class="spacer_div" style="width: 2%;"></div>
-      <!-- Start of second column-->
-      <div class="md_home_column column">
-
-        <!-- Second column - 1st card-->
-        <div class="md_home_link_container">
-          <div class="cIconContainer">
-            <div class="hText"> AI </div>
-            <div class="hIcon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 718 709">
-                <path fill="currentColor"
-                  d="m304.188 151l-29 93l-28-93l-93-29l93-28l28-94l29 94l93 28zm162-51l-14 47l-16-47l-46-15l46-14l16-46l14 46l46 14zm-457 511l573-556c4-5 10-8 17-8c9-1 18 2 25 9c3 2 7 6 13 11c11 10 23 22 32 34c4 6 6 11 6 16c1 10-2 19-8 25l-573 558c-5 5-11 7-18 8c-9 1-18-2-25-9c-3-3-7-6-13-12c-11-9-23-21-31-34c-4-6-6-12-7-17c-1-10 2-18 9-25zm460-404l42 43l133-129l-42-44zm-279 57l-13 46l-14-46l-46-15l46-14l14-47l13 47l48 14zm466-35l15 47l46 14l-46 15l-15 46l-15-46l-46-15l46-14z" />
-              </svg>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer last_in_card">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="ai/rag-application/"> RAG Application </a>
-              </div>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer last_in_card">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="ai/develop-an-ai-agent-created-using-wso2-integrator-bi/"> Develop an AI Agent Created Using WSO2 Integrator: BI </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Second column - 2nd card-->
-        <div class="spacer_div_verticle first_column_space"></div>
-        <div class="md_home_link_container">
-          <div class="cIconContainer">
-            <div class="hText">Support & Community </div>
-            <div class="hIcon">
-              <svg width="14" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M18.6946 6.07017L11.1946 1.78446C10.7642 1.53851 10.2358 1.53851 9.8054 1.78446L2.30541 6.07017C1.8692 6.31943 1.6 6.78331 1.6 7.28571V15.8038C1.6 16.3062 1.8692 16.7701 2.30541 17.0193L9.8054 21.305C10.2358 21.551 10.7642 21.551 11.1946 21.305L11.409 21.1825L11.0077 20.959C10.3846 20.612 10 19.9663 10 19.2669V13.7331C10 13.0337 10.3846 12.388 11.0077 12.041L16.0077 9.25679C16.6226 8.9144 17.3774 8.9144 17.9923 9.25679L19.4 10.0407V7.28571C19.4 6.78332 19.1308 6.31943 18.6946 6.07017ZM21 10.9316V7.28571C21 6.20914 20.4231 5.21511 19.4884 4.68098L11.9884 0.395271C11.0661 -0.131757 9.93388 -0.131757 9.01158 0.395271L1.51158 4.68098C0.576858 5.21511 0 6.20914 0 7.28571V15.8038C0 16.8804 0.576859 17.8744 1.51158 18.4085L9.01158 22.6942C9.93388 23.2213 11.0661 23.2213 11.9884 22.6942L13.0423 22.092L16.0077 23.7432C16.6226 24.0856 17.3774 24.0856 17.9923 23.7432L22.9923 20.959C23.6154 20.612 24 19.9663 24 19.2669V13.7331C24 13.0337 23.6154 12.388 22.9923 12.041L21 10.9316ZM16.7861 10.6547C16.917 10.5818 17.083 10.5818 17.2139 10.6547L22.2139 13.4389C22.3424 13.5104 22.4 13.6284 22.4 13.7331V19.2669C22.4 19.3716 22.3424 19.4896 22.2139 19.5611L17.2139 22.3453C17.083 22.4182 16.917 22.4182 16.7861 22.3453L11.7861 19.5611C11.6576 19.4896 11.6 19.3716 11.6 19.2669V13.7331C11.6 13.6284 11.6576 13.5104 11.7861 13.4389L16.7861 10.6547Z"
-                  fill="black" />
-              </svg>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="https://wso2.com/devant/pricing/">Pricing and Support</a>
-              </div>
-            </div>
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a
-                  href="https://discord.com/login?redirect_to=%2Fchannels%2F955510916064092180%2F1354011500066373704">Discord</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- End of Second column - 1st card-->
-      <!-- End of second column-->
-      <div class="spacer_div" style="width: 2%;"></div>
-      <!-- Start of 3rd column-->
-      <div class="md_home_column column">
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href="."
+      title="Devant Documentation"
+      class="md-nav__button md-logo"
+      aria-label="Devant Documentation"
+      data-md-component="logo"
+    >
+      <!--
+ * Copyright (c) 2023, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
 
 
-        <!-- Start of 3rd column- 1st card-->
-        <div class="md_home_link_container">
-          <div class="cIconContainer">
-            <div class="hText">
-              Using Devant
-            </div>
-            <div class="hIcon">
-              <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M8.74999 7.24998V0.972534L0.369324 11.75H5.25199L5.25255 17.028L13.6303 7.25033L8.74999 7.24998ZM2.41199 10.75L7.74999 3.88598V8.2499L11.456 8.24998L6.25099 14.324L6.25188 10.75H2.41199Z"
-                  fill="#40404B" />
-              </svg>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="sharing-and-reusing/create-a-connection/">Share and Reuse Integrations</a>
-              </div>
-            </div>
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="manage-databases-and-caches/devant-managed-databases-and-caches/">Devant-Managed Databases and
-                  Caches</a>
-              </div>
-            </div>
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="api-management/overview/">API Management</a>
-              </div>
-            </div>
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="testing/test-rest-endpoints-via-the-openapi-console/">Testing</a>
-              </div>
-            </div>
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="monitoring-and-insights/observability-overview/">Monitoring and Insights</a>
-              </div>
-            </div>
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="administer/control-access-in-the-devant-console/">Administer</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of Third column – 1st card -->
-        <div class="spacer_div_verticle first_column_space"></div>
-        <!-- Start of 3rd column- 2nd card-->
-        <div class="md_home_link_container">
-          <div class="cIconContainer">
-            <div class="hText">Devant Samples</div>
-            <div class="hIcon">
-              <svg width="16" height="15" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M8.46562 13.4822C8.56106 13.4749 8.65587 13.4653 8.75 13.4536C11.464 13.1151 13.6151 10.964 13.9536 8.25C13.9653 8.15587 13.9749 8.06106 13.9822 7.96562C13.9871 7.90216 13.991 7.83842 13.9938 7.77441C13.9979 7.68346 14 7.59197 14 7.5C14 4.18629 11.3137 1.5 8 1.5C4.68629 1.5 2 4.18629 2 7.5C2 7.567 2.0011 7.63374 2.00327 7.70021C2.10714 10.8682 4.66684 13.4149 7.84002 13.4979C7.89317 13.4993 7.94649 13.5 8 13.5C8.05732 13.5 8.11444 13.4992 8.17134 13.4976C8.27005 13.4948 8.36816 13.4897 8.46562 13.4822ZM8.53452 11.9686C8.60277 11.989 8.6751 12 8.75 12C10.8211 12 12.5 10.3211 12.5 8.25C12.5 8.1751 12.489 8.10277 12.4686 8.03452C12.376 7.72533 12.0893 7.5 11.75 7.5C11.3358 7.5 11 7.83579 11 8.25C11 9.49264 9.99264 10.5 8.75 10.5C8.33579 10.5 8 10.8358 8 11.25C8 11.5893 8.22533 11.876 8.53452 11.9686ZM9.5 14.85C9.01534 14.9484 8.5137 15 8 15C7.4863 15 6.98466 14.9484 6.5 14.85C5.97829 14.7441 5.47625 14.584 5 14.3759V18.75C5 19.1642 5.33579 19.5 5.75 19.5H10.25C10.6642 19.5 11 19.1642 11 18.75V14.3759C10.9732 14.3876 10.9463 14.3992 10.9193 14.4106C10.4672 14.6019 9.99234 14.75 9.5 14.85ZM12.5 13.5005C14.3217 12.1322 15.5 9.95373 15.5 7.5C15.5 3.35786 12.1421 0 8 0C3.85786 0 0.5 3.35786 0.5 7.5C0.5 9.82995 1.56245 11.9118 3.2293 13.2874C3.31785 13.3604 3.40811 13.4315 3.5 13.5005V18.75C3.5 19.9926 4.50736 21 5.75 21V21.75C5.75 22.9926 6.75736 24 8 24C9.24264 24 10.25 22.9926 10.25 21.75V21C11.4926 21 12.5 19.9926 12.5 18.75V13.5005ZM7.25 21.75C7.25 22.1642 7.58579 22.5 8 22.5C8.41421 22.5 8.75 22.1642 8.75 21.75V21H7.25V21.75Z"
-                  fill="black" />
-              </svg>
-            </div>
-          </div>
-          <div class="cContentContainer">
-            <div class="iconTextcontainer">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="devant-samples/quick-deploy-a-sample/"> Quick Deploy a Sample </a>
-              </div>
-            </div>
-            <div class="iconTextcontainer last_in_card">
-              <div class="cIcon">
-                <svg width="11" height="20" viewBox="0 -3 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.95801 0.0537109L10.748 4.83643L5.95801 9.62646L5.21094 8.88672L8.76318 5.36377L0.0473633 5.34912V4.33105L8.74854 4.31641L5.21094 0.793457L5.95801 0.0537109Z"
-                    fill="#2F5FA7" />
-                </svg>
-              </div>
-              <div class="cText">
-                <a href="devant-samples/explore-the-demo-organization/"> Explore the Demo Organization </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--end of column 3 - card 2 -->
-      </div>
-      <!-- end of column 3-->
-    </div>
+    
+        <img src="assets/images/Devant_Docs_Black.svg" alt="logo" data-md-component="logo" data-md-color="default">
+    
+    
+        <img src="assets/images/Devant_Docs_White.svg" alt="logo" data-md-component="logo" data-md-color="slate">
+    
+
+    </a>
+    Devant Documentation
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wso2/docs-devant/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
-</main>
+  <div class="md-source__repository">
+    wso2/docs-devant
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item md-nav__item--active">
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+      <input
+        class="md-nav__toggle md-toggle"
+        type="checkbox"
+        id="__toc"
+      />
+
+      <!-- Hack: see partials/toc.html for more information -->
+      
+      
+
+      <!-- Render table of contents, if not empty -->
+      
+      <a
+        href="."
+        class="md-nav__link md-nav__link--active"
+      >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"/></svg>
+    
+  </span>
 
       
-<footer class="md-footer">
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="footer-copyright-right">
-    <div class="footer-copyright-top">
-      Copyright &copy; <a href="https://wso2.com/">WSO2</a> LLC (2025)
-    </div>
-    <div class="footer-copyright-bottom">
-      Content licensed under <a href="https://creativecommons.org/licenses/by/4.0">CC By 4.0.</a> | Sample code
-      licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.
+      Home
+      
+    </span>
+    
+  </a>
+
+  <!-- Show table of contents -->
+  
+</li>
+
+<!-- Main navigation item -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav--expanded-section md-nav--expanded-section-verticle-line md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  <!-- Check for auto-collapse behavior configuration -->
+  
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_2"
+      checked
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_2"
+      id="__nav_2_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>
+    
+  </span>
+
+      &nbsp;Introduction
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_2_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_2">
+      <span class="md-nav__icon md-icon"></span>
+      Introduction
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="what-is-devant/" class="md-nav__link">
+    <span>
+      
+      What is Devant?
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav--expanded-section md-nav--expanded-section-verticle-line md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  <!-- Check for auto-collapse behavior configuration -->
+  
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_3"
+      checked
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_3"
+      id="__nav_3_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M14.064 0h.186C15.216 0 16 .784 16 1.75v.186a8.752 8.752 0 0 1-2.564 6.186l-.458.459c-.314.314-.641.616-.979.904v3.207c0 .608-.315 1.172-.833 1.49l-2.774 1.707a.749.749 0 0 1-1.11-.418l-.954-3.102a1.214 1.214 0 0 1-.145-.125L3.754 9.816a1.218 1.218 0 0 1-.124-.145L.528 8.717a.749.749 0 0 1-.418-1.11l1.71-2.774A1.748 1.748 0 0 1 3.31 4h3.204c.288-.338.59-.665.904-.979l.459-.458A8.749 8.749 0 0 1 14.064 0ZM8.938 3.623h-.002l-.458.458c-.76.76-1.437 1.598-2.02 2.5l-1.5 2.317 2.143 2.143 2.317-1.5c.902-.583 1.74-1.26 2.499-2.02l.459-.458a7.25 7.25 0 0 0 2.123-5.127V1.75a.25.25 0 0 0-.25-.25h-.186a7.249 7.249 0 0 0-5.125 2.123ZM3.56 14.56c-.732.732-2.334 1.045-3.005 1.148a.234.234 0 0 1-.201-.064.234.234 0 0 1-.064-.201c.103-.671.416-2.273 1.15-3.003a1.502 1.502 0 1 1 2.12 2.12Zm6.94-3.935c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 0 0 .119-.213ZM3.678 8.116 5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 0 0-.213.119l-1.2 1.95ZM12 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+    
+  </span>
+
+      &nbsp;Quick Start Guides
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_3_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_3">
+      <span class="md-nav__icon md-icon"></span>
+      Quick Start Guides
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="quick-start-guides/schedule-your-first-automation/" class="md-nav__link">
+    <span>
+      
+      Schedule Your First Automation
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="quick-start-guides/develop-your-first-ai-agent/" class="md-nav__link">
+    <span>
+      
+      Develop Your First AI Agent
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="quick-start-guides/develop-your-first-integration-as-api/" class="md-nav__link">
+    <span>
+      
+      Develop Your First Integration as API
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="quick-start-guides/develop-your-first-event-integration/" class="md-nav__link">
+    <span>
+      
+      Develop Your First Event Integration
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="quick-start-guides/develop-your-first-file-integration/" class="md-nav__link">
+    <span>
+      
+      Develop Your First File Integration
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_4"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_4"
+      id="__nav_4_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Zm7.47 3.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L10.69 8 9.22 6.53a.75.75 0 0 1 0-1.06ZM6.78 6.53 5.31 8l1.47 1.47a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"/></svg>
+    
+  </span>
+
+      &nbsp;Devant Samples
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_4_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_4">
+      <span class="md-nav__icon md-icon"></span>
+      Devant Samples
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested  ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_4_1"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_4_1"
+      id="__nav_4_1_label"
+      tabindex="0"
+    >
+    <span>
+      
+      Explore the Samples Collection
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="2"
+        aria-labelledby="__nav_4_1_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_4_1">
+      <span class="md-nav__icon md-icon"></span>
+      Explore the Samples Collection
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-samples/samples-overview/" class="md-nav__link">
+    <span>
+      
+      Samples Overview
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-samples/quick-deploy-a-sample/" class="md-nav__link">
+    <span>
+      
+      Quick Deploy a Sample
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-samples/explore-the-demo-organization/" class="md-nav__link">
+    <span>
+      
+      Explore the Demo Organization
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-samples/deploy-with-wso2-integrator-mi/" class="md-nav__link">
+    <span>
+      
+      Deploy with WSO2 Integrator: MI
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_5"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_5"
+      id="__nav_5_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 0 1 16 0v5.25a.75.75 0 0 1-1.5 0V8a6.5 6.5 0 1 0-13 0v5.25a.75.75 0 0 1-1.5 0Zm3-1.25C3 5.784 3.784 5 4.75 5h6.5c.966 0 1.75.784 1.75 1.75v1.5A1.75 1.75 0 0 1 11.25 10h-6.5A1.75 1.75 0 0 1 3 8.25Zm1.47-.53a.75.75 0 0 0 0 1.06l1.5 1.5a.75.75 0 0 0 1.06 0L8 7.81l.97.97a.75.75 0 0 0 1.06 0l1.5-1.5a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215l-.97.97-.97-.97a.75.75 0 0 0-1.06 0l-.97.97-.97-.97a.75.75 0 0 0-1.06 0Zm1.03 6.03a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"/></svg>
+    
+  </span>
+
+      &nbsp;AI
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_5_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_5">
+      <span class="md-nav__icon md-icon"></span>
+      AI
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="ai/rag-application/" class="md-nav__link">
+    <span>
+      
+      RAG Application
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="ai/develop-an-ai-agent-created-using-wso2-integrator-bi/" class="md-nav__link">
+    <span>
+      
+      Develop an AI Agent Created Using WSO2 Integrator: BI
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_6"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_6"
+      id="__nav_6_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.693 1.066a.747.747 0 0 1 .614 0l7.25 3.25a.75.75 0 0 1 0 1.368L13 6.831v2.794c0 1.024-.81 1.749-1.66 2.173-.893.447-2.075.702-3.34.702-.278 0-.55-.012-.816-.036a.75.75 0 0 1 .133-1.494c.22.02.45.03.683.03 1.082 0 2.025-.221 2.67-.543.69-.345.83-.682.83-.832V7.503L8.307 8.934a.747.747 0 0 1-.614 0L4 7.28v1.663c.296.105.575.275.812.512.438.438.688 1.059.688 1.796v3a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75v-3c0-.737.25-1.358.688-1.796.237-.237.516-.407.812-.512V6.606L.443 5.684a.75.75 0 0 1 0-1.368ZM2.583 5 8 7.428 13.416 5 8 2.572ZM2.5 11.25v2.25H4v-2.25c0-.388-.125-.611-.25-.735a.697.697 0 0 0-.5-.203.707.707 0 0 0-.5.203c-.125.124-.25.347-.25.735Z"/></svg>
+    
+  </span>
+
+      &nbsp;Devant Concepts
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_6_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_6">
+      <span class="md-nav__icon md-icon"></span>
+      Devant Concepts
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/resource-hierarchy/" class="md-nav__link">
+    <span>
+      
+      Resource Hierarchy
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/organization/" class="md-nav__link">
+    <span>
+      
+      Organization
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/project/" class="md-nav__link">
+    <span>
+      
+      Project
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/integration/" class="md-nav__link">
+    <span>
+      
+      Integration
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/endpoint/" class="md-nav__link">
+    <span>
+      
+      Endpoint
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/ci-cd/" class="md-nav__link">
+    <span>
+      
+      CI/CD
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/deployment-tracks/" class="md-nav__link">
+    <span>
+      
+      Deployment Tracks
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/connections/" class="md-nav__link">
+    <span>
+      
+      Connections
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/data-planes/" class="md-nav__link">
+    <span>
+      
+      Data Planes
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devant-concepts/environments/" class="md-nav__link">
+    <span>
+      
+      Environments
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_7"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_7"
+      id="__nav_7_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 6.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-6.5a.25.25 0 0 0-.25-.25h-1a.75.75 0 0 1 0-1.5h1c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-6.5C2 5.784 2.784 5 3.75 5h1a.75.75 0 0 1 0 1.5ZM7.823.177a.25.25 0 0 1 .354 0l2.896 2.896a.25.25 0 0 1-.177.427H8.75v5.75a.75.75 0 0 1-1.5 0V3.5H5.104a.25.25 0 0 1-.177-.427Z"/></svg>
+    
+  </span>
+
+      &nbsp;Share and Reuse Integrations
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_7_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_7">
+      <span class="md-nav__icon md-icon"></span>
+      Share and Reuse Integrations
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="sharing-and-reusing/create-a-connection/" class="md-nav__link">
+    <span>
+      
+      Create a Connection
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="sharing-and-reusing/use-a-connection-in-your-integration/" class="md-nav__link">
+    <span>
+      
+      Use a Connection in Your Integration
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="sharing-and-reusing/use-a-database-connection-in-your-integration/" class="md-nav__link">
+    <span>
+      
+      Use a Database Connection in Your Integration
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_8"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_8"
+      id="__nav_8_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 3.5c0-.626.292-1.165.7-1.59.406-.422.956-.767 1.579-1.041C4.525.32 6.195 0 8 0c1.805 0 3.475.32 4.722.869.622.274 1.172.62 1.578 1.04.408.426.7.965.7 1.591v9c0 .626-.292 1.165-.7 1.59-.406.422-.956.767-1.579 1.041C11.476 15.68 9.806 16 8 16c-1.805 0-3.475-.32-4.721-.869-.623-.274-1.173-.62-1.579-1.04-.408-.426-.7-.965-.7-1.591Zm1.5 0c0 .133.058.318.282.551.227.237.591.483 1.101.707C4.898 5.205 6.353 5.5 8 5.5c1.646 0 3.101-.295 4.118-.742.508-.224.873-.471 1.1-.708.224-.232.282-.417.282-.55 0-.133-.058-.318-.282-.551-.227-.237-.591-.483-1.101-.707C11.102 1.795 9.647 1.5 8 1.5c-1.646 0-3.101.295-4.118.742-.508.224-.873.471-1.1.708-.224.232-.282.417-.282.55Zm0 4.5c0 .133.058.318.282.551.227.237.591.483 1.101.707C4.898 9.705 6.353 10 8 10c1.646 0 3.101-.295 4.118-.742.508-.224.873-.471 1.1-.708.224-.232.282-.417.282-.55V5.724c-.241.15-.503.286-.778.407C11.475 6.68 9.805 7 8 7c-1.805 0-3.475-.32-4.721-.869a6.15 6.15 0 0 1-.779-.407Zm0 2.225V12.5c0 .133.058.318.282.55.227.237.592.484 1.1.708 1.016.447 2.471.742 4.118.742 1.647 0 3.102-.295 4.117-.742.51-.224.874-.47 1.101-.707.224-.233.282-.418.282-.551v-2.275c-.241.15-.503.285-.778.406-1.247.549-2.917.869-4.722.869-1.805 0-3.475-.32-4.721-.869a6.327 6.327 0 0 1-.779-.406Z"/></svg>
+    
+  </span>
+
+      &nbsp;Devant-Managed Databases and Caches
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_8_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_8">
+      <span class="md-nav__icon md-icon"></span>
+      Devant-Managed Databases and Caches
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="manage-databases-and-caches/devant-managed-databases-and-caches/" class="md-nav__link">
+    <span>
+      
+      Overview
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="manage-databases-and-caches/devant-managed-postgresql-databases/" class="md-nav__link">
+    <span>
+      
+      PostgreSQL
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="manage-databases-and-caches/devant-managed-mysql-databases/" class="md-nav__link">
+    <span>
+      
+      MySQL
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="manage-databases-and-caches/devant-managed-caches/" class="md-nav__link">
+    <span>
+      
+      Devant-Managed Cache
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="manage-databases-and-caches/add-devant-managed-databases-and-caches-to-the-marketplace/" class="md-nav__link">
+    <span>
+      
+      Add Devant-Managed Databases and Caches to the Marketplace
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_9"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_9"
+      id="__nav_9_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m8.533.133 5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667l5.25-1.68a1.748 1.748 0 0 1 1.066 0Zm-.61 1.429.001.001-5.25 1.68a.251.251 0 0 0-.174.237V7c0 1.36.275 2.666 1.057 3.859.784 1.194 2.121 2.342 4.366 3.298a.196.196 0 0 0 .154 0c2.245-.957 3.582-2.103 4.366-3.297C13.225 9.666 13.5 8.358 13.5 7V3.48a.25.25 0 0 0-.174-.238l-5.25-1.68a.25.25 0 0 0-.153 0ZM11.28 6.28l-3.5 3.5a.75.75 0 0 1-1.06 0l-1.5-1.5a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l.97.97 2.97-2.97a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"/></svg>
+    
+  </span>
+
+      &nbsp;API Management
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_9_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_9">
+      <span class="md-nav__icon md-icon"></span>
+      API Management
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="api-management/overview/" class="md-nav__link">
+    <span>
+      
+      Overview
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="api-management/lifecycle-management/" class="md-nav__link">
+    <span>
+      
+      Lifecycle Management
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="api-management/api-security/" class="md-nav__link">
+    <span>
+      
+      API Security
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested  ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_9_4"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_9_4"
+      id="__nav_9_4_label"
+      tabindex="0"
+    >
+    <span>
+      
+      Consuming APIs
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="2"
+        aria-labelledby="__nav_9_4_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_9_4">
+      <span class="md-nav__icon md-icon"></span>
+      Consuming APIs
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="api-management/consuming-apis/consuming-an-api-secured-with-an-api-key/" class="md-nav__link">
+    <span>
+      
+      Consuming an API secured with an API Key
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="api-management/consuming-apis/consuming-an-api-secured-with-oauth2/" class="md-nav__link">
+    <span>
+      
+      Consuming an API secured with OAuth2
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="api-management/api-rate-limiting/" class="md-nav__link">
+    <span>
+      
+      API Rate Limiting
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_10"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_10"
+      id="__nav_10_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 4a4 4 0 0 1 8 0v2h.25c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-5.5C2 6.784 2.784 6 3.75 6H4Zm8.25 3.5h-8.5a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25ZM10.5 6V4a2.5 2.5 0 1 0-5 0v2Z"/></svg>
+    
+  </span>
+
+      &nbsp;Configure VPN
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_10_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_10">
+      <span class="md-nav__icon md-icon"></span>
+      Configure VPN
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="configure-vpn/configure-tailscale-vpn/" class="md-nav__link">
+    <span>
+      
+      Configure VPNs on the Devant Cloud Data Plane
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_11"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_11"
+      id="__nav_11_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.746.746 0 0 1 9.5 6Z"/></svg>
+    
+  </span>
+
+      &nbsp;Testing
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_11_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_11">
+      <span class="md-nav__icon md-icon"></span>
+      Testing
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="testing/test-rest-endpoints-via-the-openapi-console/" class="md-nav__link">
+    <span>
+      
+      Test REST Endpoints via the OpenAPI Console
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_12"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_12"
+      id="__nav_12_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"/></svg>
+    
+  </span>
+
+      &nbsp;Monitoring and Insights
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_12_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_12">
+      <span class="md-nav__icon md-icon"></span>
+      Monitoring and Insights
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="monitoring-and-insights/observability-overview/" class="md-nav__link">
+    <span>
+      
+      Observability Overview
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="monitoring-and-insights/alerts-overview/" class="md-nav__link">
+    <span>
+      
+      Alerts Overview
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="monitoring-and-insights/logs-overview/" class="md-nav__link">
+    <span>
+      
+      Logs Overview
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested  ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_12_4"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_12_4"
+      id="__nav_12_4_label"
+      tabindex="0"
+    >
+    <span>
+      
+      Usage Insights
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="2"
+        aria-labelledby="__nav_12_4_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_12_4">
+      <span class="md-nav__icon md-icon"></span>
+      Usage Insights
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="monitoring-and-insights/usage-insights-overview/" class="md-nav__link">
+    <span>
+      
+      Usage Insights Overview
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="monitoring-and-insights/generate-custom-reports/" class="md-nav__link">
+    <span>
+      
+      Generate Custom Reports
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_13"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_13"
+      id="__nav_13_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 0a8.2 8.2 0 0 1 .701.031C9.444.095 9.99.645 10.16 1.29l.288 1.107c.018.066.079.158.212.224.231.114.454.243.668.386.123.082.233.09.299.071l1.103-.303c.644-.176 1.392.021 1.82.63.27.385.506.792.704 1.218.315.675.111 1.422-.364 1.891l-.814.806c-.049.048-.098.147-.088.294.016.257.016.515 0 .772-.01.147.038.246.088.294l.814.806c.475.469.679 1.216.364 1.891a7.977 7.977 0 0 1-.704 1.217c-.428.61-1.176.807-1.82.63l-1.102-.302c-.067-.019-.177-.011-.3.071a5.909 5.909 0 0 1-.668.386c-.133.066-.194.158-.211.224l-.29 1.106c-.168.646-.715 1.196-1.458 1.26a8.006 8.006 0 0 1-1.402 0c-.743-.064-1.289-.614-1.458-1.26l-.289-1.106c-.018-.066-.079-.158-.212-.224a5.738 5.738 0 0 1-.668-.386c-.123-.082-.233-.09-.299-.071l-1.103.303c-.644.176-1.392-.021-1.82-.63a8.12 8.12 0 0 1-.704-1.218c-.315-.675-.111-1.422.363-1.891l.815-.806c.05-.048.098-.147.088-.294a6.214 6.214 0 0 1 0-.772c.01-.147-.038-.246-.088-.294l-.815-.806C.635 6.045.431 5.298.746 4.623a7.92 7.92 0 0 1 .704-1.217c.428-.61 1.176-.807 1.82-.63l1.102.302c.067.019.177.011.3-.071.214-.143.437-.272.668-.386.133-.066.194-.158.211-.224l.29-1.106C6.009.645 6.556.095 7.299.03 7.53.01 7.764 0 8 0Zm-.571 1.525c-.036.003-.108.036-.137.146l-.289 1.105c-.147.561-.549.967-.998 1.189-.173.086-.34.183-.5.29-.417.278-.97.423-1.529.27l-1.103-.303c-.109-.03-.175.016-.195.045-.22.312-.412.644-.573.99-.014.031-.021.11.059.19l.815.806c.411.406.562.957.53 1.456a4.709 4.709 0 0 0 0 .582c.032.499-.119 1.05-.53 1.456l-.815.806c-.081.08-.073.159-.059.19.162.346.353.677.573.989.02.03.085.076.195.046l1.102-.303c.56-.153 1.113-.008 1.53.27.161.107.328.204.501.29.447.222.85.629.997 1.189l.289 1.105c.029.109.101.143.137.146a6.6 6.6 0 0 0 1.142 0c.036-.003.108-.036.137-.146l.289-1.105c.147-.561.549-.967.998-1.189.173-.086.34-.183.5-.29.417-.278.97-.423 1.529-.27l1.103.303c.109.029.175-.016.195-.045.22-.313.411-.644.573-.99.014-.031.021-.11-.059-.19l-.815-.806c-.411-.406-.562-.957-.53-1.456a4.709 4.709 0 0 0 0-.582c-.032-.499.119-1.05.53-1.456l.815-.806c.081-.08.073-.159.059-.19a6.464 6.464 0 0 0-.573-.989c-.02-.03-.085-.076-.195-.046l-1.102.303c-.56.153-1.113.008-1.53-.27a4.44 4.44 0 0 0-.501-.29c-.447-.222-.85-.629-.997-1.189l-.289-1.105c-.029-.11-.101-.143-.137-.146a6.6 6.6 0 0 0-1.142 0ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8Z"/></svg>
+    
+  </span>
+
+      &nbsp;Administer
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_13_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_13">
+      <span class="md-nav__icon md-icon"></span>
+      Administer
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="administer/control-access-in-the-devant-console/" class="md-nav__link">
+    <span>
+      
+      Control Access in the Devant Console
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="administer/configure-enterprise-login/" class="md-nav__link">
+    <span>
+      
+      Configure Enterprise Login
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested  ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_13_3"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_13_3"
+      id="__nav_13_3_label"
+      tabindex="0"
+    >
+    <span>
+      
+      Configure an External IdP
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="2"
+        aria-labelledby="__nav_13_3_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_13_3">
+      <span class="md-nav__icon md-icon"></span>
+      Configure an External IdP
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp/" class="md-nav__link">
+    <span>
+      
+      Configure Asgardeo as an External IdP
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="administer/configure-an-external-idp/configure-azure-ad-as-an-external-idp/" class="md-nav__link">
+    <span>
+      
+      Configure Azure as an External IdP
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="administer/configure-a-custom-domain-for-your-organization/" class="md-nav__link">
+    <span>
+      
+      Configure a Custom Domain for Your Organization
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+      
+      
+      <!--
+ * Copyright (c) 2024-2025, WSO2 LLC. (https://www.wso2.com).
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+
+
+<!-- Render current and nested navigation items -->
+
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+
+
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_14"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_14"
+      id="__nav_14_label"
+      tabindex="0"
+    >
+    <span>
+      
+      
+  <span class="icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"/></svg>
+    
+  </span>
+
+      &nbsp;References
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="1"
+        aria-labelledby="__nav_14_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_14">
+      <span class="md-nav__icon md-icon"></span>
+      References
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="references/faq/" class="md-nav__link">
+    <span>
+      
+      FAQ
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="references/create-an-organization/" class="md-nav__link">
+    <span>
+      
+      Create an Organization
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="references/import-a-repository/" class="md-nav__link">
+    <span>
+      
+      Import a Repository
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="references/develop-integrations-with-git/" class="md-nav__link">
+    <span>
+      
+      Develop Integrations with Git
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="references/install-and-setup-wso2-integrator-bi/" class="md-nav__link">
+    <span>
+      
+      Install and Set Up WSO2 Integrator: BI
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="references/devant-platform-services-billing-and-upgrades/" class="md-nav__link">
+    <span>
+      
+      Devant Platform Service Billing and Upgrades
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="references/signup-and-upgrade-guide/" class="md-nav__link">
+    <span>
+      
+      Sign-Up and Upgrade Guide
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devops-and-ci-cd/manage-configurations-and-secrets/" class="md-nav__link">
+    <span>
+      
+      Manage Configurations and Secrets
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested  ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_14_9"
+      
+      
+    />
+
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
+      
+    
+      
+    
+  
+
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_14_9"
+      id="__nav_14_9_label"
+      tabindex="0"
+    >
+    <span>
+      
+      Autoscale
+      
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="2"
+        aria-labelledby="__nav_14_9_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_14_9">
+      <span class="md-nav__icon md-icon"></span>
+      Autoscale
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devops-and-ci-cd/autoscale/autoscale-component-replicas/" class="md-nav__link">
+    <span>
+      
+      Autoscale Component Replicas
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="devops-and-ci-cd/autoscale/autoscale-components-with-scale-to-zero/" class="md-nav__link">
+    <span>
+      
+      Autoscale Components with Scale-to-Zero
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+<div class="md-content">
+  <article class="md-content__inner md-typeset">
+    <div class="md-home-search-container">
+      <h1 class="md-home-search-input-label">Devant Documentation</h1>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+    </div>
+    <div class="description-section">
+      <p>
+        Devant is a cloud-native integration platform for deploying, managing, and scaling your integrations, APIs, and
+        AI-powered applications.
+        Deploy and monitor integrations with built-in CI/CD, observability, autoscaling, and managed databases.
+      </p>
+    </div>
+
+    
+
+    <a href="/devant/docs/quick-start-guides/schedule-your-first-automation/" rel="noopener" class="quickstart-cta">
+
+      <div class="cta-icon">
+        
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M14.064 0h.186C15.216 0 16 .784 16 1.75v.186a8.752 8.752 0 0 1-2.564 6.186l-.458.459c-.314.314-.641.616-.979.904v3.207c0 .608-.315 1.172-.833 1.49l-2.774 1.707a.749.749 0 0 1-1.11-.418l-.954-3.102a1.214 1.214 0 0 1-.145-.125L3.754 9.816a1.218 1.218 0 0 1-.124-.145L.528 8.717a.749.749 0 0 1-.418-1.11l1.71-2.774A1.748 1.748 0 0 1 3.31 4h3.204c.288-.338.59-.665.904-.979l.459-.458A8.749 8.749 0 0 1 14.064 0ZM8.938 3.623h-.002l-.458.458c-.76.76-1.437 1.598-2.02 2.5l-1.5 2.317 2.143 2.143 2.317-1.5c.902-.583 1.74-1.26 2.499-2.02l.459-.458a7.25 7.25 0 0 0 2.123-5.127V1.75a.25.25 0 0 0-.25-.25h-.186a7.249 7.249 0 0 0-5.125 2.123ZM3.56 14.56c-.732.732-2.334 1.045-3.005 1.148a.234.234 0 0 1-.201-.064.234.234 0 0 1-.064-.201c.103-.671.416-2.273 1.15-3.003a1.502 1.502 0 1 1 2.12 2.12Zm6.94-3.935c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 0 0 .119-.213ZM3.678 8.116 5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 0 0-.213.119l-1.2 1.95ZM12 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+
+
+      </div>
+
+      <div class="cta-content">
+        <span class="cta-title">New to Devant?</span>
+        <span class="cta-desc">Take our quick start guide to deploy your first integration.</span>
+      </div>
+    </a>
+
+    <div class="components-hub-container">
+
+      <div class="components-grid-split">
+
+        <div>
+          <div class="components-section-header">
+            <h2>Get Started</h2>
+            <p>Set up your organization and deploy your first integration.</p>
+          </div>
+          <div class="components-card">
+            <div>
+              <div class="md-column-grid-item-header-icon icon-color-4">
+                
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"/></svg>
+
+
+              </div>
+              <h3>Quick Start</h3>
+              <div class="components-card-content">
+                Create your Devant organization, explore the demo, and deploy your first integration to the cloud.
+              </div>
+            </div>
+            <div class="components-card-footer">
+
+              <a href="/devant/docs/references/create-an-organization/" rel="noopener"
+                class="components-resource-link">
+                Create an Organization <span>&rarr;</span>
+              </a>
+              <a href="/devant/docs/devant-samples/explore-the-demo-organization/" rel="noopener"
+                class="components-resource-link">
+                Explore Demo Organization <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="components-section-header">
+            <h2>Core Concepts</h2>
+            <p>Understand Devant's platform architecture and features.</p>
+          </div>
+          <div class="components-card">
+            <div>
+              <div class="md-column-grid-item-header-icon icon-color-4">
+                
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+
+              </div>
+              <h3>Platform Concepts</h3>
+              <div class="components-card-content">
+                Learn about organizations, projects, environments, data planes, and deployment tracks.
+              </div>
+            </div>
+            <div class="components-card-footer">
+
+              <a href="/devant/docs/devant-concepts/organization/" rel="noopener"
+                class="components-resource-link">
+                Organizations <span>&rarr;</span>
+              </a>
+              <a href="/devant/docs/devant-concepts/project/" rel="noopener"
+                class="components-resource-link">
+                Projects <span>&rarr;</span>
+              </a>
+              <a href="/devant/docs/devant-concepts/environments/" rel="noopener"
+                class="components-resource-link">
+                Environments <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="components-section-header">
+        <h2>Quick Start Guides</h2>
+        <p>Deploy your first integrations and AI applications.</p>
+      </div>
+
+      <div class="components-grid-2">
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 0 1 16 0v5.25a.75.75 0 0 1-1.5 0V8a6.5 6.5 0 1 0-13 0v5.25a.75.75 0 0 1-1.5 0Zm3-1.25C3 5.784 3.784 5 4.75 5h6.5c.966 0 1.75.784 1.75 1.75v1.5A1.75 1.75 0 0 1 11.25 10h-6.5A1.75 1.75 0 0 1 3 8.25Zm1.47-.53a.75.75 0 0 0 0 1.06l1.5 1.5a.75.75 0 0 0 1.06 0L8 7.81l.97.97a.75.75 0 0 0 1.06 0l1.5-1.5a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215l-.97.97-.97-.97a.75.75 0 0 0-1.06 0l-.97.97-.97-.97a.75.75 0 0 0-1.06 0Zm1.03 6.03a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"/></svg>
+
+
+            </div>
+            <h3>AI Agents</h3>
+            <div class="components-card-content">
+              Deploy AI agents and RAG applications to Devant. Build intelligent applications with WSO2 Integrator.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="/devant/docs/quick-start-guides/develop-your-first-ai-agent/" rel="noopener"
+              class="components-resource-link">
+              Develop Your First AI Agent <span>&rarr;</span>
+            </a>
+            <a href="/devant/docs/ai/rag-application/" rel="noopener" class="components-resource-link">
+              RAG Application <span>&rarr;</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 1.75C0 .784.784 0 1.75 0h3.5C6.216 0 7 .784 7 1.75v3.5A1.75 1.75 0 0 1 5.25 7H4v4a1 1 0 0 0 1 1h4v-1.25C9 9.784 9.784 9 10.75 9h3.5c.966 0 1.75.784 1.75 1.75v3.5A1.75 1.75 0 0 1 14.25 16h-3.5A1.75 1.75 0 0 1 9 14.25v-.75H5A2.5 2.5 0 0 1 2.5 11V7h-.75A1.75 1.75 0 0 1 0 5.25Zm1.75-.25a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25Zm9 9a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25Z"/></svg>
+
+
+            </div>
+            <h3>Integrations as API</h3>
+            <div class="components-card-content">
+              Deploy and expose your integrations as managed APIs on Devant with built-in API management.
+            </div>
+          </div>
+          <div class="components-card-footer">
+            <a href="/devant/docs/quick-start-guides/develop-your-first-integration-as-api/" rel="noopener"
+              class="components-resource-link">
+              Develop Your First Integration as API <span>&rarr;</span>
+            </a>
+          </div>
+          <div class="components-card-footer">
+            <a href="/devant/docs/api-management/overview/" rel="noopener"
+              class="components-resource-link">
+              API Management Overview <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg>
+
+
+            </div>
+            <h3>Event & File Integrations</h3>
+            <div class="components-card-content">
+              Deploy event-driven and file-based integrations. Process files and handle events in the cloud.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="/devant/docs/quick-start-guides/develop-your-first-event-integration/" rel="noopener"
+              class="components-resource-link">
+              Develop Your First Event Integration <span>&rarr;</span>
+            </a>
+            <a href="/devant/docs/quick-start-guides/develop-your-first-file-integration/" rel="noopener"
+              class="components-resource-link">
+              Develop Your First File Integration <span>&rarr;</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/></svg>
+
+
+            </div>
+            <h3>Scheduled Automations</h3>
+            <div class="components-card-content">
+              Deploy scheduled tasks and automations to run on Devant with cron-based scheduling.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="/devant/docs/quick-start-guides/schedule-your-first-automation/" rel="noopener"
+              class="components-resource-link">
+              Schedule Your First Automation <span>&rarr;</span>
+            </a>
+            <a href="/devant/docs/devant-samples/quick-deploy-a-sample/" rel="noopener"
+              class="components-resource-link">
+              Quick Deploy a Sample <span>&rarr;</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="components-section-header">
+        <h2>Deploy & Monitor</h2>
+        <p>Deploy your integrations and monitor their performance.</p>
+      </div>
+
+      <div class="components-grid-2">
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v4c0 .372-.116.717-.314 1 .198.283.314.628.314 1v4a1.75 1.75 0 0 1-1.75 1.75H1.75A1.75 1.75 0 0 1 0 12.75v-4c0-.358.109-.707.314-1a1.739 1.739 0 0 1-.314-1v-4C0 1.784.784 1 1.75 1ZM1.5 2.75v4c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-4a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Zm.25 5.75a.25.25 0 0 0-.25.25v4c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-4a.25.25 0 0 0-.25-.25ZM7 4.75A.75.75 0 0 1 7.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5A.75.75 0 0 1 7 4.75ZM7.75 10h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM3 4.75A.75.75 0 0 1 3.75 4h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 4.75ZM3.75 10h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"/></svg>
+
+
+            </div>
+            <h3>CI/CD & DevOps</h3>
+            <div class="components-card-content">
+              Leverage built-in CI/CD pipelines, manage configurations and secrets, and enable autoscaling for your
+              deployments.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="/devant/docs/devant-concepts/ci-cd/" rel="noopener" class="components-resource-link">
+              CI/CD Overview <span>&rarr;</span>
+            </a>
+            <a href="/devant/docs/devops-and-ci-cd/manage-configurations-and-secrets/" rel="noopener"
+              class="components-resource-link">
+              Manage Configurations and Secrets <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"/></svg>
+
+
+            </div>
+            <h3>Monitoring & Insights</h3>
+            <div class="components-card-content">
+              Monitor your integrations with built-in observability. View logs, metrics, alerts, and usage insights in
+              real-time.
+            </div>
+          </div>
+          <div class="components-card-footer">
+            <a href="/devant/docs/monitoring-and-insights/observability-overview/" rel="noopener"
+              class="components-resource-link">
+              Observability Overview <span>&rarr;</span>
+            </a>
+          </div>
+          <div class="components-card-footer">
+            <a href="/devant/docs/monitoring-and-insights/logs-overview/" rel="noopener"
+              class="components-resource-link">
+              Logs Overview <span>&rarr;</span>
+            </a>
+          </div>
+          <div class="components-card-footer">
+            <a href="/devant/docs/monitoring-and-insights/alerts-overview/" rel="noopener"
+              class="components-resource-link">
+              Alerts Overview <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="components-section-header">
+        <h2>Administration & Platform</h2>
+        <p>Manage your organization, users, and platform services.</p>
+      </div>
+
+      <div class="components-grid-2">
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"/></svg>
+
+
+            </div>
+
+            <h3>Organization Management</h3>
+            <div class="components-card-content">
+              Manage your Devant organization, invite members, configure access control, and set up enterprise login.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="/devant/docs/administer/inviting-members/" rel="noopener"
+              class="components-resource-link">
+              Inviting Members <span>&rarr;</span>
+            </a>
+            <a href="/devant/docs/administer/control-access-in-the-devant-console/" rel="noopener"
+              class="components-resource-link">
+              Control Access <span>&rarr;</span>
+            </a>
+            <a href="/devant/docs/administer/configure-enterprise-login/" rel="noopener"
+              class="components-resource-link">
+              Configure Enterprise Login <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="components-card">
+          <div>
+            <div class="md-column-grid-item-header-icon icon-color-4">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 3.5c0-.626.292-1.165.7-1.59.406-.422.956-.767 1.579-1.041C4.525.32 6.195 0 8 0c1.805 0 3.475.32 4.722.869.622.274 1.172.62 1.578 1.04.408.426.7.965.7 1.591v9c0 .626-.292 1.165-.7 1.59-.406.422-.956.767-1.579 1.041C11.476 15.68 9.806 16 8 16c-1.805 0-3.475-.32-4.721-.869-.623-.274-1.173-.62-1.579-1.04-.408-.426-.7-.965-.7-1.591Zm1.5 0c0 .133.058.318.282.551.227.237.591.483 1.101.707C4.898 5.205 6.353 5.5 8 5.5c1.646 0 3.101-.295 4.118-.742.508-.224.873-.471 1.1-.708.224-.232.282-.417.282-.55 0-.133-.058-.318-.282-.551-.227-.237-.591-.483-1.101-.707C11.102 1.795 9.647 1.5 8 1.5c-1.646 0-3.101.295-4.118.742-.508.224-.873.471-1.1.708-.224.232-.282.417-.282.55Zm0 4.5c0 .133.058.318.282.551.227.237.591.483 1.101.707C4.898 9.705 6.353 10 8 10c1.646 0 3.101-.295 4.118-.742.508-.224.873-.471 1.1-.708.224-.232.282-.417.282-.55V5.724c-.241.15-.503.286-.778.407C11.475 6.68 9.805 7 8 7c-1.805 0-3.475-.32-4.721-.869a6.15 6.15 0 0 1-.779-.407Zm0 2.225V12.5c0 .133.058.318.282.55.227.237.592.484 1.1.708 1.016.447 2.471.742 4.118.742 1.647 0 3.102-.295 4.117-.742.51-.224.874-.47 1.101-.707.224-.233.282-.418.282-.551v-2.275c-.241.15-.503.285-.778.406-1.247.549-2.917.869-4.722.869-1.805 0-3.475-.32-4.721-.869a6.327 6.327 0 0 1-.779-.406Z"/></svg>
+
+
+            </div>
+
+            <h3>Managed Services</h3>
+            <div class="components-card-content">
+              Use Devant-managed databases, caches, and configure VPN for secure connectivity.
+            </div>
+          </div>
+          <div class="components-card-footer">
+
+            <a href="/devant/docs/manage-databases-and-caches/devant-managed-databases-and-caches/"
+              rel="noopener" class="components-resource-link">
+              Managed Databases and Caches <span>&rarr;</span>
+            </a>
+            <a href="/devant/docs/references/devant-platform-services-billing-and-upgrades/" rel="noopener"
+              class="components-resource-link">
+              Platform Services & Billing <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</article>
+
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <!--
+ * Copyright (c) 2021, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ * WSO2 Inc. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+
+ NOTE: Borrowed generously from MkDocs and MkDocs-material
+-->
+
+<footer class="md-footer md-typeset">
+  <div class="md-footer__content">
+    <div class="md-footer__meta-sections">
+      <div class="md-footer__meta-section md-footer__meta-section--discord">
+        <div class="discord-icon">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+        </div>
+        <div class="md-footer__meta-section__text-content">
+          <h3 class="md-footer__meta-section__heading">Join our Discord</h3>
+          <p class="md-footer__meta-section__description">
+            Connect with our community on our official Discord server. Share ideas, get help, and be a part of the
+            awesome conversations!
+          </p>
+          <a target="_blank" rel="noopener noreferrer" class="md-footer__meta-section__link" role="group"
+            href="https://discord.com/invite/wso2">Join Discord<svg class="chevron chakra-icon css-1nyqxv"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="14" width="14" fill="currentColor"
+              aria-hidden="true" focusable="false">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg></a>
+        </div>
+      </div>
+      <div class="md-footer__meta-section md-footer__meta-section--discord">
+        <div class="md-footer__meta-section__links">
+          <div class="md-footer__meta-section__link md-footer__meta-section__link--composite">
+            <svg class="community-logo community-logo--monochrome" width="14" height="14" viewBox="0 0 256 249"
+              xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+              <g fill="#161614">
+                <path
+                  d="M127.505 0C57.095 0 0 57.085 0 127.505c0 56.336 36.534 104.13 87.196 120.99 6.372 1.18 8.712-2.766 8.712-6.134 0-3.04-.119-13.085-.173-23.739-35.473 7.713-42.958-15.044-42.958-15.044-5.8-14.738-14.157-18.656-14.157-18.656-11.568-7.914.872-7.752.872-7.752 12.804.9 19.546 13.14 19.546 13.14 11.372 19.493 29.828 13.857 37.104 10.6 1.144-8.242 4.449-13.866 8.095-17.05-28.32-3.225-58.092-14.158-58.092-63.014 0-13.92 4.981-25.295 13.138-34.224-1.324-3.212-5.688-16.18 1.235-33.743 0 0 10.707-3.427 35.073 13.07 10.17-2.826 21.078-4.242 31.914-4.29 10.836.048 21.752 1.464 31.942 4.29 24.337-16.497 35.029-13.07 35.029-13.07 6.94 17.563 2.574 30.531 1.25 33.743 8.175 8.929 13.122 20.303 13.122 34.224 0 48.972-29.828 59.756-58.22 62.912 4.573 3.957 8.648 11.717 8.648 23.612 0 17.06-.148 30.791-.148 34.991 0 3.393 2.295 7.369 8.759 6.117 50.634-16.879 87.122-64.656 87.122-120.973C255.009 57.085 197.922 0 127.505 0" />
+                <path
+                  d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398" />
+              </g>
+            </svg>
+            <label>Report issues</label><a target="_blank" rel="noopener noreferrer"
+              href="https://github.com/wso2/docs-devant/issues">Head over to GitHub</a>
+          </div>
+          <div class="md-footer__meta-section__link md-footer__meta-section__link--composite">
+            <img src="assets/images/favicon.png" alt="Enterprise Support" width="14" height="14"
+              style="vertical-align:middle; margin-right:6px;" />
+            <label>Need support?</label><a target="_blank" rel="noopener noreferrer"
+              href="https://wso2.com/subscription/">Enterprise Support</a>
+          </div>
+          <div class="md-footer__meta-section__link md-footer__meta-section__link--composite">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="14" width="14">
+              <path d="M28.16 32H2.475V20.58H5.32v8.575h19.956V20.58h2.884z" fill="#bcbbbb" />
+              <path
+                d="M8.477 19.8l13.993 2.923.585-2.806-13.993-2.923zm1.832-6.704l12.94 6.04 1.208-2.572-12.94-6.08zm3.586-6.353l10.99 9.12 1.832-2.183-10.99-9.12zM20.99 0l-2.3 1.715 8.536 11.46 2.3-1.715zM8.166 26.27H22.43v-2.845H8.166v2.845z"
+                fill="#f48024" />
+            </svg>
+            <label>Got a tough question?</label><a target="_blank" rel="noopener noreferrer"
+              href="https://stackoverflow.com/questions/tagged/wso2-bi?tab=Newest">Ask on Stackoverflow</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="md-copyright md-typeset">
+  <div class="md-copyright__content">
+    <div class="md-copyright__highlight">
+      
+      &copy; 2024-2026 <a href="https://wso2.com/">WSO2</a> LLC.
+      
+      &nbsp;|&nbsp;
+      Content licensed under <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC By 4.0</a>. |
+      Sample code licensed under <a href="https://www.apache.org/licenses/" target="_blank">Apache 2.0</a>.
+    </div>
+  </div>
+</div>
 </footer>
-
+      
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.path", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "navigation.instant.progress", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link", "search.suggest", "search.share"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.fc8c2696.min.js"></script>
@@ -713,8 +6500,10 @@
       
         <script src="assets/js/devanttheme.js"></script>
       
+        <script src="assets/js/theme.js"></script>
+      
         <script src="js/open_in_new_tab.js"></script>
       
     
-  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+  </body>
 </html>
