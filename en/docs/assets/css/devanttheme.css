@@ -22,7 +22,7 @@
 }
 
 .md-nav__link {
-    font-weight: bold;
+    font-weight: normal !important;
 }
 
 .md-nav--primary .md-nav__item--nested .md-nav__list .md-nav__link {
@@ -763,5 +763,10 @@ html .md-nav--secondary .md-nav__link:not(.md-nav__link--passed) {
 }
 
 @media screen and (max-width: 59.9375em) {
+    .md-content {
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+    }
+
     body[data-md-scrolllock] {}
 }
