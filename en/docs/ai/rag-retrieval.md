@@ -16,7 +16,7 @@ To retrieve chunks that have already been ingested (without uploading new files)
     ???+ info "Info"
         To create an API key, refer to the [Pinecone API key documentation](https://docs.pinecone.io/guides/projects/manage-api-keys#create-an-api-key).
 
-3. Enter the **Collection Name**. The collection will be automatically created if it does not exist.
+3. Enter the **Collection Name** from which you want to retrive data.
 4. Click **Next**.
 
 ### Step 2: Configure the embedding model
@@ -42,7 +42,7 @@ Execute queries to ensure proper data retrieval.
 
 3. Click **Retrieve**. The search results will display the chunks that match the query.
 
-!!!info
+???+ info "Info"
      - Devant's retrieval process uses a reranking model to ensure that only the most accurate and contextually relevant chunks are returned.
 
 ![RAG retrieval](../assets/img/ai/rag-application/rag-retrieval.gif)
