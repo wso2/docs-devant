@@ -33,7 +33,9 @@ The datasource specifies the location from which files will be ingested. Devant 
 2. Enter the **API Key** in the API key field.
 
     ???+ info "Info"
-        For instructions on creating an API key, see the [Google documentation](https://docs.cloud.google.com/docs/authentication/api-keys#create). Ensure the key has the required [Drive API scopes](https://developers.google.com/workspace/drive/api/guides/api-specific-auth) enabled.
+        To obtain a key, use the [Google Cloud Console](https://console.cloud.google.com/) to create a project and generate a key as described in the [Google Documentation](https://cloud.google.com/docs/authentication/api-keys#create) and restrict it to the **Google Drive API**.
+
+        **Note:** The target folder must be **public** ("Anyone with the link"), as API keys cannot access private files.
 
 3. Provide the **Folder ID** of the Google Drive folder containing the files to be ingested.
 

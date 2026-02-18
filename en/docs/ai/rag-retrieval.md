@@ -3,10 +3,10 @@
 ## Introduction
 Retrieval-Augmented Generation (RAG) retrieval is the process of searching a vector database for the most relevant information in response to a user query.
 
-!!!note 
-    - This guide assumes you have already ingested files in to your vector store. If you havent already follow the [Ingestion](rag-ingestion.md) guide on how you can do that.
+!!! note 
+    - This guide assumes you have already ingested files into your vector store. If you haven't already follow the [Ingestion](rag-ingestion.md) guide on how you can do that.
 
-To retrieve chunks that have already been ingested (without uploading new files), navigate to your organization using the **Organization** dropdown in the in the top left of the Devant console header. In the left navigation menu, click **RAG**, then select **Retrieval**.
+To retrieve chunks that have already been ingested (without uploading new files), navigate to your organization using the **Organization** dropdown in the top left of the Devant console header. In the left navigation menu, click **RAG**, then select **Retrieval**.
 
 ### Step 1: Initialize vector store
 
@@ -47,6 +47,6 @@ Execute queries to ensure proper data retrieval.
 
 ![RAG retrieval](../assets/img/ai/rag-application/rag-retrieval.gif)
 
-After completing the RAG ingestion process, you can also implement a rag retrieval to connect your vector database with user queries and generate responses using the WSO2 Integrator: BI.
+After completing the RAG ingestion process, you can also implement a RAG retrieval to connect your vector database with user queries and generate responses using the WSO2 Integrator: BI.
 
 For detailed implementation steps and configuration, refer to the [RAG retrieval](https://bi.docs.wso2.com/integration-guides/ai/rag/build-a-rag-application/#rag-retrieval) tutorial in the WSO2 Integrator: BI documentation.

@@ -10,7 +10,7 @@ RAG works through two main processes, which are ingestion and retrieval.
 To make use of RAG effectively, data must be systematically ingested into vector databases. This process, known as RAG ingestion, involves setting up a vector database, utilizing embedding models, processing source files and chunking data.
 Devant offers a platform to efficiently ingest and manage unstructured documents for RAG.
 This guide walks through the key steps of RAG ingestion in Devant.
-Devant RAG ingestion has support for multiple file types including PDFS, DOCX, PPTX, XLSX, HTML as well as audio support (MP3, WAV, OGG) 
+Devant RAG ingestion supports multiple file types including PDFs (including scanned PDFs), DOCX, PPTX, XLSX, CSV, HTML, MD, images, and audio files (MP3, WAV, M4A, FLAC, OGG).
 
 Navigate to your organization using the **Organization** dropdown in the top left of the Devant console header. In the left navigation menu, click **RAG**, then select **Ingestion**.
 

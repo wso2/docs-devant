@@ -23,13 +23,13 @@ Click the **Create Service** button and your service will get created
 ### Step 2: Test endpoints
 Once the component is created you will be redirected to the Overview page.
 
-1. On the devolopment environment card, click **Test** to open the OpenAPI Console, where you will be able to try out all the available endpoints from the endpoint list.
+1. On the development environment card, click **Test** to open the OpenAPI Console, where you will be able to try out all the available endpoints from the endpoint list.
 2. Expand the resource you want to test.
 3. Click Try it out to enable it.
 4. Provide values for the parameters.
 5. Click **Execute**. The response will be displayed under the **Responses** section.
  
-!!!note 
+!!! note 
     - Some parameters are automatically populated with default values. You can modify them as needed.
 
 
@@ -150,5 +150,5 @@ Returns a JSON object indicating the service status.
 ```
 
 ???+ info "Info"
-    - For more details on RAG ingestion and retrieval, and how to obtain API keys and credentials refer the [RAG Ingesion](rag-ingestion.md) guide.
+    - For more details on RAG ingestion and retrieval, and how to obtain API keys and credentials refer the [RAG Ingestion](rag-ingestion.md) guide.
     
