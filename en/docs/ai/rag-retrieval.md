@@ -16,12 +16,12 @@ To retrieve chunks that have already been ingested (without uploading new files)
     ???+ info "Info"
         To create an API key, refer to the [Pinecone API key documentation](https://docs.pinecone.io/guides/projects/manage-api-keys#create-an-api-key).
 
-3. Enter the **Collection Name** from which you want to retrive data.
+3. Enter the **Collection Name** from which you want to retrieve data.
 4. Click **Next**.
 
 ### Step 2: Configure the embedding model
 
-1. Select `text-embedding-ada-002` embedding model from the **Open AI** dropdown.
+1. Select `text-embedding-ada-002` embedding model from the **OpenAI** dropdown.
 2. Enter the API key in the **Embedding Model API Key** field.
 
     ???+ info "Info"
