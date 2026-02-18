@@ -32,8 +32,8 @@
         }
     }
     var jsonTreeInputs = document.getElementsByClassName('jsonTreeInput');
-    if(jsonTreeInputs && jsonTreeInputs.length > 0){
-        for( var i=0; i < jsonTreeInputs.length; i++){
+    if (jsonTreeInputs && jsonTreeInputs.length > 0) {
+        for (var i = 0; i < jsonTreeInputs.length; i++) {
             try {
                 var jsonTreeInput = jsonTreeInputs[i];
                 var jsonTreeOutput = jsonTreeInput.previousElementSibling;
@@ -45,11 +45,11 @@
                 jsonTreeInput.style.display = 'none';
             } catch (e) {
                 console.error(e);
-            } 
+            }
         }
-        
+
     }
-    
+
 })();
 
 /* 
@@ -82,8 +82,8 @@ var observeeList = document.querySelectorAll(".md-sidebar__inner > .md-nav--seco
 var listElems = document.querySelectorAll(".md-sidebar__inner > .md-nav--secondary > ul li");
 var config = { attributes: true, childList: true, subtree: true };
 
-var callback = function(mutationsList, observer) {
-    for(var mutation of mutationsList) {
+var callback = function (mutationsList, observer) {
+    for (var mutation of mutationsList) {
         if (mutation.type == 'attributes') {
             mutation.target.parentNode.setAttribute(mutation.attributeName,
                 mutation.target.getAttribute(mutation.attributeName));
@@ -103,8 +103,8 @@ for (var i = 0; i < observeeList.length; i++) {
 
     observer.observe(el, config);
 
-    el.onclick = function(e) {
-        listElems.forEach(function(elm) {
+    el.onclick = function (e) {
+        listElems.forEach(function (elm) {
             if (elm.classList) {
                 elm.classList.remove('active');
             }
@@ -117,7 +117,7 @@ for (var i = 0; i < observeeList.length; i++) {
 function scrollerPosition(mutation) {
     var blurList = document.querySelectorAll(".md-sidebar__inner > .md-nav--secondary > ul li > .md-nav__link[data-md-state='blur']");
 
-    listElems.forEach(function(el) {
+    listElems.forEach(function (el) {
         if (el.classList) {
             el.classList.remove('active');
         }
@@ -158,18 +158,17 @@ function setActive(parentNode, i) {
  */
 var editIcon = document.getElementById('editIcon');
 
-window.addEventListener('scroll', function() {
-    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    if (scrollPosition >= 90) {
-        editIcon.classList.add('active');
-    } else {
-        editIcon.classList.remove('active');
-    }
-});
+if (editIcon) {
+    window.addEventListener('scroll', function () {
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        if (scrollPosition >= 90) {
+            editIcon.classList.add('active');
+        } else {
+            editIcon.classList.remove('active');
+        }
+    });
+}
 
-/*
- * Fixes the issue related to clicking on anchors and landing somewhere below it
- */
 
 window.addEventListener("hashchange", function () {
 
