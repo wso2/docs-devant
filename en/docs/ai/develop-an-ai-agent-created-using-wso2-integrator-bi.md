@@ -60,7 +60,7 @@ Since this integration was created locally, you’ll need to push it to GitHub b
 2. A new tab will open showing your integration’s **Overview** page.
 3. Wait for the build to complete.
 
-![Develop an AI Agent Created Using WSO2 Integrator: BI](../assets/img/ai/deploy-bi/deploy.gif){.cInlineImage-full}
+![Develop an AI Agent Created Using WSO2 Integrator: BI]({{base_path}}/assets/img/ai/deploy-bi/deploy.gif){.cInlineImage-full}
 
 ## Step 8: Configure environment variables
 
@@ -68,7 +68,7 @@ Since this integration was created locally, you’ll need to push it to GitHub b
 2. Click **Configure to Continue** to enter any required API keys or tokens.
 3. Click **Next** and then **Apply**—this will trigger a redeployment with the updated configuration.
 
-![Add Configurables](../assets/img/ai/deploy-bi/configure.png){.cInlineImage-full}
+![Add Configurables]({{base_path}}/assets/img/ai/deploy-bi/configure.png){.cInlineImage-full}
 
 ## Step 9: Test and promote
 
@@ -79,7 +79,7 @@ Since this integration was created locally, you’ll need to push it to GitHub b
     - Send emails  
 
     <div style="margin-top: 1em;">
-      ![AI Chat Agent](../assets/img/ai/deploy-bi/chat.gif){.cInlineImage-full}
+      ![AI Chat Agent]({{base_path}}/assets/img/ai/deploy-bi/chat.gif){.cInlineImage-full}
     </div>
 
 3. When ready, click **Promote** to deploy your integration to **Production**.

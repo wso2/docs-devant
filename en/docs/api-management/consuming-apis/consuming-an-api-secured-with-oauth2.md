@@ -25,7 +25,7 @@ Before you begin, ensure you have the following:
 12. To test the API, click **Generate** under **Token:** subsection. This will generate an access token using the OAuth2 client credentials flow.
 
     <div style="width: 80%;">
-    ![Consuming API with OAuth2](../../assets/img/api-management/oauth2-consumption.gif)
+    ![Consuming API with OAuth2]({{base_path}}/assets/img/api-management/oauth2-consumption.gif)
     </div>
 
 Once you have the access token, you can use it to make authenticated requests to the secured API. Include the token in the `Authorization` header of your HTTP requests as follows:

@@ -25,7 +25,7 @@ To enable rate limiting for an API, follow the steps given below:
 7. Select a **Rate Limiting Level** based on your requirements and click **Apply**.
 
     <div style="width: 80%;">
-    ![Rate Limiting](../../assets/img/api-management/rate-limiting.gif)
+    ![Rate Limiting]({{base_path}}/assets/img/api-management/rate-limiting.gif)
     </div>
 
 ## API-level rate limiting
