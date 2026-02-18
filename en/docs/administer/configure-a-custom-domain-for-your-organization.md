@@ -55,11 +55,11 @@ To add a custom domain for your organization, follow the steps given below:
 
  7. Take a look at the generated CNAME target value displayed and create a DNS record associating the domain name to the CNAME target value with your DNS provider.
     
-    ![CNAME target value](../assets/img/administer/configure-domain/cname-target-value.png)
+    ![CNAME target value]({{base_path}}/assets/img/administer/configure-domain/cname-target-value.png)
 
     !!! info
           When you select **Developer Portal** as the type, the environment is not applicable, and the CNAME alias will be displayed as follows:
-           ![Developer Portal CNAME target value](../assets/img/administer/configure-domain/developer-portal-cname-target-value.png)
+           ![Developer Portal CNAME target value]({{base_path}}/assets/img/administer/configure-domain/developer-portal-cname-target-value.png)
 
  8. Once the CNAME type DNS record is created, click **Verify**.
 
@@ -116,7 +116,7 @@ To add a custom domain for your organization, follow the steps given below:
                     ```
                     Replace `<root_or_bundle_cert>.pem` with the path to your root certificate or a bundle containing both the root and intermediate certificates.
                     5. Once the certificate chain is verified, upload it via the Devant Console:
-                        ![Upload certificate chain](../assets/img/administer/configure-domain/upload-certificate-chain.png)
+                        ![Upload certificate chain]({{base_path}}/assets/img/administer/configure-domain/upload-certificate-chain.png)
                         - If the constructed chain includes the leaf certificate, follow these steps:
                             - Upload the constructed certificate chain in the **TLS Certificate** field.
                             - Upload the private key file in the **TLS Key File** field.
@@ -134,7 +134,7 @@ Now, you have successfully added a custom domain for your organization.
 
 You can see the added custom domain listed in the **Active Domains** tab under the URL **Settings** tab.
     
- ![Active domains](../assets/img/administer/configure-domain/active-domains.png)
+ ![Active domains]({{base_path}}/assets/img/administer/configure-domain/active-domains.png)
 
 The custom domain you added will be available to the entity types in the specified environment. You can use the custom domain when configuring a custom URL for an integration.
 
@@ -159,7 +159,7 @@ To add a custom URL for your integration, follow the steps given below:
 3. In the left navigation menu, click **Admin** and then **Settings**. This opens the integration-level settings page.
 4. Click the **URL Settings** tab. This displays the active deployments of the integration across different environments and indicates whether a custom URL is configured. If an active custom domain is available to configure a custom URL for a integration in a specific environment, the **Edit URL Mapping** icon in the corresponding **Action** column becomes enabled.
     
-    ![Active deployments](../assets/img/administer/configure-domain/active-deployments.png)
+    ![Active deployments]({{base_path}}/assets/img/administer/configure-domain/active-deployments.png)
 
 5. To configure a custom URL for a integration in a specific environment, click the **Edit URL Mapping** icon under the **Action** column corresponding to the respective environment. This opens the **URL Settings** dialog, where you can specify values to add to a custom URL.
 
@@ -171,7 +171,7 @@ To add a custom URL for your integration, follow the steps given below:
 
 7. Click **Deploy**. This creates the custom URL mapping, which you can see under the **URL Settings** tab.  The custom URL will be in the **Approved** state.
     
-    ![Approved custom URL](../assets/img/administer/configure-domain/approved-custom-url.png)
+    ![Approved custom URL]({{base_path}}/assets/img/administer/configure-domain/approved-custom-url.png)
 
 !!! info "Note"
      By default, any user with the `Manage URL Mappings` permission can deploy custom URL mappings. For better governance, you can configure an approval process for URL mappings using [Devant Workflows](./configure-approvals-for-devant-workflows.md).

@@ -31,7 +31,7 @@ Devant treats all configurations and secrets as sensitive content, but lets you 
 4. Make sure you are on the correct **Deployment Track** and the **Environment** for which you want to manage configurations and secrets.
 
     <div style="width: 80%;">
-    ![Navigate to Configurations & Secrets Page](../../assets/img/devops-and-ci-cd/manage-configurations-and-secrets/page-navigation.png)
+    ![Navigate to Configurations & Secrets Page]({{base_path}}/assets/img/devops-and-ci-cd/manage-configurations-and-secrets/page-navigation.png)
     </div>
 
 ### Add an environment variable to your container

@@ -24,7 +24,7 @@ Before you begin, ensure you have the following:
 11. A dialog box with the credentials will appear, which you can close after noting down the necessary details.
 
     <div style="width: 80%;">
-    ![Consuming API with API Key](../../assets/img/api-management/api-key-consumption.gif)
+    ![Consuming API with API Key]({{base_path}}/assets/img/api-management/api-key-consumption.gif)
     </div>
 
 Once you have the API Key, you can use it to make authenticated requests to the secured API. Include the key in the `api-key` header of your HTTP requests as follows:

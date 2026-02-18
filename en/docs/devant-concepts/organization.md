@@ -11,7 +11,9 @@ An organization in Devant is a logical grouping of users and user resources. A f
 
 If you are a member of more than one organization, you can switch from one organization to another when necessary. To do this, select the required organization from the **Organization** list in the Devant Console header.
 
+{% raw %}
 {% include "../administer/inviting-members.md" %}
+{% endraw %}
 
 ## Manage user permission
 

@@ -185,6 +185,7 @@ plugins:
     - search:
         lang: ['en']
     - open-in-new-tab
+    - markdownextradata
 
     - exclude:
           glob:

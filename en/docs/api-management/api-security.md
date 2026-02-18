@@ -41,7 +41,7 @@ Follow the steps given below.
 6. Click **Apply** to save the changes. The changes will be deployed to the Development environment immediately. For other environments, you need to promote the changes.
 
     <div style="width: 80%;">
-    ![API Security](../../assets/img/api-management/api-security.gif)
+    ![API Security]({{base_path}}/assets/img/api-management/api-security.gif)
     </div>
 
 To consume the secured API, please refer to the relevant documentation for the chosen security scheme:
