@@ -12,7 +12,11 @@ This section explains how to sign up for Devant.
 1. Go to [https://wso2.com/devant](https://wso2.com/devant).
 2. Select **Get started for free**.
 
-<a href="{{base_path}}/assets/img/references/signup-and-upgrade/landing-page.png"><img src="{{base_path}}/assets/img/references/signup-and-upgrade/landing-page.png" alt="Devant Landing Page" width="80%"></a>
+    <div align="center">
+        <a href="{{base_path}}/assets/img/references/signup-and-upgrade/landing-page.png">
+            <img src="{{base_path}}/assets/img/references/signup-and-upgrade/landing-page.png" alt="Devant Landing Page" width="80%">
+        </a>
+    </div>
 
 3. Choose your preferred sign up method, and follow the instructions on the screen to associate your email address with Devant.
 
