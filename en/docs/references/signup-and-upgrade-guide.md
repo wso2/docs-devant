@@ -1,11 +1,11 @@
 ---
-title: Sign Up and Upgrade Guide
+title: Sign-Up and Upgrade Guide
 description: Guide on how to sign up and upgrade your Devant account.
 ---
 
-# Sign Up and Upgrade Guide
+# Sign-Up and Upgrade Guide
 
-## Sign up
+## Sign-up
 
 This section explains how to sign up for Devant.
 
@@ -22,18 +22,18 @@ This section explains how to sign up for Devant.
 
 ## Upgrade to the Pay-As-You-Go (PAYG) or enterprise tier
 
-This section will show you how to upgrade from the free tier to the Pay-As-You-Go (PAYG) or Enterprise tier.
+This section will show you how to upgrade from the free tier to the Pay-As-You-Go (PAYG) or enterprise tier.
 
 1. Contact us through one of the following methods:
 
     <ol type="a">
-    <li>Via your dedicated Account Manager or Technical Owner,</li>
+    <li>Via your dedicated Account Manager or Technical Owner</li>
     <li>Via [https://wso2.com/contact/?src=devant](https://wso2.com/contact/?src=devant)</li>
     </ol>
 
 2. If you do not have a dedicated Account Manager, we will assign one to guide you through the contracting process.
 
-3. Once your contract is finalized, you will be required to [sign up](##Sign-up) for Devant if you are not signed up already.
+3. Once your contract is finalized, you will be required to [sign up](## Sign-up) for Devant if you are not signed up already.
 
     !!! Note 
         We recommend using a common service email address to sign up and administer your Devant [Organization](https://wso2.com/devant/docs/devant-concepts/organization/).
