@@ -61,7 +61,6 @@ You can verify successful ingestion by reviewing the automation logs.
 
 ![RAG schedule](../assets/img/ai/rag-application/rag-schedule3.gif)
 
-
 As shown below, you can automate your ingestion workflow at specified intervals (e.g., minutely, hourly, daily, monthly). During each scheduled run, the system detects new files in the data source and ingests them into the vector store.
 
 ![RAG schedule](../assets/img/ai/rag-application/rag-schedule.png)

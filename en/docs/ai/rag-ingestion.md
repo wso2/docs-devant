@@ -52,7 +52,6 @@ Chunking is used to break large documents into manageable parts because processi
 
 ### Step 4: Choose ingestion mode
 
-
 Choose how you want to perform RAG ingestion:
 
 - **Upload Now**: Instantly upload and ingest files into your vector store. The steps below will guide you through the **Upload Now** workflow for immediate ingestion.
@@ -86,6 +85,5 @@ Once processing is complete, execute test queries to ensure proper data retrieva
 
  ![RAG ingestion](../assets/img/ai/rag-application/rag-ingestion3.gif)
        
-
 !!! note
     Follow this detailed tutorial [video](https://www.youtube.com/watch?v=8GlrHYS-EYI&list=PLp0TUr0bmhX4colDnjhEKAnZ3RmjCv5y2&ab_channel=WSO2) to understand how to set up the RAG ingestion and create your vector index.

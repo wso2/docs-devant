@@ -32,9 +32,7 @@ Once the component is created you will be redirected to the Overview page.
 !!! note 
     - Some parameters are automatically populated with default values. You can modify them as needed.
 
-
 ![RAG Service](../assets/img/ai/rag-application/rag-service.gif)    
-
 
 ### Available API endpoints
 The image below shows how all the available endpoints are listed in the **Console** page. You can expand each endpoint and try them out as needed.
