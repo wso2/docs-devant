@@ -241,7 +241,7 @@ extra:
         icon: octicons/database-16
         level: 1
       API Management:
-        icon: octicons/shield-check-16
+        icon: octicons/workflow-16
         level: 1
       Configure VPN:
         icon: octicons/lock-16
