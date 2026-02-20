@@ -1,3 +1,8 @@
+---
+title: Connections
+description: Learn how to use Connections to connect integrations in Devant.
+---
+
 # Connections
 
 Integrations can exist in two primary forms: standalone and integrated. Connecting integrations is an integral part of creating integrated solutions. Devant allows you to connect integrations using Connections. 

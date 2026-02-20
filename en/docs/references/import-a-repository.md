@@ -1,3 +1,8 @@
+---
+title: Import a Repository
+description: Learn how to import a repository in Devant.
+---
+
 # Import a Repository
 
 Once you’ve logged into [Devant Console](https://console.devant.dev/), you’ll land in the default project automatically created under your organization. Alternatively, you can choose to create a new project within the organization.

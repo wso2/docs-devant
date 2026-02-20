@@ -1,3 +1,8 @@
+---
+title: Schedule Your First Automation
+description: Learn how to schedule and automate workflows in Devant. Step-by-step guide to create scheduled integrations and automated tasks using Devant's CI/CD capabilities.
+---
+
 # Schedule Your First Automation
 
 ## Overview

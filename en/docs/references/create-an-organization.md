@@ -1,3 +1,8 @@
+---
+title: Create an Organization
+description: Learn how to create an organization in Devant.
+---
+
 # Create an Organization
 
 In Devant, an organization is a logical grouping of users and their associated resources. When signing in for the first time, a user must create an organization and become a member to begin using Devant. Refer [Organization](../devant-concepts/organization.md) for more details. 

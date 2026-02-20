@@ -1,4 +1,9 @@
-﻿# Organization
+﻿---
+title: Organization
+description: Learn about Organizations in Devant and how to manage them.
+---
+
+# Organization
 
 An organization in Devant is a logical grouping of users and user resources. A first-time user must create an organization and be a member of it when signing in to Devant. Users and resources in an organization cannot access resources in another organization unless an admin of the other organization invites them and adds them as member of that organization. A user cannot create more than one organization.
 
@@ -6,7 +11,9 @@ An organization in Devant is a logical grouping of users and user resources. A f
 
 If you are a member of more than one organization, you can switch from one organization to another when necessary. To do this, select the required organization from the **Organization** list in the Devant Console header.
 
+{% raw %}
 {% include "../administer/inviting-members.md" %}
+{% endraw %}
 
 ## Manage user permission
 

@@ -1,4 +1,9 @@
-﻿# Project
+﻿---
+title: Project
+description: Learn about Projects in Devant and how they group integrations.
+---
+
+# Project
 
 A project in Devant is a logical group of related integrations that typically represent a complete solution. A project consists of one or more integrations. All integrations within a project can ideally be (but are not restricted to) in a single GitHub repository under different paths. This is also known as the monorepo architecture.
 

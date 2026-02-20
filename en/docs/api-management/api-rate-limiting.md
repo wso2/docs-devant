@@ -1,3 +1,8 @@
+---
+title: API Rate Limiting
+description: Learn how to enable and configure API rate limiting in Devant.
+---
+
 # API Rate Limiting
 
 API rate limiting is a technique that allows you to control the rate of requests made to an API. Rate limiting helps prevent system overload and enhances API performance. By limiting the number of requests in a specific time frame, you ensure that your API remains available and responsive to all users while being protected from malicious attacks.
@@ -20,7 +25,7 @@ To enable rate limiting for an API, follow the steps given below:
 7. Select a **Rate Limiting Level** based on your requirements and click **Apply**.
 
     <div style="width: 80%;">
-    ![Rate Limiting](../../assets/img/api-management/rate-limiting.gif)
+    ![Rate Limiting]({{base_path}}/assets/img/api-management/rate-limiting.gif)
     </div>
 
 ## API-level rate limiting

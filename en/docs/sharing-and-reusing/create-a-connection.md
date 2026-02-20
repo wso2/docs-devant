@@ -1,3 +1,8 @@
+---
+title: Create a Connection
+description: Learn how to create reusable connections in Devant.
+---
+
 # Create a Connection
 
 Using Connections, you can connect the integration with other APIs on Devant or external services. It also allows you to create connections to any Devant-managed database.

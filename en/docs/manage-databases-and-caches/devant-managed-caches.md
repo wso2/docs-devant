@@ -1,3 +1,8 @@
+---
+title: Devant Managed Cache
+description: Learn about Devant-Managed Cache, a fully-managed in-memory NoSQL database compatible with Redis® OSS.
+---
+
 # Devant-Managed Cache
 
 Fully compatible with legacy Redis® OSS.

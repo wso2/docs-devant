@@ -1,3 +1,8 @@
+---
+title: Deployment Tracks
+description: Learn how Deployment Tracks streamline integration deployment and API versioning in Devant.
+---
+
 # Deployment Tracks
 
 Deployment Tracks in Devant are structured pathways for simplified integration deployment. They act like advanced CI/CD pipelines, ensuring your integrations reach their destinations seamlessly. They establish an organized and structured approach that minimizes the chances of errors and challenges that are typically associated with deployment workflows.

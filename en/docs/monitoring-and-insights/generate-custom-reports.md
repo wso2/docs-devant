@@ -1,3 +1,8 @@
+---
+title: Generate Custom Reports
+description: Learn how to generate custom reports in Devant Usage Insights.
+---
+
 # Generate Custom Reports
 
 Devant usage insights allow you to generate custom reports to view important information and make timely decisions for the betterment of your business. With custom reports, you can generate reports for a set of metrics of your choice and aggregate results by specific fields. Once generated, the metrics can be filtered out using any selected group-by filters. Custom reports can be visualized as overtime charts, pie charts, or tables.

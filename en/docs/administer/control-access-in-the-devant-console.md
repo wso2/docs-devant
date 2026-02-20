@@ -1,3 +1,8 @@
+---
+title: Control Access in the Devant Console
+description: Learn how to manage access to projects and resources in the Devant Console using roles, groups, and mapping levels.
+---
+
 # Control Access in the Devant Console
 
 In the Devant Console, you have the ability to manage access to projects and the actions that can be performed within them. Administrators can restrict project access to specific user groups. This feature is useful when you need certain user groups to have access to particular projects or for a set of projects.
@@ -24,7 +29,7 @@ To elaborate further, refer to the following diagram.
 
 The following diagram depicts a role-group assignment at a specific resource level. In the diagram, an admin user has assigned the Developer role to all members of the Engineering group within the Engineering Project. This grants members of the Engineering group the ability to perform all actions allowed by the Developer role within the Engineering Project.
 
-![Console access control](../assets/img/administer/access-control-to-console.png)
+![Console access control]({{base_path}}/assets/img/administer/access-control-to-console.png)
 
 ## Sample scenario
 
@@ -80,7 +85,7 @@ Follow the steps given below to assign the **Developer** role to the **Engineeri
 6. In the **Add Roles to Group in Project** dialog that opens, click the **Roles** list and select **Developer**.
 7. Click **Add**. This assigns the **Developer** role to the group. You should see the mapping level as **Project (Engineering Project)** as follows, indicating the scope of the mapping:
 
-    ![Mapping level](../assets/img/administer/mapping-level.png)
+    ![Mapping level]({{base_path}}/assets/img/administer/mapping-level.png)
 
    This grants developer access to members of the Engineering Project Developer group, limited to the Engineering Project.
 
