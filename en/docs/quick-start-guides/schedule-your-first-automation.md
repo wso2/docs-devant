@@ -54,9 +54,12 @@ This redirects you to the **Create New Integration in VS Code** page.
 3. Add an appropriate commit message and commit.
 4. Click **Sync Changes** to push the changes to remote.
 
-## Optional: Test the Automation manually
+## Optional: Test the automation manually
 
-You can execute your automation directly from the environment card on the **Overview** page:
+!!! note "Prerequisite"
+         Ensure the build has completed successfully (Build Status: `Completed`) before testing. You can view the Build History by clicking **Build** in the left navigation.
+
+You can execute your automation directly from the **Development** card on the **Overview** page:
 
 1. On the Overview page, locate the **Development** card.
 2. Click **Test** to run your automation immediately.
@@ -74,7 +77,7 @@ You can execute your automation directly from the environment card on the **Over
             To explore a WSO2 MI-based manual task with arguments, try out the [Weather to Logs Task](https://github.com/wso2/choreo-samples/tree/main/weather-to-logs-mi-manual-task) sample. For instructions, see the `README.md` file in the sample repository.
 
             !!! info
-                When working on WSO2 MI projects and deploying a WSO2 MI integration as a manual task in Choreo, use the WSO2 MI automation mode. For details, see [Running the Micro Integrator in Automation Mode](https://mi.docs.wso2.com/en/latest/install-and-setup/install/running-the-mi-in-automation-mode/).
+                When working on WSO2 MI projects and deploying a WSO2 MI integration as a manual task in Devant, use the WSO2 MI automation mode. For details, see [Running the Micro Integrator in Automation Mode](https://mi.docs.wso2.com/en/latest/install-and-setup/install/running-the-mi-in-automation-mode/).
 
         === "WSO2 BI"
             To explore a Ballerina manual task with arguments, try out the [Weather to Email Task](https://github.com/wso2/choreo-samples/tree/main/weather-to-email-integration) sample. For instructions, see the `README.md` file in the sample repository.
@@ -84,14 +87,14 @@ You can execute your automation directly from the environment card on the **Over
     !!! note
         As user portal features are added, testing and other actions will be accessible directly from the **Overview** page, making it easier to manage and validate your automations.
 
-## Step 5: Schedule Automation
+## Step 5: Schedule automation
 
 1. Once you push the changes, the overview page of the Devant automation will automatically refresh and show you the **Latest Commit** and automatically build your automation showing the **Build Status**.
 
     !!! note
-        The build process may take some time. Once complete, the build status changes to **Success**. You can see the Build History by clicking **Build** in the left navigation.
+        The build process may take some time. Once complete, the build status changes to **Completed**. You can see the Build History by clicking **Build** in the left navigation.
 
-2. Once the **Build Status** shows `Build completed`, click **Test** to run your automation once.
+2. Once the **Build Status** shows `Completed`, you can test your automation. See the [Optional: Test the automation manually](#optional-test-the-automation-manually) section for detailed instructions on testing, including testing with runtime arguments.
 3. The development card automatically updates with execution details. Click the refresh button in the top right corner if it is not automatically updated.
 4. Click **View Logs** on an execution. You will see the `Hello World` log printed along with the execution time.
 5. Click **Schedule** to schedule the automation.
@@ -107,7 +110,7 @@ You can execute your automation directly from the environment card on the **Over
 10. After successfully testing, you can promote your automation to production by clicking the **Promote** button.
 11. Once promoted to production, click **Run** to run your automation immediately.
     
-    !!!info
+    !!! info
         If you want to pass runtime arguments when running in production, use the **Run with Arguments** option in the same way as described above in the [Test the Automation manually](#optional-test-the-automation-manually) section.
 
 12. In critical environments (Production), you will be able to see automation metrics such as:
