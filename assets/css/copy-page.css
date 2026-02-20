@@ -5,7 +5,6 @@
     position: relative;
     float: right;
     margin-left: 0.5rem;
-    /* Spacing from other icons */
 }
 
 /* Main button - behaves like md-content__button */
@@ -15,12 +14,12 @@
     background: none;
     border: none;
     padding: 0;
-    color: var(--md-default-fg-color--light);
+    color: var(--md-accent-fg-color) !important;
     transition: color 0.25s;
 }
 
 .copy-page-button:hover {
-    color: var(--md-default-fg-color);
+    color: var(--md-accent-fg-color) !important;
 }
 
 /* Hide text span if any remains, though we will remove it in JS */
@@ -34,11 +33,9 @@
     top: calc(100% + 8px);
     /* Open downwards */
     bottom: auto;
-    left: 50% !important;
-    /* Center relative to parent */
-    transform: translateX(-50%) !important;
-    right: auto !important;
-    /* Override right alignment */
+    right: 0 !important;
+    left: auto !important;
+    transform: none !important;
     min-width: 240px;
     padding: 0.5rem;
     background-color: var(--md-default-bg-color);
@@ -164,8 +161,8 @@
         position: fixed;
         top: auto;
         bottom: 0;
-        left: 0;
-        right: 0;
+        left: 0 !important;
+        right: 0 !important;
         min-width: unset;
         width: 100%;
         border-radius: 16px 16px 0 0;
@@ -180,3 +177,4 @@
         padding: 0.875rem 1rem;
     }
 }
+
