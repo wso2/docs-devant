@@ -146,6 +146,7 @@ nav:
       - Autoscale:
         - Autoscale Component Replicas: devops-and-ci-cd/autoscale/autoscale-component-replicas.md
         - Autoscale Components with Scale-to-Zero: devops-and-ci-cd/autoscale/autoscale-components-with-scale-to-zero.md
+      - Private Data Plane Management Models: references/private-data-plane-management-models.md
 
 # Markdown extensions
 markdown_extensions:
