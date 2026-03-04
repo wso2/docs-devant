@@ -85,7 +85,7 @@ For example, on a server with 4GB memory (4,096 MB), the simultaneous connection
 4 x 4096 = 16384 // 16k connections
 ```
 
-This number is estimated by the exact available memory so it can vary between different plans and cloud providers. To see the exact maximum connections allowed, use the \* redis-cli and info command as follows:
+This number is estimated by the exact available memory so it can vary between different plans and cloud providers. To see the exact maximum connections allowed, use the redis-cli and info command as follows:
 
 ```
 echo "info" | redis-cli -u REDIS_URI | grep maxclients

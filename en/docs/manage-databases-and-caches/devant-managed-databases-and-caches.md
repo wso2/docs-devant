@@ -12,7 +12,7 @@ These databases and caches can be seamlessly provisioned to offer persistence an
     - The capability to create Devant-managed databases, vector databases, and cache services is available only for paid Devant users.
     - Billing for these services will be included in your Devant subscription, with pricing varying based on the service plan of the resources you create. For more details, see [Devant Platform Services Billing](../references/devant-platform-services-billing-and-upgrades.md#platform-service-billing-information).
 
-!!!Tip "Explore the free trial"
+!!! tip "Explore the free trial"
     Devant provides a 7-day free trial for all database types on the 'Hobbyist' service plan, available to free-tier users.
 
 ## PostgreSQL on Devant
