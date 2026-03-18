@@ -85,7 +85,11 @@ nav:
       - Explore the Demo Organization: devant-samples/explore-the-demo-organization.md
       - "Deploy with WSO2 Integrator: MI": devant-samples/deploy-with-wso2-integrator-mi.md
   - AI:
-      - RAG Application: ai/rag-application.md
+      - RAG:
+          - Ingestion: ai/rag-ingestion.md
+          - Retrieval: ai/rag-retrieval.md
+          - Schedule Automation: ai/schedule-rag-automation.md
+          - Service: ai/rag-service.md
       - 'Develop an AI Agent Created Using WSO2 Integrator: BI': ai/develop-an-ai-agent-created-using-wso2-integrator-bi.md
   - Devant Concepts:
       - Resource Hierarchy: devant-concepts/resource-hierarchy.md
