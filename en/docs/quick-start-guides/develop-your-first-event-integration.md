@@ -54,8 +54,8 @@ This redirects you to the **Create New Integration in VS Code** page.
 
     | Field                   | Value        |
     |-------------------------|--------------|
-    | **username** | `username`   |
-    | **password** | `password`   |
+    | **username**            | `username`   |
+    | **password**            | `password`   |
 
 7. Add `Orders` as the **Queue Name** and click **Create**. If there is no queue named `Orders` in RabbitMQ server, this will create a new queue with this name. 
 
