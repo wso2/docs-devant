@@ -71,6 +71,8 @@ You can execute your automation directly from the **Development** card on the **
         2. In the **Runtime Arguments** pane, enter the arguments you want to pass to your application.
         3. Click **Execute**. This triggers the task with the specified arguments.
 
+        To define a structured and validated runtime argument form, see [Configure Runtime Argument Schema](configure-runtime-argument-schema.md).
+
         The capability to run a manual task with arguments is supported for the following build presets:
 
         === "WSO2 MI"
@@ -84,8 +86,6 @@ You can execute your automation directly from the **Development** card on the **
 
             !!! info
                 If you want to pass arguments to Ballerina main functions, use the **Test with Arguments** capability. For details on the arguments you can pass, see the [Ballerina documentation](https://ballerina.io/learn/by-example/main-function/). You can also override configurable values in the same manner. For more information, see [Provide values to configurable variables](https://ballerina.io/learn/provide-values-to-configurable-variables/#provide-via-command-line-arguments).
-    !!! note
-        As user portal features are added, testing and other actions will be accessible directly from the **Overview** page, making it easier to manage and validate your automations.
 
 ## Step 5: Schedule automation
 

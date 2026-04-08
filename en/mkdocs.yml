@@ -78,6 +78,7 @@ nav:
       - Develop Your First Integration as API: quick-start-guides/develop-your-first-integration-as-api.md
       - Develop Your First Event Integration: quick-start-guides/develop-your-first-event-integration.md
       - Develop Your First File Integration: quick-start-guides/develop-your-first-file-integration.md
+      - Configure Runtime Argument Schema : quick-start-guides/configure-runtime-argument-schema.md
   - Devant Samples:
       - Explore the Samples Collection:
           - Samples Overview: devant-samples/samples-overview.md
