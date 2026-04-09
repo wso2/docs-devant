@@ -4,8 +4,8 @@ description: Define structured runtime argument input forms for automations usin
 ---
 
 ## Prerequisite
-1. Create or import an automation. See [Schedule Your First Automation](schedule-your-first-automation.md).
 
+1. Create or import an automation. See [Schedule Your First Automation](schedule-your-first-automation.md).
 
 === "WSO2 Integrator: BI"
     ## WSO2 Integrator: BI
@@ -31,7 +31,7 @@ description: Define structured runtime argument input forms for automations usin
 
     ### Step 4: Verify the generated runtime argument form
 
-    1. In Devant, got to automation **Overview** page, click **Test with Arguments**.
+    1. In Devant, go to the automation **Overview** page, click **Test with Arguments**.
 
         <div style="width: 100%;">
         ![Open generated runtime argument form](../../assets/img/get-started/configure-runtime-argument-schema/runtime-args-bi-trigger.gif)
@@ -44,7 +44,6 @@ description: Define structured runtime argument input forms for automations usin
     - `float`
     - `decimal`
     - `byte`
-
 
 === "component.yaml (v1.2)"
     ## component.yaml (v1.2)
@@ -67,7 +66,7 @@ description: Define structured runtime argument input forms for automations usin
 
     ### Step 4: Verify the generated runtime argument form
 
-    1. In Devant, got to automation **Overview** page, click **Test with Arguments**.
+    1. In Devant, go to the automation **Overview** page, click **Test with Arguments**.
 
     ### Supported argument types
 
@@ -216,7 +215,7 @@ description: Define structured runtime argument input forms for automations usin
         `enum` arguments render as dropdowns and values are validated against the `values` list.
 
     ### UI behavior
-    When a valid runtime argument schema is available, Devant renders typed input fields, enum dropdowns, repeat controls, and pre-execution validation.  
+    When a valid runtime argument schema is available, Devant renders typed input fields, enum dropdowns, repeat controls, and pre-execution validation.
     If no schema is available, Devant falls back to generic argument input.
 
     ### Current limitations
