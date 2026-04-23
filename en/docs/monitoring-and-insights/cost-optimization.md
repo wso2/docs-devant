@@ -8,7 +8,7 @@
 The Devant cost optimization feature provides detailed cost insights across your organization, enabling you to analyze resource utilization and cost efficiency at the Organization, Project, and Integration levels. The dashboards provide comprehensive visualizations and actionable recommendations to optimize cloud infrastructure costs while maintaining performance.
 
 **All metrics, visualizations, and analytics displayed across the Organization, Project, and Integration levels reflect data for the current month, from the first day up to the current date.** This provides you with up-to-date insights into your resource utilization and cost efficiency.
-Monthly figures show the accumulated data for the current month so far, while comparisons to the previous month are also available in some metrics. This approach gives you both immediate visibility into current spending patterns and understanding the trend compared to last month for optimization decisions.
+Monthly figures show the accumulated data for the current month so far, while comparisons to the previous month are also available in some metrics. This approach gives you both immediate visibility into current spending patterns and an understanding of the trend compared to last month for optimization decisions.
 
 You can use this information to track ongoing cost optimization efforts and make timely adjustments to your resource allocations within the current billing cycle.
 
@@ -126,7 +126,7 @@ At the Release Level within the Integration Level, you can view:
 
    ![Component details card](../assets/img/cost-optimization/component_details.png){ style="width:600px; height:auto;" }
 
-  This card shows configuration data for the deployment, including number of replicas, scale to zero settings, and horizontal pod auto-scaling that can be configured in DevOps.
+  This card shows configuration data for the deployment, including the number of replicas, scale-to-zero settings, and horizontal pod autoscaling that can be configured in DevOps.
 
 #### Optimization Configurations
 
@@ -134,18 +134,18 @@ Under the Optimization Configurations section, you can configure how Devant appl
 
 **Auto Apply Recommendations**
 
-When enabled, this toggle automatically implements resource right-sizing recommendations daily. Every 24 hours the system automatically checks if the release has any recommendations that would save more than $0.01, and if found, applies them without requiring manual intervention. This feature helps maintain continuous cost efficiency without constant monitoring.
+When enabled, this toggle automatically implements resource right-sizing recommendations daily. Every 24 hours, the system automatically checks if the release has any recommendations that would save more than $0.01, and if found, applies them without requiring manual intervention. This feature helps maintain continuous cost efficiency without constant monitoring.
 
 **Safety Buffer**
 
 This setting determines how conservatively the optimization algorithm calculates resource recommendations:
 
-* **Low** - Adds a 10% buffer above the calculated resource requirements, which maximizes cost savings but provides less headroom for unexpected traffic spikes.
-* **High** - Adds a 20% buffer above the calculated resource requirements, offering more capacity for handling unexpected load increases. Recommended for production environments.
+* **Low** - Adds a 10% buffer above the calculated resource requirements, maximizing cost savings but providing less headroom for unexpected traffic spikes.
+* **High** - Adds a 20% buffer above the calculated resource requirements, providing additional capacity to handle unexpected load increases. Recommended for production environments.
 
 The Safety Buffer setting helps you balance between maximum cost efficiency and maintaining reliable performance. For mission-critical applications or services with variable workloads, the High setting provides additional capacity to handle sudden traffic increases, while the Low setting is suitable for predictable workloads where you want to optimize costs more aggressively. These configurations allow you to tailor the optimization behavior to your specific needs, balancing cost-saving opportunities with operational requirements at the integration level.
 
-* **Monthly Cost, Missed Savings, Efficiency and Estimated Cost**
+* **Monthly Cost, Missed Savings, Efficiency, and Estimated Cost**
 
   ![Component metrics cards](../assets/img/cost-optimization/component_metrics_cards.png){ style="width:600px; height:auto;" }
 
