@@ -172,11 +172,11 @@ The Safety Buffer setting helps you balance between maximum cost efficiency and 
   * Provides potential cost savings per adjustment
 
 * **Enable Scale to Zero**
-  * Stops a integration when no requests are being served
+  * Stops an integration when no requests are being served
   * Reduces idle infrastructure costs
 
 * **Stop Deployment**
-  * Identifies and halts unused deployments
+  * Stops an integration when no requests are being served
   * Prevents unnecessary spending on unused resources
 
 ### Applying Recommendations
