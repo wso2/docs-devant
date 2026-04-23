@@ -131,6 +131,7 @@ nav:
       - Usage Insights:
           - Usage Insights Overview: monitoring-and-insights/usage-insights-overview.md
           - Generate Custom Reports: monitoring-and-insights/generate-custom-reports.md
+      - Cost Insights: monitoring-and-insights/cost-optimization.md
   - Administer:
       - Control Access in the Devant Console: administer/control-access-in-the-devant-console.md
       - Configure Enterprise Login: administer/configure-enterprise-login.md
