@@ -129,25 +129,21 @@ At the Release Level within the Integration Level, you can view:
   This card shows configuration data for the deployment, including number of replicas, scale to zero settings, and horizontal pod auto-scaling that can be configured in DevOps.
 
 #### Optimization Configurations
-    Under the Optimization Configurations section, you can configure how Devant applies cost optimization recommendations:
 
-    Auto Apply Recommendations: 
-    
-    When enabled, this toggle automatically implements resource right-sizing recommendations daily. Every 24 hours the system automatically checks if the release has any recommendations that would save more than $0.01, and if found, applies them without requiring manual intervention. This feature helps maintain continuous cost efficiency without constant monitoring.
+Under the Optimization Configurations section, you can configure how Devant applies cost optimization recommendations:
 
+**Auto Apply Recommendations**
 
-    Safety Buffer: 
-    
-    This setting determines how conservatively the optimization algorithm calculates resource recommendations:
+When enabled, this toggle automatically implements resource right-sizing recommendations daily. Every 24 hours the system automatically checks if the release has any recommendations that would save more than $0.01, and if found, applies them without requiring manual intervention. This feature helps maintain continuous cost efficiency without constant monitoring.
 
-        Low: Adds a 10% buffer above the calculated resource requirements, which maximizes cost savings but provides less headroom for unexpected traffic spikes
+**Safety Buffer**
 
-        High: Adds a 20% buffer above the calculated resource requirements, offering more capacity for handling unexpected load increases - recommended for production environments
+This setting determines how conservatively the optimization algorithm calculates resource recommendations:
 
+* **Low** - Adds a 10% buffer above the calculated resource requirements, which maximizes cost savings but provides less headroom for unexpected traffic spikes.
+* **High** - Adds a 20% buffer above the calculated resource requirements, offering more capacity for handling unexpected load increases. Recommended for production environments.
 
-
-    The Safety Buffer setting helps you balance between maximum cost efficiency and maintaining reliable performance. For mission-critical applications or services with variable workloads, the High setting provides additional capacity to handle sudden traffic increases, while the Low setting is suitable for predictable workloads where you want to optimize costs more aggressively.
-    These configurations allow you to tailor the optimization behavior to your specific needs, balancing cost-saving opportunities with operational requirements at the integration level.
+The Safety Buffer setting helps you balance between maximum cost efficiency and maintaining reliable performance. For mission-critical applications or services with variable workloads, the High setting provides additional capacity to handle sudden traffic increases, while the Low setting is suitable for predictable workloads where you want to optimize costs more aggressively. These configurations allow you to tailor the optimization behavior to your specific needs, balancing cost-saving opportunities with operational requirements at the integration level.
 
 * **Monthly Cost, Missed Savings, Efficiency and Estimated Cost**
 
