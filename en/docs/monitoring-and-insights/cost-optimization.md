@@ -10,7 +10,7 @@ The Devant cost optimization feature provides detailed cost insights across your
 **All metrics, visualizations, and analytics displayed across the Organization, Project, and Integration levels reflect data for the current month, from the first day up to the current date.** This provides you with up-to-date insights into your resource utilization and cost efficiency.
 Monthly figures show the accumulated data for the current month so far, while comparisons to the previous month are also available in some metrics. This approach gives you both immediate visibility into current spending patterns and an understanding of the trend compared to last month for optimization decisions.
 
-You can use this information to track ongoing cost optimization efforts and make timely adjustments to your resource allocations within the current billing cycle.
+You can use this information to track ongoing cost optimization efforts and make timely adjustments to your resource allocations during the current billing cycle.
 
 ## Organization Level
 
@@ -23,14 +23,14 @@ At the Organization level, Devant provides key insights into overall cost saving
   ![Monthly savings summary chart](../assets/img/cost-optimization/monthly_savings_summary.png){ style="width:200px; height:auto;" }
 
 
-  This chart visualizes the percentage of cost savings achieved (by manual or automatic application of recommendations) compared to missed savings (potential savings missed due to recommendations not being applied) up to the current date. You should aim to maximize the saved cost and minimize missed savings.
+  This chart visualizes the percentage of cost savings achieved (by manual or automated application of recommendations) compared to missed savings (potential savings missed due to recommendations not being applied) up to the current date. You should aim to maximize the saved cost and minimize missed savings.
 
 * **Total Monthly Savings**
 
   ![Total monthly savings card](../assets/img/cost-optimization/total_monthly_savings.png){ style="width:300px; height:auto;" }
 
 
-  This card shows the cost saved in the current month through manual or automatic application of recommendations. It includes a breakdown for Production and Non-Production environments, with a dropdown showing savings for each respective environment.
+  This card shows the cost savings in the current month from the manual or automatic application of recommendations. It includes a breakdown for Production and Non-Production environments, with a dropdown that shows savings for each environment.
 
 * **Monthly Missed Savings**
 
@@ -42,7 +42,7 @@ At the Organization level, Devant provides key insights into overall cost saving
 
     ![Annual savings card](../assets/img/cost-optimization/annual_savings.png){ style="width:300px; height:auto;" }
 
-  This card shows accumulated savings throughout the year. It combines the savings completed through the end of the previous month with savings achieved up to the present day of the current month. This demonstrates that a fully cost-optimized organization with no savings for the current month has achieved this state by saving costs in previous months.
+  This card shows accumulated savings throughout the year. It combines savings completed through the end of the previous month with those achieved up to the current day of the current month. This demonstrates that a fully cost-optimized organization with no savings for the current month has achieved this state by saving costs in previous months.
 
 * **Monthly CPU and Memory Cost**
 
@@ -60,7 +60,7 @@ At the Organization level, Devant provides key insights into overall cost saving
 
   ![Monthly CPU and Memory efficiency card](../assets/img/cost-optimization/resource_efficiency.png){ style="width:300px; height:auto;" }
 
-  This card shows the percentage utilization of CPU and Memory compared to allocation. This metric indicates your resource optimization level, which directly reflects cost optimization. The breakdown of CPU and Memory efficiencies provides individual understanding of each resource's optimization. The percentage change shown compares current efficiency to last month's efficiency with an arrow indicating increase or decrease.
+  This card shows the percentage utilization of CPU and Memory relative to their allocations. This metric indicates your resource optimization level, which directly reflects cost optimization. The breakdown of CPU and Memory efficiencies provides individual understanding of each resource's optimization. The percentage change shown compares current efficiency with last month's, with an arrow indicating an increase or decrease.
 
 * **Cost Analysis Plot**
 
@@ -72,7 +72,7 @@ At the Organization level, Devant provides key insights into overall cost saving
   * **Utilization Cost** - The ideal cost that should be billed if no extra resources were allocated. This is typically not achievable in practice as some buffer is needed for uninterrupted service.
   * **Optimized Cost** - The cost suggested by the optimization algorithm that provides sufficient buffer for efficient performance while optimizing costs.
 
-  You can filter the view to show All resources, CPU only, or Memory only for time-based cost analysis.
+  You can filter the view to show `All` resources, CPU only, or Memory only for time-based cost analysis.
 
 * **Cost Savings (Deployments Summary)**
 
@@ -97,7 +97,7 @@ At the Organization level, Devant provides key insights into overall cost saving
   * CPU and Memory Efficiency 
   * Ratio of Applied Suggestions to total available recommendations
 
-  You can click on any project in this table or use the top navigation to visit the Project Level cost insights.
+  You can click on any project in this table or use the top navigation to view the Project Level cost insights.
 
 ## Project Level
 
@@ -116,7 +116,7 @@ These toggles enable automatic application of recommendations for all deployment
 
 ![Integration level dashboard](../assets/img/cost-optimization/ComponentLevel.png)
 
-The Integration Level differs from both Organization and Project levels. At the Integration Level, you can access the release level through both deployment track (version) and environment configuration as shown:
+The Integration Level differs from both the Organization and Project levels. At the Integration Level, you can access the release level through both the deployment track (version) and the environment configuration as shown:
 
  ![Release selection](../assets/img/cost-optimization/release_selection.png){ style="width:300px; height:auto;" }
 
