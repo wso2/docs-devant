@@ -47,7 +47,7 @@ To build your MCP Server using WSO2 Integrator: BI, refer to the [MCP Service In
 5. Go back to the **Design** view using the back arrow in the top left corner.
 6. From the right side panel, click the **View in Devant** to view this integration in Devant.
 
-## Step 5: Test MCP Server
+## Step 5: Test MCP server
 
 1. Once you push the changes, the overview page of the Devant MCP Server will automatically refresh and show you the **Latest Commit** and automatically build and show the **Build Status**.
 
