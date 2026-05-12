@@ -56,7 +56,7 @@ To build your MCP Server using WSO2 Integrator: BI, refer to the [MCP Service In
 
 2. Once the **Build Status** shows `Build completed`, it will be automatically deployed into the development environment.
 
-3. Then, click the **Configure to Continue** button, enter the configurable values, and click **`Apply`**.
+3. Then, click the **Configure to Continue** button, enter the configurable values, and click **Apply**.
 
 4. Navigate to the **Test** page of your MCP Server in Devant and use the **MCP Playground** to explore available tools. Select a tool, provide the required inputs, and execute it to test functionality.
 
