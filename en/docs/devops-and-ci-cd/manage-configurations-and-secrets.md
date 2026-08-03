@@ -56,6 +56,9 @@ To add environment variables:
     !!!tip
         You can optionally import environment variables from a `.env` file by clicking **Import from .env file**.
 
+    !!!info "Note"
+        If you're setting a value for a Ballerina [configurable variable](https://ballerina.io/learn/provide-values-to-configurable-variables/), use the naming convention `BAL_CONFIG_VAR_key=value`.
+
 7. Click **Create**.
 
 ### Add a file mount to your container
