@@ -44,7 +44,7 @@ This redirects you to the **Create New Integration in VS Code** page.
     | `username`          | `string`   |
     | `password`          | `string`   |
     
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/add-configurables.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/add-configurables.gif" alt="Add Configurations" width="80%"></a>
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/add-configurables.gif" class="glightbox"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/add-configurables.gif" alt="Add Configurations" width="80%"></a>
 
 2. Go to the **Design View** by clicking the Home icon on the top left corner and click **Add Artifact**.
 3. Select **RabbitMQ Event Handler**. Choosing the **Event Integration** from the Devant console disables the other options.
@@ -59,13 +59,13 @@ This redirects you to the **Create New Integration in VS Code** page.
 
 7. Add `Orders` as the **Queue Name** and click **Create**. If there is no queue named `Orders` in RabbitMQ server, this will create a new queue with this name. 
 
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/add-event-listener.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/add-event-listener.gif" alt="Add Configurations" width="80%"></a>
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/add-event-listener.gif" class="glightbox"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/add-event-listener.gif" alt="Add Configurations" width="80%"></a>
 
 8. In the **Design** view, click the `onMessage` function box. It will redirect you to the flow diagram view.
 9. Click the plus icon after the **Start** node to open the node panel.
 10. Add a **Log Info** node with the **Msg** as `message.toString()`. 
 
-    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/implement-event-handler.gif"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/implement-event-handler.gif" alt="Add Configurations" width="80%"></a>
+    <a href="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/implement-event-handler.gif" class="glightbox"><img src="{{base_path}}/assets/img/get-started/deploy-your-first-event-integration/implement-event-handler.gif" alt="Add Configurations" width="80%"></a>
 
 ## Step 4: Push to Devant
 
