@@ -18,7 +18,7 @@ Devant treats all configurations and secrets as sensitive content, but lets you 
 - **Secrets** are write-only. Once created, you cannot view or retrieve their content via Devant, but you can overwrite them at any time.
 - **Configurations** can be read and updated via Devant after creation.
 
-    !!!info "Note"
+    !!! info "Note"
         For sensitive data such as database passwords, cloud credentials, or service accounts, it is recommended to use secrets rather than configurations.
 
 ## Managing environment variables and file mounts on Devant
@@ -43,7 +43,7 @@ To add environment variables:
 3. Select **Environment Variables** in the **Create a Config or Secret** pane.
 4. Select **Mark as a Secret** if the values contain sensitive information.
 
-    !!!info "Note"
+    !!! info "Note"
         Secret environment variables cannot be read after creation, but you can overwrite them at any time.
 
 5. Enter a **Display Name** to identify this configuration.

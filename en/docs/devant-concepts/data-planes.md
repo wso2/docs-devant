@@ -7,11 +7,11 @@ description: Understand the architecture of Devant data planes, including cloud 
 
 Devant's architecture comprises two key components: the control plane and the data plane. The control plane handles essential tasks such as administering organizations, users, and projects. In addition, it also governs the entire journey of integration development, from the initial stages of creation, progressing to deployment, including measures to enforce governance and the provision for observability. The Devant control plane is a SaaS that manages all cloud data planes and private data planes. It caters to diverse user personas, including CIOs, architects, and developers, as well as DevOps, and platform engineers.
 
-The data plane is the environment where user integrations are deployed based on configurations set in the control plane. The integrations can be built in [Ballerina](https://ballerina.io/) and [Wso2 Micro Integrator](https://wso2.com/integrator/micro-integrator/) which are optimized for building integrations or using the Devant Cloud Editor. Importantly, all traffic related to the runtime of user integrations are restricted to the Devant data plane, ensuring strict containment of user data within its boundaries.
+The data plane is the environment where user integrations are deployed based on configurations set in the control plane. The integrations can be built in [Ballerina](https://ballerina.io/) and [WSO2 Micro Integrator](https://wso2.com/integrator/micro-integrator/) which are optimized for building integrations or using the Devant Cloud Editor. Importantly, all traffic related to the runtime of user integrations is restricted to the Devant data plane, ensuring strict containment of user data within its boundaries.
 
 Devant's architecture features two distinct data plane types: cloud data planes and private data planes. A cloud data plane utilizes a multi-tenanted infrastructure model for deploying user integrations, creating a shared yet secure environment for integration runtime. In contrast, a private data plane(PDP) provides dedicated infrastructure for a single organization to run its user integrations. This ensures an added layer of privacy and control for organizations with specific requirements.
 
-![Choreo high-level view](../assets/img/devant-concepts/high-level-view.png)
+![Devant high-level view](../assets/img/devant-concepts/high-level-view.png)
 
 ## Private data planes
 
@@ -131,7 +131,7 @@ The following diagram depicts the architecture overview of Devant's in-data-plan
 
 ![Observability architecture](../assets/img/devant-concepts/observability-architecture.png){width=700 height=500}
 
-The private data plane observability architecture is centered around a strong commitment to data privacy and compliance. This is achieved through a strategic decision to retain logs and observability data within the data planes itself. Key aspects of this architecture include:
+The private data plane observability architecture is centered around a strong commitment to data privacy and compliance. This is achieved through a strategic decision to retain logs and observability data within the data plane itself. Key aspects of this architecture include:
 
 - **Data storage at source**: Logs and observability data are stored within the data plane itself, enhancing security, simplifying access, and ensuring compliance.
 - **Direct browser-to-data-plane interaction**: The Devant Console in the user's browser directly interacts with APIs in the data plane, reducing potential data routing complexities and ensuring a more secure, direct flow of information.
