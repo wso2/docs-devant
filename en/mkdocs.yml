@@ -190,6 +190,7 @@ plugins:
     - search:
         lang: ['en']
     - open-in-new-tab
+    - glightbox
     - markdownextradata
 
     - exclude:
